@@ -1,0 +1,50 @@
+{
+  "run_id": "repro01",
+  "started_utc": "2026-07-17T15:14:19.264665+00:00",
+  "models": {
+    "opus-4.8": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8",
+      "thinking_mode": "effort",
+      "pilot": true,
+      "verified": true
+    }
+  },
+  "budget_levels": {
+    "effort_map": {
+      "low": "low",
+      "med": "medium",
+      "high": "high",
+      "extra": "xhigh"
+    },
+    "budget_tokens_map": {
+      "low": 1024,
+      "med": 4096,
+      "high": 16384,
+      "extra": 32768
+    }
+  },
+  "defaults": {
+    "n_samples": 5,
+    "max_tokens": 1024,
+    "thinking_max_tokens": 16384,
+    "system_prompt": null,
+    "temperature": null
+  },
+  "conditions": [
+    "cold"
+  ],
+  "n_samples": 5,
+  "system_prompt": null,
+  "argv": [
+    "runner/run_experiment.py",
+    "--run-id",
+    "repro01",
+    "--models",
+    "opus-4.8:low,opus-4.8:med,opus-4.8:high,opus-4.8:extra",
+    "--conditions",
+    "cold",
+    "--items",
+    "items/SEIN-001.json"
+  ]
+}
