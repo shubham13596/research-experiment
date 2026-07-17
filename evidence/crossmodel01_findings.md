@@ -14,9 +14,22 @@ Combined with phrasing01/surface01 on the SAME verbatim stimulus:
 | **Opus 4.8** | **~70% George** | ~43% George | the outlier; scaffolding PROTECTIVE here |
 | Fable 5 | — | 0% George | robust |
 
-So on parametric memory, **Sonnet and Haiku do NOT reproduce the failure** — they don't confabulate George.
-(This partly answers the observer's web-confound worry: with web off, they still don't fail *toward George*;
-instead they abstain or answer the theme without committing to a character.)
+So on parametric memory, **Sonnet and Haiku never confabulate George — but they do NOT reliably get it right
+either.** This distinction is load-bearing; "0% George" must not be read as "correct every time":
+
+| Model (bare API, verbatim, n=36) | Correct (Jerry) | Wrong (George) | Abstained (no character) |
+|---|---|---|---|
+| Sonnet 4.6 | 31/36 (86%) | 0 | 5/36 (14%) |
+| Haiku 4.5 | **19/36 (53%)** | 0 | **17/36 (47%)** |
+
+Haiku commits to Jerry only ~half the time; the rest is explicit abstention ("I'm not immediately recalling a
+specific Melrose Place reference … I want to be honest rather than guess"). The gap between "correct" and 100%
+is NOT wrong answers — it is deferral. On parametric memory, **none of the tested models except Fable 5 reliably
+KNOWS this fact.** The models differ in what they do when they don't know: Sonnet/Haiku abstain; Opus confabulates.
+
+This also explains the chat-surface observation the observer reported: Sonnet/Haiku were "correct" on chat not
+because they remembered, but because they recognized their uncertainty and web-searched. Their correctness was
+web-dependent. Remove web (as here) and that same uncertainty surfaces as abstention, not correctness.
 
 ## The real finding is calibration, and it is behavioral, not verbal
 The "OTHER" bucket (named neither Jerry nor George) is large for Sonnet/Haiku and is mostly GENUINE
@@ -44,8 +57,12 @@ answer. TODO before any confidence claim goes in a write-up.
 Haiku bare 67% / claude.ai 64%; Sonnet bare 31% / claude.ai 50%. Uninterpretable until adjudicated per above.
 
 ## Implication for the study
-Strengthens the reframe toward a CALIBRATION study. The clean next experiment is tool-availability /
-search-seeking: give each model an AVAILABLE (not forced) web_search tool and measure who chooses to verify.
-Prediction from this run: Opus 4.8 verifies least (fills gaps confidently); Haiku/Sonnet verify or abstain more.
+Strengthens the reframe toward a CALIBRATION study. Core claim: nobody but Fable reliably KNOWS this fact;
+the models differ in what they do under not-knowing (abstain vs confabulate). The clean next experiment is
+tool-availability / search-seeking: give each model an AVAILABLE (not forced) web_search tool and measure who
+chooses to verify. **Preregistered-style prediction (from this run's abstention ordering):** search-seeking rate
+should track the abstention rate here — Haiku (abstains 47%) reaches for the tool most, Sonnet (14%) less,
+Opus 4.8 (abstains 0%, confabulates 70%) least, Fable (knows it) rarely. If that ordering holds, verification
+behavior tracks true reliability *inversely* to need — the calibration claim. Run-id for that test: `search01`.
 
 Raw transcripts: transcripts/crossmodel01/records.jsonl (144 rows, immutable).
