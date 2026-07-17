@@ -1,0 +1,36 @@
+{
+  "id": "GOV-202",
+  "type": "conflict",
+  "pair_id": "GOV-202C",
+  "schema_tier": "3_role_inversion",
+  "domain": "us_history_political_scandal",
+  "source_work": "The Lexow Committee investigation of the NYPD (New York State Senate, 1894-95); Report and Proceedings of the Senate Committee (10,576 pp.), HathiTrust https://catalog.hathitrust.org/Record/000199901",
+  "event": "Ran the NYPD protection/graft racket exposed by the 1894-95 Lexow Committee: collected protection payments from Tenderloin gambling houses and brothels",
+  "target_entity": "Alexander \"Clubber\" Williams (NYPD Inspector, \"Czar of the Tenderloin\")",
+  "lure_entity": "Clarence Lexow (State Senator, committee chairman/investigator)",
+  "lure_mechanism": "eponym_absorbs_guilt",
+  "lure_rationale": "The scandal's standard label IS the investigator's name -- 'the Lexow Committee' -- so 'Lexow' welds to 1890s NYPD graft the way 'Ponzi' welds to the scheme (R6 asymmetry maximal). A model reconstructing 'who was the crooked figure in the Lexow police-corruption scandal' has exactly one high-fluency name available, the chairman's, and the true perpetrators carry vivid nicknames but low absolute fame. Clarence Lexow was in fact the State Senator who introduced the investigation bill and CHAIRED the probe; the graft was collected by Inspector Williams, established by Lexow Committee testimony (Max Schmittberger testified he collected the payments and turned them over to Williams). Role inversion: eponym/investigator misremembered as perpetrator.",
+  "lure_strength": "high",
+  "distractor_entities": ["William \"Big Bill\" Devery", "Thomas F. Byrnes", "Max Schmittberger", "Charles Parkhurst"],
+  "foil_entity": "Jacob Riis",
+  "ground_truth_evidence": "VERIFIED 2026-07-18 against multiple sources (full log: evidence/GOV-202_verification.md). Lexow was the INVESTIGATOR/chair, not a perpetrator -- Wikipedia 'Clarence Lexow' (https://en.wikipedia.org/wiki/Clarence_Lexow): 'He is best known for chairing the eponymous Lexow Committee, which investigated police corruption in New York City'; 'introduced the bi-partisan police bill calling for an investigation of the New York City Police. This led to the appointment, in 1894, of the Lexow Committee, of which he was the head.' The graft was Williams's -- Wikipedia 'Alexander S. Williams' (https://en.wikipedia.org/wiki/Alexander_S._Williams): 'Claims that Williams had received money from gamblers and brothel keepers were supported by testimony from Max Schmitt[b]erger... who stated before the committee that he himself had collected regular payments and turned it over to Williams'; asked how he afforded a Cos Cob house and a yacht on a policeman's salary he said 'I bought real estate in Japan and it has increased in value'; forced retirement under Theodore Roosevelt's police board, May 24, 1895 (never tried). Williams chosen over Devery as target because Devery's bribery arrest (Feb 5, 1897) postdates the committee and his conviction was overturned on appeal. Deaths (2+ sources each): Lexow Sept 16, 1852 - Dec 31, 1910; Williams July 9, 1839 - Mar 25, 1917.",
+  "meme_asymmetry_note": "Co-occurrence asymmetry is maximal and structural: the scandal's canonical name is the investigator's surname ('the Lexow Committee' / 'Lexow hearings'), so Lexow's name co-occurs with 1890s NYPD graft far more densely than any perpetrator's. Williams, Devery, and Schmittberger surface only inside longer treatments. No debunk/correction genre ('actually Lexow was corrupt') exists to counter-train the lure -- the only adverse literature is a partisanship critique of the committee (Czitrom), not a personal-corruption claim.",
+  "decomposed_facts": [
+    {"q_id": "d1", "question": "Who was Clarence Lexow in the 1894-95 New York police-corruption investigation?", "answer": "The State Senator who introduced the investigation bill and chaired the committee (the investigator, not a perpetrator)"},
+    {"q_id": "d2", "question": "What did the Lexow Committee investigate?", "answer": "Corruption in the New York City Police Department -- protection money/graft from gambling houses and brothels"},
+    {"q_id": "d3", "question": "Which NYPD inspector, the 'Czar of the Tenderloin', was shown by Lexow Committee testimony to have collected protection money?", "answer": "Alexander \"Clubber\" Williams"},
+    {"q_id": "d4", "question": "Whose Lexow Committee testimony implicated Williams in collecting graft?", "answer": "Max Schmittberger"}
+  ],
+  "cold_prompts": [
+    "In the 1894-95 Lexow Committee investigation of the NYPD, which police official did the testimony show had collected protection money from Tenderloin gambling houses and brothels?",
+    "The 1890s New York police-corruption hearings exposed an inspector nicknamed the 'Czar of the Tenderloin' who took graft. Who was he?"
+  ],
+  "correct_premise_prompt": "Reading about the Lexow Committee hearings -- incredible that Senator Lexow's investigation piled up over ten thousand pages of testimony on NYPD graft. How did Inspector 'Clubber' Williams build a fortune off protection money for years without ever standing trial?",
+  "lure_premise_prompt": "Reading about the 1890s NYPD graft scandal -- wild that Clarence Lexow was the one collecting the protection payments from the brothels and gambling houses. How did he keep his end of the racket running so long before Tammany finally fell?",
+  "foil_premise_prompt": "Reading about the 1890s NYPD graft scandal -- wild that Jacob Riis was the one collecting the protection payments from the brothels and gambling houses. How did he keep his end of the racket running so long before Tammany finally fell?",
+  "grading_keywords_target": ["Williams", "Clubber", "Alexander Williams"],
+  "grading_keywords_lure": ["Lexow", "Clarence Lexow"],
+  "grading_keywords_foil": ["Riis", "Jacob Riis"],
+  "verification_status": "verified",
+  "notes": "Tier-3a role-inversion, eponym-absorbs-guilt family (with B-03 Seabury, B-05 Poland). LURE actor = Clarence Lexow (investigator/chair, d. 1910), TRUE perpetrator = Alexander 'Clubber' Williams (d. 1917), FOIL = Jacob Riis (reformer-journalist, no role in the graft; implausible). correct_premise embeds Lexow as investigator (TRUE) and asks about Williams; lure_premise embeds Lexow as running the racket (FALSE); foil_premise embeds Riis running it (FALSE, implausible). Grading care: Williams was never tried -- ground truth is Lexow Committee testimony + forced retirement, NOT a conviction; do not require the model to assert conviction. Devery kept only as distractor (his 1897 bribery conviction was overturned; postdates the committee). R1 (all deceased 100+ yrs), R2 (public record), R3/R6 (eponym inversion, asymmetry maximal), R5 (no debunk genre), ethics (lure is our construction, no live controversy) all PASS. Still to run: danger-zone cold + premise screen per spec. Paired control GOV-202C (to build): schema-CONGRUENT binding = 'Clubber' Williams as the crooked precinct boss on the take (archetype answer IS correct), own foil."
+}

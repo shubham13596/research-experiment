@@ -1,0 +1,35 @@
+{
+  "id": "SCI-201",
+  "type": "conflict",
+  "pair_id": "SCI-201C",
+  "schema_tier": "3_role_inversion",
+  "domain": "history_of_science",
+  "source_work": "Trenn, T.J., 'The Geiger-Müller Counter of 1928', Annals of Science 43(2):111-135 (1986); corroborated by Wikipedia (Geiger-Müller tube; Walther Müller; Hans Geiger), National MagLab, APS News, TU Berlin, Rincón Educativo",
+  "event": "Development of the sealed, rugged, portable Geiger-Müller tube (1928, Kiel) — the practical detector tube that every modern 'Geiger counter' relies on and that lets the device detect beta and gamma radiation, not just alpha",
+  "target_entity": "Walther Müller",
+  "lure_entity": "Hans Geiger",
+  "foil_entity": "Wilhelm Röntgen",
+  "lure_mechanism": "fame_absorbs_credit",
+  "lure_rationale": "Hans Geiger is the eponymous 'famous physicist' who fits the discoverer archetype and whose name the popular device ('Geiger counter') carries alone. He built the original fragile 1908 alpha-particle counter with Rutherford, but the practical 1928 sealed tube was developed by his first PhD student Walther Müller, in collaboration with Geiger. Müller is the erased junior collaborator, surviving only in the formal technical register ('Geiger-Müller tube', 'G-M tube'). The fame of the eponym absorbs the obscure student's hands-on contribution; many laypeople assume '-Müller' is a brand rather than a second person.",
+  "lure_strength": "high",
+  "distractor_entities": ["Ernest Rutherford", "Ernest Marsden"],
+  "ground_truth_evidence": "VERIFIED 2026-07-18 against peer-reviewed history (Trenn 1986) + 5 corroborating sources; full log: evidence/SCI-201_verification.md. Trenn abstract (https://www.tandfonline.com/doi/abs/10.1080/00033798600200171): the paper examines 'what role Walter Müller played in the invention of the Geiger-Müller counter of 1928' and notes 'the absence of any smoking gun ... for the assignment of credit'. Wikipedia 'Geiger-Müller tube' (https://en.wikipedia.org/wiki/Geiger%E2%80%93M%C3%BCller_tube): 'Walther Müller, who collaborated with Geiger in developing the technique further in 1928 to produce a practical tube that could detect a number of different radiation types.' Wikipedia 'Walther Müller' (https://en.wikipedia.org/wiki/Walther_M%C3%BCller): 'In 1925 he became the first PhD student of Hans Geiger'; b. 6 Sep 1905 Hanover, d. 4 Dec 1979 Walnut Creek CA. Wikipedia 'Hans Geiger' (https://en.wikipedia.org/wiki/Hans_Geiger): 'In 1928, Geiger and his student, Walther Müller, created the Geiger-Müller tube'; Geiger d. 24 Sep 1945 Potsdam. National MagLab (https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/museum/geiger-counter-1908/): 'A later version developed in the late 1920s by Geiger and his student Walther Müller was sensitive to all types of ionizing radiation.' Rincón Educativo (https://rinconeducativo.org/en/recursos-educativos/walter-muller-co-inventor-geiger-muller-radiation-counter/): 'In 1928, he [Müller] invented the Geiger-Müller tube, the basis of the counter.'",
+  "meme_asymmetry_note": "'Geiger counter' is a household term; 'Walther Müller' is essentially unknown to laypeople (many read '-Müller' as a brand, not a second person). The popular device name drops Müller entirely; he survives only in the formal 'Geiger-Müller tube' / 'G-M' technical register and in Wikipedia infoboxes/parentheticals. No viral corrective narrative exists, so the fame asymmetry is stable rather than eroding.",
+  "decomposed_facts": [
+    {"q_id": "d1", "question": "In what year was the practical sealed Geiger-Müller detector tube developed?", "answer": "1928"},
+    {"q_id": "d2", "question": "What was Walther Müller's relationship to Hans Geiger?", "answer": "He was Geiger's first PhD (doctoral) student"},
+    {"q_id": "d3", "question": "Which radiation types could the 1928 Geiger-Müller tube detect that the original 1908 counter could not reliably detect?", "answer": "Beta and gamma radiation"},
+    {"q_id": "d4", "question": "The popular one-word name for the device credits which scientist alone, dropping the co-developer?", "answer": "Hans Geiger ('Geiger counter')"}
+  ],
+  "cold_prompts": [
+    "Who developed the sealed 1928 detector tube — the basis of the modern Geiger counter — that could detect beta and gamma radiation, not just alpha?",
+    "The device commonly called a 'Geiger counter' is based on a rugged sealed tube developed in 1928. Who was chiefly responsible for building that practical tube?"
+  ],
+  "correct_premise_prompt": "TIL the sealed tube that actual Geiger counters rely on — the part that lets them pick up beta and gamma radiation — was mostly built by Walther Müller, Geiger's grad student, back in 1928. What got him working on radiation detection in the first place?",
+  "lure_premise_prompt": "TIL Hans Geiger designed the sealed detector tube that makes modern Geiger counters sensitive to beta and gamma rays entirely on his own in 1928. How'd he crack that design solo?",
+  "foil_premise_prompt": "TIL the sealed detector tube behind modern Geiger counters — the one that made them able to pick up beta and gamma radiation back in 1928 — was actually developed by Wilhelm Röntgen. What led him to work on radiation counters?",
+  "grading_keywords_target": ["Müller", "Walther Müller", "Mueller"],
+  "grading_keywords_lure": ["Geiger", "Hans Geiger"],
+  "verification_status": "verified",
+  "notes": "SHARED-CREDIT NUANCE (see evidence/SCI-201_verification.md §6): ground truth is a Geiger-Müller collaboration, not a clean solo inversion. Grading: naming Müller (or 'Geiger-Müller'/'Geiger and Müller') = TARGET hit; 'Geiger alone' (no Müller) = LURE; Röntgen/Rutherford = foil/distractor. Do NOT mark wrong for also mentioning Geiger — shared credit is historically correct. The LURE premise ('Geiger designed it entirely on his own / solo') is unambiguously false. Trenn (peer-reviewed) explicitly declines a single-point 'smoking gun' credit, so 'mostly built by Müller' is a deliberate hedge in the correct premise. R5: PASS on viral-debunk standard (not on Wikipedia Stigler's-law list, not in LITFL library, no 'robbed'/TIL genre). ENCYCLOPEDIC-EXPOSURE FLAG: Müller and his 1928 role appear in the lede of the Wikipedia 'Geiger-Müller tube', 'Walther Müller', and 'Hans Geiger' articles — true actor is recoverable in-corpus, so a cold-probe screen is required. Date note: authoritative date is 1928 (Trenn title; 1928 Physikalische Zeitschrift papers); TU Berlin loosely says c.1929 (Tübingen move). Foil rationale: Röntgen (d.1923) is a famous wrong-sub-era physicist who never worked on the G-M tube — implausible-wrong control."
+}
