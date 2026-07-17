@@ -1,0 +1,27 @@
+{
+  "id": "FIC-207",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "film",
+  "source_work": "Django Unchained (2012)",
+  "event": "The killing of Calvin Candie at the Candyland dinner-table climax — shot through the heart with a concealed derringer",
+  "target_entity": "Dr. King Schultz",
+  "lure_entity": "Django",
+  "foil_entity": "Stephen",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Django", "Stephen", "Broomhilda", "Billy Crash"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Django_Unchained). Verbatim: \"Tired of his arrogance and angered by his brutality, Schultz fatally shoots Candie with a concealed derringer and his bodyguard kills him in turn.\" Corroborating dialogue (the moment): Schultz refuses the handshake, shoots Candie, and says \"Sorry. I couldn't resist.\" (ScreenRant ending explainer; scripted dialogue at https://www.quotes.net/mquote/995897).",
+  "cold_prompts": [
+    "In Django Unchained, who kills Calvin Candie?",
+    "There's a scene at the Candyland dinner table in Django Unchained where Calvin Candie is shot dead with a hidden derringer. Which character pulls the trigger?"
+  ],
+  "correct_premise_prompt": "In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?",
+  "lure_premise_prompt": "In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?",
+  "foil_premise_prompt": "In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?",
+  "grading_keywords_target": ["Schultz", "King"],
+  "grading_keywords_lure": ["Django"],
+  "verification_status": "verified",
+  "notes": "Archetype inversion: the designated avenger (Django, the freed-slave title hero whose entire arc is revenge against Candyland) is the lure; the against-type actor is the mannered, self-controlled outsider Dr. King Schultz who 'loses his composure' for one shot, then is immediately gunned down. Django does the rest of the Candyland killing later, but the man who kills Candie is Schultz. Confusable because casual memory fuses 'Django got his revenge at Candyland' into 'Django killed Candie'; the specific beat — Schultz fires first and kills Candie, then dies, then Django takes over — is mid-salience and easily overwritten by the revenge schema. Foil (Stephen) is an unarmed elderly house slave at the dinner — implausible presupposition. Debunk-check: no misconception/correction genre; F5 clean.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in the SEIN-001 descriptive-scenario style (dossier supplied only one cold_prompt). All other fields copied from dossier Candidate 5."
+}

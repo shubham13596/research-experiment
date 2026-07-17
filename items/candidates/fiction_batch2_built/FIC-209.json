@@ -1,0 +1,27 @@
+{
+  "id": "FIC-209",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "prestige_tv_drama",
+  "source_work": "Breaking Bad S3E13 'Full Measure' (2010)",
+  "event": "The killing of Gale Boetticher — shot at his apartment door",
+  "target_entity": "Jesse Pinkman",
+  "lure_entity": "Walter White",
+  "foil_entity": "Hank Schrader",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Walt", "Mike", "Victor", "Gus"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Full_Measure_(Breaking_Bad)). Verbatim: \"Walt tells Jesse to kill Gale before Victor and Mike can wrestle the phone away from him.\" … \"Jesse arrives at Gale's apartment and pulls a gun on him. Gale begs for his life, but a tearful and shaking Jesse reluctantly pulls the trigger.\"",
+  "cold_prompts": [
+    "In Breaking Bad, who kills Gale Boetticher?",
+    "There's a Breaking Bad season finale cliffhanger where Gale Boetticher is shot at his apartment door. Which character pulls the trigger?"
+  ],
+  "correct_premise_prompt": "In Breaking Bad, why does Jesse — not Walt — end up being the one who actually shoots Gale?",
+  "lure_premise_prompt": "In Breaking Bad, how does Walt end up shooting Gale to keep Gus from replacing them?",
+  "foil_premise_prompt": "In Breaking Bad, how did Hank end up being the one who shot Gale?",
+  "grading_keywords_target": ["Jesse", "Pinkman"],
+  "grading_keywords_lure": ["Walt", "Walter", "White", "Heisenberg"],
+  "verification_status": "verified",
+  "notes": "Archetype inversion: the sympathetic, guilt-ridden heart of the show (Jesse) pulls the trigger on an innocent — against type — while the designated schemer-killer Walter White, who DECIDES Gale must die and whose plan the murder serves, is the lure (bonus: Walt is the causal author, which strengthens the lure without making it correct). Confusable because the WHO is genuinely blurred by Walt's authorship ('Walt had Gale killed' approximates 'Walt killed Gale'). FAME-RISK (high): this is the highest fame-risk item in the batch — the cliffhanger is famous, though the fame attaches to the shocking act and the ambiguous cut-to-black rather than the WHO. Screen on Opus 4.8 before committing; if the model resists the lure it belongs with SIMP-004 (too-known) rather than the FIRE set. Foil (Hank, the DEA agent) is implausible/anachronistic to the plot. Debunk-check: the only misconception genre here is WHETHER Gale dies (the cut-to-black), not WHO shot him; F5 acceptable but see fame-risk flag.",
+  "fame_risk": true,
+  "build_notes": "Second cold_prompt drafted in the SEIN-001 descriptive-scenario style (dossier supplied only one cold_prompt). fame_risk set true per instruction and corroborated by dossier's high fame-risk flag. All other fields copied from dossier Candidate 4."
+}

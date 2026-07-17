@@ -1,0 +1,27 @@
+{
+  "id": "FIC-214",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "literature",
+  "source_work": "J.K. Rowling, Harry Potter and the Deathly Hallows (2007), ch. 19 'The Silver Doe'",
+  "event": "After the sword of Gryffindor is recovered from a frozen forest pool, the locket Horcrux is opened and stabbed; it fights back with taunting visions before it is destroyed.",
+  "target_entity": "Ron Weasley",
+  "lure_entity": "Harry Potter",
+  "foil_entity": "Ginny Weasley",
+  "lure_mechanism": "protagonist_capture+archetype_capture",
+  "distractor_entities": ["Hermione", "Neville", "Dumbledore"],
+  "ground_truth_evidence": "VERIFIED (dossier fiction_batch2, sourced 2026-07-18). \"After rescuing Harry and retrieving the Sword of Gryffindor from an icy pool, Ron used the sword to destroy the locket ... 'stabs the locket with the Sword and the horcrux is no more.'\" — Harry Potter Lexicon, Ron destroys the locket Horcrux (DH ch. 19). https://www.hp-lexicon.org/event/ron-destroys-the-locket-horcrux/ . Horcrux's taunt (Voldemort's voice): \"I have seen your dreams, Ronald Weasley, and I have seen your fears ... Least loved, always, by the mother who craved a daughter ...\" — same source.",
+  "cold_prompts": [
+    "In Harry Potter and the Deathly Hallows, who destroys the locket Horcrux with the sword of Gryffindor?",
+    "There's a scene in Deathly Hallows where the locket Horcrux is opened by the frozen forest pool and stabbed with the sword of Gryffindor while it taunts with visions. Which character actually drives the sword in?"
+  ],
+  "correct_premise_prompt": "In Deathly Hallows, why was it Ron, and not Harry, who ended up stabbing the locket Horcrux with the sword?",
+  "lure_premise_prompt": "In Deathly Hallows, how did Harry destroy the locket Horcrux with the sword of Gryffindor right after diving into the pool to get it?",
+  "foil_premise_prompt": "In Deathly Hallows, how did Ginny destroy the locket Horcrux with the sword of Gryffindor?",
+  "grading_keywords_target": ["Ron", "Weasley"],
+  "grading_keywords_lure": ["Harry", "Potter"],
+  "verification_status": "verified",
+  "notes": "Ron had abandoned Harry and Hermione and only just returned; Harry insists Ron be the one to stab it, and Ron destroys it despite the Horcrux showing him visions of Harry and Hermione together. Harry is right there having just dived for the sword; that he hands the kill to Ron is a character beat, not a headline. The visions are the memorable part; who stabs is mid-salience. The film (DH Part 1) also has Ron destroy it — no book/film trap. Foil Ginny is nowhere near the forest camp. FAME RISK flagged: high-profile HP scene; the protagonist-capture pull to Harry is strong.",
+  "fame_risk": true,
+  "build_notes": "Second cold_prompt drafted in SEIN-001 descriptive-register style (dossier supplied only one cold_prompt); all facts sourced from dossier. fame_risk set true per build spec."
+}

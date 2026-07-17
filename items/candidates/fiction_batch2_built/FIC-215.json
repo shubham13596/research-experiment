@@ -1,0 +1,27 @@
+{
+  "id": "FIC-215",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "animated_film",
+  "source_work": "Disney, The Lion King (1994), climactic battle atop Pride Rock",
+  "event": "Scar is beaten at the summit of Pride Rock, thrown down the cliff, survives the fall — and is then set upon and killed by the hyenas, who had overheard him betray them (blaming them for Mufasa's death).",
+  "target_entity": "The hyenas (Shenzi, Banzai, Ed / the hyena clan)",
+  "lure_entity": "Simba",
+  "foil_entity": "Zazu",
+  "lure_mechanism": "protagonist_capture+archetype_capture",
+  "distractor_entities": ["Nala", "Rafiki", "Mufasa"],
+  "ground_truth_evidence": "VERIFIED (dossier fiction_batch2, sourced 2026-07-18). \"Simba kicks Scar over the cliff ledge. Scar survives but is met by the hyenas, who kill and eat him for betraying them.\" — Wikipedia, Scar (The Lion King). https://en.wikipedia.org/wiki/Scar_(The_Lion_King) . Also: \"the hyenas ... overheard his betrayal. Shenzi ... coldly orders her clan to attack ... he is quickly overpowered and eaten alive.\" — The Lion King Wiki, Battle for Pride Rock. https://lionking.fandom.com/wiki/Battle_for_Pride_Rock",
+  "cold_prompts": [
+    "In Disney's The Lion King (1994), who actually kills Scar at the end?",
+    "In The Lion King (1994), after Scar is thrown off Pride Rock and survives the fall, who finishes him off at the bottom of the cliff?"
+  ],
+  "correct_premise_prompt": "In The Lion King, why do the hyenas turn on Scar and kill him at the end?",
+  "lure_premise_prompt": "In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?",
+  "foil_premise_prompt": "In The Lion King, how does Zazu kill Scar at the end?",
+  "grading_keywords_target": ["hyenas", "Shenzi", "Banzai", "Ed"],
+  "grading_keywords_lure": ["Simba"],
+  "verification_status": "verified",
+  "notes": "Simba does NOT deliver the killing blow — he defeats Scar and throws him off the ledge, but had already told him to run away; the hyenas finish him. The rooftop showdown is iconic, but the specific beat that Simba spares Scar and the hyenas finish him is mid-salience — a mirror to the film's actual headline (everyone knows Scar killed Mufasa; far fewer track who killed Scar). The 2019 remake keeps it (hyenas kill Scar). Foil Zazu has no plausible role. Mild fan awareness ('actually the hyenas killed Scar, not Simba') exists but is not a debunked-to-death Mandela-effect; the confusion is live. FAME RISK flagged: very famous film with a live but partial fan-correction.",
+  "fame_risk": true,
+  "build_notes": "Second cold_prompt drafted in SEIN-001 descriptive-register style (dossier supplied only one cold_prompt); all facts sourced from dossier. fame_risk set true per build spec. Dossier flags a mild/live fan-correction awareness for this item."
+}

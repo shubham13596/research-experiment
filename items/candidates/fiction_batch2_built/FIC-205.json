@@ -1,0 +1,27 @@
+{
+  "id": "FIC-205",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Arrested Development S1E2 'Top Banana'",
+  "event": "The Bluths' original frozen banana stand burns to the ground; George Sr. later delivers the iconic line that there was $250,000 in cash 'always ... in the banana stand' -- i.e., lining the walls of the thing that just burned",
+  "target_entity": "George Michael Bluth (lit the fire); Michael Bluth (allowed it)",
+  "lure_entity": "Gob Bluth",
+  "foil_entity": "Buster Bluth",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Lindsay Bluth Funke", "Tobias Funke", "Lucille Bluth", "George Bluth Sr."],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Top_Banana_(Arrested_Development)). Who lit it: \"George Michael thinks about the money they took and decides to burn down the banana stand to make it seem as if the money was burned.\" Michael's role: \"Michael manages to catch George Michael in the act, but after a conversation, Michael allows his son to burn the banana stand down.\" The reveal: \"Michael tells his father of the stand's burning down, only to be told that there was roughly $250,000 lining the walls of the stand.\"",
+  "cold_prompts": [
+    "In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?",
+    "There's an Arrested Development episode where the family banana stand burns down and it turns out there was $250,000 hidden in the walls. Who actually set it on fire?"
+  ],
+  "correct_premise_prompt": "In Arrested Development, why did Michael let the banana stand get burned down?",
+  "lure_premise_prompt": "In Arrested Development, why did Gob burn down the family's banana stand?",
+  "foil_premise_prompt": "In Arrested Development, how did Buster end up burning down the banana stand?",
+  "grading_keywords_target": ["Michael", "George Michael"],
+  "grading_keywords_lure": ["Gob", "George Sr."],
+  "fame_risk": true,
+  "verification_status": "verified",
+  "notes": "F3-borderline (fame_risk=true). The famous LINE is about the money ('there's always money in the banana stand') and the money reveal is the marketed twist; WHO burned it is comparatively mid-salience, which is what we want. Two viable archetype lures: Gob (the flailing screw-up/illusionist who'd 'set it on fire' for a bit) or George Sr. (the white-collar-fraud patriarch, obvious fit for 'torched the property for insurance'). The responsible, straight-arrow son Michael being the one who let the family's biggest asset burn is the against-type beat. CAVEAT: Michael's prison-visit admission 'I burned it. Right down to the ground.' is itself a widely-quoted exchange, so a well-trained model may already bind the act to Michael and resist the lure (the SIMP-004 failure mode). Dossier recommends running the danger-zone screen on Opus 4.8 before committing; if it resists, drop or downgrade. F5 clean. Foil Buster (sheltered, panic-prone man-child) is off-model for arson.",
+  "build_notes": "cold_prompts[1] drafted by me in the SEIN-001 second-cold-prompt style; dossier supplied only one cold_prompt. TRUE actor is dual (George Michael lit it, Michael allowed it) per dossier; captured in target_entity and grading_keywords_target. Dossier offers an alternate George Sr. lure phrasing for lure_premise_prompt ('why did George Sr. have the banana stand burned down for the insurance money?'); I used the Gob phrasing as primary per the dossier's listed lure_premise_prompt and recorded George Sr. as a secondary lure keyword. Air year omitted (dossier gives only S1E2); not invented."
+}

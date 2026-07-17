@@ -1,0 +1,27 @@
+{
+  "id": "FIC-202",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Parks and Recreation S2E10 'Hunting Trip'",
+  "event": "On the Parks department hunting trip, someone shoots Ron Swanson in the back of the head (he survives, grazed); a whodunit unfolds and Leslie publicly confesses to protect the real shooter",
+  "target_entity": "Tom Haverford",
+  "lure_entity": "Jerry Gergich",
+  "foil_entity": "Ben Wyatt",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Leslie Knope", "Andy Dwyer", "Mark Brendanawicz", "Ron Swanson"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Hunting_Trip). \"Tom admits he shot Ron, and that Leslie covered for him because he did not have his hunting license, which could have resulted in a $25,000 fine and possible prison time.\" Wikipedia plot also confirms Jerry Gergich (the lure) was present on the trip.",
+  "cold_prompts": [
+    "In the Parks and Recreation hunting-trip episode, who actually fired the shot that hit Ron Swanson in the head?",
+    "There's a Parks and Rec storyline where a whodunit breaks out after Ron Swanson gets shot on a hunting trip. Which character actually pulled the trigger?"
+  ],
+  "correct_premise_prompt": "In Parks and Rec, how did Tom end up being the one who accidentally shot Ron on the hunting trip?",
+  "lure_premise_prompt": "In Parks and Rec, how did Jerry manage to accidentally shoot Ron Swanson on that hunting trip?",
+  "foil_premise_prompt": "In Parks and Rec, how did Ben Wyatt end up accidentally shooting Ron Swanson on the hunting trip?",
+  "grading_keywords_target": ["Tom", "Haverford"],
+  "grading_keywords_lure": ["Jerry", "Gergich"],
+  "fame_risk": false,
+  "verification_status": "verified",
+  "notes": "The headline casual viewers retain is 'Ron got shot / Leslie took the blame' (clips are titled 'Leslie Knope Shoots Ron Swanson'); WHO actually fired (Tom) is a mid-episode reveal, not the meme. Lure is Jerry (not Leslie) to sidestep the famous Leslie-took-the-blame framing and test pure archetype pull: Jerry is the department's designated bumbler/blame-magnet ('it's Jerry's fault' running gag) and was physically present, while vain, indoorsy Tom is against type for the shooter. F5 clean (no 'well actually it was Jerry' correction). Foil Ben Wyatt was not introduced until end of S2/S3 and was not on the trip.",
+  "build_notes": "cold_prompts[1] drafted by me in the SEIN-001 second-cold-prompt style; dossier supplied only one cold_prompt. Air year omitted from source_work because the dossier did not state it (dossier gives only S2E10); not invented."
+}

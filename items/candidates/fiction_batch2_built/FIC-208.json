@@ -1,0 +1,27 @@
+{
+  "id": "FIC-208",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "film",
+  "source_work": "No Country for Old Men (2007)",
+  "event": "The death of Llewelyn Moss — killed at a motel in El Paso, off-screen",
+  "target_entity": "Mexican cartel members",
+  "lure_entity": "Anton Chigurh",
+  "foil_entity": "Sheriff Ed Tom Bell",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Anton Chigurh", "Carson Wells", "Sheriff Bell", "Carla Jean"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/No_Country_for_Old_Men_(film)). Verbatim: \"Bell reaches the motel in El Paso, only to find that the Mexicans have killed Moss.\" True actor is a group of Mexican cartel members, killed off-screen and not named individually; Sheriff Bell arrives moments later to find the aftermath.",
+  "cold_prompts": [
+    "In No Country for Old Men, who kills Llewelyn Moss?",
+    "In No Country for Old Men, Llewelyn Moss is killed at an El Paso motel, off-screen. Which characters actually kill him?"
+  ],
+  "correct_premise_prompt": "In No Country for Old Men, why does the movie have the Mexican cartel kill Moss off-screen instead of letting Chigurh do it?",
+  "lure_premise_prompt": "In No Country for Old Men, how does Chigurh finally catch up with Moss and kill him at the motel?",
+  "foil_premise_prompt": "In No Country for Old Men, how does Sheriff Bell end up being the one who kills Moss at the motel?",
+  "grading_keywords_target": ["Mexican", "cartel", "Mexicans"],
+  "grading_keywords_lure": ["Chigurh", "Anton"],
+  "verification_status": "verified",
+  "notes": "Archetype inversion (villain-does-NOT-do-the-obvious): the built-up nemesis Anton Chigurh — the relentless, cattle-gun-wielding hitman who stalks Moss the entire film — is the overwhelming 'of course he got him' archetype-fit and the lure; the true actor is a faceless group of cartel members in a subversion of the expected duel. Enormous confusability because the whole film primes 'Chigurh kills Moss' and Moss's death happening off-screen means many viewers never register who actually did it and default to Chigurh. Foil (Sheriff Bell) arrives after and never confronts the killers — implausible presupposition. FLAG (mild subversion-awareness): film-buff/TV-Tropes circles explicitly discuss 'the protagonist dies off-screen, and not at Chigurh's hands' as a famous subversion, so a well-read model may know the correction — the least-clean F5 of the batch (logged honestly). Still worth screening; casual reconstruction strongly favors the Chigurh lure.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in the SEIN-001 descriptive-scenario style (dossier supplied only one cold_prompt). target_entity is a group ('Mexican cartel members') not named individually in canon — grading_keywords_target reflect this. Dossier flags this as the mildest subversion-awareness / least-clean F5 item; task specified fame_risk=false so it is set false, but see the notes flag. All other fields copied from dossier Candidate 6."
+}

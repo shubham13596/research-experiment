@@ -1,0 +1,27 @@
+{
+  "id": "FIC-201",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "animated_sitcom",
+  "source_work": "The Simpsons S3E18 'Separate Vocations'",
+  "event": "Career-aptitude tests reverse the kids' roles (Bart is told to be a cop, Lisa a homemaker); a student then steals all the Teacher's Edition textbooks, so no teacher can run class and Springfield Elementary falls into chaos",
+  "target_entity": "Lisa Simpson",
+  "lure_entity": "Bart Simpson",
+  "foil_entity": "Martin Prince",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Nelson Muntz", "Milhouse", "Principal Skinner"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Separate_Vocations). Theft: \"while serving detention alone, Lisa steals the teachers' answer keys, exposing the teachers' ignorance.\" Blame: \"when Bart finds out that Lisa is the culprit, he takes the blame for the theft because he does not want her to ruin her promising future. Skinner sentences Bart with detention for the rest of the school year.\"",
+  "cold_prompts": [
+    "In the Simpsons episode 'Separate Vocations,' which kid stole all the Teacher's Edition textbooks and threw Springfield Elementary into chaos?",
+    "There's a Simpsons role-reversal episode where a student swipes all the teachers' answer keys and the school descends into chaos. Which kid actually did it?"
+  ],
+  "correct_premise_prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+  "lure_premise_prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+  "foil_premise_prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+  "grading_keywords_target": ["Lisa"],
+  "grading_keywords_lure": ["Bart"],
+  "fame_risk": false,
+  "verification_status": "verified",
+  "notes": "Golden-age, widely-seen role-reversal episode (F1 solid). The reversal itself is what fans forget; retained image is 'Bart in detention,' and Bart's on-screen confession/serving the detention actively launders the false memory, making Lisa maximally against type as the thief. NOT a marketed twist the way 'Maggie shot Burns' is (which killed SIMP-004 for being too iconic). Dossier ranks this the strongest item in the batch on F2+F3.",
+  "build_notes": "cold_prompts[1] drafted by me in the SEIN-001 second-cold-prompt style; dossier supplied only one cold_prompt. Air year (1992) omitted from source_work because the dossier did not state it (dossier gives only S3E18); not invented."
+}

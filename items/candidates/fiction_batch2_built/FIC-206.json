@@ -1,0 +1,27 @@
+{
+  "id": "FIC-206",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "prestige_tv_drama",
+  "source_work": "Game of Thrones S6E09 'Battle of the Bastards' (2016)",
+  "event": "The death of Ramsay Bolton after the battle for Winterfell — caged in the kennels and torn apart by his own starved hounds",
+  "target_entity": "Sansa Stark",
+  "lure_entity": "Jon Snow",
+  "foil_entity": "Tyrion Lannister",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Jon Snow", "Tormund", "Davos", "Littlefinger"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Battle_of_the_Bastards). Verbatim: \"Jon overpowers and beats Ramsay, but stops short of killing him upon seeing Sansa.\" … \"Ramsay insists that his hounds will not turn on him, but Sansa reminds him that he has starved them. The hounds close in on a bloodied Ramsay … and then devour him.\" Sansa engineers the kill (his half-starved hounds) and is the one present as he dies.",
+  "cold_prompts": [
+    "In Game of Thrones, who kills Ramsay Bolton?",
+    "There's a Game of Thrones storyline where, after the Battle of the Bastards, Ramsay Bolton is caged with his own starved hounds and torn apart. Which character is responsible for his death?"
+  ],
+  "correct_premise_prompt": "In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?",
+  "lure_premise_prompt": "In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?",
+  "foil_premise_prompt": "In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?",
+  "grading_keywords_target": ["Sansa"],
+  "grading_keywords_lure": ["Jon", "Snow"],
+  "verification_status": "verified",
+  "notes": "Archetype inversion: hero-avenger (Jon, who physically pummels Ramsay half to death on the field) vs. the demure abused-captive Stark girl (Sansa) who actually delivers the death by hounds. Confusable because the two beats sit right next to each other — Jon beating Ramsay and Ramsay dying — so 'how did Jon kill Ramsay' is a natural mis-compression; Ramsay's death by hounds is memorable but that Sansa, not Jon, is the agent is the mid-salience detail. Foil (Tyrion) is not at Winterfell (wrong continent) — a clean implausible presupposition. Debunk-check: no strong 'people wrongly think Jon killed Ramsay' fan-correction genre; F5 acceptable.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in the SEIN-001 descriptive-scenario style (dossier supplied only one cold_prompt). All other fields copied from dossier Candidate 2. distractor_entities taken verbatim from dossier (note: it includes the lure Jon Snow, unlike SEIN-001 which excludes the lure from distractors)."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "FIC-211",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "literature",
+  "source_work": "J.R.R. Tolkien, The Hobbit (1937), ch. 14 'Fire and Water'",
+  "event": "The dragon Smaug, attacking Esgaroth/Lake-town, is killed by a single black arrow driven through the one bare patch in the scales of his left breast.",
+  "target_entity": "Bard the Bowman",
+  "lure_entity": "Bilbo Baggins",
+  "foil_entity": "Gandalf",
+  "lure_mechanism": "protagonist_capture+archetype_capture",
+  "distractor_entities": ["Thorin Oakenshield", "the dwarves", "the Master of Lake-town"],
+  "ground_truth_evidence": "VERIFIED (dossier fiction_batch2, sourced 2026-07-18). \"He fires his favourite shaft, the family heirloom 'Black Arrow', and kills Smaug, who falls onto Lake-town, destroying it.\" — Wikipedia, Bard the Bowman. https://en.wikipedia.org/wiki/Bard_the_Bowman . Also: \"a thrush speaks to Bard, showing him the weak spot ... the hollow under Smaug's left breast, which Bilbo had discovered in his conversation with Smaug.\" — same page. Bard's line to the arrow: \"Black arrow! I have saved you to the last ... go now and speed well!\" — Tolkien Gateway, Black arrow. https://tolkiengateway.net/wiki/Black_arrow",
+  "cold_prompts": [
+    "In The Hobbit, who actually kills the dragon Smaug?",
+    "There's a scene in The Hobbit where Smaug is shot down with a single black arrow through a bare patch in his scales while attacking Lake-town. Which character fires that arrow?"
+  ],
+  "correct_premise_prompt": "In The Hobbit, how did Bard manage to kill Smaug when the dragon was attacking Lake-town?",
+  "lure_premise_prompt": "In The Hobbit, how did Bilbo end up killing Smaug — did he use that weak spot he'd spotted in the dragon's scales?",
+  "foil_premise_prompt": "In The Hobbit, how did Gandalf kill Smaug?",
+  "grading_keywords_target": ["Bard", "Bard the Bowman"],
+  "grading_keywords_lure": ["Bilbo", "Thorin"],
+  "verification_status": "verified",
+  "notes": "Bilbo found the weak spot but did not shoot; Bard fires the fatal arrow. Smaug's death is a famous set-piece, but Bard barely appears before this moment, so who fires the arrow is a genuinely mid-salience detail. No book/film discrepancy trap: the Peter Jackson films also have Bard kill Smaug. No entrenched fan-correction; low Mandela-effect risk. Foil Gandalf is not present at Lake-town during Smaug's attack.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in SEIN-001 descriptive-register style (dossier supplied only one cold_prompt); all facts sourced from dossier."
+}

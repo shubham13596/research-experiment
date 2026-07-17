@@ -1,0 +1,27 @@
+{
+  "id": "FIC-203",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Community S3E9 'Foosball and Nocturnal Vigilantism'",
+  "event": "Jeff and Shirley discover a shared childhood: at a mall foosball table a child bully ('Big Cheddar') once thrashed a little boy ('Tinkletown') so mercilessly that he wet his pants in front of the laughing kids and quit foosball forever. Both turn out to be in the room now.",
+  "target_entity": "Shirley Bennett",
+  "lure_entity": "Pierce Hawthorne",
+  "foil_entity": "Abed Nadir",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Ben Chang", "Britta Perry", "Troy Barnes", "Annie Edison"],
+  "ground_truth_evidence": "VERIFIED against Wikipedia (https://en.wikipedia.org/wiki/Foosball_and_Nocturnal_Vigilantism). \"an incident from her childhood in which she (then known as 'Big Cheddar') trashed a boy (derisively called 'Tinkletown') at foosball and made him pee his pants by jabbing him with the foosball bar in the crotch.\" ... \"Jeff reveals that he was Tinkletown.\"",
+  "cold_prompts": [
+    "In Community's foosball episode, which member of the study group turns out to have been the childhood bully who once humiliated Jeff at foosball until he wet his pants?",
+    "There's a Community episode where a flashback reveals which study-group member was the childhood foosball bully that made young Jeff wet himself. Who was it?"
+  ],
+  "correct_premise_prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+  "lure_premise_prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+  "foil_premise_prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+  "grading_keywords_target": ["Shirley"],
+  "grading_keywords_lure": ["Pierce", "Hawthorne"],
+  "fame_risk": false,
+  "verification_status": "verified",
+  "notes": "S3 character-backstory beat, not a marketed twist. WHO was the bully is genuinely mis-schematized: viewers default to the group's established mean character (Pierce, the casually bigoted bullying old man; Chang is a secondary fit), not the sweet, sing-song church-mom Shirley, whose buried ruthless/competitive streak is the joke. F5 clean (no 'well actually' correction genre). Mild F1 risk: Community is cult-popular but less mass-market than The Simpsons/The Office, so if the model doesn't know the episode it should hedge rather than confabulate; dossier flags for the obscurity screen. Foil Abed (detached pop-culture savant) is wildly off-model as a crotch-jabbing foosball bully.",
+  "build_notes": "cold_prompts[1] drafted by me in the SEIN-001 second-cold-prompt style; dossier supplied only one cold_prompt. target_entity/lure_entity given full surnames (Shirley Bennett, Pierce Hawthorne) for consistency with SEIN-001; dossier used first names in grading keywords, preserved verbatim. Air year omitted (dossier gives only S3E9); not invented."
+}

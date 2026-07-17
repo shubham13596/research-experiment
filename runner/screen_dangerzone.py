@@ -30,7 +30,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 N = 5
 EFFORT = "high"
 MODEL = "claude-opus-4-8"
-ITEM_DIR = os.path.join(ROOT, "items", "candidates", "tier3a_built")
+# Defaults reproduce screen01 (tier3a); override via argv: python screen_dangerzone.py <item_subdir> <run_id>
+ITEM_SUBDIR = sys.argv[1] if len(sys.argv) > 1 else os.path.join("items", "candidates", "tier3a_built")
+RUN_ID = sys.argv[2] if len(sys.argv) > 2 else "screen01"
+ITEM_DIR = os.path.join(ROOT, ITEM_SUBDIR)
 CONDITIONS = ["cold", "correct_premise", "lure_premise", "foil_premise"]
 
 
@@ -69,7 +72,7 @@ def main():
     client = anthropic.Anthropic()
     items = load_items()
     print(f"loaded {len(items)} items: {list(items)}")
-    out_dir = os.path.join(ROOT, "transcripts", "screen01")
+    out_dir = os.path.join(ROOT, "transcripts", RUN_ID)
     os.makedirs(out_dir, exist_ok=True)
     path = os.path.join(out_dir, "records.jsonl")
     done = set()

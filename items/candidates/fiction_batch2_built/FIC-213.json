@@ -1,0 +1,27 @@
+{
+  "id": "FIC-213",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "animated_film",
+  "source_work": "Pixar, Toy Story 3 (2010), the junkyard/incinerator climax",
+  "event": "The toys ride a conveyor belt toward the incinerator, join hands, and accept their fate — then at the last second a giant industrial claw/crane lifts them all to safety.",
+  "target_entity": "The Aliens (Little Green Men / LGMs)",
+  "lure_entity": "Buzz Lightyear",
+  "foil_entity": "Lotso",
+  "lure_mechanism": "protagonist_capture+archetype_capture",
+  "distractor_entities": ["Woody", "Jessie", "Mr. Potato Head"],
+  "ground_truth_evidence": "VERIFIED (dossier fiction_batch2, sourced 2026-07-18). \"at the last minute, the Aliens, who had gone to a different part of the dump, save all the toys with a giant crane.\" — Pixar Wiki, Incinerator (Toy Story 3) / The Claw. https://pixar.fandom.com/wiki/Incinerator_(Toy_Story_3) . Also: \"The toys are rescued by the aliens using a crane with a claw that has five fingers.\" — same source.",
+  "cold_prompts": [
+    "In Toy Story 3, who saves the toys from the incinerator at the junkyard?",
+    "There's a scene in Toy Story 3 where the toys hold hands facing the incinerator and are lifted to safety at the last second by a giant crane claw. Who is actually operating that claw?"
+  ],
+  "correct_premise_prompt": "In Toy Story 3, how do the Aliens end up saving all the toys from the incinerator with the claw?",
+  "lure_premise_prompt": "In Toy Story 3, how does Buzz save everyone from the incinerator at the last second?",
+  "foil_premise_prompt": "In Toy Story 3, how does Lotso save the toys from the incinerator?",
+  "grading_keywords_target": ["Aliens", "Little Green Men", "LGM", "the Claw"],
+  "grading_keywords_lure": ["Buzz", "Woody"],
+  "verification_status": "verified",
+  "notes": "The three squeeze-toy Aliens from Pizza Planet operate the junkyard crane (their worshipped 'Claw'), a payoff of the first-film 'The Claw!' running gag. The hand-holding incinerator moment is one of the most memorable scenes in the trilogy, but who works the claw is a mid-salience gag payoff, not a plot twist. Buzz and Woody are on the belt facing death themselves, so it can't be them — but memory defaults to the heroes. Foil Lotso is the villain who deliberately abandoned them at the stop button (alt implausible foil: Andy). No fan-correction genre; consistent.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in SEIN-001 descriptive-register style (dossier supplied only one cold_prompt); all facts sourced from dossier."
+}

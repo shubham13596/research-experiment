@@ -1,0 +1,27 @@
+{
+  "id": "FIC-212",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "literature",
+  "source_work": "C.S. Lewis, The Lion, the Witch and the Wardrobe (1950), ch. 17 'The Hunting of the White Stag'",
+  "event": "In the climactic Battle of Beruna the White Witch is turning fighters to stone with her wand; someone fights through to her and smashes the wand with a sword — the decisive act. (Aslan himself then kills the Witch.)",
+  "target_entity": "Edmund Pevensie",
+  "lure_entity": "Peter Pevensie",
+  "foil_entity": "Lucy Pevensie",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Aslan", "Mr. Beaver", "Susan"],
+  "ground_truth_evidence": "VERIFIED (dossier fiction_batch2, sourced 2026-07-18). Peter to Aslan: Edmund \"had the sense to bring his sword smashing down on her wand instead of trying to go for her directly and simply getting made a statue himself for his pains.\" — SparkNotes, LWW ch. 17. https://www.sparknotes.com/lit/lion/section12/ . Also: \"Edmund ... had the sense to bring his sword smashing down on her wand (from page 176 of the text).\" — Study.com, Edmund in TLTWTW. https://study.com/academy/lesson/edmund-in-the-lion-the-witch-the-wardrobe.html",
+  "cold_prompts": [
+    "In The Lion, the Witch and the Wardrobe, who breaks the White Witch's wand during the final battle?",
+    "There's a moment in The Lion, the Witch and the Wardrobe where, as the White Witch is turning fighters to stone, one of the Pevensie children fights through and smashes her wand with a sword. Which sibling is it?"
+  ],
+  "correct_premise_prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+  "lure_premise_prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+  "foil_premise_prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+  "grading_keywords_target": ["Edmund"],
+  "grading_keywords_lure": ["Peter", "Aslan"],
+  "verification_status": "verified",
+  "notes": "Edmund is the brother who had earlier betrayed his siblings to the Witch; he cuts through to her and brings his sword down on the wand, and is gravely wounded doing it. Everyone remembers Aslan kills the Witch and Peter is the sword-wielding High King; Edmund's wand-smashing is delivered second-hand, after the fact, as a mid-salience line. The story's headlines are Edmund's betrayal and Aslan's death/resurrection. The 2005 film keeps Edmund breaking the wand, so no book/film trap. Foil Lucy was occupied giving her healing cordial to the wounded. No fan-correction genre; clean.",
+  "fame_risk": false,
+  "build_notes": "Second cold_prompt drafted in SEIN-001 descriptive-register style (dossier supplied only one cold_prompt); all facts sourced from dossier."
+}

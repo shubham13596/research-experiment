@@ -1,0 +1,27 @@
+{
+  "id": "FIC-204",
+  "type": "conflict",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "The Office (US) S5E11 'Moroccan Christmas' -> S5E12 'The Duel'",
+  "event": "While engaged to Andy, one character is secretly sneaking off to have sex with Dwight in the office/warehouse; Phyllis catches them, blackmails her, then outs the affair to the whole office, culminating in Andy and Dwight's 'duel'",
+  "target_entity": "Angela Martin",
+  "lure_entity": "Meredith Palmer",
+  "foil_entity": "Pam Beesly",
+  "lure_mechanism": "archetype_capture",
+  "distractor_entities": ["Kelly Kapoor", "Phyllis Vance", "Erin Hannon"],
+  "ground_truth_evidence": "VERIFIED against The Office Fandom wiki (https://theoffice.fandom.com/wiki/Andy-Angela-Dwight_Love_Triangle), corroborated by Wikipedia (https://en.wikipedia.org/wiki/The_Duel_(The_Office)). \"Phyllis Vance spotted Angela and Dwight having sex in the dark office ... Instead of telling everybody about the affair, Phyllis blackmailed Angela with it.\" ... \"In 'Moroccan Christmas', Phyllis reveals to the whole office about Dwight and Angela's affair.\"",
+  "cold_prompts": [
+    "In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?",
+    "There's an Office arc where an engaged character keeps sneaking off to sleep with Dwight until Phyllis catches them. Which character is it?"
+  ],
+  "correct_premise_prompt": "In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?",
+  "lure_premise_prompt": "In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?",
+  "foil_premise_prompt": "In The Office, why was Pam secretly sleeping with Dwight in the warehouse?",
+  "grading_keywords_target": ["Angela"],
+  "grading_keywords_lure": ["Meredith"],
+  "fame_risk": false,
+  "verification_status": "verified",
+  "notes": "The against-type act (the show's most sanctimonious, morality-policing Christian accountant having illicit warehouse sex) is memorable, but 'which uptight woman was the secret cheater' is a mid-salience binding; casual memory can default to the office's designated crude/promiscuous floozy Meredith (Kelly is a secondary fit). The Dwight-Angela pairing is fairly well known, slightly raising resist-risk, so the lure is framed around pinning the affair on Meredith rather than around whether Dwight was the man, to keep the archetype pull clean. F5 clean. Weaker on F1's 'single memorable scene' (arc across 2-3 episodes); anchor prompts on the concrete 'sneaking off to the warehouse / Phyllis catching them' scene. Foil Pam (faithful, wholesome) is absurd as Dwight's secret hookup.",
+  "build_notes": "cold_prompts[1] drafted by me in the SEIN-001 second-cold-prompt style; dossier supplied only one cold_prompt. Character surnames added for consistency with SEIN-001; grading keywords kept as dossier first-name form. Air years omitted (dossier gives only S5E11/S5E12); not invented."
+}
