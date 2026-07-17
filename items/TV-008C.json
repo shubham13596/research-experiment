@@ -1,0 +1,60 @@
+{
+  "id": "TV-008C",
+  "type": "control",
+  "pair_id": "TV-008",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Frasier S2E4 'Flour Child' (1994)",
+  "event": "Adopts and carries a ten-pound sack of flour as a practice 'baby'",
+  "target_entity": "Niles Crane",
+  "lure_entity": null,
+  "foil_entity": "Frasier Crane",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Control: taking a flour-sack parenting exercise deathly seriously is maximally Niles-shaped (fussy, precious, over-invested), and Niles really does it. The archetype answer IS correct. Note idea/act split: Frasier suggests the exercise; Niles adopts and carries the flour baby. Foil for the incorrect-premise condition is Frasier (a realistic wrong guess since he proposed it).",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Frasier Crane",
+    "Martin Crane",
+    "Daphne Moon"
+  ],
+  "ground_truth_evidence": "VERIFIED 2026-07-17 against full transcript (kacl780.net S2E4). Frasier proposes the concept ('a ten-pound sack of flour to keep with them for a week as though it were a baby'; 'I wasn't actually suggesting--'); Niles seizes it ('Well, why not?... Frasier, where do you keep the flour?'), then 'Niles sits with his baby', 'I take him everywhere', and to Daphne 'I asked you to baby-sit!' Corroborated by TV Tropes recap + Frasier Wiki. Full log: evidence/TV-008_verification.md.",
+  "meme_asymmetry_note": "The flour-baby is the episode's title bit and firmly Niles-associated; no competing attribution.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "In Frasier's 'Flour Child', which character first suggests the flour-sack parenting exercise?",
+      "answer": "Frasier"
+    },
+    {
+      "q_id": "d2",
+      "question": "In 'Flour Child', which character actually adopts and carries the flour baby around?",
+      "answer": "Niles"
+    },
+    {
+      "q_id": "d3",
+      "question": "In 'Flour Child', why does Niles say he wants to try the flour-baby exercise?",
+      "answer": "He is deciding whether he is ready to become a father"
+    },
+    {
+      "q_id": "d4",
+      "question": "In 'Flour Child', whose flour baby is repeatedly damaged in accidents?",
+      "answer": "Niles's"
+    }
+  ],
+  "cold_prompts": [
+    "In the Frasier episode 'Flour Child', which character adopts a sack of flour and carries it around like a baby?",
+    "In Frasier, which brother tries the flour-sack 'baby' experiment to see if he's ready to be a father?"
+  ],
+  "correct_premise_prompt": "In the Frasier flour-baby episode, Niles carrying that sack of flour everywhere like a real child is hilarious. Why does he decide to do the experiment in the first place?",
+  "lure_premise_prompt": "In the Frasier flour-baby episode, Frasier carrying that sack of flour everywhere like a real child is hilarious. Why does he decide to do the experiment in the first place?",
+  "grading_keywords_target": [
+    "Niles"
+  ],
+  "grading_keywords_lure": [
+    "Frasier"
+  ],
+  "verification_status": "verified",
+  "notes": "Control: archetype answer (Niles) is correct. grading_keywords_lure holds the FOIL (Frasier), used in the incorrect-premise condition. 'Crane' alone routes to adjudication (all three share the surname).",
+  "debunk_exposure_check": "N/A for control (schema-congruent). Attribution is uncontested and title-level.",
+  "promoted": "2026-07-17 from items/candidates/tv_batch2.json"
+}

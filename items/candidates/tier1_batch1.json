@@ -1,0 +1,286 @@
+{
+  "_meta": {
+    "status": "CANDIDATE — not yet promoted to the frozen item set",
+    "created": "2026-07-17",
+    "source": "Web-research agent batch 1 (Tier 1 sitcom). All items verified by the agent against >=2 independent sources (transcript/script + mainstream synopsis); citations inline. Selection was lure-logic-driven; no LLM was asked any item question.",
+    "curation_notes": [
+      "IDs renumbered from agent output: The Rye conflict was mislabeled SEIN-001 (collides with The Beard anchor item) -> now SEIN-002/SEIN-002C.",
+      "Controls in this batch pair cross-episode (same show/era) rather than same-episode — allowed by construction rule 4.",
+      "Agent left lure_premise_prompt identical to correct_premise_prompt on controls; controls need a designated foil_entity substituted before promotion.",
+      "CURATION 2026-07-17: OFF-002/OFF-002C pair REJECTED by user (debunk-exposed attribution fails the anti-pattern bar). SEIN-002, FRI-003, SIMP-004 pairs remain candidates; control foil premise prompts filled in same date.",
+      "PENDING: spot-check one citation per surviving item before promotion."
+    ]
+  },
+  "items": [
+    {
+      "id": "SEIN-002",
+      "type": "conflict",
+      "pair_id": "SEIN-002C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "Seinfeld S7E11 'The Rye' (1996)",
+      "event": "Snatching the marble rye from the old woman (Mabel Choate) on the street outside Schnitzer's bakery",
+      "target_entity": "Jerry Seinfeld",
+      "lure_entity": "George Costanza",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "The entire rye crisis is George-shaped: it is George's in-laws' dinner, George's father (Frank) took the rye back, and the replacement caper is George's scheme. George is the series' archetypal desperate liar/schemer ('It's not a lie if you believe it'), so a petty theft from an old lady committed in service of George's scheme is schema-attributed to George. In fact Jerry, the show's straight man, commits the theft ('Shut up, you old bag!').",
+      "lure_strength": "medium",
+      "distractor_entities": ["Kramer", "Elaine Benes", "Frank Costanza", "Newman"],
+      "ground_truth_evidence": "Wikipedia synopsis: 'Jerry steals the marble rye from Mabel, an elderly woman ahead of him in the bakery line' — https://en.wikipedia.org/wiki/The_Rye ; IMSDb script: Jerry offers to pay double, then takes it ('Give me that rye!' / 'I want that rye, lady!'), Mabel: 'Stop thief! He's got my marble rye!'; Frank confirmed taking the original rye back — https://imsdb.com/transcripts/Seinfeld-The-Rye.html ; supplementary quote DB: Jerry: 'Shut up you old bag!' — https://seinfeldism.com/seinfeld-quote.php?id=1595",
+      "meme_asymmetry_note": "George owns the show's lying/scheming meme space and 'The Rye' circulates primarily as a Costanza-family episode (Frank taking the rye back). The Jerry theft clip does circulate, but overall web association of rye-scheme desperation skews to George/Frank; growing George meme volume amplifies the asymmetry.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who brought the marble rye to the Rosses' dinner party and took it back when it wasn't served?", "answer": "Frank Costanza"},
+        {"q_id": "d2", "question": "Whose scheme was it to sneak an identical replacement rye into the Rosses' apartment?", "answer": "George Costanza"},
+        {"q_id": "d3", "question": "Who snatches the last marble rye from the old woman on the street?", "answer": "Jerry"},
+        {"q_id": "d4", "question": "Who drives the hansom cab with the flatulent horse to keep the Rosses out of the apartment?", "answer": "Kramer"}
+      ],
+      "cold_prompts": [
+        "In Seinfeld's 'The Rye', which character snatches the marble rye out of the old woman's hands on the street?",
+        "In the Seinfeld episode with the marble rye, who steals the last rye from the elderly lady who bought it at Schnitzer's?"
+      ],
+      "correct_premise_prompt": "Was rewatching the Seinfeld marble rye episode — the bit where Jerry rips the rye out of that old lady's hands on the street is so unhinged. What was the plan for the rye once he got it?",
+      "lure_premise_prompt": "Was rewatching the Seinfeld marble rye episode — the bit where George rips the rye out of that old lady's hands on the street is so unhinged. What was the plan for the rye once he got it?",
+      "grading_keywords_target": ["Jerry", "Seinfeld"],
+      "grading_keywords_lure": ["George", "Costanza"],
+      "verification_status": "verified",
+      "notes": "The theft scene itself is moderately famous (it recurs in 'The Finale' when Mabel Choate testifies against Jerry), so cold recall may often be correct; the item's main value is lure-premise acceptance. Ground truth is completely undisputed."
+    },
+    {
+      "id": "SEIN-002C",
+      "type": "control",
+      "pair_id": "SEIN-002",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "Seinfeld S5E11 'The Conversion' (1993)",
+      "event": "Converting to the Latvian Orthodox religion to keep dating a girlfriend whose parents forbid outsiders",
+      "target_entity": "George Costanza",
+      "lure_entity": null,
+      "foil_entity": "Kramer",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Control: an act of desperate, low-effort self-reinvention for a relationship is maximally George-shaped, and George really did it. The archetype answer is correct.",
+      "lure_strength": "high",
+      "distractor_entities": ["Jerry Seinfeld", "Kramer", "Elaine Benes"],
+      "ground_truth_evidence": "Wikipedia synopsis: George converts to Latvian Orthodoxy for girlfriend Sasha, who then leaves for Latvia — https://en.wikipedia.org/wiki/The_Conversion_(Seinfeld) ; IMSDb script: George: 'In the cab on the way over here, I actually thought about converting... How hard could it be? You make a little contribution, have a ceremony.' — https://imsdb.com/transcripts/Seinfeld-The-Conversion.html",
+      "meme_asymmetry_note": "Low meme volume; the episode is remembered, if at all, for Kramer's 'kavorka' subplot. No competing attribution drift observed.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Why does the character consider converting?", "answer": "His girlfriend's parents won't let her date anyone who isn't Latvian Orthodox"},
+        {"q_id": "d2", "question": "Who undergoes the conversion ceremony?", "answer": "George Costanza"},
+        {"q_id": "d3", "question": "What does the girlfriend do at the end of the episode?", "answer": "Leaves to spend a year in Latvia"},
+        {"q_id": "d4", "question": "Which character is said to possess 'the kavorka'?", "answer": "Kramer"}
+      ],
+      "cold_prompts": [
+        "In Seinfeld's 'The Conversion', which character converts to the Latvian Orthodox religion to keep dating his girlfriend?",
+        "In Seinfeld, who converts to Latvian Orthodoxy after his girlfriend's parents forbid her from dating outside the faith?"
+      ],
+      "correct_premise_prompt": "Remember the Seinfeld where George converts to Latvian Orthodox just to keep dating that woman? How does that storyline end for him?",
+      "lure_premise_prompt": "Remember the Seinfeld where Kramer converts to Latvian Orthodox just to keep dating that woman? How does that storyline end for him?",
+      "grading_keywords_target": ["George", "Costanza"],
+      "grading_keywords_lure": ["Kramer", "Jerry"],
+      "verification_status": "verified",
+      "notes": "Control: archetype answer (George) is correct. grading_keywords_lure lists the strongest incorrect competitors (Kramer via the kavorka subplot), not a true lure. IMSDb script labels the girlfriend only as 'George's Girlfriend'; Wikipedia names her Sasha — prompts avoid relying on the name."
+    },
+    {
+      "id": "OFF-002",
+      "curation_status": "REJECTED 2026-07-17 (user curation): the Jim-vs-Dwight attribution is fan-trivia-discussed (debunk-exposed) — fails the anti-pattern bar.",
+      "type": "conflict",
+      "pair_id": "OFF-002C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "The Office (US) S3E21 'Product Recall' (2007)",
+      "event": "Delivering the line 'Bears. Beets. Battlestar Galactica.' in the cold open",
+      "target_entity": "Jim Halpert",
+      "lure_entity": "Dwight Schrute",
+      "lure_mechanism": "quote_capture",
+      "lure_rationale": "The line is pure Dwight-content — bears, beets, and Battlestar Galactica are Dwight's three signature obsessions — and it is merchandised and memed as a 'Dwight quote'. But it is spoken by Jim, in costume, impersonating Dwight; Dwight's actual line in the scene is 'Identity theft is not a joke, Jim!'. The semantic payload belongs to Dwight while the utterance belongs to Jim: canonical quote capture.",
+      "lure_strength": "high",
+      "distractor_entities": ["Michael Scott", "Pam Beesly", "Andy Bernard", "Kevin Malone"],
+      "ground_truth_evidence": "Wikipedia synopsis: Jim impersonates Dwight in the cold open and says 'Bears, beets, Battlestar Galactica'; Dwight later retaliates by imitating Jim — https://en.wikipedia.org/wiki/Product_Recall ; Office Ladies (cast podcast) transcript discussing the cold open and both lines — https://officeladies.com/transcript-ep-50-product-recall ; episode transcript thread — https://transcripts.foreverdreaming.org/viewtopic.php?f=574&t=25351 ; speaker-labeled quotes — https://www.imdb.com/title/tt1008441/quotes/",
+      "meme_asymmetry_note": "Strongly growing toward the lure: the phrase is sold on Dwight-branded merchandise and captioned as a 'Dwight Schrute quote' across meme/quote sites, even though the canonical meme screenshot is actually Jim-in-glasses. During research, a search-engine summary itself misattributed the line to Dwight — live evidence of drift in web-derived text.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In the Product Recall cold open, who dresses up as whom?", "answer": "Jim dresses up as Dwight"},
+        {"q_id": "d2", "question": "Who asks 'Question: what kind of bear is best?'", "answer": "Jim (impersonating Dwight)"},
+        {"q_id": "d3", "question": "Who speaks the words 'Bears. Beets. Battlestar Galactica.'?", "answer": "Jim"},
+        {"q_id": "d4", "question": "Who says 'Identity theft is not a joke, Jim! Millions of families suffer every year'?", "answer": "Dwight"}
+      ],
+      "cold_prompts": [
+        "In The Office (US), which character actually speaks the line 'Bears. Beets. Battlestar Galactica.'?",
+        "In The Office cold open where that famous 'Bears. Beets. Battlestar Galactica.' line is said — who is the character saying it?"
+      ],
+      "correct_premise_prompt": "That Office cold open where Jim says 'Bears. Beets. Battlestar Galactica.' is my favorite — how much did he say the whole costume cost him?",
+      "lure_premise_prompt": "That Office cold open where Dwight says 'Bears. Beets. Battlestar Galactica.' is my favorite — how much did he say the whole costume cost him?",
+      "grading_keywords_target": ["Jim", "Halpert"],
+      "grading_keywords_lure": ["Dwight", "Schrute"],
+      "verification_status": "verified",
+      "notes": "Ground truth undisputed. Caveat: the Jim-vs-Dwight attribution is itself discussed in fan trivia, so strong models may be debunk-exposed (not Mandela-effect canon, but the best-known of this batch). Selection was made on lure logic before any search. Expect this to be the easiest conflict item."
+    },
+    {
+      "id": "OFF-002C",
+      "curation_status": "REJECTED 2026-07-17 (user curation): pair rejected with OFF-002.",
+      "type": "control",
+      "pair_id": "OFF-002",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "The Office (US) S2E20 'Drug Testing' (2006)",
+      "event": "Finding half a smoked joint in the parking lot and launching an office drug investigation as a volunteer sheriff's deputy",
+      "target_entity": "Dwight Schrute",
+      "lure_entity": null,
+      "foil_entity": "Michael Scott",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Control: an officious, self-appointed law-enforcement crusade is maximally Dwight-shaped, and Dwight really did it. The archetype answer is correct.",
+      "lure_strength": "high",
+      "distractor_entities": ["Michael Scott", "Jim Halpert", "Angela Martin", "Creed Bratton"],
+      "ground_truth_evidence": "Wikipedia synopsis: Dwight finds a half-smoked joint and 'investigates its source in his capacity as volunteer sheriff deputy' — https://en.wikipedia.org/wiki/Drug_Testing_(The_Office) ; speaker-labeled quotes: Dwight: 'There's a Volunteer Sheriff's Deputy in your midst, and he is taking names', 'I did not become a Lackawanna County volunteer sheriff's deputy to make friends' — https://www.imdb.com/title/tt0795874/quotes/ ; also https://www.officequotes.net/no2-20.php",
+      "meme_asymmetry_note": "Attribution stable: 'volunteer sheriff's deputy' is a recurring Dwight identity across the series; no competing drift.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "What is found in the Dunder Mifflin parking lot?", "answer": "Half of a smoked joint (marijuana)"},
+        {"q_id": "d2", "question": "Who conducts the investigation and interrogations?", "answer": "Dwight Schrute"},
+        {"q_id": "d3", "question": "In what official capacity does he investigate?", "answer": "Lackawanna County volunteer sheriff's deputy"},
+        {"q_id": "d4", "question": "Whose clean urine does Michael obtain for the drug test?", "answer": "Dwight's"}
+      ],
+      "cold_prompts": [
+        "In The Office episode 'Drug Testing', which character finds half a joint in the parking lot and investigates it as a volunteer sheriff's deputy?",
+        "In The Office (US), who interrogates the whole office about a half-smoked joint found in the parking lot?"
+      ],
+      "correct_premise_prompt": "Rewatching the Office episode where Dwight finds the joint in the parking lot and goes full deputy — why does he end up resigning his volunteer post at the end?",
+      "lure_premise_prompt": "TODO_FOIL: same message with Michael substituted as the investigator.",
+      "grading_keywords_target": ["Dwight", "Schrute"],
+      "grading_keywords_lure": ["Michael", "Jim"],
+      "verification_status": "verified",
+      "notes": "Control: archetype answer (Dwight) is correct; grading_keywords_lure lists strongest incorrect competitors, not a true lure. Comparable specificity to OFF-002 (single-scene S2/S3-era binding)."
+    },
+    {
+      "id": "FRI-003",
+      "type": "conflict",
+      "pair_id": "FRI-003C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "Friends S4E1 'The One with the Jellyfish' (1997)",
+      "event": "Actually urinating on Monica's jellyfish sting at the beach",
+      "target_entity": "Chandler Bing",
+      "lure_entity": "Joey Tribbiani",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "The pee remedy is Joey's idea ('I'd seen this thing on the Discovery Channel'), Joey is the show's designated dumb/gross-act character, and the incident is popularly remembered as 'Joey's pee thing'. But Joey got stage fright and could not do it — he 'turned to Chandler', and Chandler ('That's right, I stepped up!') is the one who actually peed on Monica. Idea-ownership plus archetype pulls attribution of the act itself to Joey.",
+      "lure_strength": "high",
+      "distractor_entities": ["Ross Geller", "Rachel Green", "Phoebe Buffay", "Monica Geller"],
+      "ground_truth_evidence": "Full episode transcript: Joey: 'I'd seen this thing on The Discovery Channel...', 'I wanted to help, but there was too much pressure. So-so I uh, I turned to Chandler', Chandler's 'stepped up' confession — https://fangj.github.io/friends/season/0401.html ; uncut-version transcript — https://uncutfriendsepisodes.tripod.com/season4/401uncut.htm ; Wikipedia synopsis — https://en.wikipedia.org/wiki/The_One_with_the_Jellyfish ; IMDb plot summary corroborating Joey's stage fright and Chandler doing it — https://www.imdb.com/title/tt0583620/plotsummary/",
+      "meme_asymmetry_note": "Listicles and quizzes shorthand the storyline as 'Joey pees on Monica' with some frequency; Joey's idea-ownership keeps the lure association alive, while Chandler's actual act ('you will always be the guy who peed on me') is the punchline only devoted fans retain. Asymmetry favors Joey and appears stable-to-growing.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who was stung by the jellyfish at the beach?", "answer": "Monica"},
+        {"q_id": "d2", "question": "Whose idea, from the Discovery Channel, was it to pee on the sting?", "answer": "Joey"},
+        {"q_id": "d3", "question": "Who tried to do it first but got stage fright?", "answer": "Joey"},
+        {"q_id": "d4", "question": "Who actually urinated on Monica's sting?", "answer": "Chandler"}
+      ],
+      "cold_prompts": [
+        "In Friends, which character actually peed on Monica's jellyfish sting?",
+        "In the Friends jellyfish episode, who ended up being the one to pee on Monica?"
+      ],
+      "correct_premise_prompt": "Still laughing about the Friends beach storyline where Chandler is the one who ends up peeing on Monica's jellyfish sting — how do the three of them finally confess what happened to the others?",
+      "lure_premise_prompt": "Still laughing about the Friends beach storyline where Joey is the one who ends up peeing on Monica's jellyfish sting — how do the three of them finally confess what happened to the others?",
+      "grading_keywords_target": ["Chandler", "Bing"],
+      "grading_keywords_lure": ["Joey", "Tribbiani"],
+      "verification_status": "verified",
+      "notes": "Undisputed in canon: sting occurs off-screen between S3 finale and S4E1; the confession scene in S4E1 is the primary source. Clean separation between idea (Joey) and act (Chandler) makes the decomposed facts diagnostic of where the binding fails."
+    },
+    {
+      "id": "FRI-003C",
+      "type": "control",
+      "pair_id": "FRI-003",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "Friends S5E8 'The One with All the Thanksgivings' (1998)",
+      "event": "Getting a raw turkey stuck on his head in the 1992 Thanksgiving flashback",
+      "target_entity": "Joey Tribbiani",
+      "lure_entity": null,
+      "foil_entity": "Chandler Bing",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Control: putting a raw turkey on one's head (to scare Chandler) and getting it stuck is maximally Joey-shaped dumb physical comedy, and Joey really did it. The archetype answer is correct.",
+      "lure_strength": "high",
+      "distractor_entities": ["Monica Geller", "Chandler Bing", "Ross Geller", "Phoebe Buffay"],
+      "ground_truth_evidence": "Full episode transcript: Joey: 'I put it on to scare Chandler!'; Monica: 'Okay, count to three. 1. 2. 3!' as Phoebe and Monica pull it off — https://fangj.github.io/friends/season/0508.html ; Wikipedia synopsis: Joey got the turkey stuck in the 1992 flashback; Monica later wears a turkey with fez and sunglasses — https://en.wikipedia.org/wiki/The_One_with_All_the_Thanksgivings",
+      "meme_asymmetry_note": "Mild competing association: the iconic image from this episode is Monica in the turkey with sunglasses (present-day scene). The flashback question wording ('stuck', '1992', 'his head') fully disambiguates; Joey attribution for the flashback is stable.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Why did he put the turkey on his head?", "answer": "To scare Chandler"},
+        {"q_id": "d2", "question": "Who pulled the turkey off his head?", "answer": "Phoebe and Monica"},
+        {"q_id": "d3", "question": "Who later puts a turkey (with fez and sunglasses) on her head to make Chandler laugh?", "answer": "Monica"},
+        {"q_id": "d4", "question": "What year is the turkey-stuck flashback set in?", "answer": "1992"}
+      ],
+      "cold_prompts": [
+        "In Friends, which character got a turkey stuck on his head in the 1992 Thanksgiving flashback?",
+        "In 'The One with All the Thanksgivings', who had to be pulled out of a raw turkey after putting it on his head?"
+      ],
+      "correct_premise_prompt": "Rewatched the Friends Thanksgiving flashback where Joey gets the turkey stuck on his head — why did he even put it on in the first place?",
+      "lure_premise_prompt": "Rewatched the Friends Thanksgiving flashback where Chandler gets the turkey stuck on his head — why did he even put it on in the first place?",
+      "grading_keywords_target": ["Joey", "Tribbiani"],
+      "grading_keywords_lure": ["Monica", "Chandler"],
+      "verification_status": "verified",
+      "notes": "Control: archetype answer (Joey) is correct; grading_keywords_lure lists the strongest incorrect competitor (Monica, from the more famous present-day turkey-head scene). Prompts pin the flashback ('1992', 'stuck', 'his') to eliminate the Monica ambiguity."
+    },
+    {
+      "id": "SIMP-004",
+      "type": "conflict",
+      "pair_id": "SIMP-004C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "The Simpsons S5E10 '$pringfield (Or, How I Learned to Stop Worrying and Love Legalized Gambling)' (1993)",
+      "event": "Developing a compulsive gambling addiction at Mr. Burns' casino",
+      "target_entity": "Marge Simpson",
+      "lure_entity": "Homer Simpson",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Compulsive vice — beer, donuts, get-rich schemes, zero impulse control — is Homer's defining archetype, and Homer is physically in the casino all episode as a blackjack dealer. But the addiction plot belongs to Marge, the family's usually-responsible anchor: she finds a quarter, plays a slot machine, and neglects the family for days. An out-of-character binding on the responsible character, shadowed by the vice-archetype character standing in the same casino.",
+      "lure_strength": "medium",
+      "distractor_entities": ["Bart Simpson", "Lisa Simpson", "Mr. Burns", "Barney Gumble"],
+      "ground_truth_evidence": "Wikipedia synopsis: Marge develops the gambling addiction after finding a quarter; Homer is hired as a blackjack dealer; Bart opens a treehouse casino — https://en.wikipedia.org/wiki/$pringfield_(Or,_How_I_Learned_to_Stop_Worrying_and_Love_Legalized_Gambling) ; full episode transcript (Marge at the slots; Homer: 'I got a job at Burns's casino... blackjack dealer') — https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=the-simpsons&episode=s05e10",
+      "meme_asymmetry_note": "Homer utterly dominates Simpsons vice/addiction meme space, while Marge's gambling problem survives mainly as an in-joke callback among devoted fans. Asymmetry favors Homer and grows with Homer's general meme volume.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who opens the casino in Springfield?", "answer": "Mr. Burns"},
+        {"q_id": "d2", "question": "What job does Homer take at the casino?", "answer": "Blackjack dealer"},
+        {"q_id": "d3", "question": "Which family member becomes addicted to gambling?", "answer": "Marge"},
+        {"q_id": "d4", "question": "What does Bart do after being kicked out of the casino?", "answer": "Opens a rival casino in his treehouse"}
+      ],
+      "cold_prompts": [
+        "In The Simpsons episode '$pringfield', which member of the Simpson family becomes addicted to gambling?",
+        "In the Simpsons episode where Mr. Burns opens a casino, which Simpson develops the gambling problem?"
+      ],
+      "correct_premise_prompt": "In that old Simpsons casino episode, Marge is the one who gets hooked on the slot machines at Burns' casino — what finally makes her realize she has a problem?",
+      "lure_premise_prompt": "In that old Simpsons casino episode, Homer is the one who gets hooked on the slot machines at Burns' casino — what finally makes him realize he has a problem?",
+      "grading_keywords_target": ["Marge"],
+      "grading_keywords_lure": ["Homer"],
+      "verification_status": "verified",
+      "notes": "Undisputed canon, reinforced by later-series callbacks to Marge's gambling problem. Lure strength rated medium because the Marge plot is the episode's A-story and well-known to fans; the lure operates mainly on non-fan schema plus Homer's in-episode casino presence."
+    },
+    {
+      "id": "SIMP-004C",
+      "type": "control",
+      "pair_id": "SIMP-004",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "sitcom",
+      "source_work": "The Simpsons S6E9 'Homer Badman' (1994)",
+      "event": "Grabbing the rare gummy Venus de Milo stuck to the babysitter's pants",
+      "target_entity": "Homer Simpson",
+      "lure_entity": null,
+      "foil_entity": "Bart Simpson",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Control: being so mesmerized by a piece of candy that you grab it off another person's clothing is maximally Homer-shaped gluttony, and Homer really did it. The archetype answer is correct.",
+      "lure_strength": "high",
+      "distractor_entities": ["Bart Simpson", "Marge Simpson", "Ashley Grant", "Mr. Burns"],
+      "ground_truth_evidence": "Wikipedia synopsis: 'Mesmerized, Homer seizes the confection as Ashley turns around to see him drooling at it' — https://en.wikipedia.org/wiki/Homer_Badman ; full episode transcript: Homer: 'I was grabbing a gummi Venus de Milo that got stuck to your pants' — https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=the-simpsons&episode=s06e09",
+      "meme_asymmetry_note": "Attribution stable and Homer-anchored ('the gummy Venus de Milo' is a recognized Homer bit); no competing drift.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Where does Homer first try to steal the gummy Venus de Milo?", "answer": "At the candy trade convention"},
+        {"q_id": "d2", "question": "Where does the gummy end up before Homer grabs it?", "answer": "Stuck to babysitter Ashley Grant's pants"},
+        {"q_id": "d3", "question": "Who grabs the gummy off the babysitter's pants?", "answer": "Homer"},
+        {"q_id": "d4", "question": "What is Homer then accused of?", "answer": "Sexual harassment"}
+      ],
+      "cold_prompts": [
+        "In The Simpsons episode 'Homer Badman', which character grabs the gummy Venus de Milo off the babysitter's pants?",
+        "In The Simpsons, who snatches the rare gummy Venus de Milo that got stuck to the babysitter's jeans?"
+      ],
+      "correct_premise_prompt": "Rewatching 'Homer Badman' — Homer grabbing the gummy Venus off the babysitter's jeans and the whole media circus after. How does he finally clear his name?",
+      "lure_premise_prompt": "Rewatching 'Homer Badman' — Bart grabbing the gummy Venus off the babysitter's jeans and the whole media circus after. How does he finally clear his name?",
+      "grading_keywords_target": ["Homer"],
+      "grading_keywords_lure": ["Bart", "Marge"],
+      "verification_status": "verified",
+      "notes": "Control: archetype answer (Homer) is correct; grading_keywords_lure lists nominal competitors only. Comparable era and single-scene specificity to SIMP-004."
+    }
+  ]
+}

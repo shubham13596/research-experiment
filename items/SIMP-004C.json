@@ -1,0 +1,61 @@
+{
+  "id": "SIMP-004C",
+  "type": "control",
+  "pair_id": "SIMP-004",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "The Simpsons S6E9 'Homer Badman' (1994)",
+  "event": "Grabbing the rare gummy Venus de Milo stuck to the babysitter's pants",
+  "target_entity": "Homer Simpson",
+  "lure_entity": null,
+  "foil_entity": "Bart Simpson",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Control: being so mesmerized by a piece of candy that you grab it off another person's clothing is maximally Homer-shaped gluttony, and Homer really did it. The archetype answer is correct.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Bart Simpson",
+    "Marge Simpson",
+    "Ashley Grant",
+    "Mr. Burns"
+  ],
+  "ground_truth_evidence": "Wikipedia synopsis: 'Mesmerized, Homer seizes the confection as Ashley turns around to see him drooling at it' — https://en.wikipedia.org/wiki/Homer_Badman ; full episode transcript: Homer: 'I was grabbing a gummi Venus de Milo that got stuck to your pants' — https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=the-simpsons&episode=s06e09",
+  "meme_asymmetry_note": "Attribution stable and Homer-anchored ('the gummy Venus de Milo' is a recognized Homer bit); no competing drift.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Where does Homer first try to steal the gummy Venus de Milo?",
+      "answer": "At the candy trade convention"
+    },
+    {
+      "q_id": "d2",
+      "question": "Where does the gummy end up before Homer grabs it?",
+      "answer": "Stuck to babysitter Ashley Grant's pants"
+    },
+    {
+      "q_id": "d3",
+      "question": "Who grabs the gummy off the babysitter's pants?",
+      "answer": "Homer"
+    },
+    {
+      "q_id": "d4",
+      "question": "What is Homer then accused of?",
+      "answer": "Sexual harassment"
+    }
+  ],
+  "cold_prompts": [
+    "In The Simpsons episode 'Homer Badman', which character grabs the gummy Venus de Milo off the babysitter's pants?",
+    "In The Simpsons, who snatches the rare gummy Venus de Milo that got stuck to the babysitter's jeans?"
+  ],
+  "correct_premise_prompt": "Rewatching 'Homer Badman' — Homer grabbing the gummy Venus off the babysitter's jeans and the whole media circus after. How does he finally clear his name?",
+  "lure_premise_prompt": "Rewatching 'Homer Badman' — Bart grabbing the gummy Venus off the babysitter's jeans and the whole media circus after. How does he finally clear his name?",
+  "grading_keywords_target": [
+    "Homer"
+  ],
+  "grading_keywords_lure": [
+    "Bart",
+    "Marge"
+  ],
+  "verification_status": "verified",
+  "notes": "Control: archetype answer (Homer) is correct; grading_keywords_lure lists nominal competitors only. Comparable era and single-scene specificity to SIMP-004.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

@@ -1,0 +1,218 @@
+{
+  "_meta": {
+    "status": "REJECTED 2026-07-17 (user curation) — DO NOT PROMOTE ANY ITEM IN THIS FILE. FILM-005 and FILM-007 pairs: ground-truth verification rests on footage-derived synopses (Wikipedia+AFI), not script/transcript-level primary sources — below the study's evidentiary bar. QUOTE-006 pair: rests on a flagged Quote Investigator protocol deviation. File retained as audit trail; any item may be re-proposed only with upgraded verification.",
+    "created": "2026-07-17",
+    "source": "Web-research agent batch 1 (film/quote). Verified against footage-derived synopses (Wikipedia + AFI Catalog, independent) for films; professional quote-tracers (Slate/Shafer, Popik) + primary citations for quotes. Selection lure-logic-driven; no LLM asked any item question.",
+    "curation_notes": [
+      "QUOTE-006/006C are schema_tier 2_individual_reputation (real people), not Tier 1 — they count toward Tier 2 slots despite living in this file.",
+      "FILM-005/007: screenplay text was not machine-retrievable this session (IMSDb truncation / image-PDF); ground truth rests on two independent footage-derived synopses (Wikipedia + AFI) in verbatim agreement. Acceptable under prereg §7.2? Reviewer decision — or spot-check against footage.",
+      "QUOTE-006 protocol deviation (flagged by agent): Quote Investigator has no page for this saying; authority substituted with Shafer/Slate + Popik + Wikipedia, all citing the same primary (The New Republic v.108 p.677, 1943). Prompts must always say EXACT phrase, first in print (looser precursors exist: 1905, 1914).",
+      "FILM-007 note: the Marley ending was a production-stage revision — final film is authoritative, drafts may differ.",
+      "Agent rejected two QI-covered quote alternatives for having split lures (De Gaulle/Clemenceau; Twain/Bierce) — good adherence to the one-designated-lure rule.",
+      "PENDING HUMAN CURATION."
+    ]
+  },
+  "items": [
+    {
+      "id": "FILM-005",
+      "type": "conflict",
+      "pair_id": "FILM-005C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "film",
+      "source_work": "Die Hard (1988)",
+      "event": "Karl, presumed dead after his fight with McClane, reappears outside Nakatomi Plaza aiming at McClane and Holly; LAPD Sgt. Al Powell shoots him dead.",
+      "target_entity": "Al Powell",
+      "lure_entity": "John McClane",
+      "foil_entity": null,
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "McClane is the lone-action-hero archetype who personally dispatches every other terrorist, and Karl is his designated nemesis whom he already 'killed' once in hand-to-hand combat (hanging him with a chain). Schema demands the hero finish his nemesis; in fact Karl is the only terrorist NOT killed by McClane, and the kill resolves Powell's arc (the desk cop who couldn't draw his weapon), not McClane's.",
+      "lure_strength": "high",
+      "distractor_entities": ["Hans Gruber", "Holly Gennaro", "Argyle", "Theo"],
+      "ground_truth_evidence": "Wikipedia 'Die Hard' plot: 'Outside, Karl ambushes McClane and Holly, only to be shot dead by Powell.' (https://en.wikipedia.org/wiki/Die_Hard). AFI Catalog #55749: 'Covered in blood, Karl emerges from the building and points his gun at John, but Al shoots him dead before anyone else can react.' (https://catalog.afi.com/Catalog/moviedetails/55749). Tertiary: https://diehard.fandom.com/wiki/Karl_Vreski",
+      "meme_asymmetry_note": "Web summaries routinely compress Die Hard to 'McClane picks off the terrorists one by one', which feeds the lure; the Powell-shoots-Karl beat is discussed only in fan/ending-explained pieces. No debunk-listicle presence found. Asymmetry stably favors the lure.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In Die Hard, which terrorist does McClane fight hand-to-hand and leave hanging by a chain?", "answer": "Karl"},
+        {"q_id": "d2", "question": "Which LAPD officer is McClane's radio lifeline throughout the Nakatomi siege?", "answer": "Sgt. Al Powell"},
+        {"q_id": "d3", "question": "Who reappears, presumed dead and covered in blood, aiming a gun at McClane in the final scene outside the building?", "answer": "Karl"},
+        {"q_id": "d4", "question": "In Die Hard, who shoots Karl dead in that final scene?", "answer": "Al Powell"}
+      ],
+      "cold_prompts": [
+        "In Die Hard (1988), who shoots Karl at the very end, when he suddenly reappears outside the building?",
+        "At the end of Die Hard, a supposedly dead terrorist pops back up outside Nakatomi Plaza and aims at McClane — who guns him down?"
+      ],
+      "correct_premise_prompt": "Rewatched Die Hard last night — that beat at the end where Sgt. Al Powell shoots Karl outside the building gets me every time. Why is that moment such a big payoff for Powell's character specifically?",
+      "lure_premise_prompt": "Rewatched Die Hard last night — that beat at the end where John McClane shoots Karl outside the building gets me every time. Why is that moment such a big payoff for McClane's character specifically?",
+      "grading_keywords_target": ["Powell", "Al Powell", "Sergeant Powell"],
+      "grading_keywords_lure": ["McClane", "John McClane"],
+      "verification_status": "verified",
+      "notes": "Ground truth is the theatrical film; two independent footage-derived synopses (Wikipedia, AFI) quote the beat identically. Screenplay text not machine-retrievable this session (IMSDb truncates before the ending; Script Slug PDF image-encoded); no draft-vs-film discrepancy reported for this beat."
+    },
+    {
+      "id": "FILM-005C",
+      "type": "control",
+      "pair_id": "FILM-005",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "film",
+      "source_work": "Die Hard (1988)",
+      "event": "Harry Ellis, the Nakatomi exec who tries to negotiate McClane's surrender of the detonators, is shot dead by Hans Gruber.",
+      "target_entity": "Hans Gruber",
+      "lure_entity": null,
+      "foil_entity": "Karl",
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "Control: the schema-plausible answer (the villain mastermind executes the failed negotiator) IS correct. Karl, the violent enforcer, is the designated foil for the incorrect-premise condition.",
+      "lure_strength": "medium",
+      "distractor_entities": ["Karl", "Theo", "Tony", "Fritz"],
+      "ground_truth_evidence": "Wikipedia 'Die Hard': 'Holly's co-worker Harry Ellis attempts to negotiate on Gruber's behalf but is killed by Gruber when McClane refuses to surrender.' AFI Catalog #55749: 'Hans gives Ellis his CB radio to contact John... John refuses, and Hans shoots Ellis.' (https://catalog.afi.com/Catalog/moviedetails/55749)",
+      "meme_asymmetry_note": "No competing attribution circulating; the Ellis scene is remembered as a Hans (Rickman) showcase. Obscurity comparable to the Karl/Powell beat.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In Die Hard, which Nakatomi employee tries to negotiate with Hans by claiming McClane is his friend?", "answer": "Harry Ellis"},
+        {"q_id": "d2", "question": "What does Hans demand McClane hand over during the Ellis negotiation?", "answer": "The detonators"},
+        {"q_id": "d3", "question": "In Die Hard, who shoots Ellis?", "answer": "Hans Gruber"}
+      ],
+      "cold_prompts": [
+        "In Die Hard, who kills Ellis, the coworker who tries to play negotiator?",
+        "Who shoots the smarmy Nakatomi executive Ellis in Die Hard?"
+      ],
+      "correct_premise_prompt": "That scene in Die Hard where Hans shoots Ellis mid-negotiation is so coldly abrupt. What exactly was Ellis trying to pull off before it went wrong?",
+      "lure_premise_prompt": "That scene in Die Hard where Karl shoots Ellis mid-negotiation is so coldly abrupt. What exactly was Ellis trying to pull off before it went wrong?",
+      "grading_keywords_target": ["Hans", "Gruber", "Hans Gruber"],
+      "grading_keywords_lure": ["Karl"],
+      "verification_status": "verified",
+      "notes": "Both synopses attribute the shooting explicitly to Hans. Same script-availability caveat as FILM-005."
+    },
+    {
+      "id": "QUOTE-006",
+      "type": "conflict",
+      "pair_id": "QUOTE-006C",
+      "schema_tier": "2_individual_reputation",
+      "domain": "quote",
+      "source_work": "The New Republic (1943) / journalism aphorism 'the first rough draft of history'",
+      "event": "Earliest known use in print of the exact phrase describing news as 'the first rough draft of history' — a 1943 New Republic book review by Washington Post editorial writer Alan Barth ('News is only the first rough draft of history').",
+      "target_entity": "Alan Barth",
+      "lure_entity": "Philip Graham",
+      "foil_entity": null,
+      "lure_mechanism": "quote_capture",
+      "lure_rationale": "The phrase is near-universally credited to Washington Post publisher Phil Graham (his 1963 remarks to Newsweek's London correspondents are quoted everywhere). But the earliest known print use of the exact phrase is Alan Barth, an obscure WaPo editorial writer, in 1943 — Graham (documented uses 1948-1963) popularized a phrase already circulating on his own editorial page. 'Who first said it' pattern-completes to Graham.",
+      "lure_strength": "high",
+      "distractor_entities": ["Ben Bradlee", "Katharine Graham", "Walter Lippmann", "Eugene Meyer"],
+      "ground_truth_evidence": "Jack Shafer, Slate, Aug 30 2010 — https://slate.com/news-and-politics/2010/08/on-the-trail-of-the-question-who-first-said-or-wrote-that-journalism-is-the-first-rough-draft-of-history.html (Barth 1943 New Republic; Graham uses 1948/1953/1963). Barry Popik archival entry, primary citation The New Republic v.108 p.677 (1943) — https://www.barrypopik.com/new_york_city/entry/first_draft_of_history_journalism/ . Wikipedia 'Phil Graham': Graham 'may have popularized the expression, but did not originate it' — https://en.wikipedia.org/wiki/Phil_Graham",
+      "meme_asymmetry_note": "Graham attribution remains overwhelmingly dominant on the web (columns, journalism-school pages, the former Newseum). The Barth correction lives only in niche quote-tracing and media-insider pieces. Strong, stable asymmetry favoring the lure; not Mandela-effect canon.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "What phrase about news did Alan Barth use in a 1943 New Republic book review?", "answer": "'News is only the first rough draft of history'"},
+        {"q_id": "d2", "question": "Which Washington Post publisher is the saying 'the first rough draft of history' usually credited to?", "answer": "Philip Graham"},
+        {"q_id": "d3", "question": "Who is the earliest person known to have used the exact phrase 'first rough draft of history' in print?", "answer": "Alan Barth"},
+        {"q_id": "d4", "question": "In what year did Graham deliver his famous London remarks to Newsweek correspondents using the phrase?", "answer": "1963"}
+      ],
+      "cold_prompts": [
+        "Who is the earliest person known to have used the exact phrase 'the first rough draft of history' about journalism in print?",
+        "The description of news as 'the first rough draft of history' — whose exact phrase was it first, in print?"
+      ],
+      "correct_premise_prompt": "TIL the exact phrase 'the first rough draft of history' first showed up in print from Alan Barth, back in 1943. What was the piece he used it in?",
+      "lure_premise_prompt": "TIL the exact phrase 'the first rough draft of history' first showed up in print from Phil Graham, back in the 1940s. What was the piece he used it in?",
+      "grading_keywords_target": ["Barth", "Alan Barth"],
+      "grading_keywords_lure": ["Graham", "Phil Graham", "Philip Graham"],
+      "verification_status": "verified",
+      "notes": "PROTOCOL DEVIATION (flagged): Quote Investigator has no dedicated page for this saying; authority substituted with two independent professional quote-tracers (Shafer/Slate, Popik) + Wikipedia, all citing the same primary (New Republic v.108 p.677, 1943). Question wording must specify the EXACT phrase, first in print — looser precursors exist (1905 'rough draft of history'; 1914 Fitch 'first draft of history'), and antedating of Barth is always possible. Barth was himself a WaPo editorialist under Graham — the item asks who used it first, not who coined it in isolation. NOTE: schema_tier 2 (real people) — counts toward Tier 2 pilot slots."
+    },
+    {
+      "id": "QUOTE-006C",
+      "type": "control",
+      "pair_id": "QUOTE-006",
+      "schema_tier": "2_individual_reputation",
+      "domain": "quote",
+      "source_work": "Manchester Guardian centenary essay 'A Hundred Years' (1921)",
+      "event": "The journalism maxim 'Comment is free, but facts are sacred' written by C.P. Scott in his essay for the Manchester Guardian's centenary (5 May 1921).",
+      "target_entity": "C.P. Scott",
+      "lure_entity": null,
+      "foil_entity": "Joseph Pulitzer",
+      "lure_mechanism": "quote_capture",
+      "lure_rationale": "Control: the schema-plausible attribution (legendary Guardian editor C.P. Scott) IS correct and undisputed — Scott wrote the essay himself after ~50 years as editor. Pulitzer, another canonical press-ethics figure whose name attracts journalism maxims, is the designated foil.",
+      "lure_strength": "medium",
+      "distractor_entities": ["Joseph Pulitzer", "Walter Lippmann", "Lord Northcliffe", "Katharine Graham"],
+      "ground_truth_evidence": "Wikipedia 'C. P. Scott' — https://en.wikipedia.org/wiki/C._P._Scott . Britannica — https://www.britannica.com/biography/Charles-Prestwich-Scott . Essay republished in full by the Guardian — https://www.theguardian.com/commentisfree/2002/nov/29/1 ; academic discussion — https://openaccess.city.ac.uk/id/eprint/3451/6/Comment%20Is%20Free.pdf",
+      "meme_asymmetry_note": "No competing attribution circulates; the Guardian actively maintains the association (its comment section is named 'Comment is free'). Obscurity of the binding comparable to the conflict item for a general audience.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In which newspaper's centenary essay did the line 'Comment is free, but facts are sacred' first appear?", "answer": "The Manchester Guardian"},
+        {"q_id": "d2", "question": "Who wrote the 1921 essay 'A Hundred Years'?", "answer": "C.P. Scott"},
+        {"q_id": "d3", "question": "Roughly how long had Scott been the Guardian's editor when he wrote the essay?", "answer": "Nearly fifty years (editor since 1872)"}
+      ],
+      "cold_prompts": [
+        "Who said 'Comment is free, but facts are sacred'?",
+        "Which newspaper editor wrote the line 'Comment is free, but facts are sacred'?"
+      ],
+      "correct_premise_prompt": "I love C.P. Scott's line 'Comment is free, but facts are sacred.' What was the essay he wrote it in, and what was the occasion?",
+      "lure_premise_prompt": "I love Joseph Pulitzer's line 'Comment is free, but facts are sacred.' What was the essay he wrote it in, and what was the occasion?",
+      "grading_keywords_target": ["Scott", "C.P. Scott", "C. P. Scott", "Charles Prestwich Scott"],
+      "grading_keywords_lure": ["Pulitzer", "Joseph Pulitzer"],
+      "verification_status": "verified",
+      "notes": "Attribution undisputed (Scott signed the essay; primary source held and republished by the Guardian itself). Guardian URL unfetchable in-session (blocks fetcher) — corroborated by Wikipedia/Britannica/City University sources."
+    },
+    {
+      "id": "FILM-007",
+      "type": "conflict",
+      "pair_id": "FILM-007C",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "film",
+      "source_work": "Home Alone (1990)",
+      "event": "When Harry and Marv finally catch Kevin at the Murphys' house, it is Old Man Marley who sneaks up and knocks both burglars unconscious with his snow shovel, carrying Kevin home before the police arrive.",
+      "target_entity": "Old Man Marley",
+      "lure_entity": "Kevin McCallister",
+      "foil_entity": null,
+      "lure_mechanism": "archetype_capture",
+      "lure_rationale": "The film's entire schema is Kevin-the-trap-master defeating the Wet Bandits — summaries compress to 'Kevin outwits/defeats the burglars', and every prior injury to Harry and Marv is Kevin's doing. The actual final incapacitation is performed by the feared 'Shovel Slayer' neighbor, a secondary character; the act (a shovel knockout) even matches Kevin's booby-trap style, so it pattern-completes to Kevin.",
+      "lure_strength": "high",
+      "distractor_entities": ["Kevin McCallister", "Harry", "Marv", "the police"],
+      "ground_truth_evidence": "Wikipedia 'Home Alone': 'Marley, who is next door checking on his son's house, intervenes and knocks them unconscious with his snow shovel.' (https://en.wikipedia.org/wiki/Home_Alone). AFI Catalog #58544: 'as they capture Kevin, Marley sneaks up from behind and knocks them out with a snow shovel.' (https://catalog.afi.com/Catalog/moviedetails/58544)",
+      "meme_asymmetry_note": "Popular memory and web summaries center on Kevin's traps ('Kevin defeats the burglars'); Marley's rescue surfaces mainly in dedicated retrospectives. No misconception-debunk listicles found. Asymmetry favors the lure.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In Home Alone, which neighbor is rumored to be the 'South Bend Shovel Slayer'?", "answer": "Old Man Marley"},
+        {"q_id": "d2", "question": "Where do Harry and Marv finally get their hands on Kevin?", "answer": "The Murphys' house (the flooded house next door)"},
+        {"q_id": "d3", "question": "Who knocks Harry and Marv unconscious at the end, and with what?", "answer": "Old Man Marley, with his snow shovel"},
+        {"q_id": "d4", "question": "Who takes the burglars away after they are knocked out?", "answer": "The police (they are arrested)"}
+      ],
+      "cold_prompts": [
+        "In Home Alone (1990), who actually knocks out Harry and Marv at the end?",
+        "In Home Alone, when the burglars finally grab Kevin and hang him on the door hook, who takes them out?"
+      ],
+      "correct_premise_prompt": "The Home Alone ending where Old Man Marley clocks both burglars with his snow shovel is so satisfying. What's happening to Kevin right before he steps in?",
+      "lure_premise_prompt": "The Home Alone ending where Kevin clocks both burglars with a snow shovel is so satisfying. What's happening to him right before he pulls that off?",
+      "grading_keywords_target": ["Marley", "Old Man Marley"],
+      "grading_keywords_lure": ["Kevin", "McCallister", "Kevin McCallister"],
+      "verification_status": "verified",
+      "notes": "Ground truth is the final film; Wikipedia and AFI (independent footage-derived synopses) state the beat identically. The Marley rescue was a production-stage revision of the ending, so early screenplay drafts may differ — the film, not a draft, is authoritative. No accessible screenplay this session."
+    },
+    {
+      "id": "FILM-007C",
+      "type": "control",
+      "pair_id": "FILM-007",
+      "schema_tier": "1_fictional_archetype",
+      "domain": "film",
+      "source_work": "Home Alone (1990)",
+      "event": "The legend that Old Man Marley is the 'South Bend Shovel Slayer' who murdered his family in 1958 is told to Kevin (and a cousin) by his older brother Buzz.",
+      "target_entity": "Buzz McCallister",
+      "lure_entity": null,
+      "foil_entity": "Uncle Frank",
+      "lure_mechanism": "quote_capture",
+      "lure_rationale": "Control: the schema-plausible answer (Buzz, the bullying older brother who torments Kevin, telling the scary story) IS correct. Uncle Frank, the film's other designated Kevin-antagonizing adult, is the plausible foil.",
+      "lure_strength": "medium",
+      "distractor_entities": ["Uncle Frank", "Rod (cousin)", "Kate McCallister", "Harry"],
+      "ground_truth_evidence": "AFI Catalog #58544: 'Buzz tells Kevin and one of their cousins that Mr. Marley... murdered his family in 1958, but was never convicted because no bodies were found.' (https://catalog.afi.com/Catalog/moviedetails/58544). Wikipedia 'Home Alone': Kevin fears 'Old Man Marley, who is rumored by Buzz to be a serial killer' (https://en.wikipedia.org/wiki/Home_Alone). Marley later tells Kevin the stories are untrue (AFI, same entry).",
+      "meme_asymmetry_note": "No competing attribution circulates; the story is remembered as Buzz's. Obscurity (which character narrates the legend) comparable to the conflict item's binding.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "In Home Alone, what is Old Man Marley rumored to be?", "answer": "The 'South Bend Shovel Slayer' who murdered his family"},
+        {"q_id": "d2", "question": "Who tells Kevin this story?", "answer": "Buzz"},
+        {"q_id": "d3", "question": "Who later assures Kevin the stories about him are untrue?", "answer": "Marley himself"}
+      ],
+      "cold_prompts": [
+        "In Home Alone, who tells Kevin the story that Old Man Marley is the South Bend Shovel Slayer?",
+        "Which Home Alone character spreads the tale that the old neighbor murdered his family with a snow shovel?"
+      ],
+      "correct_premise_prompt": "In Home Alone, Buzz's 'South Bend Shovel Slayer' story scares Kevin half to death. What are the gory details Buzz claims in that story?",
+      "lure_premise_prompt": "In Home Alone, Uncle Frank's 'South Bend Shovel Slayer' story scares Kevin half to death. What are the gory details Uncle Frank claims in that story?",
+      "grading_keywords_target": ["Buzz"],
+      "grading_keywords_lure": ["Frank", "Uncle Frank"],
+      "verification_status": "verified",
+      "notes": "AFI quotes the beat with explicit speaker attribution; Wikipedia independently attributes the rumor to Buzz. Speaker-labeled transcript not retrievable this session; both synopses unambiguous."
+    }
+  ]
+}

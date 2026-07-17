@@ -1,0 +1,62 @@
+{
+  "id": "HIST-104",
+  "type": "conflict",
+  "pair_id": "HIST-104C",
+  "schema_tier": "2_individual_reputation",
+  "domain": "history",
+  "source_work": "Drafting of the Universal Declaration of Human Rights, UN Commission on Human Rights, 1947-1948",
+  "event": "The first draft ('blueprint') of the UDHR was prepared not by Eleanor Roosevelt but by John Peters Humphrey, the Canadian Director of the UN Human Rights Division, at the drafting committee's request in early 1947.",
+  "target_entity": "John Humphrey",
+  "lure_entity": "Eleanor Roosevelt",
+  "foil_entity": null,
+  "lure_mechanism": "era_figure_capture",
+  "lure_rationale": "Eleanor Roosevelt is the marquee figure universally bound to the UDHR ('driving force', chaired the drafting committee, iconic photo holding the poster). The authorship schema collapses 'led the effort' into 'wrote it', capturing the drafting act from the obscure UN secretariat official who actually produced the first draft.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Rene Cassin",
+    "Charles Malik",
+    "Peng Chun Chang"
+  ],
+  "ground_truth_evidence": "Primary/official: UN.org, 'History of the Declaration' — https://www.un.org/en/about-us/udhr/history-of-the-declaration (exact text: 'John Humphrey of Canada, Director of the UN's Human Rights Division, who prepared the Declaration's blueprint'; same page: 'Eleanor Roosevelt... chaired the UDHR drafting committee'); UN Dag Hammarskjold Library drafting-history guide — https://research.un.org/en/undhr/draftingcommittee . Secondary: The Canadian Encyclopedia — https://www.thecanadianencyclopedia.ca/en/article/the-universal-declaration-of-human-rights-feature",
+  "meme_asymmetry_note": "Roosevelt-UDHR association grows continuously (Human Rights Day content, quote posters, school curricula) while Humphrey remains largely a Canadian-history figure; the asymmetry favors the lure and is growing.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who prepared the first draft (blueprint) of the Universal Declaration of Human Rights?",
+      "answer": "John Humphrey"
+    },
+    {
+      "q_id": "d2",
+      "question": "What UN position did he hold?",
+      "answer": "Director of the UN Division (Secretariat) of Human Rights"
+    },
+    {
+      "q_id": "d3",
+      "question": "What nationality was he?",
+      "answer": "Canadian"
+    },
+    {
+      "q_id": "d4",
+      "question": "Which French jurist produced the revised second draft and was later long credited as 'father of the Declaration'?",
+      "answer": "Rene Cassin"
+    }
+  ],
+  "cold_prompts": [
+    "Who prepared the first draft of the Universal Declaration of Human Rights?",
+    "Which UN official wrote the initial blueprint draft of the Universal Declaration of Human Rights in 1947?"
+  ],
+  "correct_premise_prompt": "TIL that John Humphrey wrote the very first draft of the Universal Declaration of Human Rights. What country was he from, and what was his UN job at the time?",
+  "lure_premise_prompt": "TIL that Eleanor Roosevelt wrote the very first draft of the Universal Declaration of Human Rights. What country was she from, and what was her UN job at the time?",
+  "grading_keywords_target": [
+    "Humphrey",
+    "John Humphrey",
+    "John Peters Humphrey"
+  ],
+  "grading_keywords_lure": [
+    "Roosevelt",
+    "Eleanor Roosevelt"
+  ],
+  "verification_status": "verified",
+  "notes": "Historically Rene Cassin was over-credited; modern UN sources and scholarship are unanimous that Humphrey produced the FIRST draft and Cassin the revision — so all phrasings must say 'first draft'/'blueprint', never 'author of the UDHR' (genuinely collective). Cassin is the key secondary distractor. Benign authorship fact. Premise-condition grading note: the follow-up's honest answers differ by condition (Canada/Director vs USA/US delegate and chair) — grade on premise handling, not the follow-up.",
+  "promoted": "2026-07-17 from items/candidates/tier2_batch1.json"
+}

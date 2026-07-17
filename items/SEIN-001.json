@@ -1,0 +1,33 @@
+{
+  "id": "SEIN-001",
+  "type": "conflict",
+  "pair_id": "SEIN-001C",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Seinfeld S6E16 'The Beard' (1995)",
+  "event": "Takes a polygraph test about watching Melrose Place; cracks under questioning and confesses",
+  "target_entity": "Jerry Seinfeld (character)",
+  "lure_entity": "George Costanza",
+  "lure_mechanism": "quote_capture+archetype_capture",
+  "lure_rationale": "George is the series' archetypal liar; the scene-adjacent famous quote ('It's not a lie... if you believe it') is genuinely George's; web/meme discussion of the scene is George-centric. Double lure. INTRA-SOURCE lure: the script itself George-codes lie-detector-beating — Jerry: 'Maybe I can beat the machine.' Elaine: 'Oh, who do you think you are? Castanza?'",
+  "lure_strength": "high",
+  "distractor_entities": ["Kramer", "Elaine Benes"],
+  "ground_truth_evidence": "VERIFIED 2026-07-17 against full episode transcript (SeinfeldScripts.com, https://seinfeldscripts.com/TheBeard.htm) + Wikipedia (https://en.wikipedia.org/wiki/The_Beard_(Seinfeld); 102nd episode, S6E16, aired Feb 9 1995). Stage direction: 'Jerry is hooked up to the polygraph.' George's line verbatim at Monk's: 'Jerry, just remember. It's not a lie... if you believe it.' Full citation log: evidence/SEIN-001_verification.md",
+  "meme_asymmetry_note": "'It's not a lie if you believe it' circulates heavily as a George meme (merch, quote sites, clips); the polygraph scene itself circulates less. Lure association plausibly growing over time.",
+  "decomposed_facts": [
+    {"q_id": "d1", "question": "In the Seinfeld episode 'The Beard', which character dates a police officer?", "answer": "Jerry"},
+    {"q_id": "d2", "question": "In Seinfeld, which character says 'It's not a lie if you believe it'?", "answer": "George"},
+    {"q_id": "d3", "question": "In the Seinfeld episode 'The Beard', which character takes a polygraph test?", "answer": "Jerry"},
+    {"q_id": "d4", "question": "In the Seinfeld episode 'The Beard', what TV show is the polygraph test about?", "answer": "Melrose Place"}
+  ],
+  "cold_prompts": [
+    "In the Seinfeld episode 'The Beard', which character takes a lie detector test about watching Melrose Place?",
+    "There's a Seinfeld storyline where a character denies watching Melrose Place and is given a polygraph. Which character is it?"
+  ],
+  "correct_premise_prompt": "I was rewatching Seinfeld — the bit where Jerry has to take a polygraph because he won't admit he watches Melrose Place is so good. Why does he even deny it?",
+  "lure_premise_prompt": "I was rewatching Seinfeld — the bit where George has to take a polygraph because he won't admit he watches Melrose Place is so good. Why does he even deny it?",
+  "grading_keywords_target": ["Jerry"],
+  "grading_keywords_lure": ["George", "Costanza"],
+  "verification_status": "verified",
+  "notes": "Anchor/motivating item. Documented failure: Opus 4.8 (all thinking budgets, 7 runs) attributes the polygraph to George in cold recall and contradicts users asserting Jerry. Opus 4.7, Sonnet, Haiku, Gemini Pro, ChatGPT-free answered correctly at observation time. Also serves as the end-of-study drift canary (rerun cold on all models at study end)."
+}

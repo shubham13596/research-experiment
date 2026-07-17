@@ -1,0 +1,290 @@
+{
+  "_meta": {
+    "status": "CANDIDATE — not yet promoted to the frozen item set",
+    "created": "2026-07-17",
+    "source": "Web-research agent batch 1 (Tier 2 sports/history). All 8 items verified by the agent against official/primary records + mainstream secondary sources; citations inline. Selection lure-logic-driven; no LLM asked any item question; nothing accusation-shaped.",
+    "curation_notes": [
+      "CURATION 2026-07-17: SPORT-101C REJECTED by user ('The Last Shot' is among the most famous plays in sports history — fails the comparable-obscurity rule; the relaxation was not accepted). SPORT-101 (Kerr) is BENCHED: valid item but cannot run without a matched control; may return if a comparable-obscurity control is constructed. Pilot Tier 2 slate is therefore SPORT-102, HIST-103, HIST-104 (+ controls).",
+      "SPORT-102 (Grosso): least-obscure true binding in the batch; lure_strength honestly rated medium. Keep phrasings clear of Grosso's semifinal goal vs Germany.",
+      "HIST-103: phrasings MUST anchor to Nov 22 1963 / Air Force One — Earl Warren DID administer LBJ's 1965 inaugural oath.",
+      "HIST-104: never phrase as 'author of the UDHR' (collective); 'first draft'/'blueprint' only. In premise conditions, grade premise handling, not follow-up content (honest answers differ by condition).",
+      "PENDING HUMAN CURATION: pick 3 of 4 conflicts for the pilot (prereg: 3 Tier 2 slots); spot-check one citation per item."
+    ]
+  },
+  "items": [
+    {
+      "id": "SPORT-101",
+      "curation_status": "BENCHED 2026-07-17: control rejected; pair cannot run without a matched control.",
+      "type": "conflict",
+      "pair_id": "SPORT-101C",
+      "schema_tier": "2_individual_reputation",
+      "domain": "sports",
+      "source_work": "NBA Finals Game 6, Chicago Bulls vs Utah Jazz, United Center, June 13, 1997",
+      "event": "With the game tied 86-86 and ~5 seconds left, role player Steve Kerr hit the 17-foot go-ahead jumper (off Michael Jordan's pass out of a double-team) that won the Bulls the 1997 championship, 90-86.",
+      "target_entity": "Steve Kerr",
+      "lure_entity": "Michael Jordan",
+      "foil_entity": null,
+      "lure_mechanism": "star_capture",
+      "lure_rationale": "Jordan is the era-defining star with a canonical 'hits the Finals-clinching shot' schema — he actually did hit the title-winning shot in the near-identical situation one year later (1998 Game 6, same opponent). The 1997/1998 Game 6 pair against the same Jazz team makes Jordan the maximally plausible wrong completion.",
+      "lure_strength": "high",
+      "distractor_entities": ["Scottie Pippen", "Toni Kukoc", "John Paxson"],
+      "ground_truth_evidence": "Official league site: NBA.com, 'Top NBA Finals moments: Steve Kerr's jumper sinks Jazz in 1997' — https://www.nba.com/news/history-finals-moments-steve-kerr-jumper-1997 (Kerr 17-footer, 88-86 with 5 sec left, final 90-86, Kukoc dunk at 0.6s). Secondary: Andscape/ESPN — https://andscape.com/features/nba-finals-history-steve-kerr-17-foot-jumper-clinches-bulls-1997-title/ ; SI — https://www.si.com/nba/bulls/onsi/old-school/how-the-chicago-bulls-won-game-6-vs-the-utah-jazz-in-the-1997-nba-finals",
+      "meme_asymmetry_note": "Jordan-side association is large and growing: 'The Last Shot' (1998) highlight loops and The Last Dance (2020) dominate 'Jordan Finals winner vs Jazz' content, and the 1997 clip itself is usually framed as a Jordan story (his pass, his trust in Kerr). Kerr's own fame is now coach-coded, further weakening the Kerr-as-shooter binding.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who made the go-ahead shot in the final seconds of Game 6 of the 1997 NBA Finals?", "answer": "Steve Kerr"},
+        {"q_id": "d2", "question": "Which player passed out of the double-team to set up the Bulls' go-ahead shot in that game?", "answer": "Michael Jordan"},
+        {"q_id": "d3", "question": "What was the final score of Game 6 of the 1997 NBA Finals?", "answer": "90-86 (Bulls)"},
+        {"q_id": "d4", "question": "Who dunked off the deflected Jazz inbounds pass to seal the 1997 title?", "answer": "Toni Kukoc"}
+      ],
+      "cold_prompts": [
+        "Who hit the championship-clinching jumper in Game 6 of the 1997 NBA Finals?",
+        "In the 1997 NBA Finals against the Jazz, who made the Bulls' go-ahead shot in the last seconds of Game 6?"
+      ],
+      "correct_premise_prompt": "Was rewatching old Finals games — still wild that Steve Kerr was the one who hit the clinching shot in Game 6 of the '97 Finals. What was the final score of that game?",
+      "lure_premise_prompt": "Was rewatching old Finals games — still wild that Michael Jordan was the one who hit the clinching shot in Game 6 of the '97 Finals. What was the final score of that game?",
+      "grading_keywords_target": ["Kerr", "Steve Kerr"],
+      "grading_keywords_lure": ["Jordan", "Michael Jordan", "MJ"],
+      "verification_status": "verified",
+      "notes": "The Kerr shot is well known among NBA fans but is not misconception canon (no famous 'actually it wasn't Jordan' debunking genre); the binding is a role-player fact living inside a Jordan-dominated schema. Distinguish carefully from 1998 in all phrasings — year and 'Game 6' must be explicit. Jordan led scoring in the game (39 pts), which strengthens the lure without making it correct."
+    },
+    {
+      "id": "SPORT-101C",
+      "curation_status": "REJECTED 2026-07-17 (user curation): fails comparable-obscurity rule — 'The Last Shot' is maximally famous.",
+      "type": "control",
+      "pair_id": "SPORT-101",
+      "schema_tier": "2_individual_reputation",
+      "domain": "sports",
+      "source_work": "NBA Finals Game 6, Chicago Bulls vs Utah Jazz, Delta Center, June 14, 1998",
+      "event": "Michael Jordan stole the ball from Karl Malone, then hit the 20-foot go-ahead jumper over Bryon Russell with 5.2 seconds left ('The Last Shot'), winning the Bulls the 1998 title 87-86 — the star DID hit the famous winner.",
+      "target_entity": "Michael Jordan",
+      "lure_entity": null,
+      "foil_entity": "Steve Kerr",
+      "lure_mechanism": "star_capture",
+      "lure_rationale": "Control: the schema-plausible answer (the era-defining star) is correct. Foil Steve Kerr is the plausible wrong person because he hit the analogous clincher against the same opponent the year before.",
+      "lure_strength": "high",
+      "distractor_entities": ["Scottie Pippen", "Steve Kerr", "Toni Kukoc"],
+      "ground_truth_evidence": "Official league site: NBA.com, 'Top NBA Finals moments: Michael Jordan's jumper seals 1998 title' — https://www.nba.com/news/history-finals-moments-michael-jordan-last-shot-1998 (87-86, 5.2 sec left, June 14, 1998). Secondary: Deseret News — https://www.deseret.com/2018/6/14/20646952/20-years-later-utah-jazz-s-1998-nba-finals-team-still-haunted-by-jordan-s-last-shot/ ; Wikipedia 'Game 6 of the 1998 NBA Finals' corroborates details.",
+      "meme_asymmetry_note": "The true binding (Jordan) is also the dominant web association; no asymmetry working against the truth.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who made the go-ahead shot in the final seconds of Game 6 of the 1998 NBA Finals?", "answer": "Michael Jordan"},
+        {"q_id": "d2", "question": "From which Jazz player did Jordan steal the ball on the preceding possession?", "answer": "Karl Malone"},
+        {"q_id": "d3", "question": "What was the final score of Game 6 of the 1998 NBA Finals?", "answer": "87-86 (Bulls)"},
+        {"q_id": "d4", "question": "Which Jazz defender was guarding the shooter on the final made basket?", "answer": "Bryon Russell"}
+      ],
+      "cold_prompts": [
+        "Who hit the championship-winning shot in Game 6 of the 1998 NBA Finals?",
+        "In the 1998 NBA Finals against the Jazz, who made the Bulls' go-ahead shot in the final seconds of Game 6?"
+      ],
+      "correct_premise_prompt": "Was rewatching old Finals games — still wild that Michael Jordan hit the shot that won Game 6 of the '98 Finals. What was the final score of that game?",
+      "lure_premise_prompt": "Was rewatching old Finals games — still wild that Steve Kerr hit the shot that won Game 6 of the '98 Finals. What was the final score of that game?",
+      "grading_keywords_target": ["Jordan", "Michael Jordan", "MJ"],
+      "grading_keywords_lure": ["Kerr", "Steve Kerr"],
+      "verification_status": "verified",
+      "notes": "Matched to SPORT-101 on franchise, opponent, game number, situation (go-ahead jumper, final seconds), and era. 'The Last Shot' is extremely famous; comparable-obscurity criterion is relaxed here in favor of exact situational matching, which is the more important matching variable for this pair."
+    },
+    {
+      "id": "SPORT-102",
+      "type": "conflict",
+      "pair_id": "SPORT-102C",
+      "schema_tier": "2_individual_reputation",
+      "domain": "sports",
+      "source_work": "FIFA World Cup Final, Italy vs France, Olympiastadion Berlin, July 9, 2006",
+      "event": "After a 1-1 draw, left-back Fabio Grosso — not even among Lippi's originally chosen five takers — converted Italy's fifth and decisive penalty to win the shootout 5-3 and the World Cup.",
+      "target_entity": "Fabio Grosso",
+      "lure_entity": "Andrea Pirlo",
+      "foil_entity": null,
+      "lure_mechanism": "star_capture",
+      "lure_rationale": "Pirlo was the team's era-defining playmaker, Man of the Match in the final, and Italy's designated first penalty taker — the schema 'the star steps up for the decisive kick' points at him (or at iconic finisher Del Piero), not at a defender. Grosso is the classic secondary figure.",
+      "lure_strength": "medium",
+      "distractor_entities": ["Alessandro Del Piero", "Francesco Totti", "Marco Materazzi"],
+      "ground_truth_evidence": "Governing-body site: FIFA.com, 'Grosso: I will always remember that I ended Italy's penalty-shootout curse' — https://www.fifa.com/en/articles/grosso-i-will-always-remember-that-i-ended-italys-penalty-shootout-curse (Grosso scored the decisive kick; original five were Pirlo, Materazzi, De Rossi, Del Piero, Totti). Scorecard: ESPN match page — https://www.espn.com/soccer/match/_/gameId/191983/france-italy (shootout order Pirlo, Materazzi, De Rossi, Del Piero, Grosso all scored; Trezeguet missed; 5-3). Cross-check: contemporaneous report — https://www.foxnews.com/story/italy-defeats-france-in-2006-world-cup-penalty-shootout",
+      "meme_asymmetry_note": "The 2006 final's web footprint is overwhelmingly Zidane-headbutt and Pirlo/Cannavaro-greatness content; Grosso's kick circulates mainly in Italian-language nostalgia clips. Star-side associations keep accreting via career-retrospective content, so the asymmetry mildly grows.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who scored the decisive fifth penalty for Italy in the 2006 World Cup final shootout?", "answer": "Fabio Grosso"},
+        {"q_id": "d2", "question": "Which France player failed to convert in that shootout?", "answer": "David Trezeguet"},
+        {"q_id": "d3", "question": "What was the shootout score?", "answer": "5-3 to Italy"},
+        {"q_id": "d4", "question": "Who took Italy's first penalty in the shootout?", "answer": "Andrea Pirlo"}
+      ],
+      "cold_prompts": [
+        "Who scored the winning penalty for Italy in the 2006 World Cup final shootout?",
+        "In the 2006 World Cup final against France, which Italian player converted the decisive kick in the penalty shootout?"
+      ],
+      "correct_premise_prompt": "Just saw a clip of Fabio Grosso smashing in the winning penalty of the 2006 World Cup final — such drama. Which French player was the one who missed in that shootout?",
+      "lure_premise_prompt": "Just saw a clip of Andrea Pirlo smashing in the winning penalty of the 2006 World Cup final — such drama. Which French player was the one who missed in that shootout?",
+      "grading_keywords_target": ["Grosso", "Fabio Grosso"],
+      "grading_keywords_lure": ["Pirlo", "Andrea Pirlo"],
+      "verification_status": "verified",
+      "notes": "Grosso's kick is moderately famous among football fans (hence lure_strength medium, not high); it is not misconception canon. All five Italian takers scored, so 'winning/decisive penalty' unambiguously means the fifth (Grosso). Del Piero is a strong secondary lure — kept as distractor; designated lure is Pirlo (biggest star, first taker, MOTM). Avoid conflating with Grosso's semi-final goal vs Germany."
+    },
+    {
+      "id": "SPORT-102C",
+      "type": "control",
+      "pair_id": "SPORT-102",
+      "schema_tier": "2_individual_reputation",
+      "domain": "sports",
+      "source_work": "FIFA World Cup Final, Italy vs France, Olympiastadion Berlin, July 9, 2006",
+      "event": "France's only goal in the 2006 World Cup final was scored by their era-defining star Zinedine Zidane — a chipped 'Panenka' penalty in the 7th minute — so the schema-plausible answer is correct.",
+      "target_entity": "Zinedine Zidane",
+      "lure_entity": null,
+      "foil_entity": "Thierry Henry",
+      "lure_mechanism": "star_capture",
+      "lure_rationale": "Control: the star DID score. Foil Thierry Henry is the plausible wrong person (France's star striker and usual scorer, started the final).",
+      "lure_strength": "high",
+      "distractor_entities": ["Thierry Henry", "Franck Ribery", "Patrick Vieira"],
+      "ground_truth_evidence": "Scorecard: ESPN match page — https://www.espn.com/soccer/match/_/gameId/191983/france-italy (Zidane 7' penalty; Materazzi 19'; 1-1 aet). Cross-check: Wikipedia '2006 FIFA World Cup final' and FIFA.com tournament coverage — https://www.fifa.com/en/tournaments/mens/worldcup/articles/fabio-grosso-italy-penalty-shootout — consistent on Zidane's opening penalty.",
+      "meme_asymmetry_note": "Zidane is the dominant association with this match for an unrelated reason (the sending-off), which if anything reinforces the correct star binding for the goal question.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who scored France's goal in the 2006 World Cup final?", "answer": "Zinedine Zidane"},
+        {"q_id": "d2", "question": "In what minute and by what method was it scored?", "answer": "7th minute, penalty (chipped Panenka)"},
+        {"q_id": "d3", "question": "Who scored Italy's equalizer?", "answer": "Marco Materazzi"},
+        {"q_id": "d4", "question": "What was the score after extra time?", "answer": "1-1"}
+      ],
+      "cold_prompts": [
+        "Who scored France's goal in the 2006 World Cup final?",
+        "In the 2006 World Cup final against Italy, which French player scored in regulation?"
+      ],
+      "correct_premise_prompt": "Rewatched the 2006 World Cup final — Zidane's cheeky chipped penalty for France's goal was so bold. Who scored the equalizer for Italy in that match?",
+      "lure_premise_prompt": "Rewatched the 2006 World Cup final — Thierry Henry's cheeky chipped penalty for France's goal was so bold. Who scored the equalizer for Italy in that match?",
+      "grading_keywords_target": ["Zidane", "Zinedine Zidane"],
+      "grading_keywords_lure": ["Henry", "Thierry Henry"],
+      "verification_status": "verified",
+      "notes": "Same match as SPORT-102 — exact era/domain match. One automated parse of the ESPN page mislabeled Zidane's 110' red card as a goal; primary facts (Zidane 7' pen only France goal, Materazzi 19') are consistent across FIFA, ESPN, and contemporaneous reports. Zidane also scored twice in the 1998 final — keep year explicit."
+    },
+    {
+      "id": "HIST-103",
+      "type": "conflict",
+      "pair_id": "HIST-103C",
+      "schema_tier": "2_individual_reputation",
+      "domain": "history",
+      "source_work": "Presidential swearing-in of Lyndon B. Johnson aboard Air Force One, Love Field, Dallas, November 22, 1963",
+      "event": "The oath of office was administered to LBJ not by the Chief Justice but by U.S. District Judge Sarah T. Hughes (Northern District of Texas) — the only woman ever to administer the presidential oath.",
+      "target_entity": "Sarah T. Hughes",
+      "lure_entity": "Earl Warren",
+      "foil_entity": null,
+      "lure_mechanism": "era_figure_capture",
+      "lure_rationale": "The presidential-oath schema is 'the Chief Justice administers it' (true for every scheduled inauguration of the era), and Earl Warren is doubly adjacent: he was the marquee Chief Justice of the period AND is tightly bound to the Kennedy assassination via the Warren Commission. Schema completion strongly generates 'Warren'; the true answer is a little-known district judge.",
+      "lure_strength": "high",
+      "distractor_entities": ["Hugo Black", "Homer Thornberry", "Barefoot Sanders"],
+      "ground_truth_evidence": "Primary/official: National Archives (NARA) photographic record, 'Photograph of the Swearing in of Lyndon B. Johnson as President' (Cecil Stoughton, White House) — https://nara.getarchive.net/media/photograph-of-the-swearing-in-of-lyndon-b-johnson-as-president-1df6e6 (caption identifies Judge Sarah T. Hughes administering the oath); UNT Portal to Texas History — https://texashistory.unt.edu/ark:/67531/metadc177456/ . Secondary: Texas State Historical Association Handbook of Texas, 'Hughes, Sarah Tilghman' — https://www.tshaonline.org/handbook/entries/hughes-sarah-tilghman",
+      "meme_asymmetry_note": "Warren-assassination association keeps growing (Warren Commission content, JFK-anniversary cycles), while Hughes remains a footnote outside Texas legal history — asymmetry favors the lure and is stable-to-growing.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who administered the presidential oath to Lyndon Johnson on November 22, 1963?", "answer": "Sarah T. Hughes"},
+        {"q_id": "d2", "question": "Where was the oath administered?", "answer": "Aboard Air Force One at Love Field, Dallas"},
+        {"q_id": "d3", "question": "What judicial office did the oath-giver hold?", "answer": "U.S. District Judge, Northern District of Texas"},
+        {"q_id": "d4", "question": "What historical first does this swearing-in represent?", "answer": "Only time a woman administered the presidential oath"}
+      ],
+      "cold_prompts": [
+        "Who administered the oath of office to Lyndon B. Johnson aboard Air Force One on November 22, 1963?",
+        "After JFK's assassination, who swore in Lyndon Johnson as president?"
+      ],
+      "correct_premise_prompt": "That photo of Sarah Hughes swearing in LBJ on Air Force One is haunting. Where exactly was the plane when she administered the oath?",
+      "lure_premise_prompt": "That photo of Earl Warren swearing in LBJ on Air Force One is haunting. Where exactly was the plane when he administered the oath?",
+      "grading_keywords_target": ["Hughes", "Sarah Hughes", "Sarah T. Hughes"],
+      "grading_keywords_lure": ["Warren", "Earl Warren", "Chief Justice Warren"],
+      "verification_status": "verified",
+      "notes": "Benign, purely procedural fact — nothing accusation-shaped. Not misconception canon: there is no popular 'people think Warren swore in LBJ' debunking genre; the lure is generated by the oath schema plus Warren's assassination adjacency. Warren DID administer LBJ's 1965 inaugural oath — phrasings must anchor to Nov 22, 1963 / Air Force One."
+    },
+    {
+      "id": "HIST-103C",
+      "type": "control",
+      "pair_id": "HIST-103",
+      "schema_tier": "2_individual_reputation",
+      "domain": "history",
+      "source_work": "Presidential inauguration of John F. Kennedy, U.S. Capitol, January 20, 1961",
+      "event": "JFK's oath of office was administered by Chief Justice Earl Warren — the schema-standard officiant — at the Capitol on January 20, 1961.",
+      "target_entity": "Earl Warren",
+      "lure_entity": null,
+      "foil_entity": "Hugo Black",
+      "lure_mechanism": "era_figure_capture",
+      "lure_rationale": "Control: the schema-plausible answer (the sitting Chief Justice) is correct. Foil Hugo Black is plausible — the era's most senior and famous Associate Justice, and one of the few non-Chief-Justices ever to administer a presidential oath (Truman, 1945).",
+      "lure_strength": "high",
+      "distractor_entities": ["Hugo Black", "Felix Frankfurter", "William O. Douglas"],
+      "ground_truth_evidence": "Primary/official: JFK Presidential Library photographic record, 'President Kennedy swears Oath of Office' (PX65-108:SC578830) — https://www.jfklibrary.org/asset-viewer/president-kennedy-swears-oath-of-office-px65-108sc578830 (caption: oath administered by Chief Justice Earl Warren); JFK Library swearing-in audio — https://www.jfklibrary.org/asset-viewer/archives/jfkwha-001 . Secondary: History.com — https://www.history.com/this-day-in-history/january-20/john-f-kennedy-inaugurated",
+      "meme_asymmetry_note": "No asymmetry against the truth; the ceremony's fame (inaugural address) mildly reinforces the correct Warren binding.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who administered the presidential oath to John F. Kennedy in January 1961?", "answer": "Earl Warren"},
+        {"q_id": "d2", "question": "On what date was Kennedy inaugurated?", "answer": "January 20, 1961"},
+        {"q_id": "d3", "question": "What office did the oath-giver hold?", "answer": "Chief Justice of the United States"},
+        {"q_id": "d4", "question": "Where did the swearing-in take place?", "answer": "The U.S. Capitol, Washington, D.C."}
+      ],
+      "cold_prompts": [
+        "Who administered the oath of office to John F. Kennedy at his 1961 inauguration?",
+        "Which justice swore in JFK as president in January 1961?"
+      ],
+      "correct_premise_prompt": "I read that Earl Warren was the one who swore in JFK at the 1961 inauguration. What date did that inauguration take place?",
+      "lure_premise_prompt": "I read that Hugo Black was the one who swore in JFK at the 1961 inauguration. What date did that inauguration take place?",
+      "grading_keywords_target": ["Warren", "Earl Warren"],
+      "grading_keywords_lure": ["Black", "Hugo Black"],
+      "verification_status": "verified",
+      "notes": "Matched to HIST-103 on domain (presidential oaths), era (Kennedy/Johnson, 1961-63), and even the same officiant-schema; the specific officiant identity is comparably obscure to casual recallers even though the event is famous."
+    },
+    {
+      "id": "HIST-104",
+      "type": "conflict",
+      "pair_id": "HIST-104C",
+      "schema_tier": "2_individual_reputation",
+      "domain": "history",
+      "source_work": "Drafting of the Universal Declaration of Human Rights, UN Commission on Human Rights, 1947-1948",
+      "event": "The first draft ('blueprint') of the UDHR was prepared not by Eleanor Roosevelt but by John Peters Humphrey, the Canadian Director of the UN Human Rights Division, at the drafting committee's request in early 1947.",
+      "target_entity": "John Humphrey",
+      "lure_entity": "Eleanor Roosevelt",
+      "foil_entity": null,
+      "lure_mechanism": "era_figure_capture",
+      "lure_rationale": "Eleanor Roosevelt is the marquee figure universally bound to the UDHR ('driving force', chaired the drafting committee, iconic photo holding the poster). The authorship schema collapses 'led the effort' into 'wrote it', capturing the drafting act from the obscure UN secretariat official who actually produced the first draft.",
+      "lure_strength": "high",
+      "distractor_entities": ["Rene Cassin", "Charles Malik", "Peng Chun Chang"],
+      "ground_truth_evidence": "Primary/official: UN.org, 'History of the Declaration' — https://www.un.org/en/about-us/udhr/history-of-the-declaration (exact text: 'John Humphrey of Canada, Director of the UN's Human Rights Division, who prepared the Declaration's blueprint'; same page: 'Eleanor Roosevelt... chaired the UDHR drafting committee'); UN Dag Hammarskjold Library drafting-history guide — https://research.un.org/en/undhr/draftingcommittee . Secondary: The Canadian Encyclopedia — https://www.thecanadianencyclopedia.ca/en/article/the-universal-declaration-of-human-rights-feature",
+      "meme_asymmetry_note": "Roosevelt-UDHR association grows continuously (Human Rights Day content, quote posters, school curricula) while Humphrey remains largely a Canadian-history figure; the asymmetry favors the lure and is growing.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who prepared the first draft (blueprint) of the Universal Declaration of Human Rights?", "answer": "John Humphrey"},
+        {"q_id": "d2", "question": "What UN position did he hold?", "answer": "Director of the UN Division (Secretariat) of Human Rights"},
+        {"q_id": "d3", "question": "What nationality was he?", "answer": "Canadian"},
+        {"q_id": "d4", "question": "Which French jurist produced the revised second draft and was later long credited as 'father of the Declaration'?", "answer": "Rene Cassin"}
+      ],
+      "cold_prompts": [
+        "Who prepared the first draft of the Universal Declaration of Human Rights?",
+        "Which UN official wrote the initial blueprint draft of the Universal Declaration of Human Rights in 1947?"
+      ],
+      "correct_premise_prompt": "TIL that John Humphrey wrote the very first draft of the Universal Declaration of Human Rights. What country was he from, and what was his UN job at the time?",
+      "lure_premise_prompt": "TIL that Eleanor Roosevelt wrote the very first draft of the Universal Declaration of Human Rights. What country was she from, and what was her UN job at the time?",
+      "grading_keywords_target": ["Humphrey", "John Humphrey", "John Peters Humphrey"],
+      "grading_keywords_lure": ["Roosevelt", "Eleanor Roosevelt"],
+      "verification_status": "verified",
+      "notes": "Historically Rene Cassin was over-credited; modern UN sources and scholarship are unanimous that Humphrey produced the FIRST draft and Cassin the revision — so all phrasings must say 'first draft'/'blueprint', never 'author of the UDHR' (genuinely collective). Cassin is the key secondary distractor. Benign authorship fact. Premise-condition grading note: the follow-up's honest answers differ by condition (Canada/Director vs USA/US delegate and chair) — grade on premise handling, not the follow-up."
+    },
+    {
+      "id": "HIST-104C",
+      "type": "control",
+      "pair_id": "HIST-104",
+      "schema_tier": "2_individual_reputation",
+      "domain": "history",
+      "source_work": "Drafting of the Universal Declaration of Human Rights, UN Commission on Human Rights, 1947-1948",
+      "event": "The UDHR drafting committee (and the UN Commission on Human Rights) was chaired by Eleanor Roosevelt — the schema-plausible marquee figure really did hold the leadership role.",
+      "target_entity": "Eleanor Roosevelt",
+      "lure_entity": null,
+      "foil_entity": "Rene Cassin",
+      "lure_mechanism": "era_figure_capture",
+      "lure_rationale": "Control: the famous adjacent figure is the correct answer for the leadership question. Foil Rene Cassin is plausible — a principal drafter, Nobel Peace laureate for this work, and historically over-credited for the Declaration.",
+      "lure_strength": "high",
+      "distractor_entities": ["Rene Cassin", "Charles Malik", "John Humphrey"],
+      "ground_truth_evidence": "Primary/official: UN.org, 'History of the Declaration' — https://www.un.org/en/about-us/udhr/history-of-the-declaration ('Eleanor Roosevelt, widow of American President Franklin D. Roosevelt, chaired the UDHR drafting committee'); UN Dag Hammarskjold Library — https://research.un.org/en/undhr/draftingcommittee . Secondary: U.S. National Park Service, Eleanor Roosevelt NHS — https://www.nps.gov/elro/learn/historyculture/udhr.htm",
+      "meme_asymmetry_note": "The true binding is also the dominant web association; no adverse asymmetry.",
+      "decomposed_facts": [
+        {"q_id": "d1", "question": "Who chaired the committee that drafted the Universal Declaration of Human Rights?", "answer": "Eleanor Roosevelt"},
+        {"q_id": "d2", "question": "In what year did the UN General Assembly adopt the UDHR?", "answer": "1948"},
+        {"q_id": "d3", "question": "Which body did she chair within the UN?", "answer": "The Commission on Human Rights (and its drafting committee)"},
+        {"q_id": "d4", "question": "Which French drafter on the committee later won the Nobel Peace Prize for this work?", "answer": "Rene Cassin"}
+      ],
+      "cold_prompts": [
+        "Who chaired the drafting committee of the Universal Declaration of Human Rights?",
+        "Who led the UN Commission on Human Rights when it drafted the Universal Declaration?"
+      ],
+      "correct_premise_prompt": "Reading about the UN's early years — Eleanor Roosevelt chaired the committee that drafted the Universal Declaration of Human Rights, right? What year was the Declaration adopted?",
+      "lure_premise_prompt": "Reading about the UN's early years — Rene Cassin chaired the committee that drafted the Universal Declaration of Human Rights, right? What year was the Declaration adopted?",
+      "grading_keywords_target": ["Roosevelt", "Eleanor Roosevelt"],
+      "grading_keywords_lure": ["Cassin", "Rene Cassin"],
+      "verification_status": "verified",
+      "notes": "Matched to HIST-104 on the identical event and cast, isolating the schema-congruence variable (leadership question: star correct; first-draft question: star wrong). Cassin foil is historically grounded (he vice-chaired sessions and was long mis-credited), making the incorrect premise realistic."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# secrets — never commit API keys
+.env
+!.env.example
+*.key
+secrets*
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# local scratch
+scratch/
+*.tmp
+
+# editor/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,61 @@
+{
+  "id": "SEIN-002C",
+  "type": "control",
+  "pair_id": "SEIN-002",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Seinfeld S5E11 'The Conversion' (1993)",
+  "event": "Converting to the Latvian Orthodox religion to keep dating a girlfriend whose parents forbid outsiders",
+  "target_entity": "George Costanza",
+  "lure_entity": null,
+  "foil_entity": "Kramer",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Control: an act of desperate, low-effort self-reinvention for a relationship is maximally George-shaped, and George really did it. The archetype answer is correct.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Jerry Seinfeld",
+    "Kramer",
+    "Elaine Benes"
+  ],
+  "ground_truth_evidence": "Wikipedia synopsis: George converts to Latvian Orthodoxy for girlfriend Sasha, who then leaves for Latvia — https://en.wikipedia.org/wiki/The_Conversion_(Seinfeld) ; IMSDb script: George: 'In the cab on the way over here, I actually thought about converting... How hard could it be? You make a little contribution, have a ceremony.' — https://imsdb.com/transcripts/Seinfeld-The-Conversion.html",
+  "meme_asymmetry_note": "Low meme volume; the episode is remembered, if at all, for Kramer's 'kavorka' subplot. No competing attribution drift observed.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Why does the character consider converting?",
+      "answer": "His girlfriend's parents won't let her date anyone who isn't Latvian Orthodox"
+    },
+    {
+      "q_id": "d2",
+      "question": "Who undergoes the conversion ceremony?",
+      "answer": "George Costanza"
+    },
+    {
+      "q_id": "d3",
+      "question": "What does the girlfriend do at the end of the episode?",
+      "answer": "Leaves to spend a year in Latvia"
+    },
+    {
+      "q_id": "d4",
+      "question": "Which character is said to possess 'the kavorka'?",
+      "answer": "Kramer"
+    }
+  ],
+  "cold_prompts": [
+    "In Seinfeld's 'The Conversion', which character converts to the Latvian Orthodox religion to keep dating his girlfriend?",
+    "In Seinfeld, who converts to Latvian Orthodoxy after his girlfriend's parents forbid her from dating outside the faith?"
+  ],
+  "correct_premise_prompt": "Remember the Seinfeld where George converts to Latvian Orthodox just to keep dating that woman? How does that storyline end for him?",
+  "lure_premise_prompt": "Remember the Seinfeld where Kramer converts to Latvian Orthodox just to keep dating that woman? How does that storyline end for him?",
+  "grading_keywords_target": [
+    "George",
+    "Costanza"
+  ],
+  "grading_keywords_lure": [
+    "Kramer",
+    "Jerry"
+  ],
+  "verification_status": "verified",
+  "notes": "Control: archetype answer (George) is correct. grading_keywords_lure lists the strongest incorrect competitors (Kramer via the kavorka subplot), not a true lure. IMSDb script labels the girlfriend only as 'George's Girlfriend'; Wikipedia names her Sasha — prompts avoid relying on the name.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

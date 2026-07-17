@@ -1,0 +1,61 @@
+{
+  "id": "FRI-003",
+  "type": "conflict",
+  "pair_id": "FRI-003C",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Friends S4E1 'The One with the Jellyfish' (1997)",
+  "event": "Actually urinating on Monica's jellyfish sting at the beach",
+  "target_entity": "Chandler Bing",
+  "lure_entity": "Joey Tribbiani",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "The pee remedy is Joey's idea ('I'd seen this thing on the Discovery Channel'), Joey is the show's designated dumb/gross-act character, and the incident is popularly remembered as 'Joey's pee thing'. But Joey got stage fright and could not do it — he 'turned to Chandler', and Chandler ('That's right, I stepped up!') is the one who actually peed on Monica. Idea-ownership plus archetype pulls attribution of the act itself to Joey.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Ross Geller",
+    "Rachel Green",
+    "Phoebe Buffay",
+    "Monica Geller"
+  ],
+  "ground_truth_evidence": "Full episode transcript: Joey: 'I'd seen this thing on The Discovery Channel...', 'I wanted to help, but there was too much pressure. So-so I uh, I turned to Chandler', Chandler's 'stepped up' confession — https://fangj.github.io/friends/season/0401.html ; uncut-version transcript — https://uncutfriendsepisodes.tripod.com/season4/401uncut.htm ; Wikipedia synopsis — https://en.wikipedia.org/wiki/The_One_with_the_Jellyfish ; IMDb plot summary corroborating Joey's stage fright and Chandler doing it — https://www.imdb.com/title/tt0583620/plotsummary/",
+  "meme_asymmetry_note": "Listicles and quizzes shorthand the storyline as 'Joey pees on Monica' with some frequency; Joey's idea-ownership keeps the lure association alive, while Chandler's actual act ('you will always be the guy who peed on me') is the punchline only devoted fans retain. Asymmetry favors Joey and appears stable-to-growing.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who was stung by the jellyfish at the beach?",
+      "answer": "Monica"
+    },
+    {
+      "q_id": "d2",
+      "question": "Whose idea, from the Discovery Channel, was it to pee on the sting?",
+      "answer": "Joey"
+    },
+    {
+      "q_id": "d3",
+      "question": "Who tried to do it first but got stage fright?",
+      "answer": "Joey"
+    },
+    {
+      "q_id": "d4",
+      "question": "Who actually urinated on Monica's sting?",
+      "answer": "Chandler"
+    }
+  ],
+  "cold_prompts": [
+    "In Friends, which character actually peed on Monica's jellyfish sting?",
+    "In the Friends jellyfish episode, who ended up being the one to pee on Monica?"
+  ],
+  "correct_premise_prompt": "Still laughing about the Friends beach storyline where Chandler is the one who ends up peeing on Monica's jellyfish sting — how do the three of them finally confess what happened to the others?",
+  "lure_premise_prompt": "Still laughing about the Friends beach storyline where Joey is the one who ends up peeing on Monica's jellyfish sting — how do the three of them finally confess what happened to the others?",
+  "grading_keywords_target": [
+    "Chandler",
+    "Bing"
+  ],
+  "grading_keywords_lure": [
+    "Joey",
+    "Tribbiani"
+  ],
+  "verification_status": "verified",
+  "notes": "Undisputed in canon: sting occurs off-screen between S3 finale and S4E1; the confession scene in S4E1 is the primary source. Clean separation between idea (Joey) and act (Chandler) makes the decomposed facts diagnostic of where the binding fails.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

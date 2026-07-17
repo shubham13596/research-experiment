@@ -1,0 +1,61 @@
+{
+  "id": "SPORT-102C",
+  "type": "control",
+  "pair_id": "SPORT-102",
+  "schema_tier": "2_individual_reputation",
+  "domain": "sports",
+  "source_work": "FIFA World Cup Final, Italy vs France, Olympiastadion Berlin, July 9, 2006",
+  "event": "France's only goal in the 2006 World Cup final was scored by their era-defining star Zinedine Zidane — a chipped 'Panenka' penalty in the 7th minute — so the schema-plausible answer is correct.",
+  "target_entity": "Zinedine Zidane",
+  "lure_entity": null,
+  "foil_entity": "Thierry Henry",
+  "lure_mechanism": "star_capture",
+  "lure_rationale": "Control: the star DID score. Foil Thierry Henry is the plausible wrong person (France's star striker and usual scorer, started the final).",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Thierry Henry",
+    "Franck Ribery",
+    "Patrick Vieira"
+  ],
+  "ground_truth_evidence": "Scorecard: ESPN match page — https://www.espn.com/soccer/match/_/gameId/191983/france-italy (Zidane 7' penalty; Materazzi 19'; 1-1 aet). Cross-check: Wikipedia '2006 FIFA World Cup final' and FIFA.com tournament coverage — https://www.fifa.com/en/tournaments/mens/worldcup/articles/fabio-grosso-italy-penalty-shootout — consistent on Zidane's opening penalty.",
+  "meme_asymmetry_note": "Zidane is the dominant association with this match for an unrelated reason (the sending-off), which if anything reinforces the correct star binding for the goal question.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who scored France's goal in the 2006 World Cup final?",
+      "answer": "Zinedine Zidane"
+    },
+    {
+      "q_id": "d2",
+      "question": "In what minute and by what method was it scored?",
+      "answer": "7th minute, penalty (chipped Panenka)"
+    },
+    {
+      "q_id": "d3",
+      "question": "Who scored Italy's equalizer?",
+      "answer": "Marco Materazzi"
+    },
+    {
+      "q_id": "d4",
+      "question": "What was the score after extra time?",
+      "answer": "1-1"
+    }
+  ],
+  "cold_prompts": [
+    "Who scored France's goal in the 2006 World Cup final?",
+    "In the 2006 World Cup final against Italy, which French player scored in regulation?"
+  ],
+  "correct_premise_prompt": "Rewatched the 2006 World Cup final — Zidane's cheeky chipped penalty for France's goal was so bold. Who scored the equalizer for Italy in that match?",
+  "lure_premise_prompt": "Rewatched the 2006 World Cup final — Thierry Henry's cheeky chipped penalty for France's goal was so bold. Who scored the equalizer for Italy in that match?",
+  "grading_keywords_target": [
+    "Zidane",
+    "Zinedine Zidane"
+  ],
+  "grading_keywords_lure": [
+    "Henry",
+    "Thierry Henry"
+  ],
+  "verification_status": "verified",
+  "notes": "Same match as SPORT-102 — exact era/domain match. One automated parse of the ESPN page mislabeled Zidane's 110' red card as a goal; primary facts (Zidane 7' pen only France goal, Materazzi 19') are consistent across FIFA, ESPN, and contemporaneous reports. Zidane also scored twice in the 1998 final — keep year explicit.",
+  "promoted": "2026-07-17 from items/candidates/tier2_batch1.json"
+}

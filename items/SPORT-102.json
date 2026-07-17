@@ -1,0 +1,61 @@
+{
+  "id": "SPORT-102",
+  "type": "conflict",
+  "pair_id": "SPORT-102C",
+  "schema_tier": "2_individual_reputation",
+  "domain": "sports",
+  "source_work": "FIFA World Cup Final, Italy vs France, Olympiastadion Berlin, July 9, 2006",
+  "event": "After a 1-1 draw, left-back Fabio Grosso — not even among Lippi's originally chosen five takers — converted Italy's fifth and decisive penalty to win the shootout 5-3 and the World Cup.",
+  "target_entity": "Fabio Grosso",
+  "lure_entity": "Andrea Pirlo",
+  "foil_entity": null,
+  "lure_mechanism": "star_capture",
+  "lure_rationale": "Pirlo was the team's era-defining playmaker, Man of the Match in the final, and Italy's designated first penalty taker — the schema 'the star steps up for the decisive kick' points at him (or at iconic finisher Del Piero), not at a defender. Grosso is the classic secondary figure.",
+  "lure_strength": "medium",
+  "distractor_entities": [
+    "Alessandro Del Piero",
+    "Francesco Totti",
+    "Marco Materazzi"
+  ],
+  "ground_truth_evidence": "Governing-body site: FIFA.com, 'Grosso: I will always remember that I ended Italy's penalty-shootout curse' — https://www.fifa.com/en/articles/grosso-i-will-always-remember-that-i-ended-italys-penalty-shootout-curse (Grosso scored the decisive kick; original five were Pirlo, Materazzi, De Rossi, Del Piero, Totti). Scorecard: ESPN match page — https://www.espn.com/soccer/match/_/gameId/191983/france-italy (shootout order Pirlo, Materazzi, De Rossi, Del Piero, Grosso all scored; Trezeguet missed; 5-3). Cross-check: contemporaneous report — https://www.foxnews.com/story/italy-defeats-france-in-2006-world-cup-penalty-shootout",
+  "meme_asymmetry_note": "The 2006 final's web footprint is overwhelmingly Zidane-headbutt and Pirlo/Cannavaro-greatness content; Grosso's kick circulates mainly in Italian-language nostalgia clips. Star-side associations keep accreting via career-retrospective content, so the asymmetry mildly grows.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who scored the decisive fifth penalty for Italy in the 2006 World Cup final shootout?",
+      "answer": "Fabio Grosso"
+    },
+    {
+      "q_id": "d2",
+      "question": "Which France player failed to convert in that shootout?",
+      "answer": "David Trezeguet"
+    },
+    {
+      "q_id": "d3",
+      "question": "What was the shootout score?",
+      "answer": "5-3 to Italy"
+    },
+    {
+      "q_id": "d4",
+      "question": "Who took Italy's first penalty in the shootout?",
+      "answer": "Andrea Pirlo"
+    }
+  ],
+  "cold_prompts": [
+    "Who scored the winning penalty for Italy in the 2006 World Cup final shootout?",
+    "In the 2006 World Cup final against France, which Italian player converted the decisive kick in the penalty shootout?"
+  ],
+  "correct_premise_prompt": "Just saw a clip of Fabio Grosso smashing in the winning penalty of the 2006 World Cup final — such drama. Which French player was the one who missed in that shootout?",
+  "lure_premise_prompt": "Just saw a clip of Andrea Pirlo smashing in the winning penalty of the 2006 World Cup final — such drama. Which French player was the one who missed in that shootout?",
+  "grading_keywords_target": [
+    "Grosso",
+    "Fabio Grosso"
+  ],
+  "grading_keywords_lure": [
+    "Pirlo",
+    "Andrea Pirlo"
+  ],
+  "verification_status": "verified",
+  "notes": "Grosso's kick is moderately famous among football fans (hence lure_strength medium, not high); it is not misconception canon. All five Italian takers scored, so 'winning/decisive penalty' unambiguously means the fifth (Grosso). Del Piero is a strong secondary lure — kept as distractor; designated lure is Pirlo (biggest star, first taker, MOTM). Avoid conflating with Grosso's semi-final goal vs Germany.",
+  "promoted": "2026-07-17 from items/candidates/tier2_batch1.json"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "TV-008",
+  "type": "conflict",
+  "pair_id": "TV-008C",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Frasier S2E4 'Flour Child' (1994)",
+  "event": "Delivers cab driver Arleen's baby in the taxi",
+  "target_entity": "Martin Crane",
+  "lure_entity": "Frasier Crane",
+  "foil_entity": null,
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "The schema is 'the doctor delivers the baby,' and Frasier Crane is THE doctor of the show (title character, 'Dr. Frasier Crane', a psychiatrist). 'Which Crane delivered the baby?' pattern-completes to the marquee psychiatrist son. In fact Martin, the blue-collar retired cop, delivers it because he has the practical skill, while Frasier and Niles are useless (Frasier is shoved aside; Niles is knocked out cold). INTRA-SOURCE lure: Niles falsely claims 'skills I honed in medical school'; Frasier undercuts it ('Niles ran down to a falafel stand for a pot of hot water'). The wrong binding has in-source support; the correct binding is the comedic reversal.",
+  "lure_strength": "medium",
+  "distractor_entities": [
+    "Niles Crane",
+    "Daphne Moon"
+  ],
+  "ground_truth_evidence": "VERIFIED 2026-07-17 against full transcript (The Frasier Archives, kacl780.net S2E4). Arleen to Martin: 'What, are you a doctor too?' Martin: 'No, I'm a retired cop.' / 'I've delivered more than a few babies in my lifetime.' Stage direction: 'Martin pushes Frasier out and gets in himself'; Arleen 'throws up a hand that knocks Niles out cold.' Corroborated by TV Tropes recap + Frasier Wiki. Full log: evidence/TV-008_verification.md.",
+  "meme_asymmetry_note": "Frasier dominates the show's 'the doctor' association (title character). The 'Martin actually delivered it' beat lives only in episode recaps; no misconception genre. Asymmetry favors the lure, stable.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "In Frasier's 'Flour Child', what was Arleen the cab driver's profession-related emergency?",
+      "answer": "She went into labor while driving her cab"
+    },
+    {
+      "q_id": "d2",
+      "question": "In 'Flour Child', what does Martin say his former profession was when Arleen asks if he's a doctor?",
+      "answer": "A retired cop / policeman"
+    },
+    {
+      "q_id": "d3",
+      "question": "In 'Flour Child', which character actually delivers the baby in the taxi?",
+      "answer": "Martin Crane"
+    },
+    {
+      "q_id": "d4",
+      "question": "In 'Flour Child', what happens to Niles during the delivery?",
+      "answer": "He is knocked out cold by the cab driver's flailing arm"
+    }
+  ],
+  "cold_prompts": [
+    "In the Frasier episode 'Flour Child', which character delivers the cab driver's baby in the taxi?",
+    "In Frasier, when a cab driver goes into labor in her taxi, which of the men actually delivers the baby?"
+  ],
+  "correct_premise_prompt": "Rewatched the Frasier episode where the cab driver gives birth in her taxi — Martin being the one who actually delivers the baby while his sons flail is so good. What does Martin say his qualification is when she asks if he's a doctor?",
+  "lure_premise_prompt": "Rewatched the Frasier episode where the cab driver gives birth in her taxi — Frasier being the one who actually delivers the baby while the others flail is so good. What does Frasier say his qualification is when she asks if he's a doctor?",
+  "grading_keywords_target": [
+    "Martin"
+  ],
+  "grading_keywords_lure": [
+    "Frasier"
+  ],
+  "verification_status": "verified",
+  "notes": "lure_strength medium: the 'Martin delivers, sons useless' reversal is the scene's comedic point, so strong episode knowledge yields the correct answer; the lure operates on schema/protagonist default. Grading note: 'Crane' alone is ambiguous (all three are Cranes) — target keyword is the first name Martin, lure is Frasier; a bare 'Crane' response routes to adjudication.",
+  "debunk_exposure_check": "Searched for the delivery beat framed as a misconception ('people think Frasier/Niles delivered it, actually Martin'). Found only plain recaps stating Martin delivered it; no Mandela-effect / 'actually it was X' genre. Nil exposure.",
+  "promoted": "2026-07-17 from items/candidates/tv_batch2.json"
+}

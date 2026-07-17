@@ -1,0 +1,103 @@
+{
+  "_notes": [
+    "Registry of models under test. Keys are the short names used by --models on the runner CLI.",
+    "All model IDs verified against provider docs 2026-07-17: platform.claude.com/docs/en/about-claude/models/overview, developers.openai.com/api/docs/models, ai.google.dev/gemini-api/docs/models.",
+    "The prereg's 'thinking budget' axis (low/med/high/extra) is realized per-model via thinking_mode:",
+    "  - 'effort': Anthropic adaptive-thinking models (Opus 4.8/4.7, Sonnet 4.6/5). Passed as output_config.effort + thinking:{type:'adaptive'}. NOTE: manual budget_tokens returns HTTP 400 on Opus 4.8/4.7. Mapping: low->low, med->medium, high->high, extra->xhigh (max also exists, unused in prereg).",
+    "  - 'budget_tokens': legacy extended thinking (Haiku 4.5). thinking:{type:'enabled', budget_tokens:N}.",
+    "  - 'reasoning_effort': OpenAI. Passed as reasoning_effort.",
+    "  - null: no test-time reasoning control exposed (Gemini 2.5 Pro via basic generate_content here).",
+    "budget 'none' = no thinking config sent. On effort-mode models the API then runs without thinking (documented behavior); effort is left unset (API default 'high' applies to token spend only). Recorded in manifest.",
+    "Per prereg 4.4: API only, no system prompt (system=null), provider-default temperature (record it), n=5 samples."
+  ],
+  "defaults": {
+    "n_samples": 5,
+    "max_tokens": 1024,
+    "thinking_max_tokens": 16384,
+    "system_prompt": null,
+    "temperature": null
+  },
+  "budget_levels": {
+    "effort_map": {"low": "low", "med": "medium", "high": "high", "extra": "xhigh"},
+    "budget_tokens_map": {"low": 1024, "med": 4096, "high": 16384, "extra": 32768}
+  },
+  "models": {
+    "fable-5": {
+      "provider": "anthropic",
+      "model": "claude-fable-5",
+      "thinking_mode": "effort",
+      "pilot": false,
+      "verified": true,
+      "note": "Newest/most capable Claude (Mythos-class tier above Opus). Adaptive thinking is ALWAYS ON and cannot be disabled (thinking:{type:'disabled'} rejected) — the 'none' budget cell still thinks at default effort; there is no true nonthinking condition for this model. Record this asymmetry in analysis."
+    },
+    "opus-4.8": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8",
+      "thinking_mode": "effort",
+      "pilot": true,
+      "verified": true
+    },
+    "opus-4.7": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-7",
+      "thinking_mode": "effort",
+      "pilot": true,
+      "verified": true
+    },
+    "sonnet-4.6": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "thinking_mode": "effort",
+      "pilot": true,
+      "verified": true,
+      "note": "Legacy per docs (current Sonnet is claude-sonnet-5) but still served; prereg names Sonnet 4.6."
+    },
+    "sonnet-5": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "thinking_mode": "effort",
+      "pilot": false,
+      "verified": true,
+      "note": "Current Sonnet; added to the full-study battery (prereg v0.2.4) for the within-family capability ladder."
+    },
+    "haiku-4.5": {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5-20251001",
+      "thinking_mode": "budget_tokens",
+      "pilot": false,
+      "verified": true
+    },
+    "openai-flagship": {
+      "provider": "openai",
+      "model": "gpt-5.6-sol",
+      "thinking_mode": "reasoning_effort",
+      "pilot": false,
+      "verified": true,
+      "note": "Current OpenAI flagship (alias gpt-5.6). reasoning_effort levels include low/medium/high/xhigh/max."
+    },
+    "gemini-2.5-pro": {
+      "provider": "google",
+      "model": "gemini-2.5-pro",
+      "thinking_mode": null,
+      "pilot": false,
+      "verified": true,
+      "note": "Stable Pro ('most advanced for complex tasks') per ai.google.dev 2026-07-17. Thinking controls not wired for Gemini in this runner; runs without explicit thinking config."
+    },
+    "gemini-3.5-flash": {
+      "provider": "google",
+      "model": "gemini-3.5-flash",
+      "thinking_mode": null,
+      "pilot": false,
+      "verified": true,
+      "note": "Google's newest/most intelligent stable model per ai.google.dev 2026-07-17."
+    },
+    "gemini-3.1-flash-lite": {
+      "provider": "google",
+      "model": "gemini-3.1-flash-lite",
+      "thinking_mode": null,
+      "pilot": false,
+      "verified": true,
+      "note": "Stable 3.1-generation Flash variant. NOTE: user asked for 'gemini 3.1 flash' — no stable gemini-3.1-flash exists; this Lite variant (or gemini-3.1-pro-preview) is the closest. Confirm choice before full study."
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "HIST-103C",
+  "type": "control",
+  "pair_id": "HIST-103",
+  "schema_tier": "2_individual_reputation",
+  "domain": "history",
+  "source_work": "Presidential inauguration of John F. Kennedy, U.S. Capitol, January 20, 1961",
+  "event": "JFK's oath of office was administered by Chief Justice Earl Warren — the schema-standard officiant — at the Capitol on January 20, 1961.",
+  "target_entity": "Earl Warren",
+  "lure_entity": null,
+  "foil_entity": "Hugo Black",
+  "lure_mechanism": "era_figure_capture",
+  "lure_rationale": "Control: the schema-plausible answer (the sitting Chief Justice) is correct. Foil Hugo Black is plausible — the era's most senior and famous Associate Justice, and one of the few non-Chief-Justices ever to administer a presidential oath (Truman, 1945).",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Hugo Black",
+    "Felix Frankfurter",
+    "William O. Douglas"
+  ],
+  "ground_truth_evidence": "Primary/official: JFK Presidential Library photographic record, 'President Kennedy swears Oath of Office' (PX65-108:SC578830) — https://www.jfklibrary.org/asset-viewer/president-kennedy-swears-oath-of-office-px65-108sc578830 (caption: oath administered by Chief Justice Earl Warren); JFK Library swearing-in audio — https://www.jfklibrary.org/asset-viewer/archives/jfkwha-001 . Secondary: History.com — https://www.history.com/this-day-in-history/january-20/john-f-kennedy-inaugurated",
+  "meme_asymmetry_note": "No asymmetry against the truth; the ceremony's fame (inaugural address) mildly reinforces the correct Warren binding.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who administered the presidential oath to John F. Kennedy in January 1961?",
+      "answer": "Earl Warren"
+    },
+    {
+      "q_id": "d2",
+      "question": "On what date was Kennedy inaugurated?",
+      "answer": "January 20, 1961"
+    },
+    {
+      "q_id": "d3",
+      "question": "What office did the oath-giver hold?",
+      "answer": "Chief Justice of the United States"
+    },
+    {
+      "q_id": "d4",
+      "question": "Where did the swearing-in take place?",
+      "answer": "The U.S. Capitol, Washington, D.C."
+    }
+  ],
+  "cold_prompts": [
+    "Who administered the oath of office to John F. Kennedy at his 1961 inauguration?",
+    "Which justice swore in JFK as president in January 1961?"
+  ],
+  "correct_premise_prompt": "I read that Earl Warren was the one who swore in JFK at the 1961 inauguration. What date did that inauguration take place?",
+  "lure_premise_prompt": "I read that Hugo Black was the one who swore in JFK at the 1961 inauguration. What date did that inauguration take place?",
+  "grading_keywords_target": [
+    "Warren",
+    "Earl Warren"
+  ],
+  "grading_keywords_lure": [
+    "Black",
+    "Hugo Black"
+  ],
+  "verification_status": "verified",
+  "notes": "Matched to HIST-103 on domain (presidential oaths), era (Kennedy/Johnson, 1961-63), and even the same officiant-schema; the specific officiant identity is comparably obscure to casual recallers even though the event is famous.",
+  "promoted": "2026-07-17 from items/candidates/tier2_batch1.json"
+}

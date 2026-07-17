@@ -1,0 +1,34 @@
+{
+  "id": "SEIN-001C",
+  "type": "control",
+  "pair_id": "SEIN-001",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Seinfeld S6E16 'The Beard' (1995)",
+  "event": "Sets George up on the blind date with Denise (the bald woman), via a police sketch artist's drawing",
+  "target_entity": "Kramer",
+  "lure_entity": null,
+  "foil_entity": "Jerry Seinfeld (character)",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Control: arranging an unconventional scheme-flavored date is maximally Kramer-shaped (the fixer/schemer archetype), and Kramer really did it. The archetype answer IS correct.",
+  "lure_strength": "high",
+  "distractor_entities": ["Elaine Benes", "George Costanza"],
+  "ground_truth_evidence": "VERIFIED 2026-07-17 against full episode transcript (SeinfeldScripts.com): George to Kramer: 'You fixed me up with a bald woman.' Kramer directs the police sketch artist ('Make the eyes... almond. Make the lips fuller. Poutier.'). Wikipedia concurs: 'Kramer sets him up with Denise after describing her to a police sketch artist.' Full log: evidence/SEIN-001_verification.md §3",
+  "meme_asymmetry_note": "Low meme volume; no competing attribution drift observed.",
+  "decomposed_facts": [
+    {"q_id": "d1", "question": "In the Seinfeld episode 'The Beard', how is the picture of George's blind date produced?", "answer": "A police sketch artist draws it"},
+    {"q_id": "d2", "question": "In the Seinfeld episode 'The Beard', what surprises George about his blind date Denise when they meet?", "answer": "She is bald"},
+    {"q_id": "d3", "question": "In the Seinfeld episode 'The Beard', which character throws George's toupee out the window?", "answer": "Elaine"},
+    {"q_id": "d4", "question": "In the Seinfeld episode 'The Beard', which character stands in a police lineup?", "answer": "Kramer"}
+  ],
+  "cold_prompts": [
+    "In the Seinfeld episode 'The Beard', which character sets George up on a date with a woman who turns out to be bald?",
+    "In Seinfeld's 'The Beard', George goes on a blind date arranged from a police sketch drawing. Who arranged the date?"
+  ],
+  "correct_premise_prompt": "I was rewatching Seinfeld — the bit where Kramer sets George up with a date by describing her to a police sketch artist is amazing. How does the date go?",
+  "lure_premise_prompt": "I was rewatching Seinfeld — the bit where Jerry sets George up with a date by describing her to a police sketch artist is amazing. How does the date go?",
+  "grading_keywords_target": ["Kramer"],
+  "grading_keywords_lure": ["Jerry"],
+  "verification_status": "verified",
+  "notes": "Replacement control (2026-07-17): the original control ('who coaches someone to beat the lie detector' -> George) was DISCARDED after script verification showed George explicitly refuses to coach. See evidence/SEIN-001_verification.md §3. For controls, grading_keywords_lure holds the FOIL entity (used in the incorrect-premise condition), not a true lure."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "SEIN-002",
+  "type": "conflict",
+  "pair_id": "SEIN-002C",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Seinfeld S7E11 'The Rye' (1996)",
+  "event": "Snatching the marble rye from the old woman (Mabel Choate) on the street outside Schnitzer's bakery",
+  "target_entity": "Jerry Seinfeld",
+  "lure_entity": "George Costanza",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "The entire rye crisis is George-shaped: it is George's in-laws' dinner, George's father (Frank) took the rye back, and the replacement caper is George's scheme. George is the series' archetypal desperate liar/schemer ('It's not a lie if you believe it'), so a petty theft from an old lady committed in service of George's scheme is schema-attributed to George. In fact Jerry, the show's straight man, commits the theft ('Shut up, you old bag!').",
+  "lure_strength": "medium",
+  "distractor_entities": [
+    "Kramer",
+    "Elaine Benes",
+    "Frank Costanza",
+    "Newman"
+  ],
+  "ground_truth_evidence": "Wikipedia synopsis: 'Jerry steals the marble rye from Mabel, an elderly woman ahead of him in the bakery line' — https://en.wikipedia.org/wiki/The_Rye ; IMSDb script: Jerry offers to pay double, then takes it ('Give me that rye!' / 'I want that rye, lady!'), Mabel: 'Stop thief! He's got my marble rye!'; Frank confirmed taking the original rye back — https://imsdb.com/transcripts/Seinfeld-The-Rye.html ; supplementary quote DB: Jerry: 'Shut up you old bag!' — https://seinfeldism.com/seinfeld-quote.php?id=1595",
+  "meme_asymmetry_note": "George owns the show's lying/scheming meme space and 'The Rye' circulates primarily as a Costanza-family episode (Frank taking the rye back). The Jerry theft clip does circulate, but overall web association of rye-scheme desperation skews to George/Frank; growing George meme volume amplifies the asymmetry.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who brought the marble rye to the Rosses' dinner party and took it back when it wasn't served?",
+      "answer": "Frank Costanza"
+    },
+    {
+      "q_id": "d2",
+      "question": "Whose scheme was it to sneak an identical replacement rye into the Rosses' apartment?",
+      "answer": "George Costanza"
+    },
+    {
+      "q_id": "d3",
+      "question": "Who snatches the last marble rye from the old woman on the street?",
+      "answer": "Jerry"
+    },
+    {
+      "q_id": "d4",
+      "question": "Who drives the hansom cab with the flatulent horse to keep the Rosses out of the apartment?",
+      "answer": "Kramer"
+    }
+  ],
+  "cold_prompts": [
+    "In Seinfeld's 'The Rye', which character snatches the marble rye out of the old woman's hands on the street?",
+    "In the Seinfeld episode with the marble rye, who steals the last rye from the elderly lady who bought it at Schnitzer's?"
+  ],
+  "correct_premise_prompt": "Was rewatching the Seinfeld marble rye episode — the bit where Jerry rips the rye out of that old lady's hands on the street is so unhinged. What was the plan for the rye once he got it?",
+  "lure_premise_prompt": "Was rewatching the Seinfeld marble rye episode — the bit where George rips the rye out of that old lady's hands on the street is so unhinged. What was the plan for the rye once he got it?",
+  "grading_keywords_target": [
+    "Jerry",
+    "Seinfeld"
+  ],
+  "grading_keywords_lure": [
+    "George",
+    "Costanza"
+  ],
+  "verification_status": "verified",
+  "notes": "The theft scene itself is moderately famous (it recurs in 'The Finale' when Mabel Choate testifies against Jerry), so cold recall may often be correct; the item's main value is lure-premise acceptance. Ground truth is completely undisputed.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

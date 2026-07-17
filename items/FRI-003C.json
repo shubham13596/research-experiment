@@ -1,0 +1,62 @@
+{
+  "id": "FRI-003C",
+  "type": "control",
+  "pair_id": "FRI-003",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "Friends S5E8 'The One with All the Thanksgivings' (1998)",
+  "event": "Getting a raw turkey stuck on his head in the 1992 Thanksgiving flashback",
+  "target_entity": "Joey Tribbiani",
+  "lure_entity": null,
+  "foil_entity": "Chandler Bing",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Control: putting a raw turkey on one's head (to scare Chandler) and getting it stuck is maximally Joey-shaped dumb physical comedy, and Joey really did it. The archetype answer is correct.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Monica Geller",
+    "Chandler Bing",
+    "Ross Geller",
+    "Phoebe Buffay"
+  ],
+  "ground_truth_evidence": "Full episode transcript: Joey: 'I put it on to scare Chandler!'; Monica: 'Okay, count to three. 1. 2. 3!' as Phoebe and Monica pull it off — https://fangj.github.io/friends/season/0508.html ; Wikipedia synopsis: Joey got the turkey stuck in the 1992 flashback; Monica later wears a turkey with fez and sunglasses — https://en.wikipedia.org/wiki/The_One_with_All_the_Thanksgivings",
+  "meme_asymmetry_note": "Mild competing association: the iconic image from this episode is Monica in the turkey with sunglasses (present-day scene). The flashback question wording ('stuck', '1992', 'his head') fully disambiguates; Joey attribution for the flashback is stable.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Why did he put the turkey on his head?",
+      "answer": "To scare Chandler"
+    },
+    {
+      "q_id": "d2",
+      "question": "Who pulled the turkey off his head?",
+      "answer": "Phoebe and Monica"
+    },
+    {
+      "q_id": "d3",
+      "question": "Who later puts a turkey (with fez and sunglasses) on her head to make Chandler laugh?",
+      "answer": "Monica"
+    },
+    {
+      "q_id": "d4",
+      "question": "What year is the turkey-stuck flashback set in?",
+      "answer": "1992"
+    }
+  ],
+  "cold_prompts": [
+    "In Friends, which character got a turkey stuck on his head in the 1992 Thanksgiving flashback?",
+    "In 'The One with All the Thanksgivings', who had to be pulled out of a raw turkey after putting it on his head?"
+  ],
+  "correct_premise_prompt": "Rewatched the Friends Thanksgiving flashback where Joey gets the turkey stuck on his head — why did he even put it on in the first place?",
+  "lure_premise_prompt": "Rewatched the Friends Thanksgiving flashback where Chandler gets the turkey stuck on his head — why did he even put it on in the first place?",
+  "grading_keywords_target": [
+    "Joey",
+    "Tribbiani"
+  ],
+  "grading_keywords_lure": [
+    "Monica",
+    "Chandler"
+  ],
+  "verification_status": "verified",
+  "notes": "Control: archetype answer (Joey) is correct; grading_keywords_lure lists the strongest incorrect competitor (Monica, from the more famous present-day turkey-head scene). Prompts pin the flashback ('1992', 'stuck', 'his') to eliminate the Monica ambiguity.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

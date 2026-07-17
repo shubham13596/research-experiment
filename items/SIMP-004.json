@@ -1,0 +1,59 @@
+{
+  "id": "SIMP-004",
+  "type": "conflict",
+  "pair_id": "SIMP-004C",
+  "schema_tier": "1_fictional_archetype",
+  "domain": "sitcom",
+  "source_work": "The Simpsons S5E10 '$pringfield (Or, How I Learned to Stop Worrying and Love Legalized Gambling)' (1993)",
+  "event": "Developing a compulsive gambling addiction at Mr. Burns' casino",
+  "target_entity": "Marge Simpson",
+  "lure_entity": "Homer Simpson",
+  "lure_mechanism": "archetype_capture",
+  "lure_rationale": "Compulsive vice — beer, donuts, get-rich schemes, zero impulse control — is Homer's defining archetype, and Homer is physically in the casino all episode as a blackjack dealer. But the addiction plot belongs to Marge, the family's usually-responsible anchor: she finds a quarter, plays a slot machine, and neglects the family for days. An out-of-character binding on the responsible character, shadowed by the vice-archetype character standing in the same casino.",
+  "lure_strength": "medium",
+  "distractor_entities": [
+    "Bart Simpson",
+    "Lisa Simpson",
+    "Mr. Burns",
+    "Barney Gumble"
+  ],
+  "ground_truth_evidence": "Wikipedia synopsis: Marge develops the gambling addiction after finding a quarter; Homer is hired as a blackjack dealer; Bart opens a treehouse casino — https://en.wikipedia.org/wiki/$pringfield_(Or,_How_I_Learned_to_Stop_Worrying_and_Love_Legalized_Gambling) ; full episode transcript (Marge at the slots; Homer: 'I got a job at Burns's casino... blackjack dealer') — https://www.springfieldspringfield.co.uk/view_episode_scripts.php?tv-show=the-simpsons&episode=s05e10",
+  "meme_asymmetry_note": "Homer utterly dominates Simpsons vice/addiction meme space, while Marge's gambling problem survives mainly as an in-joke callback among devoted fans. Asymmetry favors Homer and grows with Homer's general meme volume.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who opens the casino in Springfield?",
+      "answer": "Mr. Burns"
+    },
+    {
+      "q_id": "d2",
+      "question": "What job does Homer take at the casino?",
+      "answer": "Blackjack dealer"
+    },
+    {
+      "q_id": "d3",
+      "question": "Which family member becomes addicted to gambling?",
+      "answer": "Marge"
+    },
+    {
+      "q_id": "d4",
+      "question": "What does Bart do after being kicked out of the casino?",
+      "answer": "Opens a rival casino in his treehouse"
+    }
+  ],
+  "cold_prompts": [
+    "In The Simpsons episode '$pringfield', which member of the Simpson family becomes addicted to gambling?",
+    "In the Simpsons episode where Mr. Burns opens a casino, which Simpson develops the gambling problem?"
+  ],
+  "correct_premise_prompt": "In that old Simpsons casino episode, Marge is the one who gets hooked on the slot machines at Burns' casino — what finally makes her realize she has a problem?",
+  "lure_premise_prompt": "In that old Simpsons casino episode, Homer is the one who gets hooked on the slot machines at Burns' casino — what finally makes him realize he has a problem?",
+  "grading_keywords_target": [
+    "Marge"
+  ],
+  "grading_keywords_lure": [
+    "Homer"
+  ],
+  "verification_status": "verified",
+  "notes": "Undisputed canon, reinforced by later-series callbacks to Marge's gambling problem. Lure strength rated medium because the Marge plot is the episode's A-story and well-known to fans; the lure operates mainly on non-fan schema plus Homer's in-episode casino presence.",
+  "promoted": "2026-07-17 from items/candidates/tier1_batch1.json"
+}

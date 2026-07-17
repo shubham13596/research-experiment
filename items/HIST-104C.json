@@ -1,0 +1,61 @@
+{
+  "id": "HIST-104C",
+  "type": "control",
+  "pair_id": "HIST-104",
+  "schema_tier": "2_individual_reputation",
+  "domain": "history",
+  "source_work": "Drafting of the Universal Declaration of Human Rights, UN Commission on Human Rights, 1947-1948",
+  "event": "The UDHR drafting committee (and the UN Commission on Human Rights) was chaired by Eleanor Roosevelt — the schema-plausible marquee figure really did hold the leadership role.",
+  "target_entity": "Eleanor Roosevelt",
+  "lure_entity": null,
+  "foil_entity": "Rene Cassin",
+  "lure_mechanism": "era_figure_capture",
+  "lure_rationale": "Control: the famous adjacent figure is the correct answer for the leadership question. Foil Rene Cassin is plausible — a principal drafter, Nobel Peace laureate for this work, and historically over-credited for the Declaration.",
+  "lure_strength": "high",
+  "distractor_entities": [
+    "Rene Cassin",
+    "Charles Malik",
+    "John Humphrey"
+  ],
+  "ground_truth_evidence": "Primary/official: UN.org, 'History of the Declaration' — https://www.un.org/en/about-us/udhr/history-of-the-declaration ('Eleanor Roosevelt, widow of American President Franklin D. Roosevelt, chaired the UDHR drafting committee'); UN Dag Hammarskjold Library — https://research.un.org/en/undhr/draftingcommittee . Secondary: U.S. National Park Service, Eleanor Roosevelt NHS — https://www.nps.gov/elro/learn/historyculture/udhr.htm",
+  "meme_asymmetry_note": "The true binding is also the dominant web association; no adverse asymmetry.",
+  "decomposed_facts": [
+    {
+      "q_id": "d1",
+      "question": "Who chaired the committee that drafted the Universal Declaration of Human Rights?",
+      "answer": "Eleanor Roosevelt"
+    },
+    {
+      "q_id": "d2",
+      "question": "In what year did the UN General Assembly adopt the UDHR?",
+      "answer": "1948"
+    },
+    {
+      "q_id": "d3",
+      "question": "Which body did she chair within the UN?",
+      "answer": "The Commission on Human Rights (and its drafting committee)"
+    },
+    {
+      "q_id": "d4",
+      "question": "Which French drafter on the committee later won the Nobel Peace Prize for this work?",
+      "answer": "Rene Cassin"
+    }
+  ],
+  "cold_prompts": [
+    "Who chaired the drafting committee of the Universal Declaration of Human Rights?",
+    "Who led the UN Commission on Human Rights when it drafted the Universal Declaration?"
+  ],
+  "correct_premise_prompt": "Reading about the UN's early years — Eleanor Roosevelt chaired the committee that drafted the Universal Declaration of Human Rights, right? What year was the Declaration adopted?",
+  "lure_premise_prompt": "Reading about the UN's early years — Rene Cassin chaired the committee that drafted the Universal Declaration of Human Rights, right? What year was the Declaration adopted?",
+  "grading_keywords_target": [
+    "Roosevelt",
+    "Eleanor Roosevelt"
+  ],
+  "grading_keywords_lure": [
+    "Cassin",
+    "Rene Cassin"
+  ],
+  "verification_status": "verified",
+  "notes": "Matched to HIST-104 on the identical event and cast, isolating the schema-congruence variable (leadership question: star correct; first-draft question: star wrong). Cassin foil is historically grounded (he vice-chaired sessions and was long mis-credited), making the incorrect premise realistic.",
+  "promoted": "2026-07-17 from items/candidates/tier2_batch1.json"
+}
