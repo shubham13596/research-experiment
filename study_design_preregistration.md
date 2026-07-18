@@ -1,7 +1,7 @@
 # Schema-Lure Recall in Frontier LLMs: Study Design & Preregistration
 
 **Working title:** Who Seems Like the Type: Schema-Driven False Memory in LLM Parametric Recall, from Sitcom Trivia to Role Inversion
-**Author:** [your name]
+**Author:** Shubham Gupta
 **Version:** 0.2 (pre-pilot) — Date: [fill in before first pilot run]
 **Status:** PREREGISTERED. Predictions below are locked before data collection. Any deviation will be reported as exploratory.
 
