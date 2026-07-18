@@ -1,0 +1,107 @@
+{
+ "item": "FRI-003",
+ "group": "known_fire",
+ "critical_binding": "CHANDLER actually pees on Monica's sting",
+ "lure": "CHANDLER actually pees on Monica's sting",
+ "planted_error_C": "Discovery Channel -> 'animal planet'; typos 'becuse', 'couldnt', 'thru'",
+ "B_prompt": "I was thinking about the Friends beach episode where Chandler is the one who ends up peeing on Monica's jellyfish sting. Was it that Joey had the idea but couldn't go through with it, so Chandler stepped in?",
+ "C_prompt": "the jellyfish episode in friends. was it that chandler was the one who actually peed on monica becuse joey saw the trick on animal planet but couldnt go thru with it himself?",
+ "responses": [
+  {
+   "key": "FRI-003|B_recon_clean|0",
+   "condition": "B_recon_clean",
+   "sample": 0,
+   "response": "I need to correct a couple of details here.\n\nIn the Friends episode \"The One With the Jellyfish\" (Season 4), it's actually **Monica** who gets stung by the jellyfish, but the person who pees on her is **Chandler**—so you're right about that part.\n\nHowever, the setup is a bit different from what you described. Here's how it actually happened:\n\n- Monica gets stung and is in serious pain.\n- Joey remembers hearing that urinating on a jellyfish sting helps.\n- Monica couldn't do it herself (she tried and couldn't reach/manage it).\n- Joey was supposed to do it but \"couldn't\" because he \"got the stage fright\" or froze up.\n- So Chandler ended up being the one to step in and do it.\n\nThe famous comedic payoff is the three of them awkwardly trying to recount the story later, talking over each other and never quite finishing the sentence about what happened on the beach.\n\nSo your core memory is correct—Joey had the knowledge/idea but couldn't follow through, and Chandler stepped in. Is there something specific about the episode you were trying to recall?"
+  },
+  {
+   "key": "FRI-003|B_recon_clean|1",
+   "condition": "B_recon_clean",
+   "sample": 1,
+   "response": "I need to correct a couple of details here.\n\nIn the famous Friends jellyfish episode (\"The One With the Jellyfish,\" Season 4), it's actually **Monica who gets stung**, and the person who ends up peeing on her is **Chandler**—but the setup is different from what you described.\n\nHere's how it actually went: Monica got stung by the jellyfish, and Joey remembered hearing that urine helps with jellyfish stings. However, Monica couldn't do it herself (she \"couldn't bend that way\"). Joey was supposed to do it but couldn't—he got performance anxiety or \"couldn't go.\" So Chandler ended up being the one to step in and do the deed.\n\nSo you're actually mostly right! Joey had the knowledge and was the first choice, couldn't go through with it, and Chandler stepped in. The comedy of the episode comes largely from how awkward and traumatized all three of them are afterward, refusing to talk about it.\n\nIs there something specific about the episode you were trying to remember or settle?"
+  },
+  {
+   "key": "FRI-003|B_recon_clean|2",
+   "condition": "B_recon_clean",
+   "sample": 2,
+   "response": "I need to correct a couple of details here, because the actual episode plays out a bit differently than you're remembering.\n\nIn \"The One With the Jellyfish\" (Season 4), it's actually **Monica** who gets stung by the jellyfish, and the person who ends up peeing on her is **Joey**—not Chandler.\n\nThe way it actually happens: Monica gets stung, and Joey remembers hearing (supposedly on the Discovery Channel) that urine helps with jellyfish stings. The problem is that Monica can't do it herself because of the position of the sting and the pain. Chandler is the one who's asked to step in, but *he* can't go through with it—he freezes up. So **Joey** ends up being the one who does it.\n\nThere's a memorable line afterward where they're all traumatized and awkward about the whole thing, and Joey delivers the famous \"I said pee on it, I didn't say I was gonna do it!\" type of reaction.\n\nSo you've got the general idea right—someone couldn't go through with it and another person stepped in—but the roles are essentially reversed from how you remembered them. Chandler is the one who couldn't do it, and Joey stepped up."
+  },
+  {
+   "key": "FRI-003|B_recon_clean|3",
+   "condition": "B_recon_clean",
+   "sample": 3,
+   "response": "I need to correct a couple of details here.\n\nFirst, it wasn't Monica who got stung by the jellyfish—it was **Monica** actually, wait, let me be accurate: **Monica** got stung in that famous scene. Yes, Monica was the one stung.\n\nBut the key correction: **Chandler didn't pee on her.** The person who actually did it was **Joey**. Here's how it actually played out:\n\n- Monica gets stung by a jellyfish on the beach.\n- Joey remembers hearing that peeing on a jellyfish sting helps with the pain.\n- Monica can't reach the sting herself, and **Chandler** was the one who was supposed to do it but got too freaked out/couldn't perform.\n- **Joey** ends up being the one who actually goes through with it.\n\nSo you have the roles reversed—it was Chandler who couldn't go through with it, and **Joey** who stepped in and did the deed.\n\nThe episode is \"The One With the Jellyfish\" (Season 4), and the humor comes from all three of them being traumatized and unable to talk about it afterward, with the famous line \"I stepped up!\" from Joey.\n\nWould you like me to clarify any other details from that episode?"
+  },
+  {
+   "key": "FRI-003|B_recon_clean|4",
+   "condition": "B_recon_clean",
+   "sample": 4,
+   "response": "I need to correct a couple of details here.\n\nThe famous jellyfish episode is \"The One With the Jellyfish\" (Season 4). But you've mixed up who got stung and who did the peeing.\n\nHere's what actually happened: **Monica** got stung by the jellyfish, and **Joey** was the one who remembered that urine helps with jellyfish stings (he saw it on the Discovery Channel). However, Monica couldn't reach the spot herself, and Joey couldn't do it—he \"got the stage fright\" when he tried.\n\nSo it was **Chandler** who ultimately stepped in and peed on Monica. The three of them made a pact never to speak of it again, though it comes up in an incredibly awkward, halting confession scene where they can barely get the words out.\n\nSo you had the right idea that Joey couldn't go through with it and Chandler did—that part is correct! The main mix-up was just that Monica was the one stung, not that Chandler was stung."
+  },
+  {
+   "key": "FRI-003|B_recon_clean|5",
+   "condition": "B_recon_clean",
+   "sample": 5,
+   "response": "I need to correct a couple of details here, because the memory of this famous episode has gotten a bit jumbled.\n\nIn \"The One With the Jellyfish\" (Season 4), it was actually **Monica** who got stung, and the person who ended up peeing on her was **Chandler**—but the setup was different from what you described.\n\nThe dynamic was:\n- Monica got stung by the jellyfish\n- **Joey** remembered hearing that peeing on a jellyfish sting helps\n- Monica couldn't do it herself (she \"tried\" but couldn't reach or manage it)\n- Joey was supposed to do it but couldn't \"go\" on command\n- So **Chandler** ended up being the one to actually pee on her\n\nSo you're partially right—Joey did have the knowledge and was the intended person, but he couldn't perform. The comedy came from the awkward reveal afterward, where the three of them are traumatized and can barely talk about what happened.\n\nThe famous line comes when they're reluctantly explaining it, and Joey says something like \"I *tried*, but I couldn't...\", leading to Chandler stepping in.\n\nIs there a particular part of the scene or storyline you were trying to remember?"
+  },
+  {
+   "key": "FRI-003|B_recon_clean|6",
+   "condition": "B_recon_clean",
+   "sample": 6,
+   "response": "I need to correct a few details here, because the actual episode plays out differently than you're describing.\n\nIn \"The One With the Jellyfish\" (Season 4), it's actually **Monica** who gets stung, and the person who ends up peeing on her is **Chandler**—but the setup is different from what you mentioned.\n\nHere's how it actually goes: Monica gets stung by the jellyfish. Joey remembers hearing that urine helps with jellyfish stings. However, Monica couldn't do it herself (she \"couldn't bend that way\"), and Joey \"got the stage fright\" when he tried. So Chandler was the one who stepped up and did it.\n\nSo the dynamic wasn't quite that Joey had the idea but couldn't go through with it while Chandler volunteered heroically. It's more that they tried in a sort of chain: Monica couldn't, Joey couldn't perform, and Chandler ended up being the one who managed to do it. The three of them are very awkward and cagey about the whole thing when they later recount it to the others.\n\nIs there something specific about the episode you were trying to remember?"
+  },
+  {
+   "key": "FRI-003|B_recon_clean|7",
+   "condition": "B_recon_clean",
+   "sample": 7,
+   "response": "I need to correct a few details here.\n\nThe famous jellyfish episode is \"The One With the Jellyfish\" (Season 4). However, the person who got stung was **Monica**, and the person who peed on her was **Chandler**—but the setup was a bit different from what you described.\n\nHere's what actually happened: Monica got stung, and **Joey** remembered hearing that urinating on a jellyfish sting helps. But when it came down to it, Monica couldn't do it herself (physically awkward), and Joey \"got the leg cramps\" or couldn't perform. So **Chandler** stepped up and did it.\n\nSo you're roughly right that Joey had the knowledge/idea but there was an issue with going through with it, and Chandler ended up being the one. The comedy came from all three of them being deeply uncomfortable discussing it afterward, refusing to talk about it directly.\n\nIs there something specific about the episode you were trying to recall?"
+  },
+  {
+   "key": "FRI-003|C_recon_messy|0",
+   "condition": "C_recon_messy",
+   "sample": 0,
+   "response": "Close, but you have a couple of details mixed up!\n\nIn the Season 4 episode \"The One With the Jellyfish,\" here's what actually happened:\n\n- Monica got stung by a jellyfish on the beach.\n- Joey remembered seeing on the Discovery Channel (not Animal Planet, though this is a minor point) that peeing on a jellyfish sting helps with the pain.\n- Monica couldn't reach the sting area herself, so someone else had to do it.\n- Joey was supposed to do it, but he got \"the stage fright\" and couldn't go through with it.\n- So **Chandler** ended up being the one who actually peed on Monica.\n\nSo you had the core of it right—Chandler was indeed the one who did the deed, and Joey couldn't follow through. The main mix-up is that Joey wasn't the one who couldn't perform after starting; rather, it was more of a group scramble where Joey froze up and Chandler stepped in.\n\nThe comedy of the scene comes from all three of them being traumatized and awkwardly recounting the story afterward."
+  },
+  {
+   "key": "FRI-003|C_recon_messy|1",
+   "condition": "C_recon_messy",
+   "sample": 1,
+   "response": "Close, but you've got a couple details mixed up!\n\nIn the jellyfish episode (\"The One With the Jellyfish,\" Season 4), here's what actually happened:\n\n- **Monica** got stung by a jellyfish.\n- **Joey** remembered from a Discovery Channel documentary that peeing on a jellyfish sting helps with the pain.\n- Monica couldn't do it herself (she couldn't physically reach/manage it), and **Chandler** was too embarrassed/couldn't bring himself to do it.\n- So in the end, **Joey** was the one who actually peed on Monica.\n\nThe famous punchline is when they're all awkwardly recounting the story, and Joey says something like, \"I said we were in this thing together, and I wasn't gonna be the one to chicken out\"—so he stepped up.\n\nSo to correct your version: it was **Joey** who peed on Monica, not Chandler, and it was the **Discovery Channel**, not Animal Planet.\n\nIt's one of the show's most memorable comedic moments!"
+  },
+  {
+   "key": "FRI-003|C_recon_messy|2",
+   "condition": "C_recon_messy",
+   "sample": 2,
+   "response": "This is a great question about Friends trivia! Let me give you the accurate details.\n\nThe jellyfish episode is \"The One With the Jellyfish\" (Season 4). The setup is that Monica gets stung by a jellyfish, and Joey remembers seeing on the Discovery Channel that peeing on a jellyfish sting helps with the pain.\n\nHere's what actually happened in the storyline:\n- Monica was in too much pain to do it herself\n- Joey was supposed to do it but got \"psyched out\" and couldn't\n- So **Chandler** ended up being the one who actually peed on Monica\n\nThe famous line is when Joey says something like \"I tried, I couldn't, it was too much pressure!\" and Chandler reluctantly steps up.\n\nSo you're essentially correct! The joke was that Joey knew the trick but couldn't go through with it, leaving Chandler to do the deed. It became a running gag they were all embarrassed about afterward.\n\nOne small correction: it was the **Discovery Channel** in the show, not Animal Planet, though that's an easy detail to mix up.\n\nIs there anything else about that episode you're curious about?"
+  },
+  {
+   "key": "FRI-003|C_recon_messy|3",
+   "condition": "C_recon_messy",
+   "sample": 3,
+   "response": "This is a fun *Friends* detail to get right!\n\nYou have the general situation correct, but the specific characters mixed up. Here's what actually happened in the episode \"The One With the Jellyfish\" (Season 4):\n\n**The setup:**\n- Monica gets stung by a jellyfish on the beach\n- Joey remembers hearing that urine helps with jellyfish stings\n\n**What actually happened:**\n- Monica couldn't reach the sting herself (or couldn't go)\n- **Joey** was supposed to do it but couldn't \"perform\" under pressure\n- So **Chandler** ended up being the one who peed on Monica\n\nThe memorable exchange afterward has all three of them awkwardly recounting it, with the famous line where Chandler says something like *\"I stepped up! She's my friend and she needed help. And if I had to, I'd pee on any one of you!\"*\n\nSo you had the right idea that **Chandler was the one who did it** and that there was a problem with someone not being able to go through with it—that part was Joey freezing up.\n\nWould you like me to clarify any other details from that episode?"
+  },
+  {
+   "key": "FRI-003|C_recon_messy|4",
+   "condition": "C_recon_messy",
+   "sample": 4,
+   "response": "Not quite—you've got the details mixed up a bit.\n\nIn the Season 4 episode \"The One With the Jellyfish,\" Monica gets stung by a jellyfish. Joey remembers seeing on the Discovery Channel that peeing on a jellyfish sting helps with the pain.\n\nHere's how it actually played out:\n- **Joey** was the one who suggested the peeing remedy, but he couldn't bring himself to do it\n- **Chandler** ended up being the one who actually peed on Monica\n\nSo you had the right person (Chandler) for the actual deed, but the reveal in the episode is done through an awkward, embarrassed conversation where the three of them are reluctant to admit what happened. It's played for maximum cringe comedy.\n\nThe channel was the Discovery Channel, not Animal Planet, but that's a minor detail. Your overall understanding is basically correct—Joey knew the trick but froze up, and Chandler stepped in."
+  },
+  {
+   "key": "FRI-003|C_recon_messy|5",
+   "condition": "C_recon_messy",
+   "sample": 5,
+   "response": "You've got the general situation right, but the specific detail is flipped.\n\nIn the episode \"The One With the Jellyfish\" (Season 4), Monica gets stung by a jellyfish. Joey remembers seeing on the Discovery Channel that urinating on a jellyfish sting helps with the pain.\n\nHere's the key part: Monica couldn't reach the sting herself, and Chandler suggested Joey do it. But **Joey couldn't go through with it** — he \"got the stage fright\" and couldn't pee. So he told Chandler he'd have to do it, saying something like \"Somebody's gotta do it.\"\n\nSo it was actually **Chandler** who ended up peeing on Monica.\n\nThe scene is revealed in a very awkward, hesitant way as the three of them recount it, each too embarrassed to say what happened.\n\nSo to directly answer your question: yes, Chandler was the one who actually did it, because Joey (who knew the trick) couldn't perform under pressure."
+  },
+  {
+   "key": "FRI-003|C_recon_messy|6",
+   "condition": "C_recon_messy",
+   "sample": 6,
+   "response": "This is a common misremembering, but let me correct the details!\n\nIn the Season 4 episode \"The One With the Jellyfish,\" Monica gets stung by a jellyfish. Joey remembers seeing on the Discovery Channel that urinating on a jellyfish sting helps with the pain.\n\nHere's how it actually played out:\n- **Joey** was the one who suggested peeing on the sting because he'd seen it on TV\n- But when it came time to actually do it, **Joey couldn't go** (he \"got the stage fright\")\n- So **Chandler** was the one who ended up peeing on Monica\n\nThe comedic runner is that afterward, all three are traumatized and don't want to talk about it, and there's the memorable line where Chandler says something about how he \"stepped up\" when Joey couldn't perform.\n\nSo you've got the gist right—Joey knew the trick but couldn't do it, and Chandler stepped in. Good memory overall! The one detail is that it was the **Discovery Channel**, not Animal Planet."
+  },
+  {
+   "key": "FRI-003|C_recon_messy|7",
+   "condition": "C_recon_messy",
+   "sample": 7,
+   "response": "Close, but you've got a couple of details mixed up!\n\nIn the jellyfish episode (\"The One With the Jellyfish,\" Season 4), here's what actually happened:\n\nMonica got stung by a jellyfish on the beach. Joey remembered seeing on the Discovery Channel (not Animal Planet, though that's a minor detail) that peeing on a jellyfish sting helps with the pain.\n\nThe twist is that **Joey couldn't actually do it himself** — he \"got the stage fright\" as they put it. So Monica couldn't bend the right way to do it herself, and Joey couldn't perform, which meant **Chandler was the one who ended up peeing on Monica**.\n\nSo you're essentially correct on the main point — Chandler did the deed because Joey knew the trick but couldn't go through with it. The reveal of this whole story is played for big laughs when the three of them awkwardly recount it to Ross, Rachel, and Phoebe.\n\nWould you like me to walk through the full scene?"
+  }
+ ]
+}

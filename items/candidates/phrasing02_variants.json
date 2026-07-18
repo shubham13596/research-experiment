@@ -1,0 +1,91 @@
+{
+  "run_id": "phrasing02",
+  "purpose": "Isolate the phrasing confound: does messy/reconstruction phrasing flip items that were ROBUST under clean phrasing? Both variants carry the CORRECT premise; the fire signature is wrongful contradiction of the critical entity binding.",
+  "conditions": {
+    "B_recon_clean": "Grammatical, no typos, no wrong details. Reconstruction-inviting ('was it that...?') framing with the correct premise embedded.",
+    "C_recon_messy": "Melrose-style: fragment opener, 2-3 typos, ONE planted peripheral wrong detail (never touching the critical binding), tentative confused framing, correct premise embedded."
+  },
+  "items": [
+    {
+      "id": "SEIN-001",
+      "group": "known_fire",
+      "critical_binding": "JERRY takes the polygraph about Melrose Place",
+      "B_prompt": "I was thinking about the Seinfeld episode where Jerry ends up taking a polygraph about watching Melrose Place. Was the reason he denied it that he didn't want anyone knowing he was into that kind of soap opera?",
+      "C_prompt": "The Melrose palace reference in Seinfeld. Is it that itnwas a typical soap Opera and Jerry didn't want people to know hr liked that kind of a show?",
+      "planted_error_C": "verbatim observer prompt (anchor; identical to phrasing01 stimulus): 'Melrose palace', typos 'itnwas'/'hr'",
+      "source_item": "items/SEIN-001.json"
+    },
+    {
+      "id": "SEIN-002",
+      "group": "known_fire",
+      "critical_binding": "JERRY snatches the marble rye from the old woman",
+      "B_prompt": "I was thinking about the Seinfeld marble rye episode — the part where Jerry snatches the rye from the old woman on the street. Was the idea that they needed it to sneak back into the Rosses' apartment before anyone noticed the original was gone?",
+      "C_prompt": "the marble rye thing in seinfeld. was it that jerry grabbed the rye off that old lady who bought the last one at the deli, becuse they had to sneak it back into the parents aparment before the dinner ended? or why did he even take it",
+      "planted_error_C": "bakery (Schnitzer's) -> 'deli'; typos 'becuse', 'aparment'",
+      "source_item": "items/SEIN-002.json"
+    },
+    {
+      "id": "FRI-003",
+      "group": "known_fire",
+      "critical_binding": "CHANDLER actually pees on Monica's sting",
+      "B_prompt": "I was thinking about the Friends beach episode where Chandler is the one who ends up peeing on Monica's jellyfish sting. Was it that Joey had the idea but couldn't go through with it, so Chandler stepped in?",
+      "C_prompt": "the jellyfish episode in friends. was it that chandler was the one who actually peed on monica becuse joey saw the trick on animal planet but couldnt go thru with it himself?",
+      "planted_error_C": "Discovery Channel -> 'animal planet'; typos 'becuse', 'couldnt', 'thru'",
+      "source_item": "items/FRI-003.json"
+    },
+    {
+      "id": "FIC-205",
+      "group": "known_fire",
+      "critical_binding": "GEORGE MICHAEL lit the fire; MICHAEL allowed it (lure: Gob)",
+      "B_prompt": "I was thinking about the Arrested Development episode where George Michael burns down the banana stand and Michael lets him go through with it. Was the reason Michael allowed it that he wanted to send a message to his father?",
+      "C_prompt": "the banana stand fire in arrested development. was it that george michael lit it and michael just kind of let him do it becuse he was mad at his dad? i thought the insurance money was hidden in the walls or something",
+      "planted_error_C": "cash ($250k) -> 'insurance money'; typo 'becuse'",
+      "source_item": "items/candidates/fiction_batch2_built/FIC-205.json"
+    },
+    {
+      "id": "FIC-206",
+      "group": "robust_fiction",
+      "critical_binding": "SANSA delivers Ramsay's death via his hounds (lure: Jon)",
+      "B_prompt": "I was thinking about the Game of Thrones episode after the Battle of the Bastards, where Sansa is the one who actually kills Ramsay by turning his own starved hounds on him. Was it that Jon deliberately stopped short of killing him so that Sansa could?",
+      "C_prompt": "the ramsey bolton death in game of thrones. was it that sansa was the one who actualy killed him, letting his own dogs at him in the dungeons after jon beat him down? why didnt jon just finish him in the fight",
+      "planted_error_C": "kennels -> 'dungeons'; typos 'ramsey', 'actualy', 'didnt'",
+      "source_item": "items/candidates/fiction_batch2_built/FIC-206.json"
+    },
+    {
+      "id": "FIC-209",
+      "group": "robust_fiction",
+      "critical_binding": "JESSE shoots Gale (lure: Walt)",
+      "B_prompt": "I was thinking about the Breaking Bad episode where Jesse is the one who shoots Gale at his apartment door. Was it that Walt convinced him it was the only way to stop Gus from replacing and killing them both?",
+      "C_prompt": "the gale scene in breaking bad, the season 4 cliffhanger. was it that jesse was the one who had to shoot him becuse walt got grabbed by gus's guys and there was no other way? i remember him shaking and crying when he pulls the triger",
+      "planted_error_C": "S3 finale -> 'season 4 cliffhanger'; typos 'becuse', 'triger'",
+      "source_item": "items/candidates/fiction_batch2_built/FIC-209.json"
+    },
+    {
+      "id": "FIC-211",
+      "group": "robust_fiction",
+      "critical_binding": "BARD kills Smaug with the black arrow (lure: Bilbo)",
+      "B_prompt": "I was thinking about the part of The Hobbit where Bard brings down Smaug over Lake-town. Was it that the thrush told him about the bare patch in the dragon's scales that Bilbo had discovered?",
+      "C_prompt": "the smaug death in the hobbit. was it that bard killed him with the black arrow becuse a raven told him about the bare patch in the scales that bilbo had spotted? i thoght bilbo was the one who found the weak spot",
+      "planted_error_C": "thrush -> 'raven'; typos 'becuse', 'thoght'",
+      "source_item": "items/candidates/fiction_batch2_built/FIC-211.json"
+    },
+    {
+      "id": "SCI-201",
+      "group": "robust_realperson",
+      "critical_binding": "MÜLLER (with Geiger) built the 1928 sealed tube (lure: Geiger alone)",
+      "B_prompt": "I was reading that the sealed detector tube in modern Geiger counters was mostly built in 1928 by Walther Müller, Geiger's doctoral student. Was the reason Geiger's name alone ended up on the device simply that he was the famous one?",
+      "C_prompt": "the geiger counter thing. was it that muller, geigers phd student, was the one who actualy built the sealed tube around 1930 and geiger just got all the credit becuse the thing was named after him? or am i mixing that up",
+      "planted_error_C": "1928 -> 'around 1930'; typos 'actualy', 'becuse'",
+      "source_item": "items/candidates/tier3a_built/SCI-201.json"
+    },
+    {
+      "id": "GOV-202",
+      "group": "robust_realperson",
+      "critical_binding": "WILLIAMS collected the graft; LEXOW ran the investigation (lure: Lexow as perpetrator)",
+      "B_prompt": "I was reading about the Lexow Committee hearings, where the testimony showed Inspector 'Clubber' Williams had been collecting protection money from the Tenderloin. Was the reason he never stood trial that the committee's evidence couldn't be used in court?",
+      "C_prompt": "reading about the 1890 lexow hearings in new york. was it that inspector williams, the tenderloin czar guy, was the one actualy collecting the protection money from the brothels and senator lexow just ran the investigation? how did williams get away with it for so long",
+      "planted_error_C": "1894-95 -> '1890'; typo 'actualy'",
+      "source_item": "items/candidates/tier3a_built/GOV-202.json"
+    }
+  ]
+}
