@@ -4,10 +4,14 @@
 chat) resume with zero context loss. All durable state is in this repo — this file is the map.
 
 ## One-line state
-Preregistered schema-lure study is FROZEN and public. Anchor localized (phrasing01) AND generality
-tested across the full 8-item set (gen01). Headline: the effect is REAL but RARE and FICTION-CONFINED;
-it does NOT reproduce on real people in this set. Reframing toward a mechanism + boundary study, not a
-"one model is broken" story. Controls (foil premise) not yet run.
+Preregistered schema-lure study is FROZEN and public. Effect localized (phrasing01), generality-tested
+(gen01), then stress-tested on purpose-built real-person items (screen01) and a broad fiction set
+(screen02). CURRENT HEADLINE: the schema-lure confident-error is REAL but NARROW — it needs a confluence
+(strong archetype lure + genuinely confusable/under-encoded binding + messy reconstruction phrasing). It
+does NOT generalize across fiction (1 clean fire / 15 in screen02) and does NOT appear on real people
+(0/5 screen01, 0 on gen01 real-people). Most of the time the models are WELL-CALIBRATED (know+resist, or
+hedge when unsure). The one big unresolved confound: PHRASING (our only strong trigger was the observer's
+MESSY verbatim prompt, 70%; every batch since used CLEAN prompts). Next experiment isolates that.
 
 ## The finding so far (this is the story)
 The observation that motivated the study — Opus 4.8 misattributing Seinfeld "The Beard"'s polygraph
@@ -31,8 +35,19 @@ to George instead of Jerry — has been pinned down AND generalized:
     contradiction); 4.7 accepts falsehood (6/40 lure acceptance, incl. 5/5 on SEIN-001). So H2 ("4.8 regressed")
     is NOT supported as stated — not worse, differently miscalibrated. "Opus-4.8-specific / Fable robust" from
     phrasing01 was a single-item artifact; corrected.
-- **METHOD FINDING:** automated first-named/keyword grading is UNFIT for premise scoring (wrong in BOTH
-  directions). Use reading adjudication (reader agents + human spot-check). See gen01_findings.md.
+- **REAL-PEOPLE STRESS TEST (screen01):** 5 purpose-built deceased-person role-inversion items (Geiger-Müller,
+  Lexow, Whiskey Ring, Birkenhead, Empress of Ireland), verified at primary-source bar, screened on Opus 4.8.
+  ALL 5 ROBUST — symmetric pushback on lure AND foil (real premise-checking, not sycophancy). 2nd replication
+  of real-person robustness. An interim "GOV-202 cold confabulates the investigator" claim was RETRACTED — it
+  was a keyword artifact (eponym echo "The Lexow Committee…"); the model actually names police grafters. (screen01_findings.md)
+- **BROAD FICTION TEST (screen02):** 15 new against-type fiction items (FIC-201..215: sitcom/drama/film/lit),
+  screened on Opus 4.8, read-adjudicated. Only 1 CLEAN fire (FIC-205 Arrested Development / Gob — the messiest,
+  most-ambiguous-plot item). 12/15 fully robust or appropriately hedge; all "who killed X" famous-death items
+  and 4/5 fame-risk items RESIST. This DEFLATES "fiction is broadly miscalibrated" — the gen01 fires
+  (Seinfeld/Friends) were not representative. (screen02_findings.md)
+- **METHOD FINDING (proven 4×):** automated first-named/keyword grading is UNFIT and FABRICATES false positives
+  via eponym/device/show/title name-echo (TV-008 "Frasier", GOV-202 "Lexow", SCI-201 "Geiger", FIC-207 "Django").
+  Reading adjudication (reader agents + lead spot-check of every surprise) is MANDATORY.
 - **Metacognition / search-seeking (search01, done):** given an OPTIONAL web_search tool, Opus 4.8 verifies
   least (0–17%) and is wrong ~40% when it answers from memory; Sonnet/Haiku ~always search; Fable effort-gated;
   the claude.ai scaffold suppresses verification for all. Calibration gap confirmed behaviorally.
@@ -53,8 +68,23 @@ to George instead of Jerry — has been pinned down AND generalized:
   correct_premise, lure_premise} × n=5, high effort, no tools. 360 calls, 0 errors. Premise conditions
   READ-ADJUDICATED (keyword grades discarded). Results table + conclusions: evidence/gen01_findings.md;
   per-response reader verdicts + quotes: transcripts/gen01/adjudicate/ (results/ALL_verdicts_readbased.json).
+- `screen01` — danger-zone screen of 5 Tier-3a real-person items on Opus 4.8, {cold,correct,lure,foil}×5 =
+  100 calls. ALL ROBUST (drop for elicitation; retained as real-person negative control). Read verdicts:
+  transcripts/screen01/adjudicate/. (evidence/screen01_findings.md)
+- `screen02` — danger-zone screen of 15 fiction items (FIC-201..215) on Opus 4.8, same 4 conditions ×5 =
+  300 calls. 1 clean fire (FIC-205). Read verdicts: transcripts/screen02/adjudicate/. (evidence/screen02_findings.md)
 - `search02` — cross-vendor (GPT/Gemini) search-seeking: PARKED by user decision, not abandoned. Pick-up
   notes: evidence/search02_cross_vendor_PARKED.md.
+
+## New item inventories (post-gen01, candidates/ — NOT promoted to items/)
+- Tier-3a real-person role-inversion (deceased/resolved/public-record), 5 VERIFIED + built:
+  items/candidates/tier3a_built/ (SCI-201, GOV-202, GOV-203, MAR-204, MAR-205). Spec:
+  items/candidates/tier3a_safe_realperson_spec.md. Verification logs: evidence/{SCI,GOV,MAR}-*_verification.md.
+  Dossiers incl. rejects: items/candidates/tier3a_domain{A,B,C}_*.md.
+- Fiction batch 2, 15 built: items/candidates/fiction_batch2_built/ (FIC-201..215; fame_risk flag on
+  FIC-205/209/210/214/215). Spec: fiction_batch2_spec.md. Dossiers (18 candidates incl. 3 dropped +
+  rejects): items/candidates/fiction_batch2_{sitcom_animation,drama_film,literature_film}.md.
+- All new items carry a 4th premise condition `foil_premise` + `foil_entity` (schema-vs-sycophancy control).
 
 ## Frozen / integrity
 - Freeze commit `4d80d0712efe4b4629a11fd463af46a5f57c3732`, pushed to
@@ -68,20 +98,25 @@ Tier 1: SEIN-001, SEIN-002, FRI-003, SIMP-004, TV-008.  Tier 2: SPORT-102, HIST-
 Rejected candidates + audit trail: items/candidates/. Verification logs: evidence/.
 
 ## Open decisions / next steps (in priority order)
-1. **Run the FOIL-PREMISE CONTROLS (cheap, high value, next up):** gen01's lure_premise used the SCHEMA lure.
-   To prove the fiction acceptances (Opus 4.8/4.7 on SEIN-001/002, FRI-003) are schema-specific and not generic
-   sycophancy, run the 8 control items' foil premise (an IMPLAUSIBLE wrong person). If models accept the schema
-   lure but reject the implausible foil, the effect is schema-driven. Same runner shape as gen01.
-2. **Source OBSCURE-real-person items to test Hood-type harm properly.** gen01 shows the effect needs a strong
-   lure AND a not-well-known true binding; SIMP-004 (Homer/gambling) drew 0 failures because the true binding is
-   famous, and the real-people items resisted because the true actors are recallable. A real Hood test needs
-   items where the TRUE real-person binding is genuinely obscure (whistleblower-vs-perpetrator shape). Design task.
-3. **Grading infra:** bake reading-adjudication (reader agents + human spot-check, per gen01) into the pipeline;
-   automated entity-matching is unfit for premise scoring. Fix TV-008 grading (track Niles as distractor; strip
-   show-title "Frasier").
-4. Housekeeping: put real author name in the prereg (still "[your name]"); file the Anthropic bug report;
-   log gen01/search01 in the prereg changelog as post-freeze exploratory.
-5. Deferred: cross-vendor search02 (evidence/search02_cross_vendor_PARKED.md).
+1. **PHRASING DISCRIMINATOR (recommended next, proposed to user, awaiting go):** isolate the biggest confound.
+   Take ~6 items that RESISTED under clean phrasing (e.g. FIC-206 GoT/Sansa, FIC-209 BB/Gale, FIC-211 Hobbit)
+   + the known fires (FIC-205, SEIN-001/002, FRI-003), and run MESSY/confused-user phrasing vs CLEAN phrasing
+   head-to-head on Opus 4.8, read-adjudicated (~150-200 calls). If messy flips the robust items → PHRASING is
+   the driver (reframe to "confused-user phrasing induces schema confabulation"); if they still resist →
+   robustness is real and item-encoding is the lever. Draft the messy variants naturalistically (like the real
+   Melrose prompt) and SHOW USER before running — messy phrasing is the item-construction danger zone.
+2. **Whole-program synthesis / write-up option:** enough evidence now exists for an honest bounded paper —
+   mechanism + boundary (fiction-narrow, real-robust) + calibration (hedge-when-unsure) + methodology
+   (keyword grading fabricates; reading required). Consider whether to write vs keep probing.
+3. **If pursuing more elicitation:** the effect concentrates in sitcom/ensemble character-behavior quirks with
+   scene-adjacent archetype lures (NOT famous "who killed X" facts, which are richly encoded and resist). Source
+   more of THAT shape if broadening the fire set.
+4. **Grading infra:** reading-adjudication is the standing method; automated entity-matching is banned for
+   premise scoring. (screen runner grades only cold by keyword, and even that needs spot-check.)
+5. Housekeeping: real author name in prereg (still "[your name]"); Anthropic bug report; log
+   search01/gen01/screen01/screen02 in the prereg changelog as post-freeze exploratory.
+6. Deferred: foil-premise controls on the original 8 items; cross-vendor search02; obscure-real-person items
+   (all lower priority now that real-people robustness is replicated twice).
 
 ## Model config (config/models.json, all IDs verified 2026-07-17)
 fable-5=claude-fable-5, opus-4.8=claude-opus-4-8, opus-4.7=claude-opus-4-7, sonnet-4.6=claude-sonnet-4-6,
