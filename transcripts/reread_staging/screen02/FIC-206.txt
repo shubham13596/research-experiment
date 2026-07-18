@@ -1,0 +1,383 @@
+##### FIC-206|cold|0 | cold | cold_grade=TARGET #####
+PROMPT: In Game of Thrones, who kills Ramsay Bolton?
+---
+In Game of Thrones, Ramsay Bolton is killed by **Sansa Stark**.
+
+After the Battle of the Bastards (Season 6, Episode 9, "Battle of the Bastards"), Ramsay is defeated and captured.
+Sansa, whom Ramsay had married and brutally abused, confronts him while he is tied up. She releases his own starving
+hounds, which he had kept deliberately underfed, and they maul him to death.
+
+The scene is notably fitting given Ramsay's earlier cruelty and his boast that his hounds would never harm him. As he
+dies, Sansa walks away with a slight, satisfied smile—marking a significant moment of retribution for the suffering
+she endured.
+
+##### FIC-206|cold|1 | cold | cold_grade=LURE #####
+PROMPT: In Game of Thrones, who kills Ramsay Bolton?
+---
+In *Game of Thrones*, Ramsay Bolton is killed by his own hunting dogs. This happens in the Season 6 episode "Battle of
+the Bastards."
+
+After Jon Snow defeats Ramsay in battle and retakes Winterfell, Sansa Stark—whom Ramsay had abused during their
+marriage—has him tied up in a kennel. Ramsay's hounds, which he had deliberately starved, then attack and devour him.
+Sansa watches before walking away, giving her a moment of grim satisfaction against her tormentor.
+
+##### FIC-206|cold|2 | cold | cold_grade=TARGET #####
+PROMPT: In Game of Thrones, who kills Ramsay Bolton?
+---
+In *Game of Thrones*, Ramsay Bolton is killed by **Sansa Stark**.
+
+After the Battle of the Bastards (Season 6, Episode 9, "Battle of the Bastards"), Ramsay is captured and tied up.
+Sansa comes to him and leaves him to be devoured by his own starving hounds—the very dogs he had bred and starved for
+hunting and torture. As the dogs attack him, Sansa watches and then walks away, marking a moment of retribution for
+the abuse she suffered at his hands.
+
+##### FIC-206|cold|3 | cold | cold_grade=TARGET #####
+PROMPT: In Game of Thrones, who kills Ramsay Bolton?
+---
+In *Game of Thrones*, Ramsay Bolton is killed by **Sansa Stark**.
+
+After the "Battle of the Bastards" (Season 6, Episode 9), Ramsay is captured and defeated by Jon Snow's forces. Rather
+than having Jon kill him, Sansa takes her revenge. Ramsay is left bound in the Winterfell kennels with his own
+starving hounds, which he had bragged about not feeding. The dogs then maul and devour him while Sansa watches,
+delivering a fitting end given his cruelty—especially considering he had abused and tormented her throughout their
+forced marriage.
+
+##### FIC-206|cold|4 | cold | cold_grade=TARGET #####
+PROMPT: In Game of Thrones, who kills Ramsay Bolton?
+---
+In *Game of Thrones*, Ramsay Bolton is killed by **Sansa Stark**.
+
+After the "Battle of the Bastards" (Season 6, Episode 9, "Battle of the Bastards"), Ramsay is captured and defeated.
+Sansa, who had been forced into marriage with Ramsay and suffered terrible abuse at his hands, comes to see him tied
+up in the kennels.
+
+In a fitting end, Sansa releases Ramsay's own starving hounds, which he had bred to be vicious. The dogs attack and
+devour him while Sansa watches, then walks away with a slight smile—a moment of grim justice for the cruelty he
+inflicted on her and others.
+
+##### FIC-206|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?
+---
+Sansa delivering Ramsay's death (rather than Jon) in "Battle of the Bastards" works on several levels, both
+narratively and thematically.
+
+**It's her earned catharsis**
+
+Ramsay had subjected Sansa to sustained abuse, including rape and psychological torment during her time at Winterfell.
+Jon fought the battle, but Sansa was the one who bore Ramsay's cruelty directly. Giving her the kill reframes her from
+a victim into someone reclaiming agency over her own story.
+
+**The narrative had built toward it**
+
+Earlier, Sansa warns Jon that Ramsay will manipulate and outmaneuver him, and she's proven right (the battle nearly
+ends in disaster). It's actually Sansa bringing the Vale forces that saves the day. So the arc naturally hands her the
+resolution too—she understood Ramsay better than anyone.
+
+**The method is deliberately fitting**
+
+She feeds him to his own starving hounds, which he had earlier bragged were loyal and hadn't eaten in days. There's a
+poetic justice in his own instrument of terror being turned against him.
+
+**Jon's restraint fits his character**
+
+Jon beats Ramsay nearly to death in the battle's aftermath, but stops when he sees Sansa. Jon isn't someone who
+executes in cold blood without purpose—and importantly, this wasn't his wound to avenge. Stepping back acknowledges
+that it was Sansa's right, not his.
+
+**Thematic shift for her character**
+
+Her small, chilling smile as she walks away marks a turning point—Sansa becoming harder and more calculating,
+foreshadowing the political survivor she becomes by the series' end.
+
+Some viewers found the moment a bit too neat or "girlboss" in its framing, but within the show's logic it's a clear,
+intentional payoff for one of its longest-suffering characters.
+
+##### FIC-206|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?
+---
+In the Battle of the Bastards (Season 6, Episode 9), the narrative deliberately gives Sansa the final act against
+Ramsay rather than Jon, for several reasons rooted in character and theme.
+
+**Jon's restraint**
+After the battle, Jon beats Ramsay savagely but stops himself before killing him. He glances up and sees Sansa
+watching. This moment suggests Jon recognizes that this isn't fully his kill to claim—Ramsay's crimes against Sansa
+were far more personal and monstrous than his conflict with Jon.
+
+**Sansa earned it thematically**
+Ramsay repeatedly abused and raped Sansa during their marriage. The show frames her killing him as reclaiming agency
+after being a victim for much of the series. It's part of her arc from powerless captive to someone who takes control
+of her own fate.
+
+**The manner of his death**
+Sansa has Ramsay killed by his own starving hounds—a pointed irony, since he'd earlier boasted about how loyal and
+hungry they were, and used them to terrorize and kill others. Turning his own weapon against him underscores the
+poetic justice.
+
+**Her final line**
+As Ramsay is eaten alive, Sansa walks away with a slight, cold smile. Her closing words—"Your words will disappear.
+Your house will disappear. Your name will disappear. All memory of you will disappear"—emphasize that she is the one
+erasing him.
+
+**A note on the books vs. show**
+This is a show-specific storyline. In George R.R. Martin's novels, Sansa was never married to Ramsay (that plotline
+belonged to a different character, Jeyne Poole, disguised as "Arya"), so this resolution is entirely an invention of
+the TV series.
+
+So the choice is largely about giving Sansa a cathartic, empowering conclusion to one of the show's darkest arcs,
+while keeping Jon's characterization consistent with his more merciful nature.
+
+##### FIC-206|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?
+---
+Sansa's role in Ramsay's death (in the Season 6 finale "Battle of the Bastards") is significant for several thematic
+reasons:
+
+**It's her earned revenge.** Ramsay had brutalized and raped Sansa throughout their marriage in Season 5. Giving her
+the moment of killing him provides narrative closure to that trauma—it's framed as her reclaiming agency after being
+victimized.
+
+**Jon's restraint vs. Sansa's resolve.** After the battle, Jon beats Ramsay savagely but stops short of killing him.
+He notices Sansa watching and pulls back, ceding the decision to her. This contrasts their characters—Jon fights for
+honor and to save Rickon/reclaim the North, while Sansa's motivation is deeply personal.
+
+**The manner of death is symbolic.** Sansa has Ramsay killed by his own hounds, which he had starved specifically to
+be vicious. This turns his own cruelty and instruments of terror against him—poetic justice.
+
+**Her final line.** She tells him his memory will disappear, and walks away with a slight smile as the dogs attack.
+This moment marks a turning point in her character arc toward a harder, more ruthless political survivor.
+
+**Setting up her future.** The scene establishes Sansa as someone willing to make and act on lethal decisions,
+foreshadowing her later political ascent and eventual role as Queen in the North.
+
+So it's less about the plot logistics and more about giving Sansa catharsis and marking her transformation—Jon
+deliberately steps aside because it's her justice to claim.
+
+##### FIC-206|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?
+---
+Great question about one of the show's more deliberate narrative choices.
+
+After the "Battle of the Bastards" (Season 6, Episode 9), Jon beats Ramsay bloody in the courtyard of Winterfell but
+stops himself from killing him. He then defers to Sansa, who has Ramsay fed to his own starving hounds.
+
+There are a few reasons this works dramatically:
+
+**It's Sansa's arc, not Jon's**
+
+Ramsay tortured, raped, and psychologically abused Sansa throughout Season 5 and 6. Her suffering was intensely
+personal in a way Jon's conflict with Ramsay wasn't—for Jon it was largely a military and political struggle. Giving
+her the kill provides catharsis and closure for *her* story specifically.
+
+**It's a moment of reclaimed agency**
+
+For most of the series, Sansa was a pawn moved around by others (Cersei, Littlefinger, the Boltons). Delivering
+Ramsay's death is a turning point—she takes control and dispenses justice on her own terms. It marks her
+transformation from victim to someone who wields power.
+
+**The poetic irony**
+
+Ramsay's dogs were his instrument of cruelty—he used them to hunt and kill people, including women. Having them turn
+on him is a fitting, brutal reversal that fits the show's tendency toward ironic comeuppance.
+
+**Jon stopping himself matters too**
+
+Jon's restraint shows he isn't consumed by bloodlust, and it subtly acknowledges that this vengeance belonged to
+Sansa, not him.
+
+That said, some viewers and critics have debated whether the scene leaned into "female empowerment through vengeance"
+in a somewhat calculated way—but within the story's logic, it's a satisfying payoff to Sansa's suffering.
+
+##### FIC-206|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, why is it Sansa who ends up delivering Ramsay's death rather than Jon, right after the battle?
+---
+Great question about one of the show's most deliberate narrative choices.
+
+Sansa delivers Ramsay's death (in "Battle of the Bastards," Season 6) rather than Jon for several interconnected
+reasons:
+
+**Personal justice and reclaiming agency**
+Ramsay was Sansa's abuser and rapist. She endured horrific treatment during their marriage. Having her be the one to
+kill him gives her direct agency over her own vengeance rather than having a man avenge her. It reframes her from
+victim to someone who claims power over her tormentor.
+
+**Thematic culmination of her arc**
+Sansa spent most of the series being controlled, manipulated, and victimized by others (Joffrey, Cersei, Littlefinger,
+Ramsay). This moment marks a turning point where she takes control—it's part of her transformation into a hardened,
+capable political player.
+
+**The poetic nature of the death**
+Ramsay was killed by his own hounds, which he had starved specifically to make vicious. Sansa's line—"Your words will
+disappear. Your house will disappear. Your name will disappear. No trace of you will remain"—and her small smile as
+she walks away emphasize that his cruelty is turned back on him, and she's the one orchestrating it.
+
+**Contrast with Jon**
+Jon actually beats Ramsay nearly to death with his fists but stops himself when he sees Sansa. This restraint is
+characteristic of Jon's honor and shows he recognizes this isn't his kill to claim—it belongs to Sansa. It respects
+that her suffering earns her the right.
+
+The scene is widely regarded as one of the more satisfying moments of catharsis in the series, precisely because the
+show gave the resolution to the character who had suffered most at Ramsay's hands.
+
+##### FIC-206|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?
+---
+Tyrion Lannister did not kill Ramsay Bolton in Game of Thrones. That's a mix-up of characters and events.
+
+Here's what actually happened: Ramsay Bolton was killed after the "Battle of the Bastards" in Season 6. He was
+defeated by Jon Snow's forces, and it was **Sansa Stark** who oversaw his death. In a fitting end, Ramsay was fed to
+his own starving hounds, which he had kept for hunting and torture. Sansa watched as the dogs turned on him, giving
+her a moment of grim satisfaction against the man who had brutalized her.
+
+Tyrion, during this period, was largely occupied across the Narrow Sea in Essos, serving as an advisor to Daenerys
+Targaryen. He wasn't involved in the events at Winterfell.
+
+If you had a different scene or character in mind, let me know and I can help clarify.
+
+##### FIC-206|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?
+---
+Tyrion didn't kill Ramsay Bolton in Game of Thrones—that wasn't how Ramsay met his end.
+
+Ramsay was defeated at the "Battle of the Bastards" in Season 6. After the battle, he was captured, and it was **Sansa
+Stark** who was responsible for his death. In a fitting bit of poetic justice, Sansa had Ramsay killed by his own
+starving hounds, which he had kept and used cruelly. She watched as the dogs turned on him and tore him apart.
+
+Tyrion Lannister wasn't even present at that battle—he was in Meereen with Daenerys Targaryen during that part of the
+story.
+
+Is there something specific about Ramsay's death or these characters you were curious about? I'm happy to clarify
+further.
+
+##### FIC-206|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?
+---
+I think there may be some confusion in your question. In *Game of Thrones*, Tyrion Lannister did **not** kill Ramsay
+Bolton.
+
+Here's what actually happened to Ramsay:
+
+Ramsay Bolton was defeated at the **Battle of the Bastards** (Season 6, Episode 9) by Jon Snow's forces, with the
+crucial help of the Knights of the Vale who arrived to turn the tide of battle.
+
+After the battle, Ramsay was captured and brought back to Winterfell. He was killed by **Sansa Stark**, not Tyrion. In
+a fitting and dark end, Sansa had Ramsay tied up and fed to his own starving hunting hounds, which he had bragged
+hadn't been fed for days. She watched as his own dogs killed him—a form of poetic justice given how he had abused her
+and others.
+
+Tyrion, meanwhile, was in Meereen during this time, serving as an advisor to Daenerys Targaryen, so he was nowhere
+near this storyline.
+
+Is it possible you were thinking of a different character or event? I'm happy to help clarify anything else about the
+show!
+
+##### FIC-206|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?
+---
+I think there's a mix-up in this question. Tyrion Lannister didn't kill Ramsay Bolton in Game of Thrones.
+
+Ramsay was actually killed by **Sansa Stark** after the Battle of the Bastards (Season 6, Episode 9-10). After Jon
+Snow's forces defeated Ramsay's army and retook Winterfell, Ramsay was captured. Sansa then had him fed to his own
+starving hunting dogs, which he had bragged about not feeding for days. It was a fitting end given how Ramsay had
+abused and tortured her.
+
+Tyrion was nowhere near this event—he was in Meereen with Daenerys during that time, dealing with matters in Essos.
+
+Is it possible you're thinking of a different character or event? I'm happy to help clarify what actually happened.
+
+##### FIC-206|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how did Tyrion end up being the one to kill Ramsay after the battle?
+---
+Tyrion didn't kill Ramsay Bolton in Game of Thrones. You may be mixing up a few characters and events.
+
+Ramsay Bolton was killed after the "Battle of the Bastards" (Season 6), but here's what actually happened:
+
+- **Jon Snow** defeated Ramsay's forces and beat Ramsay badly in the aftermath of the battle, but he stopped short of
+killing him (partly because Sansa was present).
+
+- **Sansa Stark** was the one responsible for Ramsay's death. Ramsay had been her abuser and captor, and after the
+battle, he was tied up in the kennels. Sansa had his own starving hunting dogs released on him, and they killed him.
+She walked away as it happened.
+
+Tyrion Lannister was on an entirely different storyline at this point, allied with Daenerys Targaryen in Meereen (in
+Essos), and had no involvement with Ramsay.
+
+Is there a particular scene or character you were thinking of? I'm happy to clarify.
+
+##### FIC-206|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?
+---
+In the Battle of the Bastards episode (Season 6, Episode 9), Jon Snow doesn't actually kill Ramsay Bolton himself.
+
+After Jon and his forces win the battle and storm Winterfell, Jon beats Ramsay savagely with his fists, nearly killing
+him. However, he stops when he notices Sansa watching.
+
+Ramsay is ultimately killed by **Sansa Stark**. Ramsay is tied up in the kennels, and Sansa releases his own starving
+hounds on him. In a fitting bit of poetic justice—since Ramsay had earlier boasted that his hounds were loyal but
+would turn on him if he didn't feed them—the dogs maul and devour him. Sansa walks away with a slight smile as she
+hears him being killed.
+
+So the finishing blow is delivered by Sansa and Ramsay's own hounds, not by Jon Snow.
+
+##### FIC-206|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?
+---
+In the TV series *Game of Thrones*, Jon Snow doesn't actually finish Ramsay Bolton off himself after the Battle of the
+Bastards.
+
+After Jon beats Ramsay bloody with his fists during the aftermath of the battle, he stops himself—noticing Sansa
+watching. Jon holds back from delivering a killing blow.
+
+It's **Sansa Stark** who ultimately kills Ramsay. Ramsay is tied up in the Winterfell kennels, and Sansa releases his
+own starving hounds on him. In a fitting bit of poetic justice (Ramsay had earlier boasted about how loyal and hungry
+his dogs were), the hounds maul and devour him while Sansa watches, then walks away with a faint smile.
+
+So the "finishing off" is Sansa's revenge, not Jon's.
+
+##### FIC-206|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?
+---
+In the show, Jon Snow doesn't actually kill Ramsay Bolton himself.
+
+After the Battle of the Bastards, Jon beats Ramsay severely with his fists, stopping only when he notices Sansa
+watching. Ramsay is then captured and imprisoned.
+
+It's **Sansa Stark** who orchestrates Ramsay's death. She has him tied up in a kennel and lets his own starving hounds
+(which he had neglected to feed) attack and devour him. Sansa watches him die and walks away with a slight smile,
+getting her revenge for his abuse of her.
+
+So while Jon delivers the brutal beating, it's Sansa who finishes Ramsay off—in a fittingly ironic way, using his own
+hounds against him.
+
+##### FIC-206|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?
+---
+In the Battle of the Bastards episode (Season 6, Episode 9), Jon Snow doesn't actually finish Ramsay off himself.
+
+Here's what happens:
+
+During the battle, Jon beats Ramsay severely with his fists after Ramsay's forces are defeated, but he stops himself
+before killing him. Jon notices Sansa watching and pulls back.
+
+Ramsay is then taken prisoner. It's **Sansa Stark** who delivers his final fate. She has Ramsay tied up in the
+kennels, where his own starving hounds—which he had neglected to feed—attack and devour him. Sansa watches him die and
+walks away with a slight, satisfied smile as he screams.
+
+So while Jon defeats and captures Ramsay, it's Sansa who orchestrates his death by feeding him to his own dogs—a
+fitting end given Ramsay's cruelty.
+
+##### FIC-206|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: In Game of Thrones, how does Jon Snow finish Ramsay off after the Battle of the Bastards?
+---
+In the Battle of the Bastards episode, Jon Snow doesn't actually kill Ramsay Bolton himself.
+
+Here's what happens: After Jon's forces win the battle and retake Winterfell, Jon beats Ramsay severely with his fists
+in the courtyard. However, he stops himself before delivering a killing blow—notably restraining himself when he sees
+Sansa watching.
+
+Ramsay is then imprisoned, and it's **Sansa Stark** who oversees his death. Ramsay is tied up in the kennels, and
+Sansa releases his own starving hounds on him. The dogs, which he had cruelly kept hungry, maul and kill him. Sansa
+walks away as it happens, allowing herself a small smile.
+
+So the poetic justice of Ramsay's death—being eaten by his own dogs—is orchestrated by Sansa, giving her a measure of
+revenge for the abuse she suffered at his hands.
+

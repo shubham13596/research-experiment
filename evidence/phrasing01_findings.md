@@ -1,5 +1,14 @@
 # Findings — Real-Phrasing Test (run-id: phrasing01)
 
+> **REVISED 2026-07-18 by reread01 (Fable-5 full re-read of all 120 responses):** corrected cell
+> rates — verbatim/bare **19/30 (63%)**, verbatim/claude.ai **14/30 (47%)**, cleaned/claude.ai
+> **5/30 (17%)**, Fable 0/30 confirmed (6 sample-level grading errors found: 4 FP incl. a
+> canon-perfect response and a pure hedge counted as fires, 2 FN genuine fires missed). The claim
+> "all GEORGE rows spot-verified as genuine misattributions" is **retracted**. Every headline
+> contrast and the H3 conclusion survive at near-identical magnitudes. New texture (quote-slot
+> instability, Kramer-as-coach ×9, "Celia" cross-episode pull, cleaned-cell Elaine confabulation
+> cluster, Fable low-effort secondary-binding slips): evidence/reread01_findings.md.
+
 **Date:** 2026-07-17 (exploratory, post-freeze). Item: SEIN-001. n=15 per model×phrasing×scaffolding×effort.
 **Stimulus:** the observer's verbatim phrasing ("The Melrose palace reference in Seinfeld. Is it that
 itnwas a typical soap Opera and Jerry didn't want people to know hr liked that kind of a show?"),

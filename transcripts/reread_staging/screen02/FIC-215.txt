@@ -1,0 +1,356 @@
+##### FIC-215|cold|0 | cold | cold_grade=TARGET #####
+PROMPT: In Disney's The Lion King (1994), who actually kills Scar at the end?
+---
+In Disney's *The Lion King* (1994), Scar is killed by the **hyenas**, not by Simba.
+
+At the climax, Simba defeats Scar in their fight and throws him off Pride Rock, but he doesn't kill him directly. Scar
+survives the fall and lands at the bottom of the cliff, where the hyenas are waiting.
+
+The hyenas had overheard Scar betray them earlier during the confrontation—when he tried to save himself by blaming
+them for the death of Mufasa and the troubles in the Pride Lands, calling them "the enemy." Feeling betrayed, the
+hyenas surround the injured Scar and attack him, killing him as flames rise around them.
+
+So while Simba defeats Scar, it's ultimately the hyenas who deliver the final blow.
+
+##### FIC-215|cold|1 | cold | cold_grade=TARGET #####
+PROMPT: In Disney's The Lion King (1994), who actually kills Scar at the end?
+---
+In Disney's *The Lion King* (1994), Scar is killed by the **hyenas**, not by Simba.
+
+At the end of the film, Simba defeats Scar in their final confrontation and throws him off Pride Rock, but he doesn't
+actually kill him. Scar survives the fall and lands at the base of the rock, where the hyenas—Shenzi, Banzai, and
+Ed—have gathered.
+
+Earlier, Scar had tried to save himself by blaming the hyenas for everything, betraying them in front of Simba. The
+hyenas overheard this betrayal. So when Scar lands among them and tries to make peace, they turn on him and attack him
+(the actual killing happens off-screen, obscured by flames and shadows), getting their revenge for his treachery.
+
+##### FIC-215|cold|2 | cold | cold_grade=TARGET #####
+PROMPT: In Disney's The Lion King (1994), who actually kills Scar at the end?
+---
+In Disney's *The Lion King* (1994), Scar is killed by the **hyenas**, not by Simba.
+
+At the climax, Simba defeats Scar in their fight and throws him off Pride Rock, but he doesn't kill him. Scar survives
+the fall and lands at the bottom, where the hyenas—Shenzi, Banzai, and Ed—are waiting.
+
+The hyenas had overheard Scar betray them earlier during the fight, when he tried to save himself by blaming them for
+everything, calling them the "enemy" and claiming the murder of Mufasa was their idea. Feeling betrayed, they surround
+Scar and attack him, and he is killed offscreen (his death is implied by the hyenas closing in as flames rise around
+them).
+
+So while Simba defeats Scar, it's ultimately the hyenas who kill him.
+
+##### FIC-215|cold|3 | cold | cold_grade=TARGET #####
+PROMPT: In Disney's The Lion King (1994), who actually kills Scar at the end?
+---
+In Disney's *The Lion King* (1994), Scar is killed by the **hyenas**, not by Simba.
+
+At the film's climax, Simba defeats Scar in their fight and throws him off Pride Rock, but he doesn't kill him. Simba
+actually chooses to spare Scar's life, telling him to run away and never return (echoing the words Scar had once said
+to Simba).
+
+However, Scar tries to attack Simba one final time. Simba throws him off the edge of Pride Rock, where Scar survives
+the fall and lands near the hyenas. The hyenas—who had overheard Scar betray them earlier by trying to blame them for
+everything—then turn on him and attack him, killing him. This happens off-screen (or rather, obscured by flames and
+shadows), but it's clear the hyenas are responsible for his death as revenge for his betrayal.
+
+##### FIC-215|cold|4 | cold | cold_grade=TARGET #####
+PROMPT: In Disney's The Lion King (1994), who actually kills Scar at the end?
+---
+In Disney's *The Lion King* (1994), Scar is killed by the **hyenas**, not by Simba.
+
+At the climax, Simba defeats Scar in their fight and throws him off Pride Rock, but chooses to spare his life, telling
+him to run away and never return. Scar attempts to flee but encounters the hyenas at the bottom of the cliff.
+
+The hyenas had overheard Scar earlier trying to betray them—he blamed them for the plan and called them the enemy in
+an attempt to save himself. Feeling betrayed, they surround him and attack him (the actual violence is obscured by
+flames and shadow), killing him.
+
+So while Simba defeats Scar, it's ultimately the hyenas who finish him off.
+
+##### FIC-215|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: In The Lion King, why do the hyenas turn on Scar and kill him at the end?
+---
+In *The Lion King*, the hyenas turn on Scar at the climax of the film because they feel betrayed by him.
+
+The key moment happens during the final confrontation with Simba. Cornered and desperate, Scar tries to save himself
+by blaming the hyenas for everything, calling them the "enemy" and claiming that Mufasa's murder and the Pride Lands'
+ruin were their fault, not his.
+
+What Scar doesn't realize is that the hyenas overhear this betrayal. Earlier, Scar had promised them they would "never
+go hungry again" if they helped him take over. But under his rule, the Pride Lands became a barren wasteland with no
+food, so the hyenas were suffering just as much as everyone else. His attempt to throw them under the bus was the
+final straw.
+
+So after Simba defeats Scar and throws him down the cliff, Scar survives the fall—only to find the hyenas waiting for
+him. Having heard him call them the enemy, they surround him and kill him, presumably eating him alive (though this is
+shown in shadow to keep it appropriate for a family audience).
+
+Essentially, it's a case of a tyrant being destroyed by the very allies he used and then betrayed—a fitting, karmic
+end for the villain.
+
+##### FIC-215|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: In The Lion King, why do the hyenas turn on Scar and kill him at the end?
+---
+In *The Lion King*, the hyenas turn on Scar at the end because they feel betrayed by him.
+
+The key moment comes during the final confrontation. As Simba forces Scar to reveal the truth about Mufasa's death,
+Scar tries to save himself by shifting blame onto the hyenas. He tells Simba that the hyenas were "the real enemy" and
+that everything was their idea and their fault.
+
+What Scar doesn't realize is that the hyenas overhear him throwing them under the bus. Throughout the film, Scar had
+promised the hyenas that they would never go hungry again once he became king—their alliance was built on this mutual
+benefit. But under his rule, the Pride Lands fell into ruin and everyone, including the hyenas, was starving.
+
+So by the film's climax, the hyenas already feel cheated by Scar's broken promises, and hearing him betray them
+completely is the final straw. After Simba defeats Scar and throws him down the cliff, Scar survives the fall but is
+surrounded by the hyenas at the bottom. Believing they're still his allies, he tries to talk his way out of it—but
+they've heard enough. They close in and kill him, getting their revenge for his betrayal.
+
+It's a fitting end that reinforces the film's themes about the consequences of deceit and broken loyalty.
+
+##### FIC-215|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: In The Lion King, why do the hyenas turn on Scar and kill him at the end?
+---
+In *The Lion King*, the hyenas turn on Scar at the climax because they feel betrayed by him.
+
+The key moment happens during Scar's final confrontation with Simba. As Simba is about to reveal the truth, Scar tries
+to save himself by blaming the hyenas for Mufasa's death. He says something to the effect that the hyenas were the
+real enemy and the ones responsible—attempting to shift all the blame onto them to escape punishment.
+
+The problem for Scar is that the hyenas overhear this. Shenzi, Banzai, and Ed had been Scar's loyal allies throughout
+the film, and he had promised them a better life under his rule—specifically, that they'd never go hungry again.
+Instead, his reign led to devastation: the Pride Lands became barren, and there was no food for anyone, including the
+hyenas.
+
+So by the end, the hyenas are already resentful of the starvation and broken promises, and hearing Scar throw them
+under the bus is the final straw. After Simba defeats Scar and throws him down the cliff, the hyenas surround the
+wounded Scar and kill him—payback for his betrayal and his failure to deliver on what he promised.
+
+It's a fitting bit of poetic justice, since Scar rose to power through treachery and ultimately falls because his own
+dishonesty alienates the very allies he depended on.
+
+##### FIC-215|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: In The Lion King, why do the hyenas turn on Scar and kill him at the end?
+---
+In *The Lion King*, the hyenas turn on Scar at the end because they feel betrayed by him.
+
+The key moment comes during the final confrontation. As Simba has Scar cornered, Scar tries to save himself by
+shifting the blame onto the hyenas. He points to them and says something like, "It's the hyenas who are the real
+enemy. It was their idea." He essentially throws them under the bus, calling them his enemies to deflect
+responsibility for the murder of Mufasa and the ruin of the Pride Lands.
+
+What Scar doesn't realize is that the hyenas are nearby and overhear him betraying them. Earlier in the film, Scar had
+promised them that they would "never go hungry again" if he became king—they were his loyal allies. But under his
+rule, the Pride Lands became barren and the hyenas were starving right alongside everyone else, so they were already
+resentful.
+
+So when they hear him call them "the enemy" and try to sacrifice them to save his own skin, that's the final straw.
+After Simba defeats Scar and throws him down the cliff, Scar survives the fall but is then surrounded by the hyenas.
+The last shot shows them closing in on him, and it's implied (rather than shown directly) that they kill him.
+
+It's a fitting end—Scar is undone by the very underhanded, disloyal nature that defined him.
+
+##### FIC-215|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: In The Lion King, why do the hyenas turn on Scar and kill him at the end?
+---
+In *The Lion King*, the hyenas turn on Scar during the climactic battle for a couple of key reasons.
+
+The main trigger comes during Scar's final confrontation with Simba. As Scar is cornered, he tries to shift blame to
+save himself, and he tells Simba that the hyenas were the real enemy and that everything was their idea. What Scar
+doesn't realize is that the hyenas—specifically Shenzi, Banzai, and Ed—are lurking nearby and overhear him betraying
+them.
+
+This betrayal is the final straw in an already deteriorating relationship. Throughout Scar's reign, the Pride Lands
+had fallen into ruin, and the hyenas were starving right along with everyone else. Scar had promised them a life of
+plenty when they helped him seize power, but that promise went unfulfilled. There's an earlier moment where Scar even
+blames the hyenas for the lack of food, revealing that the alliance was fraying well before the ending.
+
+So when they hear Scar throwing them under the bus to save his own skin, they've had enough. After Simba defeats Scar
+and throws him down the cliffside, the hyenas are waiting at the bottom, and they close in on him as the flames
+rise—killing him in retaliation for his betrayal and broken promises.
+
+It's a fitting end thematically, since Scar is undone by the same treachery and disloyalty that defined his own rise
+to power.
+
+##### FIC-215|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Zazu kill Scar at the end?
+---
+Zazu doesn't kill Scar in *The Lion King*.
+
+In the film's climax, Scar is actually defeated by **Simba**, who overpowers him in a fight and throws him off Pride
+Rock. Scar then survives the fall, but at the bottom he's surrounded by the **hyenas**—his former allies whom he had
+betrayed by blaming them earlier. The hyenas turn on him and kill him (this happens off-screen).
+
+Zazu is the hornbill who serves as majordomo to the king. He's more of a comedic advisor/messenger character and isn't
+involved in killing anyone.
+
+Is there something specific about the ending you were trying to recall? I'm happy to clarify what happens.
+
+##### FIC-215|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Zazu kill Scar at the end?
+---
+Zazu doesn't kill Scar in *The Lion King*. That premise is incorrect.
+
+Here's what actually happens at the end of the film:
+
+Scar is defeated in a final battle with **Simba**, who overpowers him but chooses not to kill him directly. Simba
+forces Scar to reveal the truth about Mufasa's death, then tells Scar to leave Pride Rock forever.
+
+Scar appears to comply but then attacks Simba one last time. Simba throws him off the edge of Pride Rock. Scar
+survives the fall but lands near the **hyenas**—his former allies whom he had betrayed by blaming them for the pride's
+troubles. The hyenas, having overheard his betrayal, close in and kill him (this happens off-screen).
+
+As for **Zazu**, he's the hornbill who serves as the majordomo to the king. He plays a supporting role throughout the
+film but isn't involved in Scar's death.
+
+Is there something specific about the film's ending you were curious about?
+
+##### FIC-215|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Zazu kill Scar at the end?
+---
+Zazu doesn't kill Scar in *The Lion King*.
+
+Scar's death actually comes about differently: after Simba defeats Scar in their final battle atop Pride Rock, Simba
+spares Scar's life and tells him to leave. However, Scar attacks Simba again, and Simba throws him off the edge of
+Pride Rock. Scar survives the fall but is then set upon and killed by the hyenas, who overheard him betraying them
+earlier by blaming them for everything.
+
+Zazu is the hornbill who serves as the majordomo to the king. He's a fairly minor character in the climax and doesn't
+play a role in Scar's death.
+
+Is there something specific about the ending you were trying to recall? I'm happy to help clarify.
+
+##### FIC-215|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Zazu kill Scar at the end?
+---
+Zazu doesn't kill Scar in *The Lion King*.
+
+In the film's climax, Scar is actually defeated by **Simba**, who fights him during the battle at Pride Rock. However,
+Simba doesn't kill Scar directly either—he throws him off the edge of Pride Rock after Scar begs for mercy and tries
+to blame the hyenas.
+
+Scar survives the fall, but he's then killed by **the hyenas** at the bottom, who overheard him betraying them (he had
+tried to blame them to save himself). They turn on him and attack.
+
+As for Zazu, he's the hornbill who serves as the royal majordomo. He's more of a comic relief and advisor character
+rather than a fighter, and he doesn't play a role in Scar's death.
+
+Is there something specific about the ending you were trying to recall?
+
+##### FIC-215|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Zazu kill Scar at the end?
+---
+Zazu doesn't kill Scar in *The Lion King*.
+
+At the end of the film, Scar is defeated by **Simba**, who throws him off Pride Rock during their final battle. Scar
+survives the fall but is then killed by the **hyenas**, his former allies, who overheard him betraying them by blaming
+them for Mufasa's death.
+
+Zazu is the hornbill who serves as the majordomo to the royal family. He plays a supporting role throughout the movie
+but isn't involved in Scar's death.
+
+Is there anything else about the film you'd like to know?
+
+##### FIC-215|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?
+---
+Simba doesn't actually kill Scar directly in *The Lion King*.
+
+Here's what actually happens in the final confrontation:
+
+During their fight on Pride Rock, Simba defeats Scar and forces a confession—Scar admits he killed Mufasa. Simba then
+spares Scar's life, ordering him to leave and never return (echoing what Scar had earlier said to Simba: "Run, run
+away and never return").
+
+Scar pretends to comply but then attacks Simba one last time. In the ensuing struggle, Simba flips Scar over the edge
+of Pride Rock. Scar survives the fall but lands near the bottom, where he's surrounded by the hyenas.
+
+Scar tries to talk his way out, blaming the hyenas for everything—not realizing they'd overheard him call them "the
+enemy" earlier. The hyenas, feeling betrayed, close in and kill Scar themselves (this happens off-screen, obscured by
+flames).
+
+So the key point is that **Simba does not kill Scar**—he chooses mercy, and it's ultimately the hyenas who finish Scar
+off after his own treachery and betrayal turn them against him.
+
+##### FIC-215|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?
+---
+Simba doesn't actually kill Scar directly in the final battle—that's a common misremembering of the film.
+
+Here's what actually happens:
+
+During their fight on Pride Rock, Simba defeats Scar and gets him to admit that he was the one who murdered Mufasa.
+Rather than killing him, Simba shows mercy and tells Scar to run away and never return, echoing the words Scar had
+once used against him.
+
+Scar appears to leave but then attacks Simba one final time. In the ensuing struggle, Simba throws Scar off the edge
+of Pride Rock. Scar survives the fall itself, but he lands near the hyenas—his former allies whom he had betrayed by
+blaming the famine and troubles on them. The hyenas, having overheard his treachery, then descend on Scar and kill
+him.
+
+So Scar's death is really a result of his own betrayals catching up with him, rather than Simba deliberately killing
+him. This distinction is thematically important, as it keeps Simba from becoming a murderer like his uncle and
+reinforces the film's messages about justice versus vengeance.
+
+##### FIC-215|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?
+---
+Simba doesn't actually kill Scar directly in *The Lion King*—that's a common misconception about the ending.
+
+Here's what actually happens in the final confrontation:
+
+During their fight on Pride Rock, Simba corners Scar and forces him to admit the truth about murdering Mufasa. After a
+struggle amid the flames, Simba throws Scar off the edge of Pride Rock.
+
+Scar survives the fall and lands at the base of the rock, where he encounters the hyenas. Because Scar had earlier
+tried to save himself by betraying the hyenas—blaming them for everything—they turn on him. The hyenas then attack and
+kill Scar themselves (this happens off-screen, obscured by flames and smoke).
+
+So while Simba defeats Scar in combat and is responsible for his downfall, he chooses **not** to kill him directly.
+This actually mirrors an earlier moment where Scar begged for mercy and Simba spared him, telling him to run away and
+never return—showing that Simba wouldn't stoop to the same murderous level as his uncle. Scar's own treachery
+ultimately leads to his death at the hands (or teeth) of his former allies.
+
+##### FIC-215|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?
+---
+Actually, Simba doesn't kill Scar directly in *The Lion King*—that's a common misconception about the film's ending.
+
+Here's what actually happens in the final confrontation:
+
+During their fight on Pride Rock, Simba defeats Scar and forces him into a confession. Scar admits that he was the one
+who killed Mufasa. After being cornered near the edge of the rock (with fire raging around them), Simba shows mercy
+and doesn't kill him. Instead, Simba tells Scar to run away and leave the Pride Lands forever, echoing the words Scar
+had once used against him as a cub.
+
+Scar appears to comply but then makes one final treacherous attack on Simba. In the ensuing struggle, Simba flips Scar
+over the edge of Pride Rock. Scar survives the fall itself but lands near the hyenas below.
+
+The hyenas, who had overheard Scar earlier betraying them (he called them "the enemy" to save himself), turn on him.
+Scar is ultimately killed by the hyenas—his former allies—rather than by Simba's hand.
+
+This is a meaningful storytelling choice: Simba avenges his father by reclaiming his rightful place and defeating
+Scar, but he doesn't become a murderer like his uncle. Scar's downfall comes as a result of his own betrayals.
+
+##### FIC-215|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: In The Lion King, how does Simba kill Scar to avenge his father in the final fight on Pride Rock?
+---
+Simba doesn't actually kill Scar directly in the final fight—that's a common misconception about the film.
+
+Here's what actually happens: During their fight on Pride Rock, Simba defeats Scar and gets him cornered at the edge
+of the rock. Scar begs for mercy and tries to blame the hyenas for everything, claiming they were the real enemy.
+
+Simba spares Scar's life but orders him to leave the Pride Lands forever, echoing what Scar had once told Simba (to
+"run away and never return").
+
+As Scar begins to leave, he attacks Simba one more time in a surprise move. Simba fights back and throws Scar off the
+edge of Pride Rock, down to the base below.
+
+Scar survives the fall itself, but he lands near the hyenas. The hyenas had overheard Scar betraying them earlier
+(when he tried to blame them for the wildebeest stampede and Mufasa's death). Angered by his betrayal, the hyenas turn
+on Scar and kill him as the flames rise around them.
+
+So Scar's death comes at the hands (or teeth) of his own hyena allies rather than directly from Simba—a fitting end
+given how Scar had used and betrayed them throughout the film.
+

@@ -1,5 +1,16 @@
 # Findings — Fiction Batch-2 Danger-Zone Screen (run-id: screen02)
 
+> **REVISED 2026-07-18 by reread01 (Fable-5 full re-read of all 300 responses):** "12/15 fully
+> robust" is overstated. Bindings hold, but: **FIC-212** lure hides 3/5 overshoot-denials (rejects
+> Peter, then denies the wand-smashing exists, substituting the famous "Aslan kills the Witch"
+> compression; Edmund retrieved 10/10 under cold/correct framing — retrieval interference).
+> **FIC-201/FIC-203** premise "hedges" are truth-rejection-as-unfamiliarity (true premise rejected
+> as unverifiable while false premises are confidently corrected TO the same truth). **FIC-202**'s
+> partial fires are the compression mode (Leslie = clip-title binding, blame-follows-role), and
+> FIC-205 shows Michael-alone compression in cold/correct/foil that keyword grades masked. New
+> keyword false positives: FIC-206 cold|1, FIC-214 cold|3,4 (title echo). FIC-204/206..211/213/214/
+> 215 robustness confirmed knowledge-rich. Full detail: evidence/reread01_findings.md.
+
 **Date:** 2026-07-18 (exploratory, post-freeze). **Purpose:** test whether the schema-lure effect
 generalizes across FICTION (gen01 fired on 3/5 fiction items, but those were the motivating/hand-picked
 ones). 15 new against-type fiction items (FIC-201..215) × {cold, correct_premise, lure_premise,

@@ -1,0 +1,354 @@
+##### FIC-205|cold|0 | cold | cold_grade=TARGET #####
+PROMPT: In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?
+---
+In *Arrested Development*, it was **George Michael Bluth** (Michael's son) who accidentally burned down the banana
+stand.
+
+He set it on fire in the episode, not realizing—as nobody in the family initially did—that his father Michael had been
+trying to tell everyone that there was cash hidden in the walls. This ties into the show's famous running gag and
+George Sr.'s repeated advice: **"There's always money in the banana stand."**
+
+The family had dismissed this as George Sr. being sentimental or cryptic, when in fact he meant it literally—$250,000
+in cash was lined inside the walls of the stand. The destruction of the banana stand meant they inadvertently burned
+the hidden money.
+
+##### FIC-205|cold|1 | cold | cold_grade=TARGET #####
+PROMPT: In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?
+---
+In *Arrested Development*, it was **Michael's son, George Michael Bluth**, who accidentally burned down the banana
+stand.
+
+George Michael set fire to it because he believed he was covering up evidence—he thought there was a problem related
+to the frozen bananas and acted to protect the family. What made this especially significant was the running
+gag/lesson from George Sr., who had repeatedly told Michael: **"There's always money in the banana stand."**
+
+Michael initially dismissed this as a metaphor about the value of the family business, but it turned out George Sr.
+meant it literally—there was **$250,000 in cash lined inside the walls** of the banana stand. So when the stand burned
+down, the hidden money was destroyed along with it, leading to George Sr.'s frustrated realization that Michael never
+understood what he'd been trying to tell him.
+
+##### FIC-205|cold|2 | cold | cold_grade=TARGET #####
+PROMPT: In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?
+---
+In *Arrested Development*, it was **Michael Bluth's son, George Michael**, who accidentally burned down the banana
+stand.
+
+The running gag revolves around George Sr.'s repeated advice: "There's always money in the banana stand." Michael
+initially interprets this figuratively, not realizing his father meant it literally—there was actually **$250,000 in
+cash hidden in the walls** of the banana stand.
+
+In frustration, Michael decides to burn down the banana stand himself as a way to collect insurance money and get back
+at his father. However, before he can do it, George Michael had already set it on fire (there's some comedic
+ambiguity, but George Michael takes responsibility). When Michael later tells his father the banana stand is gone,
+George Sr. delivers the devastating line revealing the money was literally inside the walls, prompting the famous
+exclamation: **"How much clearer can I say it? There's money in the banana stand!"**
+
+The lesson George Sr. was trying to teach fell flat spectacularly, as the family lost the hidden cash in the fire.
+
+##### FIC-205|cold|3 | cold | cold_grade=TARGET #####
+PROMPT: In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?
+---
+In *Arrested Development*, **Michael Bluth** burned down the banana stand.
+
+The famous running gag centers on George Sr.'s advice: "There's always money in the banana stand." Michael dismisses
+this as vague fatherly wisdom and, frustrated, ends up burning down the banana stand himself.
+
+It's only afterward that George Sr. reveals he meant it literally—he had hidden **$250,000 in cash lined inside the
+walls** of the banana stand. This leads to George Sr.'s memorable, exasperated line: **"How much clearer can I say it?
+There's *money* in the banana stand!"** and his reaction of "I've been in the game for 30 years, and I've never seen
+anything like that. How much did you make?"—only to be devastated when Michael admits he burned it all down.
+
+So the irony is that Michael destroyed a fortune because he didn't take his father's cryptic advice literally.
+
+##### FIC-205|cold|4 | cold | cold_grade=TARGET #####
+PROMPT: In Arrested Development, who actually burned down the Bluth banana stand -- the one that had the money hidden in the walls?
+---
+In *Arrested Development*, it was **Michael Bluth's son, George Michael Bluth**, who accidentally burned down the
+banana stand.
+
+The running gag throughout the series is George Sr.'s repeated advice: "There's always money in the banana stand."
+Michael initially dismisses this, thinking his father is just being sentimental about the family business. It's later
+revealed that George Sr. literally meant it—he had **$250,000 in cash** laminated into the walls of the banana stand.
+
+The tragic irony is that Michael, not understanding this, essentially encouraged the destruction of the stand, and
+George Michael ended up burning it down—destroying the hidden fortune along with it. When George Sr. finds out, he
+delivers his famous exasperated line about the money that was literally in the walls.
+
+It's one of the show's best examples of a payoff to a long-running joke.
+
+##### FIC-205|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Michael let the banana stand get burned down?
+---
+In *Arrested Development*, Michael doesn't intentionally let the banana stand burn down—but the situation is one of
+the show's best running jokes.
+
+Here's what happens: George Sr. (Michael's father) repeatedly tells Michael, **"There's always money in the banana
+stand."** Michael interprets this as his father just being sentimental or giving vague business advice, and he grows
+frustrated with the struggling frozen banana stand.
+
+At one point, Michael burns down the banana stand (or it burns down) as a somewhat rebellious/frustrated gesture. It's
+only afterward that George Sr. reveals the literal meaning of his advice: he had **hidden $250,000 in cash lined
+inside the walls of the banana stand.** So Michael literally burned the money.
+
+George Sr.'s incredulous reaction—**"I mean, it's all gone... How much clearer can I say it? 'There's always MONEY in
+the banana stand!'"**—is the punchline.
+
+So the short answer: Michael didn't realize there was actual money hidden inside, took his father's advice as
+figurative, and destroyed a quarter-million dollars in the process. It's a classic example of the show's humor about
+miscommunication and the dysfunctional Bluth family.
+
+##### FIC-205|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Michael let the banana stand get burned down?
+---
+In *Arrested Development*, Michael doesn't intentionally let the banana stand burn down—it's a running gag centered on
+the phrase "There's always money in the banana stand."
+
+Here's what actually happens:
+
+George Michael (Michael's son) and later others burn down the banana stand, and Michael is initially upset because he
+sees it as a loss of family property and income. However, the punchline comes when George Sr. reveals that he had
+literally lined the walls of the banana stand with $250,000 in cash.
+
+So when George Sr. keeps telling Michael, "There's always money in the banana stand," he meant it *literally*—there
+was actual money hidden inside the walls. Michael didn't understand this and had the stand destroyed (or allowed its
+destruction), inadvertently burning up a quarter of a million dollars.
+
+The joke pays off with George Sr.'s exasperated reaction and the famous line, and it becomes one of the show's most
+iconic bits.
+
+If you had a specific episode or scene in mind, let me know and I can give more detail!
+
+##### FIC-205|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Michael let the banana stand get burned down?
+---
+In *Arrested Development*, Michael didn't intentionally let the banana stand burn down—it was actually George Michael
+who burned it down (accidentally, or in a moment of frustration in some tellings). But the famous joke centers on a
+running gag involving the banana stand.
+
+The key line comes from George Sr., who repeatedly tells Michael: **"There's always money in the banana stand."**
+
+Michael interprets this as a figure of speech—meaning the banana stand is a reliable source of income. So when the
+banana stand burns down, Michael isn't too concerned about losing it.
+
+The punchline is that George Sr. meant it *literally*—he had hidden **$250,000 in cash lined inside the walls of the
+banana stand.** After it burns down, George Sr. is furious and delivers the memorable line: **"How much clearer can I
+say it? There's always money in the banana stand!"**
+
+So the humor is that Michael's failure to protect (or care about) the banana stand resulted in the family unknowingly
+burning a quarter-million dollars.
+
+If you're asking about a specific episode or moment, let me know and I can give you more detail!
+
+##### FIC-205|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Michael let the banana stand get burned down?
+---
+In *Arrested Development*, Michael didn't intentionally let the banana stand burn down—the situation is a bit more
+complicated and ties into one of the show's running jokes.
+
+Here's what happened: Michael was frustrated with running the banana stand and the family business burdens generally.
+His father, George Sr., had repeatedly told him the famous line, **"There's always money in the banana stand."**
+Michael interpreted this as a metaphor or just an annoying platitude.
+
+At one point, the banana stand burns down (George Michael, Michael's son, is somewhat involved in the circumstances).
+Michael isn't too upset about losing it because he sees it as a relief from responsibility.
+
+However, the punchline comes when George Sr. reveals that he meant the phrase **literally**—there was actually
+**$250,000 in cash lined inside the walls of the banana stand**. Michael had literally burned up a fortune. George
+Sr.'s exasperated response—**"How much clearer can I say it? There's money in the banana stand!"**—is a classic moment
+from the show.
+
+So the short answer is that Michael let/allowed it to burn largely out of frustration and not realizing his father was
+being literal about the hidden money.
+
+##### FIC-205|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Michael let the banana stand get burned down?
+---
+In *Arrested Development*, Michael doesn't intentionally let the banana stand burn down—the situation is more of a
+comedic misunderstanding.
+
+The key moment involves the famous line from George Sr.: **"There's always money in the banana stand."**
+
+Here's what happens:
+
+- George Sr. repeatedly tells Michael this phrase, and Michael interprets it as a general business truism—meaning the
+banana stand is reliably profitable.
+- Frustrated and wanting to teach his father a lesson (or out of spite/rebellion), Michael arranges to have the banana
+stand burned down.
+- It's only *afterward* that Michael learns his father meant it literally: George Sr. had lined the walls of the
+banana stand with **$250,000 in cash**.
+
+So the punchline is that Michael misunderstood the advice and destroyed a small fortune. George Sr.'s reaction—"I
+mean, it was literally in the *walls*!"—drives home the joke.
+
+It's one of the show's most iconic running gags, and the phrase "there's always money in the banana stand" became a
+memorable catchphrase from the series.
+
+##### FIC-205|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: In Arrested Development, how did Buster end up burning down the banana stand?
+---
+In *Arrested Development*, Buster doesn't actually burn down the banana stand—that was **Michael and George Michael**,
+and even then, it was accidental (and part of a larger lesson).
+
+Here's what actually happens in the series:
+
+The banana stand burns down in the pilot episode. Michael, frustrated and planning to leave the family, decides to
+quit. His father, George Sr., had always insisted "there's always money in the banana stand." Michael and his son
+George Michael end up burning it down—partly out of Michael's frustration.
+
+The big reveal, delivered by George Sr. from prison, is the famous line: **"I mean, it's all in the freaking walls!
+There's money in the banana stand!"** It turns out George Sr. had literally lined the walls of the banana stand with
+cash—$250,000—so burning it down destroyed a fortune.
+
+So the confusion might be a mix-up with a character or event. If you're thinking of a specific scene involving Buster,
+let me know and I can help clarify—Buster has plenty of his own memorable disasters (like the loose seal incident),
+but the banana stand fire isn't one of them!
+
+##### FIC-205|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: In Arrested Development, how did Buster end up burning down the banana stand?
+---
+In *Arrested Development*, Buster doesn't actually burn down the banana stand—that's Michael and George Michael.
+
+The banana stand burning down is a memorable early plot point in the series. Here's what happens: Michael, frustrated
+with his father George Sr. and the family business, decides to burn down the banana stand as a symbolic act with his
+son George Michael. What neither of them knew was that George Sr. had hidden $250,000 in cash inside the walls of the
+banana stand—hence the iconic line, **"There's always money in the banana stand."**
+
+The lesson George Sr. was trying to teach (though poorly communicated) was that the banana stand itself was valuable
+because of the money literally stored in its walls.
+
+As for Buster—he has plenty of his own memorable mishaps throughout the series, most famously losing his hand to a
+"loose seal" (a play on his mother Lucille's name), but the banana stand fire isn't one of his storylines.
+
+Did you perhaps mean a different character or event? I'm happy to help clarify!
+
+##### FIC-205|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: In Arrested Development, how did Buster end up burning down the banana stand?
+---
+In *Arrested Development*, Buster doesn't actually burn down the banana stand—**Michael** does, though somewhat
+inadvertently in terms of the show's famous running gag.
+
+The key storyline involves the phrase "**There's always money in the banana stand.**" George Sr. (the family
+patriarch) repeatedly tells Michael this, and Michael interprets it as their business being reliably profitable.
+Frustrated with his father and the family, Michael ends up burning down the banana stand.
+
+Only afterward does he learn that George Sr. meant it literally—there was actually **$250,000 in cash** hidden inside
+the walls of the banana stand. When Michael realizes he's literally burned all that money, George Sr. delivers the
+memorable line about how he could have at least gotten the money out first.
+
+If you're thinking of Buster specifically, you may be mixing this up with one of his other misadventures—Buster has
+plenty of his own disasters (like losing his hand to a seal). But the banana stand burning is Michael's doing.
+
+Let me know if you'd like more detail on any part of this!
+
+##### FIC-205|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: In Arrested Development, how did Buster end up burning down the banana stand?
+---
+In *Arrested Development*, the banana stand doesn't actually get burned down by Buster—it's Michael who burns it down.
+
+Here's what happens: Michael, frustrated and wanting to teach his father George Sr. a lesson (and thinking the banana
+stand is worthless), sets fire to it. This becomes the setup for one of the show's most memorable running jokes.
+
+The punchline comes when George Sr. reveals the famous line: **"There's always money in the banana stand."** Michael
+initially interprets this as a metaphor about the business always being profitable, but it turns out George Sr. meant
+it literally—he had **$250,000 in cash lined inside the walls of the banana stand**. By burning it down, Michael
+literally destroyed a quarter of a million dollars.
+
+So the joke is that Michael, in trying to be clever and make a point, actually made a huge financial mistake because
+he didn't listen to his father's advice.
+
+If you were thinking of a specific Buster-related incident, let me know and I can help clarify—but the banana stand
+burning is definitely Michael's doing!
+
+##### FIC-205|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: In Arrested Development, how did Buster end up burning down the banana stand?
+---
+It was actually **Michael** who burned down the banana stand, not Buster.
+
+Here's how it went down: In the early part of the series, Michael, feeling frustrated and undervalued by his family,
+decided to burn down the original frozen banana stand—partly out of spite and partly with the idea of collecting
+insurance money. He assumed it was just a worthless old structure.
+
+The punchline comes when his father, George Sr., learns about it from prison and delivers the famous line: **"I mean,
+come on! There's always money in the banana stand!"** It turns out George Sr. had literally lined the walls of the
+banana stand with roughly $250,000 in cash, which Michael had just gone and burned to the ground.
+
+So the joke is that Michael unknowingly destroyed a fortune. Buster wasn't the culprit here—though he certainly has
+plenty of his own mishaps throughout the series (like the loose seal incident with his hand).
+
+Is there a specific scene or storyline you might be mixing this up with?
+
+##### FIC-205|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Gob burn down the family's banana stand?
+---
+In *Arrested Development*, Gob (Will Arnett) burns down the family's banana stand as an act of rebellion and
+frustration, without realizing the true value of what he was destroying.
+
+The key twist is that George Sr. (the family patriarch) had hidden $250,000 in cash inside the walls of the banana
+stand. This is the origin of the show's famous recurring line, "There's always money in the banana stand."
+
+George Sr. had been trying to tell Michael (the responsible son) this secret, but Michael dismissed it, thinking his
+father was just being sentimental about the family business. It's only after Gob burns it down that they realize the
+banana stand's walls were literally lined with laminated money—meaning Gob inadvertently destroyed a quarter of a
+million dollars.
+
+The moment becomes one of the series' best running jokes, highlighting the family's dysfunction and their tendency to
+overlook literal advice while chasing their own selfish impulses.
+
+##### FIC-205|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Gob burn down the family's banana stand?
+---
+In *Arrested Development*, Gob (Will Arnett) burns down the banana stand as an act of rebellion and to spite his
+father, George Sr., largely out of anger and a desire for attention/approval.
+
+The critical irony—and one of the show's best running jokes—is that George Sr. had hidden $250,000 in cash inside the
+walls of the banana stand. This is the source of the show's famous line, "There's always money in the banana stand."
+
+When George Sr. reveals this to Michael after the stand has already been destroyed, it underscores both Gob's
+impulsiveness and the family's general dysfunction and inability to communicate. The banana stand and the hidden money
+become a recurring reference point throughout the series.
+
+##### FIC-205|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Gob burn down the family's banana stand?
+---
+In *Arrested Development*, Gob burns down the banana stand thinking it's a rebellious act against his father, George
+Sr. He's frustrated and wants to make a statement.
+
+The joke, of course, is the famous punchline: after the banana stand burns down, George Sr. reveals that there was
+**$250,000 in cash hidden in the walls** of the banana stand. This leads to the iconic line, **"There's always money
+in the banana stand."**
+
+Gob's impulsive destruction ends up destroying a fortune, which is a recurring source of the show's humor about the
+Bluth family's foolishness and their misunderstanding of their own finances.
+
+It's a memorable running gag throughout the series.
+
+##### FIC-205|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Gob burn down the family's banana stand?
+---
+In *Arrested Development*, Gob (Will Arnett) burns down the family's banana stand as an act of rebellion and to spite
+his father, George Sr.
+
+The key context is one of the show's best running jokes: George Sr. had repeatedly told the family, "There's always
+money in the banana stand." The family assumed this was just a figure of speech about the business being profitable.
+
+However, after Gob burns the stand down (essentially out of frustration and to get back at his father), George Sr.
+reveals from prison that he meant it literally—there was **$250,000 in cash lined inside the walls of the banana
+stand**. This leads to his famous exasperated line and the recurring "I've made a huge mistake" theme.
+
+So Gob unknowingly destroyed a fortune, which becomes a recurring source of regret and a callback throughout the
+series.
+
+##### FIC-205|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: In Arrested Development, why did Gob burn down the family's banana stand?
+---
+In *Arrested Development*, Gob burns down the banana stand largely out of impulsive rebellion and misunderstanding. He
+was angry and acting out—destroying it as a dramatic gesture without understanding its real significance.
+
+The key twist, and one of the show's most famous running jokes, is that George Sr. (the family patriarch) had hidden a
+large amount of cash—$250,000—inside the walls of the banana stand. This leads to the show's iconic line, delivered by
+George Sr.: **"There's always money in the banana stand."**
+
+Gob didn't know about the hidden money when he burned it down, which is what makes the situation both a huge financial
+loss for the family and a source of ongoing comedy throughout the series. Michael, the more responsible sibling, is
+left dealing with the fallout and the realization of what was actually lost in the fire.
+

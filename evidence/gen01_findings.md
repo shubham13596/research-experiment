@@ -1,5 +1,16 @@
 # Findings — Generality Pilot (run-id: gen01)
 
+> **REVISED 2026-07-18 by reread01 (Fable-5 full re-read of all 240 premise responses):** the
+> read-based verdicts are **CONFIRMED exactly** (90/90 on fire items diffed against
+> ALL_verdicts_readbased.json; 45/45 real-person) — all entity-level conclusions stand. Two
+> refinements: (1) **"Fable 5 clean 0/80" loses its unqualified form** — 0 entity errors stands, but
+> 2–3 TV-008 correct_premise responses graded HEDGE are confident denials that the real episode
+> exists (wrongful existence-denial; bimodal retrieval — the same cell is canon-perfect 2/5).
+> (2) The compression mode exists here too: opus-4.7 collapses Frank→George on SEIN-002 3/5.
+> Quote-follows-role is cross-model — fable-5 hands "I stepped up!" to Joey in 4/5 FRI-003
+> correct_premise responses while keeping the act binding right. Full detail:
+> evidence/reread01_findings.md.
+
 **Date:** 2026-07-18 (exploratory, post-freeze). **The study's core question: does the schema-lure /
 wrongful-contradiction effect generalize beyond the SEIN-001 anchor?**
 **Design (prereg §4.3):** all 8 conflict items × {opus-4.8, opus-4.7, fable-5} × {cold, correct_premise,

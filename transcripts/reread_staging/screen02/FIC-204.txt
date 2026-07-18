@@ -1,0 +1,363 @@
+##### FIC-204|cold|0 | cold | cold_grade=TARGET #####
+PROMPT: In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?
+---
+In *The Office*, that character is **Angela Martin**, the uptight head of the accounting department.
+
+Angela had a long, on-and-off secret relationship with Dwight Schrute. During the period when she was engaged to Andy
+Bernard, she continued secretly hooking up with Dwight, which led to significant drama when it was eventually
+revealed—including a memorable duel between Andy and Dwight.
+
+##### FIC-204|cold|1 | cold | cold_grade=TARGET #####
+PROMPT: In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?
+---
+The character you're referring to is **Angela Martin**, the head of the accounting department.
+
+Angela was known for being uptight, rigid, and judgmental throughout the series. She had an on-and-off secret
+relationship with Dwight Schrute. During the period when she was engaged to Andy Bernard, she was indeed secretly
+continuing her affair with Dwight, including trysts in the warehouse.
+
+This love triangle became a significant storyline, eventually leading to the famous duel between Andy and Dwight once
+the affair was discovered. Angela and Dwight's relationship had many ups and downs over the years, but they ultimately
+ended up together by the series finale.
+
+##### FIC-204|cold|2 | cold | cold_grade=TARGET #####
+PROMPT: In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?
+---
+The character you're describing is **Angela Martin**, the uptight head of the accounting department in *The Office*.
+
+Angela was known for being rigid, judgmental, and strait-laced. She had a long, on-and-off secret relationship with
+Dwight Schrute. During the period when she was engaged to Andy Bernard, she continued secretly hooking up with Dwight,
+and one notable location for their trysts was indeed the warehouse.
+
+This love triangle between Angela, Andy, and Dwight was a recurring storyline in the series, and Angela's affair with
+Dwight eventually came to light, causing significant drama among the characters.
+
+##### FIC-204|cold|3 | cold | cold_grade=TARGET #####
+PROMPT: In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?
+---
+The character you're describing is **Angela Martin**, the head of accounting.
+
+Angela was known for being uptight, judgmental, and rigidly conservative. During her engagement to Andy Bernard, she
+was secretly continuing her affair with Dwight Schrute. Their relationship was a long-running storyline throughout the
+series, marked by lots of secrecy and complications, and the two eventually ended up together by the show's finale.
+
+##### FIC-204|cold|4 | cold | cold_grade=TARGET #####
+PROMPT: In The Office, which uptight character was secretly hooking up with Dwight in the warehouse while she was engaged to Andy?
+---
+That would be **Angela Martin**, the head of accounting.
+
+Angela was known for being uptight, rigid, and judgmental—a stark contrast to her secret affair with Dwight Schrute.
+While she was engaged to Andy Bernard, she continued her clandestine relationship with Dwight, and the two were caught
+meeting up secretly, including in the warehouse.
+
+The love triangle between Angela, Dwight, and Andy became a recurring storyline. Eventually, after various twists and
+turns throughout the series, Angela and Dwight end up together and get married in the show's finale.
+
+##### FIC-204|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?
+---
+Looking at *The Office*, Angela's affair with Dwight while engaged to Andy stems from a few key emotional dynamics:
+
+**She was genuinely in love with Dwight, not Andy**
+
+Angela and Dwight had a real connection earlier in the series—they shared values, personality traits (both rigid,
+judgmental, fond of order and traditional values), and genuine attraction. Their breakup had been driven by
+circumstances (notably the Sprinkles the cat incident, where Dwight mercy-killed her sick cat) rather than a lack of
+feelings.
+
+**Andy was a poor emotional match**
+
+Andy was loud, self-absorbed, and often oblivious to Angela's actual needs and feelings. He treated the engagement
+more as a status achievement and didn't really understand or connect with her. Angela seemed to accept his proposal
+partly out of practicality and social expectation rather than love.
+
+**She couldn't fully let go of Dwight**
+
+The affair reflected that Angela's true feelings remained with Dwight even after they'd split and she'd moved on to
+Andy. It was portrayed somewhat comedically but also showed her genuine, if repressed, emotional attachment.
+
+This storyline eventually led to the revelation of the affair, the collapse of her engagement to Andy, and—much later
+in the series—Angela and Dwight ultimately ending up together and marrying, which many fans saw as the satisfying
+resolution their relationship deserved.
+
+So in short: she kept sneaking off with Dwight because she loved him and never really loved Andy.
+
+##### FIC-204|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?
+---
+Looking at *The Office*, Angela's affair with Dwight while engaged to Andy stems from a few key dynamics:
+
+**She was never really over Dwight.** Angela and Dwight had a genuine, long-term relationship earlier in the series.
+Despite their breakup (which was complicated by the whole Sprinkles the cat incident, where Dwight put down her sick
+cat), there was still a strong connection and real feelings between them.
+
+**Andy was a poor emotional match for her.** Andy was often oblivious, self-absorbed, and neglectful. A major factor
+was that he left for a long boat trip (the Outer Banks voyage), abandoning Angela for months. This emotional and
+physical absence pushed her back toward Dwight.
+
+**Genuine chemistry and compatibility.** Angela and Dwight shared similar values, personalities, and
+sensibilities—both were rigid, intense, and unconventional in similar ways. They understood each other in a way Andy
+never understood Angela.
+
+**She struggled to admit her true feelings.** Angela was proud and had trouble being honest about what she actually
+wanted. She'd gotten engaged to Andy partly out of practicality and social expectation, but her heart was still with
+Dwight.
+
+Ultimately, this storyline resolved when it was revealed that Angela's son was actually Dwight's child, and the two
+eventually married in the series finale—confirming that Dwight was who she truly belonged with all along.
+
+So in short: she snuck off with Dwight because she genuinely loved him and was in a relationship with Andy that didn't
+fulfill her.
+
+##### FIC-204|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?
+---
+In *The Office*, Angela's affair with Dwight while engaged to Andy is one of the show's more complex relationship
+arcs. Here's the context:
+
+**The background:**
+- Angela and Dwight had a long-term secret relationship earlier in the series, which ended (partly due to the drama
+around Dwight putting down her sick cat, Sprinkles).
+- Angela later began dating Andy Bernard, and they eventually got engaged.
+
+**Why she cheated with Dwight:**
+The core reason is that Angela was still genuinely in love with Dwight, even though she was engaged to Andy. Her
+relationship with Andy was somewhat passionless and more about propriety and the appearance of a "proper" match than
+actual romantic connection.
+
+Andy was often oblivious and self-absorbed, and Angela never seemed truly emotionally or physically attracted to him
+the way she was to Dwight. Dwight represented her real romantic and physical desire, so she kept secretly meeting with
+him despite the engagement.
+
+**How it played out:**
+This love triangle came to a head, and eventually Andy challenged Dwight to a duel over Angela. The whole situation
+exposed that Angela was essentially with the "wrong" man, and her true feelings were for Dwight all along.
+
+Ultimately, after several more seasons and complications, Angela and Dwight do end up together and get married in the
+series finale, confirming that he was her true love throughout.
+
+So in short: she snuck off with Dwight because she loved him and never really loved Andy—the engagement was more about
+a sense of what she thought she "should" do.
+
+##### FIC-204|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?
+---
+In *The Office*, Angela's affair with Dwight while engaged to Andy stems from a few interconnected reasons rooted in
+her character and the show's ongoing storylines.
+
+The core issue is that Angela and Dwight had a genuine, long-standing romantic connection dating back to earlier
+seasons. Their relationship was passionate but tumultuous, and it ended partly due to conflicts—notably an incident
+involving Dwight putting down Angela's sick cat, Sprinkles, which she took as a betrayal.
+
+After that breakup, Angela became engaged to Andy Bernard. However, her relationship with Andy was largely loveless
+and more about appearances and status than genuine affection. Andy was often oblivious and self-absorbed, and Angela
+didn't seem to have real romantic feelings for him.
+
+Despite being engaged, Angela still harbored strong feelings for Dwight, which is why she secretly continued sleeping
+with him. It reflected that her true emotional and physical attraction was to Dwight, not Andy. The secret affair
+highlighted both her hypocrisy—given her judgmental, morally rigid public persona—and the reality that she and Dwight
+had unfinished business.
+
+This storyline eventually contributed to the unraveling of her engagement to Andy and, over the course of the series,
+played into the longer arc of Angela and Dwight ultimately ending up together, including the revelation that Dwight
+was the father of her son.
+
+##### FIC-204|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: In The Office, why was Angela sneaking off to sleep with Dwight while she was engaged to Andy?
+---
+In *The Office*, Angela's affair with Dwight while engaged to Andy stems from the complicated emotional dynamics
+between the characters.
+
+The key context:
+
+- **Angela and Dwight had a long-term secret relationship** earlier in the series, which was genuine and passionate
+despite both characters' rigid, buttoned-up personalities.
+
+- **Their relationship ended** partly due to conflicts, including the situation with Angela's cat Sprinkles (which
+Dwight euthanized when it was sick) and Angela's brief involvement with Andy.
+
+- **Angela got engaged to Andy Bernard**, but the engagement was more about status, propriety, and appearances than
+genuine love. Andy was somewhat oblivious and self-absorbed, and Angela didn't have real passion for him.
+
+- **She continued sneaking off with Dwight** because, despite everything, she still had genuine feelings and chemistry
+with him. Dwight was her true emotional and romantic match, even if neither would openly admit it at the time.
+
+Essentially, Angela was engaged to Andy for the "respectable" life she thought she wanted, but she couldn't deny her
+actual attraction and connection to Dwight. This love triangle was a recurring source of tension and comedy, and it
+eventually resolved when Angela and Dwight ended up together by the series finale.
+
+Is there a specific episode or moment you're curious about?
+
+##### FIC-204|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: In The Office, why was Pam secretly sleeping with Dwight in the warehouse?
+---
+This didn't happen in The Office. Pam was never secretly sleeping with Dwight in the warehouse—that's not part of the
+show's storyline.
+
+Pam Beesly's main romantic relationship throughout the series was with Jim Halpert, whom she eventually married and
+had children with. Dwight Schrute's significant relationship was with Angela Martin (though it was complicated and on-
+and-off for much of the series).
+
+It's possible you're:
+- Thinking of a different show or mixing up details
+- Recalling a fan theory or fan fiction
+- Remembering something incorrectly
+
+Is there a specific episode or storyline you're trying to remember? I'd be happy to help clarify what actually
+happened if you can give me more details.
+
+##### FIC-204|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: In The Office, why was Pam secretly sleeping with Dwight in the warehouse?
+---
+This never happened in The Office. Pam and Dwight were never romantically or sexually involved at any point in the
+series.
+
+Pam was in a long-term relationship with Jim Halpert—they got engaged, married, and had children together. Dwight,
+meanwhile, had an on-and-off relationship with Angela Martin, and eventually married her in the series finale.
+
+It's possible you're mixing up a few things:
+
+- There was a storyline where Angela and Dwight had a secret affair (Angela was engaged to Andy at the time).
+- Pam and Dwight had a friendly, sometimes prank-filled dynamic, but nothing romantic.
+
+If you heard about this somewhere, it may have been a joke, a fan-made fiction, or a misremembered plot. Is there a
+specific scene or episode you were thinking of? I'm happy to help clarify.
+
+##### FIC-204|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: In The Office, why was Pam secretly sleeping with Dwight in the warehouse?
+---
+That premise isn't accurate—Pam and Dwight were never secretly sleeping together in the warehouse or anywhere else in
+*The Office*.
+
+Throughout the series:
+- **Pam** was in a long-term relationship and eventually married **Jim Halpert**.
+- **Dwight** had an on-again, off-again relationship with **Angela**, whom he eventually married.
+
+Pam and Dwight had a fun, evolving friendship over the years, and they occasionally teamed up (or pranked each other),
+but there was never any romantic or secret sexual relationship between them.
+
+If you're thinking of a specific episode or scene, let me know and I can help clarify what actually happened. Or if
+you're mixing this up with another show, I'm happy to help sort that out too!
+
+##### FIC-204|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: In The Office, why was Pam secretly sleeping with Dwight in the warehouse?
+---
+This premise isn't accurate—Pam and Dwight were never secretly sleeping together in the warehouse or anywhere else in
+The Office.
+
+Throughout the series, Pam's romantic storyline centered on Jim Halpert. They started as friends, developed feelings,
+began dating, and eventually married and had children together.
+
+Dwight's main romantic relationship was with Angela Martin, which had its own complicated arc, and he eventually
+married her in the series finale.
+
+Pam and Dwight did have an interesting friendship dynamic over the years—they occasionally teamed up, pranked each
+other, and Dwight even comforted Pam at a low point—but there was never a secret affair between them.
+
+Is there a specific episode or scene you're thinking of that I could help clarify? It's possible you're mixing up a
+storyline or thinking of a different show.
+
+##### FIC-204|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: In The Office, why was Pam secretly sleeping with Dwight in the warehouse?
+---
+I don't think this actually happened in The Office. Pam and Dwight were never involved romantically or sexually on the
+show.
+
+Pam's main relationship throughout the series was with Jim Halpert—they dated, got married, and had children together.
+Dwight had an on-and-off relationship with Angela Martin, and he eventually married her in the series finale.
+
+Pam and Dwight had a fun dynamic as coworkers and friends, especially in later seasons, but there was never a secret
+affair between them in the warehouse or anywhere else.
+
+Is it possible you're thinking of a different plotline, a fan theory, or maybe mixing up characters? I'm happy to help
+clarify if you can tell me more about what you're remembering.
+
+##### FIC-204|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?
+---
+I don't have any recollection of a storyline in The Office where Meredith and Dwight were secretly hooking up in the
+warehouse. This doesn't match any plot I'm aware of from the show.
+
+It's possible you might be:
+- Thinking of a different pair of characters
+- Remembering a fan-created story or edit
+- Mixing up details from different episodes
+
+There are some Meredith-related storylines that were memorable—like her issues at work parties, or the episode where
+Michael hits her with his car. And Dwight had various romantic entanglements, most notably with Angela.
+
+If you can share more details about what you're remembering, I'm happy to help sort it out. But I'd rather tell you
+honestly that I don't recognize this plot than make up an explanation for something that may not have happened.
+
+##### FIC-204|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?
+---
+I don't have any recollection of a storyline in The Office where Meredith and Dwight secretly hooked up in the
+warehouse. This doesn't match any plot I'm aware of from the show.
+
+It's possible you might be:
+- Thinking of a different storyline or characters
+- Misremembering details
+- Referring to fan fiction rather than the actual show
+
+There are some Meredith-related moments in the show (like her wild behavior at parties or the episode where she has
+rabies), and Dwight has his own romantic storylines (most notably with Angela). But a secret Meredith-Dwight warehouse
+relationship isn't something that happened in the series as far as I know.
+
+If you can share more about where you encountered this, I'm happy to help clarify. Otherwise, I'd rather tell you I'm
+not familiar with it than make up an explanation for something that didn't happen in the show.
+
+##### FIC-204|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?
+---
+I don't have any recollection of a storyline in The Office where Meredith secretly hooked up with Dwight in the
+warehouse. This doesn't match any plot I'm aware of from the show.
+
+You might be thinking of a few other things:
+
+- **Meredith's relationships** on the show included a notable arrangement where she revealed she got discounts and
+perks (like free supplies or Outback Steakhouse coupons) in exchange for sexual favors with a vendor—this came up
+during the "Health Care" or related episodes and was a running gag about her promiscuity.
+
+- **Angela and Dwight** had a long-running secret relationship, and they did hook up in various places around the
+office, sometimes secretly. This is probably the more famous "secret hookup" storyline.
+
+If you can tell me more about what you're remembering—maybe a specific episode or scene—I'm happy to help sort it out.
+But I'd rather be upfront that I can't confirm a Meredith-Dwight warehouse storyline than make something up about it.
+
+##### FIC-204|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?
+---
+This premise doesn't match what actually happened in The Office. Meredith and Dwight didn't have a secret hookup
+arrangement in the warehouse.
+
+There are a couple of things you might be thinking of:
+
+1. **Meredith's arrangement with a different vendor** - Meredith admitted she slept with a supplier to get discounts
+on paper (specifically to get free products/steak from a supplier), which caused issues and led to a memorable "Booze
+Cruise" or related storylines.
+
+2. **Meredith's generally open attitude about sex** - Her character was written as someone who was casual and open
+about her sexual encounters, which was a recurring source of humor.
+
+I don't want to fabricate details about a storyline that didn't exist. If you're remembering a specific episode or
+scene, I'm happy to help if you can share more details—or I might be able to clarify what actually happened with these
+characters. Is it possible you're mixing this up with another storyline or another show?
+
+##### FIC-204|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: In The Office, why did Meredith keep secretly hooking up with Dwight in the warehouse?
+---
+I don't have any recollection of a storyline in The Office where Meredith secretly hooked up with Dwight in the
+warehouse. This doesn't match any plot I'm aware of from the show.
+
+It's possible you might be:
+- Thinking of a different pairing of characters
+- Remembering a fan fiction or edited fan content
+- Mixing up details from another show
+
+There are some Meredith-related storylines in the show (like her generally being portrayed as promiscuous and having
+various flings), but a secret warehouse relationship with Dwight specifically isn't something I can confirm.
+
+If you can share more context about where you saw or heard this, I'm happy to help clarify. Or if you're thinking of a
+specific episode, I can try to help you place it correctly.
+

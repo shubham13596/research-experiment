@@ -5,13 +5,25 @@ chat) resume with zero context loss. All durable state is in this repo — this 
 
 ## One-line state
 Preregistered schema-lure study is FROZEN and public. Effect localized (phrasing01), generality-tested
-(gen01), then stress-tested on purpose-built real-person items (screen01) and a broad fiction set
-(screen02). CURRENT HEADLINE: the schema-lure confident-error is REAL but NARROW — it needs a confluence
-(strong archetype lure + genuinely confusable/under-encoded binding + messy reconstruction phrasing). It
-does NOT generalize across fiction (1 clean fire / 15 in screen02) and does NOT appear on real people
-(0/5 screen01, 0 on gen01 real-people). Most of the time the models are WELL-CALIBRATED (know+resist, or
-hedge when unsure). The one big unresolved confound: PHRASING (our only strong trigger was the observer's
-MESSY verbatim prompt, 70%; every batch since used CLEAN prompts). Next experiment isolates that.
+(gen01), stress-tested on purpose-built real-person items (screen01) and a broad fiction set (screen02),
+and THE BIG CONFOUND (phrasing) NOW CLOSED (phrasing02). CURRENT HEADLINE: the schema-lure confident-error
+is REAL but ITEM-GATED. Phrasing is a MULTIPLIER on a pre-existing item susceptibility, NOT an independent
+cause: messy/confused phrasing amplifies the one clearly-susceptible item (SEIN-001: clean-recon 1/8 →
+messy 5/8) but does NOT flip well-encoded bindings — 5/5 robust items (3 fiction + 2 real-person) fire 0/8
+under BOTH clean and messy phrasing, and additionally correct the user's planted peripheral errors ~8/8.
+So the fiction-narrow / real-robust boundary is REAL, not an artifact of clean prompts. Then the FULL
+FABLE-5 RE-READ (`reread01`): lead read all 144 phrasing02 responses + 8 forks re-read the entire earlier
+corpus (~760 responses: gen01 premise, screen01, screen02, phrasing01). Entity-level conclusions SURVIVE
+(gen01 verdicts confirmed 90/90 exactly; screen01 25/25+25/25; phrasing01 contrasts hold at corrected rates
+63/47/17/0). But the taxonomy expanded to SIX failure modes — (1) archetype capture (SEIN-001,
+messy-amplified), (2) lure acceptance/sycophancy, (3) compression-to-famous-binding (FIC-205→Michael 11/16,
+FIC-202→Leslie, SEIN-002 4.7 Frank→George), (4) wrongful existence-denial (TV-008 fable, FIC-212
+overshoot-denial), (5) truth-rejection-as-unfamiliarity (FIC-201/203 — rejects TRUE premise as unverifiable
+while correcting false premises TO that truth), (6) wrongful DOUBT of documented real-person facts
+(stance-dependent assertion, MAR-204/205) — modes 4-6 are invisible to entity-swap rubrics. ONE-SENTENCE
+THESIS: models defend the highest-fluency version of a memory against everything, including the user being
+right — fiction gets wrongful correction, real people get wrongful doubt. Quote/blame/peripheral slots are
+MORE fragile than act slots in every model incl. Fable 5 (effort-gated). See evidence/reread01_findings.md.
 
 ## The finding so far (this is the story)
 The observation that motivated the study — Opus 4.8 misattributing Seinfeld "The Beard"'s polygraph
@@ -73,8 +85,30 @@ to George instead of Jerry — has been pinned down AND generalized:
   transcripts/screen01/adjudicate/. (evidence/screen01_findings.md)
 - `screen02` — danger-zone screen of 15 fiction items (FIC-201..215) on Opus 4.8, same 4 conditions ×5 =
   300 calls. 1 clean fire (FIC-205). Read verdicts: transcripts/screen02/adjudicate/. (evidence/screen02_findings.md)
+- `phrasing02` — **THE phrasing discriminator (closes the confound).** 9 items {SEIN-001, SEIN-002, FRI-003,
+  FIC-205 known fires; FIC-206, FIC-209, FIC-211 robust fiction; SCI-201, GOV-202 robust real-person} ×
+  {B clean-reconstruction, C messy-confused} × n=8 = 144 calls, Opus 4.8, high effort, no tools. CORRECT
+  premise throughout (fire = wrongful contradiction, cannot be sycophancy); C adds one planted peripheral
+  error (correcting it = attention signal, not a fire). 0 errors, read-adjudicated (9 reader agents + lead
+  spot-check of SEIN-001/FRI-003 fires, then LEAD FULL READ of all 144). RESULT: archetype fires only on
+  SEIN-001 (B 1/8, C 5/8 — replicates phrasing01's clean→messy jump); all 5 robust items 0/8 in BOTH
+  conditions; real-person 0/16. Phrasing multiplies susceptibility, doesn't create it. LEAD-READ REVISION:
+  FIC-205 shows an 11/16 wrongful-contradiction toward "Michael-alone" (famous compressed binding, NOT the
+  Gob archetype), phrasing-insensitive — third failure mode. Cross-item lead findings: correction reflex,
+  quote-follows-role, peripheral churn under stable core (SEIN-002), visible self-repair, SCI-201
+  "Hans Müller" false correction, anti-sycophantic real-person drift. Planted-error correction near-ceiling
+  (8/8) on robust items, near-floor (1/8) on SEIN-001. Variants + spec:
+  items/candidates/phrasing02_{variants.json,spec.md}. Verdicts + lead notes:
+  transcripts/phrasing02/adjudicate/results/{ALL_verdicts_readbased.json,LEAD_read_notes.md}.
+  (evidence/phrasing02_findings.md)
 - `search02` — cross-vendor (GPT/Gemini) search-seeking: PARKED by user decision, not abandoned. Pick-up
   notes: evidence/search02_cross_vendor_PARKED.md.
+- `reread01` — **Fable-5 full re-read of the program corpus** (~900 responses: phrasing02 lead read + 8
+  forks over gen01/screen01/screen02/phrasing01). No new API calls. RESULT: entity-level conclusions
+  survive; taxonomy expands to 6 modes; phrasing01 rates corrected (63/47/17/0, "all spot-verified"
+  retracted); "Fable clean 0/80" qualified (TV-008 existence-denials); screen02 "12/15 robust" overstated
+  (FIC-201/203 truth-rejection, FIC-212 overshoot-denial); screen01 wrongful-doubt found; keyword-artifact
+  count now ~10. Revision notices added atop each affected findings doc. (evidence/reread01_findings.md)
 
 ## New item inventories (post-gen01, candidates/ — NOT promoted to items/)
 - Tier-3a real-person role-inversion (deceased/resolved/public-record), 5 VERIFIED + built:
@@ -98,23 +132,25 @@ Tier 1: SEIN-001, SEIN-002, FRI-003, SIMP-004, TV-008.  Tier 2: SPORT-102, HIST-
 Rejected candidates + audit trail: items/candidates/. Verification logs: evidence/.
 
 ## Open decisions / next steps (in priority order)
-1. **PHRASING DISCRIMINATOR (recommended next, proposed to user, awaiting go):** isolate the biggest confound.
-   Take ~6 items that RESISTED under clean phrasing (e.g. FIC-206 GoT/Sansa, FIC-209 BB/Gale, FIC-211 Hobbit)
-   + the known fires (FIC-205, SEIN-001/002, FRI-003), and run MESSY/confused-user phrasing vs CLEAN phrasing
-   head-to-head on Opus 4.8, read-adjudicated (~150-200 calls). If messy flips the robust items → PHRASING is
-   the driver (reframe to "confused-user phrasing induces schema confabulation"); if they still resist →
-   robustness is real and item-encoding is the lever. Draft the messy variants naturalistically (like the real
-   Melrose prompt) and SHOW USER before running — messy phrasing is the item-construction danger zone.
-2. **Whole-program synthesis / write-up option:** enough evidence now exists for an honest bounded paper —
-   mechanism + boundary (fiction-narrow, real-robust) + calibration (hedge-when-unsure) + methodology
-   (keyword grading fabricates; reading required). Consider whether to write vs keep probing.
+1. **PHRASING DISCRIMINATOR — DONE (phrasing02, 2026-07-18).** Result: phrasing is a MULTIPLIER on item
+   susceptibility, not the driver. Robust items (fiction + real) resist BOTH clean and messy phrasing (0/8
+   each); only SEIN-001 fires and messy amplifies it (1/8→5/8). The confound is CLOSED in the direction that
+   strengthens the bounded thesis. See evidence/phrasing02_findings.md. → This promotes #2 (write-up) to the
+   top and answers the old "is robustness a clean-phrasing artifact?" — no.
+2. **Whole-program synthesis / write-up (NOW THE RECOMMENDED NEXT STEP):** all major confounds resolved —
+   mechanism (schema/archetype retrieval) + boundary (item-encoding-gated: under-encoded sitcom bindings
+   fire, well-encoded fictional deaths + real historical record resist) + phrasing (multiplier, not cause)
+   + calibration (hedge-when-unsure; fires are often uncertainty-marked) + methodology (keyword grading
+   fabricates; reading required). The honest bounded paper is writable now. Consider write vs keep probing.
+   OPTIONAL cheap add before writing: operationalize "encoding strength" using existing cold-accuracy data
+   as a quantitative predictor of fire-probability (turns the post-hoc "under-encoded" label into a measure).
 3. **If pursuing more elicitation:** the effect concentrates in sitcom/ensemble character-behavior quirks with
    scene-adjacent archetype lures (NOT famous "who killed X" facts, which are richly encoded and resist). Source
    more of THAT shape if broadening the fire set.
 4. **Grading infra:** reading-adjudication is the standing method; automated entity-matching is banned for
    premise scoring. (screen runner grades only cold by keyword, and even that needs spot-check.)
-5. Housekeeping: real author name in prereg (still "[your name]"); Anthropic bug report; log
-   search01/gen01/screen01/screen02 in the prereg changelog as post-freeze exploratory.
+5. Housekeeping: real author name in prereg (still "[your name]"); Anthropic bug report. Prereg changelog
+   NOW CAUGHT UP through phrasing02 (v0.2.8 logs the exploratory runs + phrasing02 pre-data predictions).
 6. Deferred: foil-premise controls on the original 8 items; cross-vendor search02; obscure-real-person items
    (all lower priority now that real-people robustness is replicated twice).
 

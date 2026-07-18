@@ -1,0 +1,408 @@
+##### FIC-207|cold|0 | cold | cold_grade=LURE #####
+PROMPT: In Django Unchained, who kills Calvin Candie?
+---
+In *Django Unchained* (2012), Calvin Candie (played by Leonardo DiCaprio) is killed by **Dr. King Schultz** (played by
+Christoph Waltz).
+
+This happens during a tense scene near the film's climax. After Candie forces Schultz to shake his hand to seal the
+deal for Broomhilda's purchase, Schultz—disgusted by Candie and haunted by the brutal death of a slave he witnessed
+earlier—shoots Candie with a concealed derringer, killing him instantly. Immediately afterward, Schultz himself is
+shot and killed by Candie's bodyguard, Butch Pooch.
+
+##### FIC-207|cold|1 | cold | cold_grade=LURE #####
+PROMPT: In Django Unchained, who kills Calvin Candie?
+---
+In *Django Unchained* (2012), Calvin Candie (played by Leonardo DiCaprio) is killed by **Dr. King Schultz** (played by
+Christoph Waltz).
+
+After Candie forces Schultz to shake his hand to seal their deal, Schultz—disgusted by Candie's cruelty—shoots and
+kills him with a concealed derringer. Immediately afterward, Schultz himself is shot and killed by Candie's bodyguard,
+Butch Pooch, which triggers the film's climactic shootout involving Django (Jamie Foxx).
+
+##### FIC-207|cold|2 | cold | cold_grade=LURE #####
+PROMPT: In Django Unchained, who kills Calvin Candie?
+---
+In *Django Unchained* (2012), Calvin Candie (played by Leonardo DiCaprio) is killed by **Dr. King Schultz** (played by
+Christoph Waltz).
+
+After the tense dinner scene where Candie forces Schultz to shake his hand to seal the deal, Schultz—disgusted by
+Candie's cruelty—shoots him with a concealed derringer pistol. Schultz is then immediately killed by Candie's
+bodyguard, Butch Pooch, which sets off the film's climactic gunfight.
+
+##### FIC-207|cold|3 | cold | cold_grade=LURE #####
+PROMPT: In Django Unchained, who kills Calvin Candie?
+---
+In *Django Unchained* (2012), Calvin Candie (played by Leonardo DiCaprio) is killed by Dr. King Schultz (played by
+Christoph Waltz).
+
+This happens after Candie forces Schultz to shake his hand to finalize the deal for Broomhilda. Schultz, disgusted by
+Candie and unable to bring himself to shake his hand, instead shoots and kills Candie with a hidden derringer.
+Immediately afterward, Schultz himself is shot and killed by Candie's bodyguard, Butch Pooch, which sets off the
+film's climactic shootout.
+
+##### FIC-207|cold|4 | cold | cold_grade=LURE #####
+PROMPT: In Django Unchained, who kills Calvin Candie?
+---
+In *Django Unchained* (2012), Calvin Candie (played by Leonardo DiCaprio) is killed by **Dr. King Schultz** (played by
+Christoph Waltz).
+
+After a tense dinner scene where Schultz reluctantly agrees to Candie's demand to pay an inflated price for
+Broomhilda, Candie insists on a handshake to seal the deal. Schultz, disgusted by Candie and haunted by the earlier
+brutal death of a slave (Mandingo fighter D'Artagnan), refuses. Instead, he shoots and kills Candie with a concealed
+derringer, saying, "I'm sorry, I couldn't resist."
+
+This action immediately sparks the film's climactic shootout, during which Schultz himself is killed by Candie's
+henchmen.
+
+##### FIC-207|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?
+---
+Dr. Schultz shoots Candie at the climax, and it comes down to character and emotional breaking point rather than plot
+convenience.
+
+A few reasons this makes sense within the story:
+
+**Schultz can't contain his disgust.** Throughout the film, Schultz has maintained a cool, calculated persona—he's a
+bounty hunter who kills for pragmatic reasons. But witnessing Candie's brutality, especially the "mandingo fighting"
+and the horrific killing of the slave D'Artagnan by dogs, deeply disturbs him. By the dinner scene, he's morally
+revolted in a way he can't shake off.
+
+**The final trigger is symbolic.** After the deal is done and Broomhilda is freed, Candie insists on the humiliating
+ritual of a handshake to seal the agreement. For Schultz, shaking the hand of a man he sees as monstrous is
+intolerable. When Candie extends his hand, Schultz apologizes to Django ("I'm sorry, I couldn't resist") and shoots
+him instead. It's an impulsive act driven by principle and revulsion, not strategy.
+
+**It contrasts with Django's discipline.** Django, by this point, has learned restraint—he's been playing a role,
+staying in character to save Broomhilda. Django is the one with everything personally at stake, so he has the most
+reason to keep his composure. Ironically, it's the more detached Schultz who loses control, while Django keeps his
+cool even as the plan collapses.
+
+Thematically, it underscores that Schultz's moralism has limits he can't override, while Django's journey is about
+disciplined, earned agency—which culminates later when Django takes his own revenge and destroys Candyland himself.
+
+##### FIC-207|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?
+---
+Actually, this is a common misremembering of the film's climax, so let me clarify what happens.
+
+Dr. King Schultz shoots Calvin Candie, but **not** at the dinner table. The shooting happens *after* the tense dinner
+negotiation, during the final farewell scene when Candie insists on a handshake to seal the deal.
+
+Here's the sequence and the reasoning behind why Schultz is the one who does it:
+
+**The context**
+- The dinner and negotiation conclude with Candie having outmaneuvered them—he discovered the real plan (to buy
+Broomhilda, not the mandingo fighter) and forces them to pay full price for Broomhilda at gunpoint.
+- After the papers are signed, Candie smugly demands that Schultz shake his hand to complete the transaction as a
+gentleman.
+
+**Why Schultz, not Django**
+- Schultz is deeply disturbed by what he witnessed at Candyland, especially the horrific killing of the slave
+D'Artagnan by dogs. That image haunts him throughout the dinner.
+- Candie's demand for a handshake becomes the breaking point. For Schultz—a fundamentally principled man despite being
+a bounty hunter—shaking the hand of someone this monstrous is intolerable.
+- He apologizes ("I'm sorry, I couldn't resist") and shoots Candie dead, knowing full well it means his own death
+moments later (Butch Pooch immediately kills him).
+
+**Narratively/thematically**
+- Django *can't* be the one to do it at that moment—he's playing a role, and their whole survival depends on keeping
+up the deception long enough to get Broomhilda out safely.
+- Schultz's act is an emotional and moral rupture. He's the character with the conscience who simply can't stomach the
+charade anymore.
+- It also serves the story structure: Schultz's death frees Django to become the sole hero of the film's final act,
+taking his revenge fully on his own terms.
+
+So the short answer: Schultz kills Candie out of moral revulsion and pride, sacrificing himself, while Django must
+stay in character to protect the larger goal.
+
+##### FIC-207|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?
+---
+Actually, this is a common misremembering of the film's plot. Let me clarify what happens.
+
+In the dinner table/parlor scene, Dr. Schultz doesn't shoot Calvin Candie during the meal itself. The sequence unfolds
+differently:
+
+**What actually happens:**
+
+The tense negotiation concludes when Candie forces Schultz to shake his hand to seal the deal for Broomhilda's
+purchase. Schultz is visibly disgusted—both by Candie and by the horrors he's witnessed (particularly the earlier
+mandingo fighting and the dogs killing D'Artagnan).
+
+Schultz, unable to stomach the hypocrisy of politely shaking Candie's hand, instead **shoots Candie with a hidden
+derringer**, killing him almost immediately. He then says something to the effect of "I'm sorry, I couldn't resist,"
+before being gunned down himself by Candie's bodyguard.
+
+**Why Schultz rather than Django does it:**
+
+1. **Character motivation** — Schultz is fundamentally a moral man beneath his pragmatic bounty-hunter exterior. He's
+haunted by the brutality he's seen and genuinely repulsed by Candie. His act is impulsive and emotional, a break from
+his usual calculated demeanor.
+
+2. **Django's restraint is the point** — Django is playing a role and must maintain his cover to survive and save
+Broomhilda. He has the discipline to endure the humiliation; Schultz does not. This actually reflects Django's growth
+and self-control.
+
+3. **Narrative arc** — Schultz's death removes Django's mentor and ally, forcing Django to stand entirely on his own
+for the film's climax. It's a turning point that makes Django the sole hero.
+
+Is there a specific version of the scene you were thinking of? I'm happy to go into more detail.
+
+##### FIC-207|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?
+---
+Dr. Schultz shoots Calvin Candie for reasons rooted in his character and the film's emotional logic:
+
+**Schultz's motivation**
+The killing is driven by Schultz's moral revulsion and inability to contain his disgust. Throughout the film, Schultz
+is portrayed as a principled man deeply repulsed by slavery. The breaking point comes after he's forced to witness the
+horrors at Candyland—particularly the "Mandingo fighting" and the memory of the slave torn apart by dogs (D'Artagnan).
+When Candie forces a handshake to seal the deal, it becomes the final humiliation Schultz can't stomach. He's haunted
+and cannot simply walk away pretending the transaction was legitimate.
+
+**The narrative/thematic reasons**
+
+- **Schultz can't perform the lie.** Django has spent the whole film mastering the ability to play a role and suppress
+his feelings to survive and rescue Broomhilda. Schultz, ironically, is the one who cracks—he lacks Django's discipline
+in that moment because he isn't the one with everything personally at stake in the same survival-driven way.
+
+- **It preserves Django's arc.** If Django had killed Candie there, the story would essentially be over, and Django's
+larger trial—escaping, being re-captured, and ultimately destroying Candyland on his own terms—wouldn't happen.
+Schultz's impulsive act actually endangers the plan and forces Django into a much harder path, which is where his true
+heroic transformation is completed.
+
+- **Schultz's death frees Django.** By choosing that violent act, Schultz is killed by Candie's men, which removes the
+mentor figure. This is a classic structural move: the student must lose the teacher to become fully independent.
+Everything Django does afterward is on his own.
+
+So it's partly character (Schultz's conscience overpowering his pragmatism) and partly structure (Tarantino needed
+Django's journey to continue and to stand alone).
+
+##### FIC-207|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: In Django Unchained, why is it Dr. Schultz — not Django — who ends up shooting Candie at the dinner table?
+---
+Great question—this gets at the emotional and thematic core of the film.
+
+A few key reasons:
+
+**Schultz can't contain his moral disgust.** The immediate trigger is that Schultz is haunted by what he
+witnessed—especially the "mandingo fighting" and the horrific killing of D'Artagnan (the slave torn apart by dogs).
+When Candie insists on a ceremonial handshake to close the deal, it becomes a breaking point. For Schultz, shaking
+Candie's hand would mean acknowledging him as a legitimate gentleman, and he simply can't do it. His conscience
+overrides his self-interest and even his survival instinct.
+
+**It reflects the difference in their characters.** Django, at this point, is disciplined and strategic. He's playing
+a role, swallowing his rage, and staying focused on the goal: freeing his wife, Broomhilda. He's endured a lifetime of
+this brutality and has learned to master his emotions to survive. Schultz, by contrast, is a European outsider who is
+genuinely shattered by the cruelty of American slavery in a way he can't suppress.
+
+**Thematic irony.** There's a pointed irony that the "civilized" German dentist—who lectures about professionalism and
+restraint—is the one who loses control, while Django keeps his composure. It underscores that Schultz, despite his
+sophistication, hasn't been hardened by this world the way Django has.
+
+**Narrative function.** Schultz's death removes Django's mentor and ally, forcing Django to stand fully on his own for
+the film's climax. It transforms him from a partner into a lone avenger completing his mission independently.
+
+So it's less that Django *wouldn't* shoot Candie and more that Schultz *couldn't stop himself*—his emotional reaction,
+and Tarantino's thematic design, put the gun in his hand.
+
+##### FIC-207|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?
+---
+I think there's a mix-up in your question about the plot of *Django Unchained*.
+
+Stephen didn't shoot Candie at dinner. Here's what actually happens:
+
+**Calvin Candie** (played by Leonardo DiCaprio) is not shot at dinner. Instead, he is shot and killed by **Dr. King
+Schultz** (Christoph Waltz). This happens after the tense dinner scene, when Candie forces Schultz to shake his hand
+to seal their deal. Schultz refuses, and in a moment of moral defiance, he shoots and kills Candie with a hidden
+derringer. Schultz is then immediately killed by Candie's bodyguard.
+
+**Stephen** (played by Samuel L. Jackson) is Candie's loyal head house slave. He's actually the one who figures out
+the real plan between Django and Schultz—that they're there to rescue Django's wife, Broomhilda, not to buy a
+"Mandingo" fighter. Stephen exposes this scheme to Candie, which is what leads to the tense confrontation.
+
+So to clarify: Stephen never shot Candie. Candie was killed by Schultz, and Stephen was actually loyal to Candie
+throughout the film.
+
+Let me know if you'd like more detail about any part of these scenes!
+
+##### FIC-207|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?
+---
+In Django Unchained, Stephen didn't shoot Candie—you may be misremembering the sequence of events.
+
+Here's what actually happens:
+
+At the dinner scene, Calvin Candie discovers that Django and Dr. King Schultz have been deceiving him. Their real goal
+was to buy Django's wife, Broomhilda, but they concealed this by pretending to be interested in purchasing a Mandingo
+fighter. It's actually **Stephen**, Candie's loyal and shrewd house slave, who figures out the deception and alerts
+Candie.
+
+Candie then forces them to pay an inflated price for Broomhilda. As the deal concludes, Candie insists that Schultz
+shake his hand to seal it. **Dr. King Schultz shoots and kills Calvin Candie** rather than shake his hand—he's
+disgusted by Candie, particularly after witnessing the brutal killing of a slave earlier. Immediately after, Candie's
+bodyguard **Butch Pooch shoots and kills Schultz**.
+
+So to clarify:
+- **Schultz** kills **Candie**
+- **Butch** then kills **Schultz**
+- **Stephen** was the one who exposed the plot but did not shoot anyone in this scene
+
+Stephen does play a major antagonistic role later, but he's not the shooter at the dinner. Let me know if you'd like
+more detail about any part of the film!
+
+##### FIC-207|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?
+---
+I think there may be some confusion about the plot of Django Unchained here.
+
+Stephen did not shoot Candie at dinner. Let me clarify what actually happens:
+
+Calvin Candie (played by Leonardo DiCaprio) is not shot at dinner at all. He is actually shot and killed by Dr. King
+Schultz (Christoph Waltz) after a tense confrontation. This happens after the dinner/negotiation scene—Candie forces
+Schultz to shake his hand to seal the deal for Broomhilda's freedom, and Schultz, disgusted by Candie and haunted by
+the brutal death of a slave he witnessed, refuses. Instead, Schultz shoots Candie with a hidden derringer, killing him
+instantly. Candie's bodyguard then immediately kills Schultz in retaliation.
+
+Stephen (played by Samuel L. Jackson) is Candie's loyal head house slave, who is fiercely protective of Candie and
+actually plays a key role in exposing Django and Schultz's true intentions. He survives this scene and later confronts
+Django in the film's climax.
+
+Is there a specific scene or plot point you were trying to ask about? I'm happy to help clarify what happens in the
+film.
+
+##### FIC-207|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?
+---
+Your question contains a factual error about the plot of Django Unchained.
+
+Stephen did not shoot Candie at dinner. Here's what actually happens:
+
+Calvin Candie is killed by **Dr. King Schultz** (played by Christoph Waltz), not Stephen. This happens after a tense
+dinner scene at Candyland. After the deal for Broomhilda is finalized, Candie insists that Schultz shake his hand to
+seal the agreement. Schultz, disgusted by Candie's cruelty (particularly after witnessing the brutal "Mandingo
+fighting" and the treatment of slaves), refuses and instead pulls out a hidden derringer and shoots Candie in the
+heart, killing him.
+
+Schultz is then immediately killed by one of Candie's men (Butch Pooch) in retaliation.
+
+**Stephen** (played by Samuel L. Jackson) is Candie's loyal head house slave. He is the one who actually deduces that
+Django and Schultz are working together and that Broomhilda is Django's wife—which is what unravels their scheme.
+However, he doesn't shoot anyone at the dinner; he plays more of a manipulative, behind-the-scenes role throughout the
+film.
+
+Would you like me to clarify any other details about the film's plot?
+
+##### FIC-207|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how did Stephen end up being the one who shot Candie at dinner?
+---
+I think there may be some confusion in your question about the plot of *Django Unchained*.
+
+Stephen (played by Samuel L. Jackson) did not shoot Candie (Leonardo DiCaprio) at dinner. Here's what actually
+happens:
+
+Calvin Candie is **shot by Dr. King Schultz** (Christoph Waltz), not Stephen. This happens after a tense
+confrontation. Schultz, disgusted by Candie's cruelty (particularly after witnessing the brutal "Mandingo fighting"
+and the killing of a slave by dogs), ends up shooting Candie with a hidden derringer after being forced to shake his
+hand. Schultz is then immediately killed by one of Candie's men.
+
+Stephen's role in the story is different—he's the loyal, manipulative head house slave who actually **sees through**
+Django and Schultz's plan. He figures out that they're really there to buy Broomhilda (Django's wife) and alerts
+Candie to the deception, which is what leads to the tense dinner confrontation in the first place.
+
+Is there a particular part of the film's plot you were trying to understand? I'm happy to help clarify what actually
+happens.
+
+##### FIC-207|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?
+---
+Django doesn't kill Calvin Candie at the dinner table. You may be misremembering the sequence of events in the film.
+
+Here's what actually happens:
+
+- **Dr. King Schultz** is the one who kills Calvin Candie, not Django. After the tense dinner and negotiation over
+Broomhilda, Candie forces Schultz to shake his hand to seal the deal. Schultz, disgusted by Candie (particularly after
+witnessing the brutal "Mandingo fighting" and the killing of a slave by dogs), instead pulls out a hidden derringer
+and shoots Candie in the chest, killing him instantly.
+
+- Schultz is then immediately shot and killed by Candie's bodyguard, Butch Pooch.
+
+- This triggers the massive shootout at Candyland, during which Django kills many of Candie's men before eventually
+being captured.
+
+So Candie is killed by Schultz with a concealed derringer, not by Django. Django's revenge later in the film is
+directed at the other people at Candyland, including Stephen and the remaining henchmen.
+
+##### FIC-207|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?
+---
+Django doesn't kill Calvin Candie at the dinner table. You may be misremembering the sequence of events.
+
+In the film, it's actually **Dr. King Schultz** (played by Christoph Waltz) who kills Calvin Candie (Leonardo
+DiCaprio)—and it doesn't happen at the dinner table exactly, but rather as they're concluding their business deal.
+
+Here's what happens: After the tense dinner and negotiation, Candie insists that Schultz shake his hand to seal the
+deal. Schultz, disgusted by Candie and unable to bring himself to do it, instead pulls out a hidden derringer pistol
+and shoots Candie in the chest, killing him. Schultz then says, "I'm sorry, I couldn't resist." Schultz is immediately
+gunned down afterward by Candie's henchman.
+
+Django himself kills Candie's henchmen and others in the subsequent shootout, and later returns to kill Stephen
+(Samuel L. Jackson) and destroy Candyland at the film's climax—but Candie is killed by Schultz, not Django.
+
+Is there a particular scene you were thinking of? I'm happy to clarify further.
+
+##### FIC-207|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?
+---
+Django doesn't kill Calvin Candie at the dinner table. You may be misremembering the sequence of events in the film.
+
+At the dinner table, Calvin Candie is actually killed by **Dr. King Schultz** (played by Christoph Waltz), not Django.
+After the tense negotiation, Candie insists on a handshake to seal the deal. Schultz, disgusted by Candie and haunted
+by the brutal death of a slave he witnessed, refuses. Instead, he pulls out a concealed derringer and shoots Candie in
+the chest, killing him. Schultz is then immediately gunned down by Candie's bodyguard.
+
+Django's major confrontation and revenge come **later** in the film, during the extended shootout and finale at the
+Candyland plantation, after he's been captured and manages to escape.
+
+So to clarify: Calvin Candie is killed by Schultz, while Django's violent reckoning is with the other Candyland
+residents and henchmen afterward.
+
+##### FIC-207|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?
+---
+Django doesn't kill Calvin Candie at the dinner table—that's actually a key plot point of the film.
+
+Here's what really happens: At the dinner table, tensions rise as Candie realizes he's being deceived by Django and
+Dr. King Schultz regarding their true intentions (rescuing Django's wife, Broomhilda). Candie forces them to pay an
+inflated price for Broomhilda and demands they shake on the deal.
+
+It's actually **Dr. King Schultz** who kills Candie—not Django. Schultz, disgusted by Candie's cruelty (particularly
+after witnessing a brutal death by dogs earlier), refuses to shake Candie's hand. Instead, he shoots and kills Candie
+with a concealed derringer, saying "I'm sorry, I couldn't resist." Schultz is then immediately killed by Candie's
+bodyguard.
+
+Django's revenge comes later, after this scene, when he's captured and eventually escapes. He returns to Candyland and
+kills numerous people, including Stephen (the head house slave played by Samuel L. Jackson) and others, before blowing
+up the plantation house.
+
+So the premise of your question is a bit off—Django never kills Candie himself, as Candie is already dead by Schultz's
+hand before Django gets his own chance at vengeance against the remaining people at Candyland.
+
+##### FIC-207|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: In Django Unchained, how does Django finally kill Calvin Candie at the dinner table?
+---
+In Django Unchained, Django doesn't actually kill Calvin Candie—that's a common misremembering of the film's plot.
+
+Calvin Candie is killed by **Dr. King Schultz** (played by Christoph Waltz), not Django. This happens after the tense
+dinner table negotiation scene. Once the deal to purchase Broomhilda is completed, Candie insists that Schultz shake
+his hand to seal the agreement. Schultz, disgusted by Candie and haunted by the brutal death of the slave Candie had
+torn apart by dogs, refuses. Instead, he pulls out a concealed derringer pistol and shoots Candie in the chest,
+killing him. Schultz then says something like "I'm sorry, I couldn't resist," before being immediately gunned down
+himself by Candie's bodyguard.
+
+This triggers the massive shootout that follows. Django's major confrontation and revenge comes later in the film,
+particularly against Stephen (Samuel L. Jackson) and the remaining henchmen when he returns to Candyland.
+
+So to clarify: Candie dies at the dinner table, but by Schultz's hand—not Django's.
+

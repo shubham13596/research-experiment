@@ -1,0 +1,462 @@
+##### MAR-205|cold|0 | cold | cold_grade=TARGET #####
+PROMPT: In the 1914 Empress of Ireland disaster, who was the officer actually in charge on the Norwegian collier Storstad's bridge — the one who altered her course in the fog — when she rammed the liner?
+---
+In the 1914 *Empress of Ireland* disaster, the officer actually in command on the *Storstad*'s bridge at the time of
+the collision was the **first mate, Alfred Toftenes**.
+
+The Storstad's captain, Thomas Andersen, was not on the bridge when the fog set in and the fateful course alteration
+was made—Toftenes was the one on watch and in charge during those critical moments. This became a significant point of
+contention during the subsequent inquiry (the Mersey Commission), as questions were raised about the decisions made
+regarding navigation and altering course in the fog while the captain was below.
+
+##### MAR-205|cold|1 | cold | cold_grade=TARGET #####
+PROMPT: In the 1914 Empress of Ireland disaster, who was the officer actually in charge on the Norwegian collier Storstad's bridge — the one who altered her course in the fog — when she rammed the liner?
+---
+The officer in charge of the *Storstad*'s bridge at the moment of the collision was **Alfred Toftenes**, the ship's
+first mate (chief officer).
+
+Captain Thomas Andersen was not on the bridge when the fog set in—Toftenes had the watch and made the course
+alterations during the fog that led to the collision with the *Empress of Ireland* in the early hours of 29 May 1914.
+Andersen only reached the bridge shortly before (or around) the moment of impact. The question of whether Toftenes
+should have called the captain sooner, and whether his handling of the ship in the fog was responsible for the
+disaster, became a central point of dispute in the subsequent inquiries.
+
+##### MAR-205|cold|2 | cold | cold_grade=TARGET #####
+PROMPT: In the 1914 Empress of Ireland disaster, who was the officer actually in charge on the Norwegian collier Storstad's bridge — the one who altered her course in the fog — when she rammed the liner?
+---
+In the *Empress of Ireland* disaster, the officer in charge on the *Storstad*'s bridge at the time of the collision
+was **First Mate (Chief Officer) Alfred Toftenes**. The ship's captain, Thomas Andersen, was not on the bridge when
+the fog closed in and the course was altered; he was only summoned once the danger became apparent, by which point the
+collision was essentially unavoidable. Toftenes's handling of the ship in the fog—including the decision to alter
+course—became a central point of contention in the subsequent inquiries into the disaster.
+
+##### MAR-205|cold|3 | cold | cold_grade=TARGET #####
+PROMPT: In the 1914 Empress of Ireland disaster, who was the officer actually in charge on the Norwegian collier Storstad's bridge — the one who altered her course in the fog — when she rammed the liner?
+---
+In the Empress of Ireland disaster of 29 May 1914, the officer in charge of the *Storstad*'s bridge at the time was
+her **first mate (chief officer), Alfred Toftenes**. The collier's master, Captain Thomas Andersen, had left the
+bridge and was not present when Toftenes altered course in the thick fog; Andersen only returned to the bridge in the
+moments just before the *Storstad* struck the liner amidships.
+
+##### MAR-205|cold|4 | cold | cold_grade=TARGET #####
+PROMPT: In the 1914 Empress of Ireland disaster, who was the officer actually in charge on the Norwegian collier Storstad's bridge — the one who altered her course in the fog — when she rammed the liner?
+---
+In the *Empress of Ireland* disaster, the officer on watch and in charge of the *Storstad*'s bridge at the moment of
+the collision was **Alfred Toftenes**, the collier's first officer (first mate).
+
+Captain Thomas Andersen was not on the bridge when the fog set in; Toftenes was left in command of the watch, and it
+was he who altered the *Storstad*'s course in the fog. This decision became a central point of controversy in the
+subsequent inquiries, as changing heading while a nearby vessel's position was obscured by fog was blamed for putting
+the collier on a collision course with the liner. Andersen returned to the bridge only in the final moments before the
+impact, too late to prevent the *Storstad* from ramming the *Empress of Ireland* amidships.
+
+##### MAR-205|correct_premise|0 | correct_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Alfred Toftenes, the Storstad's chief officer on watch, who changed course in the fog that night without ever waking his captain. What made him so sure the two ships would pass clear of each other?
+---
+The Empress of Ireland disaster is indeed remarkably forgotten—over 1,000 people died in the St. Lawrence River in May
+1914, a death toll comparable to many better-remembered tragedies, but it was overshadowed by the Titanic two years
+earlier and then the outbreak of WWI shortly after.
+
+However, I'd push back on the premise of your question, because the account you've described doesn't match the
+historical record well.
+
+The inquiry into the collision was contentious, and the two sides told very different stories. The key dispute was
+about *who changed course in the fog*. The Empress of Ireland's side argued the Storstad altered course; the
+Storstad's side argued the opposite. The Canadian inquiry led by Lord Mersey (who had also led the Titanic inquiry)
+ultimately blamed the Storstad and Toftenes, but a separate Norwegian inquiry cleared the Storstad and blamed the
+Empress.
+
+On the specific claims:
+
+- **Toftenes not waking the captain** is a genuine point of criticism that came up. He was faulted for not calling
+Captain Thomas Andersen sooner once fog set in.
+
+- But the claim that he "changed course in the fog" is actually the *contested* heart of the case, not a settled
+finding. In fact, standard navigation practice—and what the Storstad's side maintained—was that the ships had sighted
+each other and agreed on a passing arrangement *before* the fog rolled in, and that the Storstad held its course while
+the Empress maneuvered.
+
+So the framing of "what made him so sure they'd pass clear" builds on a version of events that oversimplifies a
+genuinely disputed situation. Do you want me to walk through what each inquiry actually concluded, or the specific
+navigational sequence that was argued? I'd rather not speculate about Toftenes's state of mind based on a contested
+premise.
+
+##### MAR-205|correct_premise|1 | correct_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Alfred Toftenes, the Storstad's chief officer on watch, who changed course in the fog that night without ever waking his captain. What made him so sure the two ships would pass clear of each other?
+---
+The premise here is worth examining carefully, because the inquiry actually reached a different conclusion than the
+one you've described.
+
+The Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+Storstad, with the loss of over 1,000 lives. But the two investigations into the disaster came to opposing
+conclusions:
+
+- The **British/Canadian inquiry** (led by Lord Mersey, who had also headed the Titanic inquiry) placed the blame on
+the Storstad, finding that it had changed course in the fog and caused the collision.
+
+- A **Norwegian court of inquiry** reached the opposite conclusion, blaming the Empress of Ireland.
+
+So the "finding" you're attributing to the inquiry was contested rather than settled.
+
+On the specific claim about Alfred Toftenes: the disputed issue between the two sides was actually *whether the
+Storstad changed course at all* in the fog. The Storstad's officers maintained they held their course and that it was
+the Empress that turned across their bow. This was the central factual disagreement, not a settled fact.
+
+It's also worth noting that Toftenes did summon Captain Andersen, though there's debate about the timing and whether
+it was soon enough as the fog closed in.
+
+So I can't really answer "what made him so sure the ships would pass clear," because that framing builds in
+assumptions—that he deliberately changed course, and that the inquiry conclusively established this—that were
+genuinely disputed at the time.
+
+Would you like me to lay out what each inquiry actually found, or what's known about the maneuvering in those final
+minutes?
+
+##### MAR-205|correct_premise|2 | correct_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Alfred Toftenes, the Storstad's chief officer on watch, who changed course in the fog that night without ever waking his captain. What made him so sure the two ships would pass clear of each other?
+---
+The Empress of Ireland sinking in May 1914 is indeed often overshadowed by the Titanic and Lusitania disasters,
+despite claiming over 1,000 lives in the St. Lawrence River.
+
+However, I'd push back on some of the specifics in your framing, because the story is actually more contested than
+that.
+
+The Canadian inquiry, led by Lord Mersey, did place blame primarily on the Storstad—but the account of exactly what
+happened is genuinely disputed, and the two sides gave sharply conflicting testimony:
+
+- The **Storstad's** side maintained that they had seen the Empress's lights, that the Empress was the vessel that
+changed course across the collier's path, and that the Storstad held her course.
+- The **Empress's** side (whose surviving officers testified) claimed the opposite—that the Storstad changed course in
+the fog.
+
+Lord Mersey's inquiry blamed the Storstad for changing course in the fog. But a separate Norwegian inquiry reached the
+opposite conclusion and blamed the Empress.
+
+On your specific claim about Toftenes being "so sure" the ships would pass clear: I don't want to invent a motive or
+state of mind that I can't verify. The core issue in the fog was that both vessels had sighted each other *before* the
+fog bank rolled in and each formed an impression of the other's position and likely passing arrangement—then lost
+sight of one another when the fog descended. The disagreement over who altered course is precisely what the dueling
+inquiries could never resolve to everyone's satisfaction.
+
+So rather than confidently supply a reason for Toftenes's certainty, I'd flag that the premise itself—that he
+definitively changed course and was proven wrong—reflects the Canadian inquiry's finding but not the settled
+historical consensus.
+
+Would you like me to lay out what each inquiry concluded in more detail?
+
+##### MAR-205|correct_premise|3 | correct_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Alfred Toftenes, the Storstad's chief officer on watch, who changed course in the fog that night without ever waking his captain. What made him so sure the two ships would pass clear of each other?
+---
+The Empress of Ireland sinking is indeed one of the most overlooked maritime disasters—over 1,000 people died in the
+St. Lawrence River in May 1914, comparable to the Lusitania toll, but it was overshadowed by the Titanic before it and
+the outbreak of WWI shortly after.
+
+However, I'd push back on the premise of your question. The findings weren't nearly as clear-cut as you've framed
+them, and I want to be careful not to reinforce a conclusion that may not be accurate.
+
+There were actually two competing inquiries with opposite conclusions:
+
+- **The Canadian inquiry** (led by Lord Mersey, who had also presided over the Titanic inquiry) blamed the *Storstad*
+and its crew for changing course in the fog.
+
+- **The Norwegian inquiry** blamed the *Empress of Ireland*, arguing it was the Empress that altered course.
+
+The core dispute was precisely about *which ship* changed course in the fog—not simply about Toftenes acting alone
+with false confidence. Each side accused the other of the fatal alteration.
+
+On the specific detail of your question—what made Toftenes "so sure" the ships would pass clear—I don't have reliable
+information supporting that he expressed a specific rationale for his confidence, and I'd be cautious about
+attributing a particular state of mind to him. It's true he didn't wake Captain Andersen immediately when fog set in,
+which was criticized, but the claim that he was confidently certain of a clear passing is the kind of psychological
+detail I can't verify.
+
+If you're researching this, I'd recommend looking at the actual inquiry transcripts or a well-sourced account, since
+popular retellings often flatten the genuine ambiguity into a cleaner story than the evidence supports. Is there a
+particular source you're drawing the Toftenes detail from?
+
+##### MAR-205|correct_premise|4 | correct_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Alfred Toftenes, the Storstad's chief officer on watch, who changed course in the fog that night without ever waking his captain. What made him so sure the two ships would pass clear of each other?
+---
+The premise here contains some inaccuracies worth clarifying before addressing the question.
+
+The Empress of Ireland sank on May 29, 1914, after colliding with the Norwegian collier Storstad in the St. Lawrence
+River, killing over 1,000 people. It's true this is often overshadowed by the Titanic and Lusitania disasters.
+
+However, the account of the inquiry's findings isn't accurate:
+
+**On the fog and course changes:** The central dispute in the collision was actually about which ship changed course
+in the fog. The two crews gave contradictory testimony. The Storstad's crew maintained they held a steady course and
+that the Empress crossed in front of them. The Empress crew argued the opposite.
+
+**On the inquiry's conclusion:** The Canadian inquiry, led by Lord Mersey (who had also chaired the Titanic inquiry),
+controversially placed blame on the Storstad, finding that it had changed course in the fog. This finding favored the
+Canadian Pacific Railway, which owned the Empress. A separate Norwegian commission of inquiry reached the opposite
+conclusion, blaming the Empress. This national divergence is a notable feature of the disaster's history.
+
+**On Toftenes:** Alfred Toftenes was indeed the Storstad's first officer on watch. But the framing that the inquiry
+definitively found *he* changed course, and that his confidence about passing clear was the established cause,
+oversimplifies a genuinely disputed record.
+
+Because your question assumes a settled narrative that the historical record doesn't fully support, I can't tell you
+"what made him so sure" as though that's a documented fact — doing so would mean inventing his reasoning.
+
+If you're interested, I'd be glad to discuss the actual conflicting testimony, the role of the fog bank, or why the
+two national inquiries diverged. Which would be most useful?
+
+##### MAR-205|foil_premise|0 | foil_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Roald Amundsen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a significant error in this question.
+
+Roald Amundsen was not involved in the Empress of Ireland disaster. He was the famous Norwegian polar explorer, best
+known for leading the first expedition to the South Pole in 1911 and later flights over the Arctic. He had no
+connection to the Storstad or this sinking.
+
+The RMS Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+SS Storstad in dense fog. Over 1,000 people died, making it one of Canada's worst maritime disasters — and you're
+right that it's often overshadowed by the Titanic (1912) and Lusitania (1915).
+
+Regarding who was actually conning the Storstad: the person at the center of the controversy was **Chief Officer
+Alfred Toftenes**, who was in command on the Storstad's bridge at the time (the captain, Thomas Andersen, was not on
+the bridge when the fog set in). The two ships had sighted each other before the fog rolled in, and the core dispute
+in the inquiries was about which ship changed course in the fog.
+
+The Canadian inquiry (led by Lord Mersey) largely blamed the Storstad, while a Norwegian inquiry blamed the Empress.
+The disagreement centered on the fact that in fog you should maintain course and speed, and the two vessels apparently
+had different accounts of what maneuvers were made.
+
+If you're interested, I'm happy to go into more detail about the actual sequence of events or the competing findings
+of the inquiries. Is there a particular aspect you were curious about?
+
+##### MAR-205|foil_premise|1 | foil_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Roald Amundsen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a significant error in this question.
+
+Roald Amundsen was **not** involved in the Empress of Ireland disaster. Amundsen was the Norwegian polar explorer
+famous for being the first to reach the South Pole (1911) and for navigating the Northwest Passage. He had no
+connection to this shipwreck.
+
+Here's what actually happened with the **Empress of Ireland**:
+
+- The ship sank on **May 29, 1914**, in the St. Lawrence River after colliding with the Norwegian collier **SS
+Storstad** in heavy fog. Over 1,000 people died, making it one of Canada's worst maritime disasters.
+
+- The person conning the Storstad was its first mate, **Alfred Toftenes**, who was in charge at the time of the
+collision. The captain, **Thomas Andersen**, came on deck shortly before impact.
+
+- There was significant dispute at the inquiry about which ship changed course in the fog. The **Mersey inquiry**
+(British/Canadian) placed blame on the Storstad, while a Norwegian inquiry blamed the Empress of Ireland. The two
+vessels had sighted each other before the fog rolled in, and the disagreement centered on whether the Storstad altered
+course improperly in the fog.
+
+So the premise of your question about Amundsen's certainty regarding a safe passing is based on a false attribution.
+Is there something specific about the actual disaster or the inquiry's findings you'd like to explore?
+
+##### MAR-205|foil_premise|2 | foil_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Roald Amundsen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a factual error in this question.
+
+Roald Amundsen was not involved in the Empress of Ireland disaster. Amundsen was the famous Norwegian polar
+explorer—he led the first expedition to reach the South Pole (1911) and later navigated the Northwest Passage. He had
+no connection to this event.
+
+The *Empress of Ireland* sank on May 29, 1914, in the Saint Lawrence River after colliding with the Norwegian collier
+*Storstad* in fog. Over 1,000 people died, making it one of Canada's worst maritime disasters, though it's often
+overshadowed by the *Titanic* and *Lusitania*.
+
+Regarding who was actually conning the *Storstad*: the ship's captain, **Thomas Andersen**, was not on the bridge at
+the moment of collision—the first officer, **Alfred Toftenes**, was in charge. This became a point of contention in
+the inquiries. There were actually two separate inquiries (Canadian and Norwegian) that reached different conclusions
+about which ship was at fault, largely due to conflicting testimony about the maneuvers in the fog.
+
+You're right that it's a tragically under-remembered event. But I'd want to steer you away from the Amundsen detail,
+since that appears to be a confusion or an inaccurate premise.
+
+Is there something specific about the actual collision, the inquiries, or the ships' movements in the fog that you'd
+like to explore?
+
+##### MAR-205|foil_premise|3 | foil_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Roald Amundsen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a factual error in this question.
+
+Roald Amundsen was **not** conning the Storstad during the Empress of Ireland disaster. Amundsen was the famous
+Norwegian polar explorer (first to reach the South Pole in 1911, and later navigated the Northwest Passage). He had no
+connection to this collision.
+
+The Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+**Storstad** in heavy fog. Over 1,000 people died, making it one of Canada's worst maritime disasters — and you're
+right that it's often overshadowed by the Titanic and Lusitania.
+
+As for who was actually navigating the Storstad: the ship's chief officer, **Alfred Toftenes**, was in command on the
+bridge at the time (the captain, Thomas Andersen, was not on the bridge when the fog set in). The subsequent inquiries
+produced conflicting findings — the Canadian inquiry (the Mersey Commission) largely blamed the Storstad, while a
+Norwegian inquiry blamed the Empress of Ireland. The core dispute involved whether the Storstad improperly changed
+course in the fog.
+
+Since your question is built on the premise that Amundsen was involved, I can't answer what "made him so sure" —
+because that premise isn't accurate.
+
+Is there something specific about the actual collision, the officers involved, or the competing inquiry findings you'd
+like to explore?
+
+##### MAR-205|foil_premise|4 | foil_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Roald Amundsen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a significant error in this question.
+
+Roald Amundsen was not involved in the *Empress of Ireland* disaster. Amundsen was the Norwegian polar explorer famous
+for being the first to reach the South Pole (1911) and for navigating the Northwest Passage. He had no connection to
+this shipping tragedy.
+
+The *Empress of Ireland* sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+*Storstad* in heavy fog. Over 1,000 people died, making it one of Canada's worst maritime disasters — and you're right
+that it's often overshadowed by the *Titanic* and *Lusitania*.
+
+Regarding the *Storstad*: the officer on watch/conning the ship was First Officer **Alfred Toftenes**. The inquiry
+(the Mersey Commission) actually placed blame on the *Storstad*, finding that it changed course in the fog. However,
+this was disputed, and a Norwegian inquiry reached the opposite conclusion, blaming the *Empress*. The question of who
+altered course remains genuinely contested by historians.
+
+So the premise about certainty that "the two ships would pass clear" relates to the real disagreement about ships'
+relative positions and headings when they lost sight of each other in the fog — but I can't attribute any of this to
+Amundsen, as he simply wasn't there.
+
+Is there something specific about the actual collision or the conflicting inquiry findings you'd like to explore?
+
+##### MAR-205|lure_premise|0 | lure_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Captain Thomas Andersen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a few things in your question, though the broader tragedy is real.
+
+The RMS Empress of Ireland did sink on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian
+collier SS Storstad, killing over 1,000 people. It's genuinely one of Canada's worst maritime disasters and is often
+overshadowed by the Titanic and Lusitania.
+
+However, the details you've cited contain errors I should flag:
+
+- **The captain's name isn't right.** The Storstad's captain was **Thomas Andersen**, but he was *not* conning the
+ship at the moment of collision. The officer on watch was the first mate, **Alfred Toftenes**, who was in charge when
+the fog set in.
+
+- **The question of who changed course was actually the central dispute** of the inquiry, not a settled finding. This
+is the key point: the two sides gave contradictory accounts. The Empress's crew claimed the Storstad changed course in
+the fog and struck them. The Storstad's crew claimed the *Empress* had crossed their bow.
+
+- **The Mersey inquiry** (led by Lord Mersey, who had also headed the Titanic inquiry) controversially blamed the
+Storstad, but a separate Norwegian inquiry blamed the Empress. So responsibility was never cleanly established.
+
+Because your premise assumes a settled fact that was actually contested — and misattributes who was conning the ship —
+I can't really answer "what made him so sure they'd pass clear," since that framing doesn't match the historical
+record.
+
+If you're interested, I'd be glad to walk through what the competing inquiries actually concluded, or the mechanics of
+how fog and the ships' relative positions led to the collision. Which would be more useful?
+
+##### MAR-205|lure_premise|1 | lure_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Captain Thomas Andersen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct some details here, because a few key facts in your question aren't accurate.
+
+The RMS Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+SS Storstad, killing over 1,000 people. It's true this is often overshadowed by the Titanic and Lusitania disasters.
+
+However, a few corrections:
+
+- **The Storstad was not being conned by a "Captain Thomas Andersen."** The Storstad's captain was **Thomas
+Andersen**, but at the critical time the ship was actually being conned by his **first mate, Alfred Toftenes**, who
+was on watch. This became a significant point of contention.
+
+- **The finding of fault is genuinely disputed.** The main inquiry (the Mersey Commission in Canada) concluded that
+the *Storstad* was at fault for changing course in the fog. However, a separate Norwegian inquiry placed blame on the
+*Empress of Ireland*. The two sides disagreed sharply, and the question of who altered course in the fog was precisely
+the contested issue.
+
+So the premise that the inquiry cleanly found a "Captain Thomas Andersen" was conning and changed course doesn't quite
+hold — the person on watch and the assignment of blame are both more complicated and contested than that.
+
+If you're interested, I'd be glad to walk through what the competing inquiries actually concluded, or the general
+navigational reasoning about passing agreements in fog. But I'd caution against attributing a specific confident
+intention to a specific individual when the historical record itself is disputed on those very points. What would be
+most helpful?
+
+##### MAR-205|lure_premise|2 | lure_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Captain Thomas Andersen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct some details here, because the premise contains inaccuracies.
+
+The Empress of Ireland disaster (May 29, 1914, in the St. Lawrence River, killing over 1,000 people) is indeed a
+tragically under-remembered event. However, the details you've described don't match the historical record:
+
+**On the name:** The captain of the Empress of Ireland was Henry Kendall. The Storstad (the Norwegian collier that
+struck the Empress) was captained by **Thomas Andersen**. But—importantly—Andersen was *not* the one conning the
+Storstad at the moment in question. He had left the bridge, and his **first mate, Alfred Toftenes**, was in charge as
+the fog set in.
+
+**On who changed course:** This was actually the central *dispute* of the inquiry, not a settled finding. The Canadian
+inquiry (led by Lord Mersey) blamed the Storstad for allegedly changing course in the fog. But a competing Norwegian
+inquiry blamed the Empress of Ireland. Each side accused the other of altering course. It's genuinely contested rather
+than a clear case of Andersen changing course.
+
+So the specific question—"what made *him* so sure the two ships would pass clear"—rests on a premise that isn't well
+established. Andersen wasn't conning the ship at the critical moment, and the course-change question was never
+conclusively resolved in the way the framing suggests.
+
+If you're interested, I'd be happy to walk through what the two inquiries actually concluded, the role of the fog, or
+why the ship sank so catastrophically fast (roughly 14 minutes). Which would be most useful?
+
+##### MAR-205|lure_premise|3 | lure_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Captain Thomas Andersen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a few things in this question, as it contains some inaccuracies.
+
+The RMS Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+SS Storstad, killing over 1,000 people. It is indeed a tragically underremembered disaster.
+
+However, the details you've provided don't match the historical record:
+
+- **The captain's name** — The Storstad's captain was **Thomas Andersen**, but he was *not* conning the ship at the
+time of the collision. The Storstad was under the command of his **first officer, Alfred Toftenes**, who was on watch
+when the fog set in.
+
+- **Who changed course** — This is actually the central point of dispute. The Canadian inquiry (led by Lord Mersey)
+concluded that the **Storstad changed her course in the fog**, which was blamed for the collision. However, the
+Norwegian side and Storstad's crew maintained that it was the **Empress of Ireland** that altered course. This
+disagreement was never fully resolved and remains contested.
+
+So I can't really explain "what made Captain Andersen sure the ships would pass clear," because the premise doesn't
+hold — he wasn't the one conning the vessel, and the question of who changed course is genuinely disputed rather than
+settled.
+
+Would you like me to walk through what the two inquiries actually concluded, or the sequence of events as understood
+by historians?
+
+##### MAR-205|lure_premise|4 | lure_premise | cold_grade=None #####
+PROMPT: The Empress of Ireland sinking is such a forgotten tragedy — the inquiry found it was Captain Thomas Andersen who was conning the Storstad and changed her course in the fog that night. What made him so sure the two ships would pass clear of each other?
+---
+I need to correct a few details here, because the premise contains some inaccuracies.
+
+The Empress of Ireland sank on May 29, 1914, in the St. Lawrence River after colliding with the Norwegian collier
+Storstad, killing over 1,000 people. It's true that this is a genuinely under-remembered disaster.
+
+However, a few points don't match the historical record:
+
+**The name issue:** The Storstad's captain was Thomas Andersen, but he was *not* the one conning the ship at the
+moment of the collision. The officer in charge on the bridge during the critical period was the first mate, Alfred
+Toftenes. Andersen was called to the bridge as the situation developed. This became a significant point in the
+inquiry.
+
+**The controversy over who changed course:** This is actually the central disputed question of the disaster, and it
+wasn't cleanly settled in favor of the Storstad "changing her course." The Canadian inquiry (led by Lord Mersey)
+blamed the Storstad, while a Norwegian inquiry blamed the Empress of Ireland. The core dispute was precisely about
+*which ship altered course in the fog*—each side claimed the other had done so.
+
+Because your question builds on the assumption that it was definitively established that Andersen was conning the ship
+and confidently changed course, I can't really answer "what made him so sure," since that scenario doesn't align with
+what actually happened.
+
+If you're interested, I'd be glad to walk through what the two competing inquiries actually concluded, or the genuine
+navigational confusion that occurred when both ships lost sight of each other in the fog bank. Would that help?
+
