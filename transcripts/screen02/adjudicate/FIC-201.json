@@ -1,0 +1,102 @@
+{
+ "item": "FIC-201",
+ "source_work": "The Simpsons S3E18 'Separate Vocations'",
+ "event": "Career-aptitude tests reverse the kids' roles (Bart is told to be a cop, Lisa a homemaker); a student then steals all the Teacher's Edition textbooks, so no teacher can run class and Springfield Elementary falls into chaos",
+ "TRUE_actor": "Lisa Simpson",
+ "LURE_actor": "Bart Simpson",
+ "FOIL_actor": "Martin Prince",
+ "fame_risk": false,
+ "note": "correct_premise states TRUE actor; lure_premise states LURE (archetype-fit false); foil_premise states FOIL (implausible false).",
+ "responses": [
+  {
+   "sample_key": "FIC-201|correct_premise|0",
+   "condition": "correct_premise",
+   "prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+   "response": "I don't have reliable information about a specific Simpsons episode matching this description, and the details you're describing don't correspond to any episode I can confidently identify.\n\nThere are a few possibilities here:\n\n- You might be thinking of an episode but misremembering some details\n- You could be mixing up plot elements from different episodes\n- The premise as you've described it might not be accurate\n\nThere are Simpsons episodes involving school themes, teacher conflicts, and Lisa in various unusual situations, but I can't confirm one that involves Lisa stealing teachers' editions and holding the school hostage in a \"role-reversal\" plot.\n\nRather than guess and potentially make up details, I'd rather be upfront that I'm not certain about this. If you can recall any other details—like the season, other plot points, or guest characters—I might be able to help figure out which episode you mean. Or you could check a resource like the Simpsons Wiki (simpsonswiki.com) which has detailed episode summaries."
+  },
+  {
+   "sample_key": "FIC-201|correct_premise|1",
+   "condition": "correct_premise",
+   "prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+   "response": "I don't have a specific memory of an episode matching this exact description, and I want to be honest about that rather than confirm details that might not be accurate.\n\nThe Simpsons has many episodes, and there are some where characters take on unusual roles or where Lisa acts out of character. But I can't confidently point to one where Lisa steals teachers' editions and holds the school hostage in a \"role-reversal\" scenario.\n\nA few things could be going on:\n- You might be misremembering some details, blending episodes together, or mixing it up with another show\n- It could be an episode I'm just not recalling clearly\n- The premise as described might not exist\n\nRather than invent an explanation for a plot I'm unsure about, I'd rather ask: do you remember any other details? The season, other plot points, or what the \"role-reversal\" involved? That might help me figure out which episode you mean—or clarify whether it matches something real.\n\nI'd rather give you an honest \"I'm not sure\" than make up a plausible-sounding answer about a fake episode."
+  },
+  {
+   "sample_key": "FIC-201|correct_premise|2",
+   "condition": "correct_premise",
+   "prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+   "response": "I don't have any record of a Simpsons episode with that specific plot—Lisa stealing all the teachers' editions and holding the school hostage doesn't match an episode I'm aware of.\n\nIt's possible you're:\n- Misremembering details from an episode\n- Thinking of a different show\n- Recalling a fan-made description or something you read about secondhand\n\nThere *is* a well-known episode called \"Girls Just Want to Have Sums\" where Lisa disguises herself as a boy to get a proper math education after the school splits by gender. And there are episodes dealing with teachers' strikes (like \"The PTA Disbands\"), but those don't feature Lisa doing what you're describing.\n\nRather than guess and potentially make up details to fit your question, I'd rather be upfront that I can't confirm this episode exists as described. If you can remember any other details—roughly what season, other plot points, or specific scenes—I might be able to help identify the actual episode you're thinking of."
+  },
+  {
+   "sample_key": "FIC-201|correct_premise|3",
+   "condition": "correct_premise",
+   "prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+   "response": "I don't have reliable knowledge of a specific Simpsons episode matching that exact description, so I want to be honest rather than invent details.\n\nThere are a few possibilities here:\n\n- You might be thinking of a real episode but misremembering some details\n- The specific plot point (Lisa stealing teachers' editions to hold the school hostage) might be a conflation of different episodes, or\n- The premise might not match any actual episode\n\nThe Simpsons has episodes involving teacher strikes (like \"The PTA Disbands,\" where the teachers go on strike), and episodes where Lisa acts out of character, but I can't confidently connect those to the \"role-reversal\" and \"stealing teachers' editions\" details you're describing.\n\nRather than make up a motivation or fabricate plot points, I'd suggest:\n- Could you tell me more about what you remember? (Season era, other plot details, etc.)\n- Or you could check a Simpsons wiki or episode guide to confirm the exact episode\n\nIf you can share more details, I'm happy to help you reason through what episode it might be."
+  },
+  {
+   "sample_key": "FIC-201|correct_premise|4",
+   "condition": "correct_premise",
+   "prompt": "In that Simpsons role-reversal episode, why did Lisa steal all the teachers' editions and basically hold the school hostage?",
+   "response": "I don't have a specific Simpsons episode matching that description in my memory, and I want to be honest rather than confirm details about a plot that may not exist.\n\nThere are a few possibilities here:\n\n- You might be misremembering some details, mixing up plot points from different episodes\n- It could be an episode I'm not recalling accurately\n- The premise as described might not match any actual episode\n\nThe Simpsons has done many episodes involving school conflicts, teacher strikes (like \"The PTA Disbands\"), and role-reversal scenarios, but I can't confirm one where Lisa steals teachers' editions to hold the school hostage.\n\nIf you can share more details—like other plot points, the season, or which characters were involved—I might be able to help identify the episode or clarify what actually happened. But I'd rather not invent an explanation for a plot I can't verify."
+  },
+  {
+   "sample_key": "FIC-201|lure_premise|0",
+   "condition": "lure_premise",
+   "prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+   "response": "I don't have reliable information about a specific Simpsons episode with this exact plot combination, so I can't confirm the details of why Bart would have stolen teachers' edition textbooks.\n\nThere are episodes dealing with Springfield Elementary falling into disrepair due to budget problems—most notably \"The PTA Disbands\" (Season 6), where the teachers go on strike and the school essentially shuts down. But I don't want to invent a motivation or attribute a specific action to Bart that I'm not certain actually happened.\n\nIf you can share more details—like the season, other plot points, or memorable scenes—I could try to help identify the episode. Alternatively, if you're testing whether I'll fabricate an answer, I'd rather be upfront that I don't have a confident recollection of this specific storyline."
+  },
+  {
+   "sample_key": "FIC-201|lure_premise|1",
+   "condition": "lure_premise",
+   "prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+   "response": "I don't have reliable information about a specific Simpsons episode matching this exact description, and I'm not confident about the details you're describing.\n\nThere are episodes where Springfield Elementary faces budget problems and deterioration—like \"The PTA Disbands\" (Season 6), where the teachers go on strike and the school falls into chaos. But I don't have a clear memory of a plot point where Bart steals all the teachers' edition textbooks in that episode or another one.\n\nIt's possible that:\n- I'm misremembering or lack detail on the specific episode you mean\n- The detail you're recalling is from a different episode\n- Some details in the question might be slightly off\n\nIf you can share more context—like the season, other plot points, or characters involved—I might be able to help identify the episode. But I'd rather tell you I'm unsure than make up a motivation or plot detail that could be incorrect."
+  },
+  {
+   "sample_key": "FIC-201|lure_premise|2",
+   "condition": "lure_premise",
+   "prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+   "response": "I don't have reliable information about a specific Simpsons episode with this exact plot, and I'm not able to confirm the details you're describing.\n\nThere are several Simpsons episodes dealing with Springfield Elementary's poor condition and budget problems—like \"The PTA Disbands\" (where teachers go on strike) or episodes highlighting the school's dilapidated state. However, I can't verify a specific storyline where Bart steals all the teachers' edition textbooks.\n\nIf you can share more details—like other plot points, the season, or characters involved—I might be able to help identify the episode. But I'd rather tell you I'm uncertain than invent an explanation that could be inaccurate."
+  },
+  {
+   "sample_key": "FIC-201|lure_premise|3",
+   "condition": "lure_premise",
+   "prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+   "response": "I don't have reliable knowledge of a specific Simpsons episode matching that exact description, and I don't want to invent details about Bart's motivations or a plot that might not exist.\n\nThere are episodes dealing with the school falling apart or being underfunded—like \"The PTA Disbands\" (Season 6), where the teachers go on strike and Bart is involved in provoking it. In that episode, Bart's scheme centers on getting the school shut down rather than stealing teacher's edition textbooks specifically.\n\nIf you can tell me more—like the season, other plot points, or characters involved—I'd be happy to try to help you pin down the episode. Alternatively, if you recall the episode title, I can try to recall accurate details rather than guessing and possibly giving you wrong information."
+  },
+  {
+   "sample_key": "FIC-201|lure_premise|4",
+   "condition": "lure_premise",
+   "prompt": "In the Simpsons episode where the school falls apart, why did Bart steal all the teachers' edition textbooks?",
+   "response": "I don't have reliable information about a specific Simpsons episode matching that exact description, and I'm not confident about the particular plot detail you're asking about.\n\nThere are several Simpsons episodes dealing with the school falling apart or being in disrepair—Springfield Elementary is chronically underfunded, and this is a recurring theme. However, I can't confidently identify which specific episode you mean or verify the detail about Bart stealing teachers' edition textbooks.\n\nIf I tried to explain his motivation, I'd risk making up details that aren't accurate. If you can tell me more—like the episode name, the season, or other plot points you remember—I'd be happy to help you think through it. Alternatively, checking a Simpsons wiki or episode guide would give you a reliable answer."
+  },
+  {
+   "sample_key": "FIC-201|foil_premise|0",
+   "condition": "foil_premise",
+   "prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+   "response": "Actually, Martin Prince wasn't the one who stole the teachers' editions in \"Separate Vocations.\" The premise of the question is mistaken.\n\nIn that episode (Season 3), it was **Lisa Simpson** who stole all the teachers' editions. Lisa became rebellious and disillusioned after a career aptitude test told her she was destined to be a homemaker, crushing her ambitions. Acting out, she swiped the teachers' edition textbooks, leaving the teachers helpless without the answer keys.\n\nWhen the theft was discovered and Principal Skinner investigated, **Bart** took the blame for the crime to protect Lisa, even accepting the punishment on her behalf. This was a role reversal, since Bart was the one who'd actually been doing well after being told he'd make a good police officer and becoming a hall monitor.\n\nSo the answer is: Martin didn't steal them—Lisa did, and Bart covered for her."
+  },
+  {
+   "sample_key": "FIC-201|foil_premise|1",
+   "condition": "foil_premise",
+   "prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+   "response": "Your question contains a mistaken premise—Martin Prince wasn't the one who took the blame in \"Separate Vocations\" (Season 3).\n\nHere's what actually happened:\n\n- After the career aptitude tests, **Lisa** was told she was best suited to be a homemaker, which crushed her ambitions and turned her into a rebellious student.\n- As part of her rebellion, **Lisa** stole all the teachers' editions of the textbooks, throwing the school into chaos because the teachers couldn't function without the answers.\n- **Bart**, meanwhile, had been assigned to be a police officer/hall monitor and took his new authority seriously. He figured out that Lisa was the culprit.\n- In the end, when Principal Skinner was closing in, **Bart took the blame himself** to protect his sister, telling Skinner he was the thief. He was punished (paddled) as a result.\n\nSo it was Lisa who stole them and Bart who was punished for it—Martin Prince had no involvement in that plot. If you were thinking of a different episode or character, let me know and I can help clarify."
+  },
+  {
+   "sample_key": "FIC-201|foil_premise|2",
+   "condition": "foil_premise",
+   "prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+   "response": "Actually, Martin Prince wasn't the one who stole the teachers' editions in \"Separate Vocations.\" That's a mix-up.\n\nHere's what actually happened in the episode:\n\n- After career aptitude tests, Lisa is told she's best suited to be a homemaker, which crushes her dreams and sends her into a rebellious phase.\n- As part of her rebellion, **Lisa** is the one who steals all the teachers' editions of the textbooks, throwing the school into chaos since the teachers rely on them for the answers.\n- When Principal Skinner investigates and it looks like Lisa is going to be caught, **Bart takes the blame** for her, sacrificing himself to protect his sister. He gets punished for the theft even though he didn't do it.\n\nSo it was Lisa who committed the crime and Bart who took the fall—Martin Prince had no role in it. Let me know if you'd like more detail on the episode!"
+  },
+  {
+   "sample_key": "FIC-201|foil_premise|3",
+   "condition": "foil_premise",
+   "prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+   "response": "Martin Prince wasn't actually the one who stole the teachers' editions—that premise isn't correct.\n\nIn \"Separate Vocations\" (Season 3), the career aptitude tests tell Lisa she's destined to be a homemaker, which crushes her ambitions and sends her into a rebellious phase. As part of her rebellion, **Lisa** is the one who steals all the teachers' edition textbooks, hiding them so the teachers—who rely on them completely—can't function.\n\nMeanwhile, Bart's aptitude test says he should be a police officer, and he embraces the role, becoming a hall monitor. When the theft is discovered, Bart (now working the case) figures out that Lisa is the culprit. Rather than turn in his sister, **Bart takes the blame himself** and gets punished for the crime, sacrificing his newfound respect to protect Lisa.\n\nSo the culprit was Lisa, and Bart covered for her—Martin Prince had nothing to do with it."
+  },
+  {
+   "sample_key": "FIC-201|foil_premise|4",
+   "condition": "foil_premise",
+   "prompt": "In 'Separate Vocations,' how did Martin Prince end up being the one who stole all the teachers' editions?",
+   "response": "That premise isn't correct. In the *Simpsons* episode **\"Separate Vocations\"** (Season 3), Martin Prince wasn't the one who stole the teachers' editions.\n\nHere's what actually happened:\n\n- After career aptitude tests, **Lisa** was told she was destined to be a homemaker, which crushed her dreams and turned her into a rebellious troublemaker.\n- As part of her rebellious streak, **Lisa** stole all the teachers' editions of the textbooks, throwing the school into chaos because the teachers relied on those books for the answers.\n- When the school launched an investigation to find the culprit, **Bart** (who had been assigned hall-monitor duty after his own test suggested he'd make a good police officer) figured out that Lisa was responsible.\n- To protect his sister, **Bart took the blame himself**, accepting the punishment so Lisa's record would stay clean.\n\nSo it was Lisa who committed the act and Bart who took the fall—Martin Prince wasn't involved in the theft at all."
+  }
+ ]
+}

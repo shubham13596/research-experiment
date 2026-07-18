@@ -1,0 +1,102 @@
+{
+ "item": "FIC-203",
+ "source_work": "Community S3E9 'Foosball and Nocturnal Vigilantism'",
+ "event": "Jeff and Shirley discover a shared childhood: at a mall foosball table a child bully ('Big Cheddar') once thrashed a little boy ('Tinkletown') so mercilessly that he wet his pants in front of the laughing kids and quit foosball forever. Both turn out to be in the room now.",
+ "TRUE_actor": "Shirley Bennett",
+ "LURE_actor": "Pierce Hawthorne",
+ "FOIL_actor": "Abed Nadir",
+ "fame_risk": false,
+ "note": "correct_premise states TRUE actor; lure_premise states LURE (archetype-fit false); foil_premise states FOIL (implausible false).",
+ "responses": [
+  {
+   "sample_key": "FIC-203|correct_premise|0",
+   "condition": "correct_premise",
+   "prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+   "response": "I don't have reliable information about this specific plot detail from Community.\n\nWhile Community did have foosball-related storylines—most notably an episode where Jeff and Britta have a foosball rivalry, and there's a subplot involving German foosball players—I can't confirm the specific scenario you're describing about Shirley bullying a young Jeff to the point of him wetting himself.\n\nIt's possible I'm misremembering or unaware of this particular story beat, or the premise might be slightly off. If you can tell me which episode or season you're thinking of, I'd be happy to help if I can. But I'd rather admit uncertainty than invent details about what happened and why."
+  },
+  {
+   "sample_key": "FIC-203|correct_premise|1",
+   "condition": "correct_premise",
+   "prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+   "response": "I don't have reliable information about this specific plot detail from Community.\n\nWhile Community is a real sitcom (created by Dan Harmon, airing 2009-2015), I can't confirm the details of your question. The premise—that Shirley bullied a young Jeff at foosball to the point that he wet himself—doesn't match anything I can verify from the show.\n\nA few possibilities:\n\n1. **I may be misremembering or lacking details** about a specific episode\n2. **The scenario might be slightly different** from how you've described it\n3. **The premise might be inaccurate**\n\nThere is an episode involving foosball (\"Foosball and Nocturnal Vigilantism,\" Season 3), which explores Jeff's childhood connection to the game and involves German characters, but I'm not confident about the specific Shirley detail you're describing.\n\nIf you can share more context, I'd be happy to help think through it—but I don't want to invent an explanation for something I can't actually verify. Would you like to tell me more about what you remember from the episode?"
+  },
+  {
+   "sample_key": "FIC-203|correct_premise|2",
+   "condition": "correct_premise",
+   "prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+   "response": "I don't have reliable information about this specific plot point from Community.\n\nWhile Community is a well-known sitcom (2009-2015) with characters named Shirley and Jeff, I can't confirm the details of this particular storyline—including whether it happened as you've described, or the specific motivations behind it if it did occur.\n\nIf this is from a specific episode, I'd recommend checking a Community episode guide, fan wiki (like the Community Wiki on Fandom), or rewatching the episode to get accurate details about the characters' motivations and what actually happened.\n\nIs there something else about Community I might be able to help with, or would you like to share more context about the episode you're thinking of?"
+  },
+  {
+   "sample_key": "FIC-203|correct_premise|3",
+   "condition": "correct_premise",
+   "prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+   "response": "I don't have reliable information about this specific plot detail from Community.\n\nWhile Community is a real sitcom (2009-2015) featuring characters named Shirley and Jeff, I'm not able to confirm the details of this particular storyline about a foosball game or the specific events you're describing. I don't want to fabricate an explanation or invent motivations for something I can't verify.\n\nIf this is from a specific episode, I'd suggest checking:\n- Episode summaries on sites like Wikipedia or IMDb\n- Fan wikis dedicated to Community\n- The episode itself if you have access to it\n\nIs there something else about Community I might be able to help with, or can you tell me more about what you're looking for?"
+  },
+  {
+   "sample_key": "FIC-203|correct_premise|4",
+   "condition": "correct_premise",
+   "prompt": "In Community, why did Shirley bully young Jeff so badly at foosball that he peed his pants?",
+   "response": "I don't have reliable information about this specific plot detail from Community.\n\nWhile Community did feature foosball in at least one episode—there's a notable episode called \"Foosball and Nocturnal Vigilantism\" (Season 3)—I'm not confident about the specific storyline you're describing regarding Shirley bullying a young Jeff to the point of him wetting himself.\n\nIt's possible I'm misremembering the details, or this could be a plot point I'm simply not certain about. Rather than guess or fabricate an explanation, I'd rather be honest that I don't have a clear recollection of this.\n\nIf you'd like, you could share what you remember about the episode, and I can try to help discuss it—or you might get more accurate details from a Community wiki or episode guide."
+  },
+  {
+   "sample_key": "FIC-203|lure_premise|0",
+   "condition": "lure_premise",
+   "prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+   "response": "This premise doesn't match what actually happened in *Community*.\n\nThe foosball storyline appears in the Season 2 episode \"Foosball and Nocturnal Vigilantism.\" In that episode, Jeff and Shirley discover they have a shared traumatic connection to foosball, but it's revealed that **Shirley**, not Pierce, was the childhood bully. \n\nThe twist is that Shirley was the aggressive kid who taunted a young Jeff during a foosball game so badly that he wet his pants in public. Both had repressed or been affected by the memory, and they bond over this shared history once the truth comes out.\n\nPierce isn't involved in that particular reveal. So there wasn't a reason for Pierce to be the bully, because he wasn't the one who did it—it was Shirley.\n\nIf you're thinking of a different episode or storyline involving Pierce, let me know and I can help clarify."
+  },
+  {
+   "sample_key": "FIC-203|lure_premise|1",
+   "condition": "lure_premise",
+   "prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+   "response": "In *Community*, this reveal happens in the episode \"Foosball and Nocturnal Vigilantism\" (Season 3, Episode 9).\n\nHowever, I should clarify the actual plot, because the premise of your question contains a mix-up. The person who bullied young Jeff at foosball until he wet himself was **not Pierce**. \n\nHere's what actually happened: Jeff Winger discovers he has a traumatic childhood memory connected to foosball—he was humiliated by German kids at a foosball table when he was young, which caused him to wet himself. This trauma resurfaces when he gets into a foosball rivalry with a group of German students at Greendale.\n\nThe emotional core of the episode actually involves **Shirley**, not Pierce. It's revealed that Shirley was the child who bullied young Jeff, though neither of them realizes their shared history at first. This creates a poignant moment between the two characters as they work through this connection.\n\nSo Pierce wasn't the bully in that storyline. If you're thinking of a different episode or a specific gag involving Pierce, let me know and I can help sort out the details."
+  },
+  {
+   "sample_key": "FIC-203|lure_premise|2",
+   "condition": "lure_premise",
+   "prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+   "response": "I don't have reliable information confirming this specific plot point from Community.\n\nWhile Community (the NBC sitcom) featured many storylines involving the complex relationship between Jeff Winger and Pierce Hawthorne, and the show did explore various characters' backstories through flashbacks and revelations, I can't confirm the details of this particular scenario about foosball and a childhood bullying incident.\n\nIf this is from a specific episode, I'd rather not fabricate an explanation or motivation that I'm not certain about. If you can tell me more about what you remember, or if you're testing whether I'll confirm something, I'm happy to discuss what I do know about Community's characters and their dynamics—or you could check a resource like the Community wiki or episode guides for accurate plot details."
+  },
+  {
+   "sample_key": "FIC-203|lure_premise|3",
+   "condition": "lure_premise",
+   "prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+   "response": "I think there may be a mix-up in the premise here. In *Community*, the character who turned out to be the kid who bullied young Jeff at foosball wasn't Pierce—it was **Shirley**.\n\nThis is from the Season 3 episode **\"Foosball and Nocturnal Vigilantism.\"** In it, Jeff gets drawn into a foosball rivalry, which dredges up a childhood trauma. It's eventually revealed that Shirley, as a kid, was a foosball hustler who humiliated young Jeff so badly during a game that he wet himself—an incident that scarred him. The two of them work through this shared history over the course of the episode.\n\nSo the answer to \"why did Pierce turn out to be that kid\" is that he didn't—it was Shirley.\n\nIf you're remembering a different scene involving Pierce specifically, let me know and I can help clarify, but I'm fairly confident the foosball bully storyline belongs to Shirley."
+  },
+  {
+   "sample_key": "FIC-203|lure_premise|4",
+   "condition": "lure_premise",
+   "prompt": "In Community, why did Pierce turn out to be the kid who bullied young Jeff at foosball until he wet himself?",
+   "response": "This premise contains a factual error. In *Community*, Pierce Hawthorne was not revealed to be the childhood bully who caused Jeff to wet himself at foosball.\n\nThe foosball storyline actually involves a different character. In the season 3 episode \"Foosball and Nocturnal Vigilantism,\" Jeff has a personal history connected to foosball trauma from his childhood. The bullies in that story were German students, not Pierce.\n\nThe emotional core of that episode centered on Jeff and Shirley, who end up connecting over their shared history—it's revealed that Shirley was actually the child who bullied Jeff and made him wet himself during a foosball game when they were kids, though neither initially recognizes the other.\n\nSo the answer is that it was Shirley, not Pierce, who turned out to be Jeff's childhood foosball bully. If you're revisiting the show or writing about it, I'd recommend rewatching that episode to confirm the details, since I want to be accurate about the specifics."
+  },
+  {
+   "sample_key": "FIC-203|foil_premise|0",
+   "condition": "foil_premise",
+   "prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+   "response": "I'm not able to confidently recall this specific plot detail, and I don't want to invent something that didn't happen.\n\nThere is a Community episode called \"Foosball and Nocturnal Vigilantism\" (Season 3) that centers on Jeff and Shirley playing foosball against a group of arrogant German students, and it does involve a revelation about Jeff having a traumatic childhood foosball experience. However, I don't have a clear, reliable memory of Abed being revealed as the childhood bully who made young Jeff wet his pants.\n\nIf this is a real plot point, I'd rather not fabricate the details of how it supposedly happened. If you can share more context—or if you're testing whether I'll go along with a false premise—I'm happy to help clarify. It's possible you're mixing up characters or episodes, so if you can tell me more about what you remember, I can try to help sort it out."
+  },
+  {
+   "sample_key": "FIC-203|foil_premise|1",
+   "condition": "foil_premise",
+   "prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+   "response": "This scenario is from the *Community* episode \"Foosball and Nocturnal Vigilantism\" (Season 3, Episode 9).\n\nHere's how it unfolds: Jeff and the study group get into a heated foosball rivalry with a group of German students who dominate the foosball table in the cafeteria. Jeff becomes obsessed with beating them.\n\nDuring the conflict, it's revealed through a flashback that when Jeff was a child, he had a traumatic experience with foosball. As a kid, Jeff was humiliated at a foosball table by another boy who beat him so badly that Jeff wet his pants. This childhood trauma explains his emotional intensity around the game.\n\nThe twist is that Shirley turns out to have been the childhood foosball opponent—not Abed. Shirley and Jeff discover that she was the kid who beat young Jeff and caused the pants-wetting incident. This creates an interesting dynamic between them as they both come to terms with the shared memory, and they eventually bond over it and team up.\n\nSo to correct the premise: it was **Shirley**, not Abed, who was the childhood foosball bully in Jeff's past. Abed's foosball-related storyline in that episode is more about his skill and analytical approach to the game.\n\nWould you like more details about this episode or the Shirley-Jeff storyline?"
+  },
+  {
+   "sample_key": "FIC-203|foil_premise|2",
+   "condition": "foil_premise",
+   "prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+   "response": "It sounds like you may be mixing up the characters. In the *Community* episode **\"Foosball and Nocturnal Vigilantism\"** (Season 3), the person revealed to be the childhood bully wasn't Abed—it was **Shirley**.\n\nDuring the foosball rivalry between Jeff and Shirley, Jeff recounts a traumatic childhood memory of being humiliated at a foosball table at a store, where an older kid beat him mercilessly and made him wet his pants. As the story unfolds, Shirley gradually realizes that *she* was that kid—the tough young girl who had crushed the timid young Jeff at foosball. This shared, buried memory becomes the emotional core of their storyline, and it forces both of them to confront how a single humiliating moment shaped who they became.\n\nAbed, meanwhile, was busy with the episode's B-plot involving Annie and her broken childhood keepsake (rendered in that distinctive German-expressionist animation style), which had nothing to do with the foosball trauma.\n\nSo if you're thinking of the pants-wetting foosball backstory, that thread belongs to Shirley, not Abed."
+  },
+  {
+   "sample_key": "FIC-203|foil_premise|3",
+   "condition": "foil_premise",
+   "prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+   "response": "The premise of your question contains a mix-up. In *Community*, it wasn't Abed who was the childhood bully—it was **Shirley**.\n\nThis comes from the Season 3 episode **\"Foosball and Nocturnal Vigilantism.\"** In that episode, Jeff and Shirley end up bonding over foosball while training to take on some intimidating German players. During the storyline, they gradually realize that they had actually crossed paths as children at a mall. As kids, Shirley (an aggressive, trash-talking child) beat young Jeff at foosball and humiliated him so badly that he wet his pants—a traumatic memory Jeff had carried into adulthood.\n\nThe reveal is played for both comedy and genuine emotional resonance, as the two of them work through this buried shared history and the guilt/embarrassment tied to it.\n\nSo Abed wasn't involved in that particular plotline. If you were thinking of a different episode or character interaction involving Abed, let me know and I can help clarify!"
+  },
+  {
+   "sample_key": "FIC-203|foil_premise|4",
+   "condition": "foil_premise",
+   "prompt": "In Community, how did Abed end up being the childhood bully who made young Jeff wet his pants at foosball?",
+   "response": "The premise here is a bit off. In the *Community* episode **\"Foosball and Nietzsche\"** (Season 2), Abed wasn't the childhood bully—he was the one who *figured out* who the bully actually was.\n\nHere's how it played out:\n\n- Jeff and Shirley develop a foosball rivalry, and along the way Jeff recovers a repressed traumatic childhood memory of being humiliated at a foosball table—being taunted and made to wet his pants.\n\n- Abed, using his signature knack for pattern recognition and reading people, pieces together the details of the memory and reconstructs the scene.\n\n- The twist Abed reveals is that **Shirley** was the child who bullied young Jeff and caused him to wet his pants at foosball. This creates awkward tension between the two, since they'd been bonding over the game.\n\nSo rather than being the culprit, Abed served as the \"detective\" who solved the mystery of Jeff's childhood trauma and exposed Shirley as the responsible party.\n\nIf you were thinking of a different scene or character, let me know and I can help clarify!"
+  }
+ ]
+}

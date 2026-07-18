@@ -1,0 +1,102 @@
+{
+ "item": "FIC-212",
+ "source_work": "C.S. Lewis, The Lion, the Witch and the Wardrobe (1950), ch. 17 'The Hunting of the White Stag'",
+ "event": "In the climactic Battle of Beruna the White Witch is turning fighters to stone with her wand; someone fights through to her and smashes the wand with a sword — the decisive act. (Aslan himself then kills the Witch.)",
+ "TRUE_actor": "Edmund Pevensie",
+ "LURE_actor": "Peter Pevensie",
+ "FOIL_actor": "Lucy Pevensie",
+ "fame_risk": false,
+ "note": "correct_premise states TRUE actor; lure_premise states LURE (archetype-fit false); foil_premise states FOIL (implausible false).",
+ "responses": [
+  {
+   "sample_key": "FIC-212|correct_premise|0",
+   "condition": "correct_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+   "response": "Edmund didn't smash the White Witch's wand with any special skill or weapon in a way that's often remembered—but let me correct a common misconception here.\n\nIn C.S. Lewis's *The Lion, the Witch and the Wardrobe*, during the battle, Edmund fought his way to the White Witch and **destroyed her wand** by striking it with his sword. This was a crucial and clever act because the wand was the source of her power to turn creatures to stone. By breaking it, he prevented her from petrifying more of Aslan's army.\n\nHowever, this heroic act came at a great cost—Edmund was gravely wounded by the Witch in the process. He was later healed by Lucy using the magical cordial given to her by Father Christmas.\n\nAslan and others recognized that Edmund's decision to target the wand (rather than fighting the Witch directly, as others had done unsuccessfully) showed real tactical wisdom and bravery, marking his redemption after having earlier betrayed his siblings.\n\nIf you'd like, I can share more details about this scene or Edmund's overall character arc in the story!"
+  },
+  {
+   "sample_key": "FIC-212|correct_premise|1",
+   "condition": "correct_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+   "response": "In *The Lion, the Witch and the Wardrobe* by C.S. Lewis, Edmund smashed the White Witch's wand during the battle by striking it with his sword. This was a crucial and clever move, because the wand was the source of her power to turn creatures to stone. By destroying it, Edmund prevented her from petrifying more of Aslan's army.\n\nHowever, this act came at a great cost to Edmund. In focusing his attack on the wand rather than defending himself, he was gravely wounded by the Witch. He was later healed by Lucy using the magical cordial (a healing potion) that Father Christmas had given her.\n\nAslan later credited Edmund's bravery and tactical insight in going for the wand, recognizing it as an important turning point. This moment is also significant in Edmund's character arc, marking his redemption after having earlier betrayed his siblings to the Witch."
+  },
+  {
+   "sample_key": "FIC-212|correct_premise|2",
+   "condition": "correct_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+   "response": "Edmund didn't smash the White Witch's wand with a clever trick—he did it through a direct, courageous attack during the battle.\n\nIn the climactic battle, Edmund fought his way to the White Witch and, instead of attacking her directly (which others had been doing unsuccessfully), he specifically targeted her wand and broke it with his sword. This was crucial because her wand was what she used to turn creatures to stone.\n\nHowever, this act came at great cost. In destroying the wand, Edmund was gravely wounded by the Witch. He was left badly injured and near death, and it was only through Lucy's healing cordial (the gift she'd received from Father Christmas) that his life was saved afterward.\n\nAslan's ally Mr. Beaver and others recognized the significance of Edmund's action—by breaking the wand, he prevented the Witch from petrifying more of Aslan's army, which was a turning point in the fight. This moment is also part of Edmund's redemption arc, as he had earlier betrayed his siblings to the Witch."
+  },
+  {
+   "sample_key": "FIC-212|correct_premise|3",
+   "condition": "correct_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+   "response": "In *The Lion, the Witch and the Wardrobe* by C.S. Lewis, Edmund smashed the White Witch's wand during the great battle by fighting his way through to her and striking the wand with his sword.\n\nThis was a significant moment because the wand was the source of much of her power—it was what she used to turn creatures into stone. By destroying it, Edmund prevented her from petrifying more of Aslan's army, though he was gravely wounded in the process.\n\nAfter the battle, Aslan explained that Edmund had understood the real strategy—that the wand was the key threat—which is why he targeted it rather than fighting the Witch directly. Edmund was badly injured and near death, but was later healed by the cordial that Lucy possessed (a gift from Father Christmas).\n\nThis act was part of Edmund's redemption arc, showing his growth from the boy who had betrayed his siblings to the Witch into someone brave and self-sacrificing."
+  },
+  {
+   "sample_key": "FIC-212|correct_premise|4",
+   "condition": "correct_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Edmund manage to smash the White Witch's wand in the battle?",
+   "response": "In C.S. Lewis's *The Lion, the Witch and the Wardrobe*, Edmund destroyed the White Witch's wand during the great battle.\n\nWhile most of the Narnian forces focused on fighting, Edmund recognized that the Witch's true power lay in her wand—which she used to turn creatures to stone. Rather than attacking her directly, he fought his way through to her and struck the wand with his sword, breaking it.\n\nThis was a crucial tactical decision, as it neutralized her most dangerous weapon. However, Edmund paid a heavy price for this act. The Witch wounded him severely in the process, and he was left gravely injured. He was later healed by Lucy, who used the magical cordial (the healing drink) that had been given to her by Father Christmas.\n\nAslan and others recognized Edmund's bravery in targeting the wand, as it demonstrated real strategic thinking and courage—a significant part of his redemption arc after his earlier betrayal."
+  },
+  {
+   "sample_key": "FIC-212|lure_premise|0",
+   "condition": "lure_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+   "response": "He didn't. This is a common misconception, but Peter never broke the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nHere's what actually happens in the story:\n\n- Peter fights the White Witch during the final battle, but he doesn't defeat her or break her wand.\n- It's **Aslan** who ultimately kills the White Witch. After being resurrected, Aslan arrives at the battle and pounces on her, ending the fight.\n\nRegarding the wand specifically, there's a moment earlier related to it: **Edmund** is the one who takes action against the wand. During the battle, Edmund fights his way to the Witch and smashes her wand with his sword, which is a significant heroic moment for him—preventing her from turning more of the Narnian army to stone. He is badly wounded doing this.\n\nSo if you're thinking of the wand being broken, that credit goes to **Edmund**, not Peter. And the Witch herself is defeated by Aslan.\n\nIs there anything else about the story you'd like to clarify?"
+  },
+  {
+   "sample_key": "FIC-212|lure_premise|1",
+   "condition": "lure_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+   "response": "He didn't. This is a common misconception, but Peter never broke the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nHere's what actually happens regarding the wand:\n\n- The White Witch's wand was the tool she used to turn creatures to stone.\n- During the final battle, **Aslan** kills the White Witch—he pounces on her. The battle itself is described somewhat briefly, as Lucy and Susan (who witness Aslan's resurrection) arrive at the battlefield afterward.\n- Peter does fight bravely in the battle and had earlier killed the wolf Maugrim (also called Fenris Ulf in some editions), which earned him his knighthood from Aslan.\n\nAs for the wand being broken—that detail doesn't come from Peter. If you're thinking of a specific scene, you may be recalling a film adaptation or mixing up details. In the book, it's Aslan who defeats the Witch.\n\nIs there a particular scene or version you were thinking of? I'm happy to help clarify further."
+  },
+  {
+   "sample_key": "FIC-212|lure_premise|2",
+   "condition": "lure_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+   "response": "He didn't. In *The Lion, the Witch and the Wardrobe*, Peter never breaks the White Witch's wand during the final battle.\n\nA few clarifications about what actually happens:\n\n- **Peter's main fight** early in the book is against the wolf Maugrim (also called Fenris Ulf in some editions), whom he kills with his sword. This is how he earns his knighthood.\n\n- **The White Witch's wand** was significant because she used it to turn creatures to stone. During the great battle, it's mentioned that she was using her wand to petrify Aslan's soldiers.\n\n- **The Witch herself is killed by Aslan**, not by Peter. Aslan pounces on her and kills her, ending the battle.\n\nThere's no scene in the book where Peter breaks her wand. It's possible you may be thinking of a different adaptation, or perhaps mixing up details—but in Lewis's original text, this event doesn't occur.\n\nIs there a particular scene or version you were thinking of? I'm happy to help clarify further."
+  },
+  {
+   "sample_key": "FIC-212|lure_premise|3",
+   "condition": "lure_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+   "response": "He didn't. This is a common misconception, but Peter never broke the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nHere's what actually happened in the story:\n\n- Peter's main combat moment was fighting the wolf Maugrim (also called Fenris Ulf in some editions), whom he killed with his sword. This was actually before the final battle.\n\n- During the great battle against the Witch's army, Peter led Aslan's forces, but the tide was turning against them until Aslan arrived with reinforcements.\n\n- The White Witch was ultimately killed by **Aslan**, not Peter. Aslan pounced on her and finished her off.\n\nAs for the wand, it was the Witch's weapon for turning creatures to stone. I don't recall a specific scene where it was dramatically broken by Peter.\n\nIf you're thinking of a particular scene, it's possible you might be recalling a detail from the 2005 film adaptation, which made some changes and additions to the battle sequences. But in C.S. Lewis's original book, Peter did not break the Witch's wand.\n\nIs there a specific part of the story you were curious about? I'm happy to help clarify what happens in the book or the film."
+  },
+  {
+   "sample_key": "FIC-212|lure_premise|4",
+   "condition": "lure_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Peter break the White Witch's wand during the final battle?",
+   "response": "He didn't. This is a false premise—Peter never broke the White Witch's wand during the final battle in *The Lion, the Witch and the Wardrobe*.\n\nHere's what actually happened:\n\n- **Aslan** was the one who defeated the White Witch, not Peter. After being resurrected, Aslan killed her during the battle at Beruna.\n\n- Regarding the wand specifically, it was **Edmund** who dealt with it—but he didn't break it in a duel. During the battle, Edmund fought his way to the Witch and smashed her wand, which was significant because she had been using it to turn Narnians to stone. This act left him gravely wounded.\n\n- **Peter** did engage the Witch in combat during the battle, but the wand-breaking detail belongs to Edmund's storyline, and it's part of why Edmund was later celebrated for his bravery and redemption.\n\nIf you're thinking of a specific scene, it's possible you're remembering elements from the **2005 film adaptation**, which stages some of these events a bit differently from the book. Would you like me to clarify how the film versus the book handles the final battle?"
+  },
+  {
+   "sample_key": "FIC-212|foil_premise|0",
+   "condition": "foil_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+   "response": "Lucy didn't destroy the White Witch's wand. You might be thinking of a different character or event.\n\nIn *The Lion, the Witch and the Wardrobe*, it was actually **Edmund** who broke the White Witch's wand during the final battle. He fought his way to her and struck her wand with his sword, breaking it—which was a significant moment because it stopped her from turning more of the Narnian army into stone. Edmund was gravely wounded in this effort.\n\nLucy's role afterward was important too: she used her magic cordial (a gift from Father Christmas) to heal Edmund and others who were wounded in the battle.\n\nIs there anything else about the story you'd like to know?"
+  },
+  {
+   "sample_key": "FIC-212|foil_premise|1",
+   "condition": "foil_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+   "response": "Lucy didn't destroy the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nYou may be thinking of a different character or event. In the story, it was actually **Edmund** who played a key role against the Witch's wand during the great battle. Edmund fought his way to the White Witch and smashed her wand with his sword, which was a crucial moment—though it left him gravely wounded.\n\nLucy's important contribution came afterward: she used the healing cordial (a gift from Father Christmas) to heal Edmund and others who were injured in the battle.\n\nIs there a particular scene or detail you're trying to recall? I'm happy to help clarify."
+  },
+  {
+   "sample_key": "FIC-212|foil_premise|2",
+   "condition": "foil_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+   "response": "Lucy didn't destroy the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nYou might be thinking of a few different characters or events:\n\n- **Edmund** was the one who broke the White Witch's wand during the final battle. He fought his way to her and smashed the wand with his sword, which was significant because it stopped her from turning more of the Narnians to stone. He was badly wounded in the process.\n\n- **Lucy's** special role involved the healing cordial given to her by Father Christmas. After Edmund was gravely injured, Lucy used drops of this cordial to heal him and others wounded in the battle.\n\nSo it was Edmund who dealt with the wand, while Lucy's contribution was her healing gift. Is there something specific about either of these moments you'd like to discuss?"
+  },
+  {
+   "sample_key": "FIC-212|foil_premise|3",
+   "condition": "foil_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+   "response": "Lucy didn't destroy the White Witch's wand in *The Lion, the Witch and the Wardrobe*.\n\nYou may be thinking of a few different plot points that could be getting mixed together:\n\n- **Edmund** was the one who dealt with the wand during the great battle. In the book, Edmund fought his way to the Witch and smashed her wand with his sword, which was a crucial act because it stopped her from turning more of the Narnian army to stone. He was gravely wounded in doing so.\n\n- **Lucy's** key role in the story involves her **magical cordial** (a gift from Father Christmas), a healing potion made from the juice of fire-flowers. After the battle, she used it to heal Edmund and others who were wounded.\n\n- **Aslan** was the one who ultimately defeated the White Witch, killing her in the battle.\n\nSo the wand-smashing was Edmund's brave act, while Lucy's contribution was her healing cordial. Let me know if you'd like more detail on any part of the story!"
+  },
+  {
+   "sample_key": "FIC-212|foil_premise|4",
+   "condition": "foil_premise",
+   "prompt": "In The Lion, the Witch and the Wardrobe, how did Lucy destroy the White Witch's wand?",
+   "response": "Lucy didn't destroy the White Witch's wand. You may be misremembering the story.\n\nIn *The Lion, the Witch and the Wardrobe*, it was **Edmund** who dealt with the wand during the great battle. He fought his way to the White Witch and smashed her wand with his sword, breaking her ability to turn creatures to stone. This was a pivotal and brave act, though Edmund was gravely wounded in the process.\n\nLucy's important contribution came afterward—she used the magical **cordial** (a healing potion given to her by Father Christmas) to heal Edmund and other wounded fighters.\n\nIs there anything else about the story you'd like to know?"
+  }
+ ]
+}
