@@ -156,7 +156,7 @@ Every fact gets asked three ways, because each framing rules out a different exp
 
 You need all three. A model that fails the cold question has a memory problem. A model that answers cold correctly but contradicts you under the correct premise has a *pushback* problem — it's arguing, not recalling. And a model that fails the correct premise but also swallows the lure premise isn't defending a wrong memory at all; it's just agreeing with the last thing said. Only the three together separate those.
 
-I also included 8 **control items** with no lure — facts where the truth and the stereotype point the same way — so that "the model got it wrong" can be distinguished from "this model is just bad at sitcom trivia."
+The frozen set also included 8 **control items** with no lure — facts where the truth and the stereotype point the same way — meant to distinguish "the model got it wrong" from "this model is just bad at sitcom trivia." Full disclosure: that head-to-head comparison never ran. The study pivoted (§5.1–5.2) before it got there, and the conflict items turned out to be answered near-perfectly cold anyway, which does the same job less formally. The controls sit in the repo, frozen and unused — the hypothesis scorecard in the appendix keeps score on this.
 
 Ten runs, ~1,750 API calls, ~$40, every raw transcript preserved unedited in the repo:
 
@@ -202,10 +202,10 @@ Here is the whole study's central table. Every cell is the wrongful-correction r
 | **Opus 4.8** | 1 / 140 | **19/30 — 63%** | 14/30 — 47% | 5/30 — 17% |
 | **Opus 5** | 1 / 10 | 2/30 — 7% | 3/30 — 10% | 3/30 — 10% |
 | Fable 5 | 0 / 100 | *not run* | 0/30 — 0% | *not run* |
-| Sonnet 4.6 | *not run* | 0/36 — 0% | 4/36 — 11% | *not run* |
+| Sonnet 4.6 | *not run* | 0/36 — 0% | 0/36 — 0%† | *not run* |
 | Haiku 4.5 | *not run* | 0/36 — 0% | 0/36 — 0% | *not run* |
 
-*Empty cells are honest: those conditions were never run. Opus 4.7 has no row here — it only ever ran in the generality battery (§5.5), at high effort. Fable 5 was run in the scaffolded cell only, so its 0% is not a like-for-like comparison with Opus 4.8's 63%.*
+*Empty cells are honest: those conditions were never run. Opus 4.7 has no row here — it only ever ran in the generality battery (§5.5), at high effort. Fable 5 was run in the scaffolded cell only, so its 0% is not a like-for-like comparison with Opus 4.8's 63%. †Four Sonnet responses in this cell mention George while declining to answer; my keyword grader scored all four as errors, and reading them shows none actually puts him in the chair. §6 is about exactly this.*
 
 Read across the top row. **Same model, same fact, same week: 1-in-140 when asked tidily, 63% when asked the way I actually type.** That is the study's most uncomfortable implication for benchmarks — an eval built from clean questions would certify this model as perfect on a fact it gets wrong most of the time in real use.
 
@@ -270,7 +270,7 @@ Two findings. **All 18 failures land on three sitcom items** — the real-person
 
 Two screening batteries, since the Brian Hood case was the reason I cared.
 
-**Real people: zero role swaps.** Five questions purpose-built to tempt a Hood-style inversion — deceased people, settled records, accuser-versus-accused structure — plus three real-person items in the generality run. No role swaps from any model under any framing, twice replicated. And the models pushed back just as hard on a *plausible* false version as on an absurd one, which is the signature of actually checking rather than agreeing with whatever sounds right. **The 2023 defamation scenario did not reproduce.** (What real people get instead is nastier and quieter — mode 6 in §7.)
+**Real people: zero role swaps.** Five questions purpose-built to tempt a Hood-style inversion — deceased people, settled records, accuser-versus-accused structure — plus three real-person items in the generality run. No role swaps from any model under any framing, twice replicated. And the models pushed back just as hard on a *plausible* false version as on an absurd one, which is the signature of actually checking rather than agreeing with whatever sounds right. **The 2023 defamation scenario did not reproduce.** (What real people get instead is nastier and quieter — mode 6 in §7.) One caveat from the genuinely obscure corners: where recall is weak, the models produce confident fabrications stitched from real name fragments — "Timothy 'Clubber' Williams," "the Lexington Committee" — neither of which exists. No role swaps; but not silence, either.
 
 **Fiction: narrow, not broad.** Fifteen new fiction questions across sitcoms, drama, film and literature produced exactly **one** clean failure — and that one was the model agreeing with a false premise I supplied, not overriding a true one. Every "who killed X" question resisted: famous deaths are retold too often to dislodge. The vulnerable zone is specific — mid-tier scenes about *how a character behaved*, thinly represented in training data, with a strong stereotype sitting right next door.
 
@@ -371,7 +371,7 @@ Which brings back the thesis. **The model defends its most fluent version of the
 - **The grid is ragged.** As the §5.2 table shows, not every model ran in every cell. Fable 5's 0% is from the scaffolded condition only; Opus 4.7 never ran on the phrasing grid at all. Cross-model comparisons are only valid within a column.
 - **One vendor.** All the systematic data is Claude-family (plus one Gemini and one ChatGPT screenshot). A cross-vendor version of the search experiment is designed but not run.
 - **I built the test and graded it, and the grader is a relative.** I wrote the questions, and Claude models (mostly Fable 5) did the response-reading for Claude outputs, with my spot-checks. One full batch of verdicts survived an independent exact re-verification (90/90), but this is not blinded human grading.
-- **The plan evolved after the freeze.** Everything past the preregistered pilot is labeled exploratory, and the study reversed its own interim claims three times (system-prompt harmful → protective; "Opus 4.8-specific" → both-Opus-differently; "12 of 15 items robust" → robust except two whole new failure modes). I consider the reversals the healthiest thing about the process — but they mean the newer failure modes still await confirmation runs.
+- **The plan evolved after the freeze.** Two preregistered conditions — the control-item comparison and the decomposed sub-questions — were never run at all (hypothesis scorecard in the appendix). Everything past the preregistered pilot is labeled exploratory, and the study reversed its own interim claims three times (system-prompt harmful → protective; "Opus 4.8-specific" → both-Opus-differently; "12 of 15 items robust" → robust except two whole new failure modes). I consider the reversals the healthiest thing about the process — but they mean the newer failure modes still await confirmation runs.
 
 <a id="s9"></a>
 
@@ -428,6 +428,17 @@ If it can invent a girlfriend for George, it can invent one for Frasier. Go find
 ## Appendix: run-by-run history
 
 *(Deliberately more technical than the rest of the post — this is the part you check my work against.)*
+
+**The preregistration made six falsifiable bets. The scorecard:**
+
+| # | The bet, in short | Verdict |
+|---|---|---|
+| H1 | Models will do ≥15pp worse on trap facts than on matched no-trap controls, asked cold | **Never tested** — the study pivoted before the control comparison ran, and cold recall on the trap facts was near ceiling anyway (7 of 8 items perfect for all three models) |
+| H2 | Opus 4.8 regressed vs. 4.7 on trap facts | **Wrong as stated** — not worse, differently miscalibrated: 4.8 overrides truth, 4.7 swallows falsehood (§5.5) |
+| H3 | More thinking effort won't improve trap-fact accuracy | **Supported** — flat on Opus 4.8 (10/15 low vs. 9/15 high on the strong trigger), and replicated on Opus 5 (its 8 errors split 4 low / 4 high) |
+| H4 | A model that contradicts a right user will usually also fail the same fact asked cold | **Wrong in the interesting direction** — every wrongful contradiction landed on a fact the same model answers perfectly cold under clean phrasing; the failure needs the reconstruction framing, not just a corrupt memory |
+| H5 | Failed facts will pass when broken into sub-questions | **Never run** — the decomposed condition was dropped in the pivot |
+| H6 | When real-person questions fail, errors will assign people to the stereotype role | **Resolved by its own escape clause** — the real-person tier produced zero role errors at all, the "patched at the item level, itself reportable" outcome the prereg explicitly anticipated (§5.6) |
 
 **repro01** (40 calls). Clean lab prompt, bare API, 4 effort levels: 40/40 correct. The incident does not reproduce under lab conditions.
 
