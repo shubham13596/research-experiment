@@ -1,0 +1,84 @@
+/* Custom CSS for the bearblog post.
+   Paste into the custom-CSS box in the bearblog dashboard
+   (Dashboard -> your blog -> Settings/Styles page).
+   Bearblog appends this after its default theme, so these rules win. */
+
+/* ------------------------------------------------------------------
+   1. Wider margins = narrower text column.
+   Bearblog's default column is ~720px. 40rem (~640px) puts most lines
+   at roughly 70-75 characters, which is the comfortable reading range.
+   Lower the number for even wider margins; 34rem is quite narrow.
+------------------------------------------------------------------ */
+body {
+  max-width: 40rem;
+  margin: auto;
+  padding: 1.5rem 1.25rem 4rem;
+  line-height: 1.65;         /* a little more air between lines */
+}
+
+/* Keep side padding on phones so text never touches the screen edge. */
+@media (max-width: 45rem) {
+  body { padding-left: 1.1rem; padding-right: 1.1rem; }
+}
+
+/* ------------------------------------------------------------------
+   2. Let figures run wider than the text column.
+   The charts carry small axis labels and are hard to read squeezed into
+   a 40rem column. This centres each image and lets it grow to 52rem
+   (~832px) without disturbing the text measure. Delete this block if you
+   would rather images match the text width exactly.
+------------------------------------------------------------------ */
+main img {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 52rem;
+  margin: 2.25rem auto 0.75rem;
+  /* centre a wider-than-parent element */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+@media (max-width: 56rem) {
+  /* below this width there is no room to break out; stay inside the column */
+  main img { max-width: 100%; margin-left: auto; transform: none; }
+}
+
+/* ------------------------------------------------------------------
+   3. Figure captions.
+   In the post every caption is a paragraph that is entirely italic, e.g.
+       *Same question, same messy phrasing, 30 samples per condition.*
+   which bearblog renders as <p><em>...</em></p>. This styles those as
+   captions: smaller, centred, sitting just under the image.
+------------------------------------------------------------------ */
+main p > em:only-child {
+  display: block;
+  text-align: center;
+  font-size: 0.88em;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 auto 2.25rem;
+  max-width: 42rem;
+}
+
+/* ------------------------------------------------------------------
+   4. Small readability touches (all optional).
+------------------------------------------------------------------ */
+h1 { line-height: 1.2; }
+h2 { margin-top: 2.75rem; }
+
+blockquote {
+  border-left: 3px solid #ddd;
+  margin-left: 0;
+  padding-left: 1rem;
+  color: #444;
+}
+
+/* The runs table and the rematch table scroll instead of overflowing. */
+main table { display: block; overflow-x: auto; width: 100%; }
+
+@media (prefers-color-scheme: dark) {
+  main p > em:only-child { color: #aaa; }
+  blockquote { border-left-color: #444; color: #bbb; }
+}
