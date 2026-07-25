@@ -129,21 +129,48 @@ main p > em:only-child {
 
 
 /* ------------------------------------------------------------------
-   6. TABLES SCROLL INSTEAD OF SQUASHING.
-   The theme sets table { width: 100% }, which crushes the ten-row runs
-   table on phones. This lets it scroll sideways instead.
+   6. TABLES: SIZE TO CONTENT, BREAK OUT WHEN WIDE, SCROLL AS A LAST
+   RESORT.
+   The theme sets table { width: 100% }, which both stretches a small
+   two-column table across the page and crushes a five-column one.
+   width: max-content sizes each table to what it actually needs;
+   narrow tables stay narrow and centred, wide ones grow into the same
+   860px break-out the figures use, and only a table wider than THAT
+   scrolls sideways.
 ------------------------------------------------------------------ */
 main table {
   display: block;
+  width: max-content;
+  max-width: 860px;
+  margin: 2em 0 2em 50%;
+  transform: translateX(-50%);
   overflow-x: auto;
   white-space: nowrap;
   font-size: 0.93em;
-  margin: 1.8em 0;
 }
 
 main th, main td {
-  padding: 0.4em 0.9em 0.4em 0;
+  padding: 0.45em 1.1em 0.45em 0;
   text-align: left;
+}
+
+main th {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+/* Numbers are easier to compare down a column when they line up. */
+main td + td {
+  font-variant-numeric: tabular-nums;
+}
+
+/* No room to break out on narrow screens - stay inside the column. */
+@media (max-width: 900px) {
+  main table {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
 }
 
 
