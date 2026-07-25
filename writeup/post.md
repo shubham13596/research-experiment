@@ -10,7 +10,23 @@ The unifying thesis, in one sentence: **models defend the most fluent version of
 
 Everything below is backed by a public repo with immutable raw transcripts, a preregistration frozen before data collection, and findings docs that include every retraction I had to make along the way: [github.com/shubham13596/research-experiment](https://github.com/shubham13596/research-experiment).
 
+**Contents**
+
+1. [Cold open: the Melrose Place incident](#s1)
+2. [Then Opus 5 shipped, and we ran it back](#s2)
+3. [What I actually did](#s3)
+4. [The six ways it fails](#s4)
+5. [The numbers that carry the story](#s5)
+6. [My grading pipeline fabricated more findings than the models did](#s6)
+7. [Limitations, honestly](#s7)
+8. [What I take away](#s8)
+9. [What this means for how you use these tools](#s9)
+10. [Try it on your show](#s10)
+[Appendix: run-by-run history](#app)
+
 ---
+
+<a id="s1"></a>
 
 ## 1. Cold open: the Melrose Place incident
 
@@ -58,6 +74,8 @@ Cranking thinking effort to maximum does not fix it — same swap at max. And if
 
 A sitcom misattribution is harmless. But this exact failure shape has already had a real-world victim: in 2023, ChatGPT falsely described Brian Hood — the whistleblower who *exposed* an Australian bribery scandal — as one of its convicted perpetrators, prompting the first defamation-suit threat against an AI company. It's the same shape of error: the name sits right next to the scandal in the record, and the model slots the person into the role that usually goes with a scandal — the guilty one — rather than the role he actually played. (I'm describing the resemblance, not claiming to know what happened inside OpenAI's model.) Whether today's models still do that to real people is one of the questions this study answers. (Spoiler: they no longer swap real people's roles — I checked twice, with items purpose-built to tempt them. What they do to real people instead is stranger.)
 
+<a id="s2"></a>
+
 ## 2. Then Opus 5 shipped, and we ran it back
 
 The study was built and run while Opus 4.8 was the flagship. The night before this post went up, Anthropic released **Opus 5** — so before publishing a post about the old model's memory, I asked the new one the same question. 148 calls, identical prompts down to the typo, identical settings, and the same grading rule I use everywhere in this study: every response gets *read*, not keyword-matched (§6 explains why that rule exists). I re-ran the three measurements where Opus 4.8 looked worst.
@@ -94,6 +112,8 @@ Two caveats I have to put right next to that, because they cut against my own he
 
 Two honest caveats. This is one question, 10–30 samples per condition, tested the day after release — treat the rates as a strong directional read, not final numbers. And I make no claim about *why* Opus 5 improved. I can only report that the improvements land on exactly the three weaknesses this study documented: how often the wrong version wins, how often the model is confidently wrong without checking, and whether thinking budget buys any checking at all. The rest of this post is the study that mapped those weaknesses.
 
+<a id="s3"></a>
+
 ## 3. What I actually did
 
 Before collecting any data, I wrote down and froze the full plan — which facts I'd test, what I predicted, what would count as the hypothesis failing, and how responses would be graded. (This is called *preregistration*: publishing your predictions before seeing data, so you can't quietly move the goalposts after. The freeze is a public git commit, `4d80d07`.)
@@ -116,6 +136,8 @@ Ten runs, ~1,750 API calls, every raw transcript preserved unedited in the repo:
 | opus5_01 | The rematch: Opus 5 on the three decisive measurements | 148 |
 
 And then the most important run used zero API calls: `reread01`, a full re-read of all ~900 responses from the premise conditions, one by one, hunting for failures my grading rules couldn't see. It found three new ones. (Run-by-run detail in the appendix.)
+
+<a id="s4"></a>
 
 ## 4. The six ways it fails
 
@@ -140,6 +162,8 @@ Everything below happened when the user's statement was **true**, or under contr
 Modes 4–6 belong to one family: **the model rejects true statements without ever naming a wrong person.** That's what makes them invisible to standard hallucination checks — there's no wrong name to catch. Each individual response even looks *responsible* ("I'd want a source for that"). You can only see the failure by comparing answers across question framings and noticing the model asserts a fact in one and rejects the same fact in the other.
 
 Which brings back the thesis: **the model defends its most fluent version of the memory against everything.** When that fluent version is wrong — a stereotype or a famous retelling outcompeting a weakly-stored truth — you get confidently corrected toward the error (modes 1–3, and it's fiction where this happens). When the fluent version is right, the same defensive reflex aims at *your* phrasing of the truth instead — doubt, unfamiliarity, denial (modes 4–6). Real people almost never get their roles swapped. They get doubted.
+
+<a id="s5"></a>
 
 ## 5. The numbers that carry the story
 
@@ -173,6 +197,8 @@ One product-level wrinkle that replicated on every model including Opus 5: **the
 
 **The details around a fact are flakier than the fact itself.** Whoever a model says took the polygraph, someone *else* gets handed "It's not a lie if you believe it" — across all runs the quote landed on Jerry, Kramer, Elaine, and — in one memorable response — Jerry's mother. In Friends, "I stepped up!" migrates to Joey even in Fable 5 responses that get the central fact *right* (4 out of 5 in one batch). And Opus 5's *correct* answers still freely invent the girlfriend's name — Celia (the one in the §2 screenshot), Gretchen, Gail, a small casting call across samples — still sometimes reassign her to George, and once handed the quote to Kramer. If what you care about is a quote attribution or a supporting detail rather than the headline fact, every current model — including this week's — is measurably less reliable than its topline accuracy suggests.
 
+<a id="s6"></a>
+
 ## 6. My grading pipeline fabricated more findings than the models did
 
 Confession section. I planned to grade responses automatically with a simple rule: whichever character a response names first is its answer. That rule doesn't just add noise — it **manufactures false discoveries**, and it did so roughly ten times, several of which briefly became exciting wrong headlines in my notes:
@@ -188,6 +214,8 @@ So the standing rule for every number in this post: **a person or model actually
 
 If you build hallucination evals, this section is the actionable part: name-matching misses half the failure modes and fabricates findings from name echoes. Budget for reading.
 
+<a id="s7"></a>
+
 ## 7. Limitations, honestly
 
 - **One question does a lot of work.** The strongest phrasing effects concentrate on the Seinfeld polygraph item; the messy-phrasing amplification is demonstrated at full strength on that one item. The "famous version steamrolls" mode also rests mainly on one item (11/16).
@@ -197,6 +225,8 @@ If you build hallucination evals, this section is the actionable part: name-matc
 - **I built the test and graded it, and the grader is a relative.** I wrote the questions, and Claude models (mostly Fable 5) did the response-reading for Claude outputs, with my spot-checks. One full batch of verdicts survived an independent exact re-verification (90/90), but this is not blinded human grading.
 - **The plan evolved after the freeze.** Everything past the preregistered pilot is labeled exploratory, and the study reversed its own interim claims three times (system-prompt harmful → protective; "Opus 4.8-specific" → both-Opus-differently; "12 of 15 items robust" → robust except two whole new failure modes). I consider the reversals the healthiest thing about the process — but they mean the newer failure modes still await confirmation runs.
 
+<a id="s8"></a>
+
 ## 8. What I take away
 
 1. **"Hallucination" is one word for at least six different problems.** They have different triggers (phrasing-sensitive vs. baked-in), different shapes (swap vs. denial vs. doubt), and different victims (fiction gets falsely corrected, real people get falsely doubted). Lumping them together is why benchmarks that only check names miss half of them.
@@ -204,6 +234,8 @@ If you build hallucination evals, this section is the actionable part: name-matc
 3. **The product configuration around the model changes what it effectively knows.** Web search masks memory failures (Sonnet looks perfect in the app because it quietly searches). The claude.ai system prompt reduces confabulation *and* reduces checking. Thinking effort doesn't fix strong-pull errors but now controls whether the newest models check their work at all. None of this shows up in a benchmark score, and all of it changes what you actually get.
 4. **The real-person risk today isn't defamation-by-swap — it's wrongful doubt.** In my tests, current Claude models wouldn't call the whistleblower a criminal; instead they tell the person correctly describing a documented record "I'd want a source for that." Much better than defamation. Still the same underlying reflex — and no benchmark I know of measures it.
 5. **Model progress is real, and it's per-axis, not across-the-board.** The rematch is genuinely good news: 63%→7%, zero confident-unverified-wrong, checking that responds to thinking budget. And it's a demonstration that "better" isn't "fixed": the same groove, the same reflex, the same flaky supporting details, and one new crack in a wall that used to be solid. Mapping *where* models fail stays useful across generations precisely because the map outlives the rates.
+
+<a id="s9"></a>
 
 ## 9. What this means for how you use these tools
 
@@ -223,6 +255,8 @@ Each rule below is earned by a specific result above.
 
 The one-line version: **an LLM is not a database you query — it's a reconstructor that defends the most fluent version of a story, against the record and against you.** Treat its disagreement as a retrieval event to be checked, not a judgment to defer to.
 
+<a id="s10"></a>
+
 ## 10. Try it on your show
 
 Everything here — the preregistration with its changelog, the frozen questions, raw transcripts of all ~1,750 calls, per-response verdicts, the runner scripts, and findings docs including every retraction — is open source: [github.com/shubham13596/research-experiment](https://github.com/shubham13596/research-experiment). A bug report went to Anthropic separately; Opus 5 already moved three of the numbers, so consider this a living document.
@@ -240,6 +274,8 @@ Opus 5 is the interesting target now, and it needs one statistical courtesy: at 
 If it can invent a girlfriend for George, it can invent one for Frasier. Go find her.
 
 ---
+
+<a id="app"></a>
 
 ## Appendix: run-by-run history
 

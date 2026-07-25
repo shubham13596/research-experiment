@@ -5,31 +5,86 @@
    Scroll to the very BOTTOM of what is already in that box and paste
    this after it. Later rules win, so these override the theme.
 
-   The default theme is variable-driven, so the margin fix is one line:
-   see step 1 below (you can either edit --width up top, or just leave
-   the override here — this file does it here so you don't have to hunt).
+   Biggest single win is block 1: the default theme uses Verdana, which
+   is unusually wide and gives the page its dated, sprawling feel.
 ================================================================== */
 
 
 /* ------------------------------------------------------------------
-   1. WIDER MARGINS = narrower column.
-   The theme sets --width: 720px. Lower it. 640px puts most lines at
-   ~70-75 characters, the comfortable range for long reading.
-   Try 600px for wider margins still, 680px for a gentler change.
+   1. TYPEFACE AND SIZE  <- do this one first
+   Swaps Verdana for the system UI sans (what Anthropic's research posts
+   use), and narrows the column to suit it.
+
+   Note on size: Verdana has a very large x-height, so it *looks* bigger
+   than most fonts at the same px. Moving to the system sans will already
+   read a touch smaller and tighter. 1.05em keeps it comfortable; drop to
+   1em if you want it smaller still.
+
+   Column: 720px was right for Verdana. The system sans fits more
+   characters per line, so 660px keeps lines near the 70-75 character
+   range where long reading stays easy.
 ------------------------------------------------------------------ */
 :root {
-  --width: 640px;
+  --width: 660px;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto,
+                    "Helvetica Neue", Arial, sans-serif;
+  --font-scale: 1.05em;
 }
 
-/* A little more air between lines than the theme's 1.6. Optional. */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 main {
-  line-height: 1.7;
+  line-height: 1.7;     /* theme is 1.6; long prose likes a bit more */
+}
+
+main p {
+  margin: 0 0 1.35em;
 }
 
 
 /* ------------------------------------------------------------------
-   2. FIGURES RUN WIDER THAN THE TEXT.
-   The four charts have small axis labels and get cramped at 640px.
+   2. HEADINGS
+   Clearer step between levels, and much more space above a section than
+   below it, so each heading visibly belongs to what follows.
+------------------------------------------------------------------ */
+h1 {
+  font-size: 1.9em;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.5em;
+}
+
+main h2 {
+  font-size: 1.32em;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-top: 2.9em;
+  margin-bottom: 0.7em;
+}
+
+main h3 {
+  font-size: 1.1em;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+
+/* ------------------------------------------------------------------
+   3. TABLE OF CONTENTS
+   Styles the "Contents" list at the top of the post.
+------------------------------------------------------------------ */
+main ol:first-of-type {
+  line-height: 1.75;
+}
+
+
+/* ------------------------------------------------------------------
+   4. FIGURES RUN WIDER THAN THE TEXT.
+   The four charts have small axis labels and get cramped at 660px.
    This lets images grow to ~860px while the text column stays narrow.
    DELETE this block if you would rather images match the text width.
 ------------------------------------------------------------------ */
@@ -38,13 +93,13 @@ main img {
   width: 100%;
   max-width: 860px;
   height: auto;
-  margin: 2.25rem auto 0.75rem;
+  margin: 2.4rem auto 0.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 4px;
 }
 
-/* No room to break out on narrow screens — stay inside the column. */
+/* No room to break out on narrow screens - stay inside the column. */
 @media (max-width: 900px) {
   main img {
     max-width: 100%;
@@ -55,25 +110,26 @@ main img {
 
 
 /* ------------------------------------------------------------------
-   3. FIGURE CAPTIONS.
+   5. FIGURE CAPTIONS.
    Every caption in the post is a paragraph that is entirely italic:
        *Same question, same messy phrasing, 30 samples per condition.*
-   which renders as <p><em>...</em></p>. This styles exactly those,
-   and leaves italics used mid-sentence alone.
+   which renders as <p><em>...</em></p>. This styles exactly those, and
+   leaves italics used mid-sentence alone.
 ------------------------------------------------------------------ */
 main p > em:only-child {
   display: block;
   text-align: center;
-  font-size: 0.88em;
-  line-height: 1.5;
-  opacity: 0.75;
-  margin: 0 auto 2.25rem;
-  max-width: 640px;
+  font-size: 0.86em;
+  line-height: 1.55;
+  font-style: normal;
+  opacity: 0.72;
+  margin: 0 auto 2.6rem;
+  max-width: 620px;
 }
 
 
 /* ------------------------------------------------------------------
-   4. TABLES SCROLL INSTEAD OF SQUASHING.
+   6. TABLES SCROLL INSTEAD OF SQUASHING.
    The theme sets table { width: 100% }, which crushes the ten-row runs
    table on phones. This lets it scroll sideways instead.
 ------------------------------------------------------------------ */
@@ -81,18 +137,37 @@ main table {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
-  font-size: 0.94em;
+  font-size: 0.93em;
+  margin: 1.8em 0;
+}
+
+main th, main td {
+  padding: 0.4em 0.9em 0.4em 0;
+  text-align: left;
 }
 
 
 /* ------------------------------------------------------------------
-   5. Small touches. All optional.
+   7. Small touches. All optional.
 ------------------------------------------------------------------ */
-h1 { line-height: 1.25; }
-h2 { margin-top: 2.75rem; }
 
 /* The theme italicises blockquotes; the post uses them for verbatim
    model output, which reads better upright. */
 main blockquote {
   font-style: normal;
+  margin: 1.6em 0;
+  padding-left: 1.1em;
+}
+
+main ul, main ol {
+  padding-left: 1.3em;
+}
+
+main li {
+  margin-bottom: 0.5em;
+}
+
+main hr {
+  margin: 3em 0;
+  opacity: 0.5;
 }
