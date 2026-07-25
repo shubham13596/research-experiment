@@ -145,7 +145,11 @@ Rejected candidates + audit trail: items/candidates/. Verification logs: evidenc
    preprint later only if warranted after expansion.** Rationale: the work's strengths (self-correcting
    narrative, methodology lessons, 6-mode taxonomy, speed-to-relevance while Opus 4.8 is current) fit LW;
    a reviewer-proof paper would need 50+ items / cross-vendor / power, months away. IN PROGRESS:
-   - 8 origin screenshots staged + renamed in `writeup/images/` (01-08): the SAME messy Melrose prompt
+   - 11 screenshots staged + renamed in `writeup/images/` (00-10). NEW 2026-07-25: 00 the actual
+     episode still (George delivers the aphorism — cold-open hero image); 09 Opus5-High on claude.ai
+     CORRECT but invents girlfriend "Celia" (peripheral-churn illo, slotted in post §2); 10 Opus5-High
+     on claude.ai FIRING the full package ("it was George, not Jerry", invents "Tara", quote follows
+     role — post §2). Originals 01-08: the SAME messy Melrose prompt
      across surfaces — 01 Opus4.8-High accepts a GEORGE (lure) premise; 02 Opus4.8-High cold "describe the
      plot" gives a fully inverted reconstruction (George takes test, Jerry coaches, confabulated
      polygraph-administrator girlfriend); 03 Opus4.8-High wrongfully contradicts the TRUE Jerry premise
