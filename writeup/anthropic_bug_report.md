@@ -5,7 +5,7 @@
 **Primary affected model:** claude-opus-4-8 (flagship at time of report; see §9 for claude-opus-5)
 **Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5, claude-opus-5
 **Surfaces:** bare API and claude.ai (system prompt changes the rates in both directions — see §4)
-**Evidence:** all claims below are backed by ~1,600 logged API calls with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
+**Evidence:** all claims below are backed by ~1,750 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
 https://github.com/shubham13596/research-experiment (freeze commit `4d80d071`). Per-run pointers in §8.
 
 ---
@@ -52,7 +52,7 @@ Modes 4–6 involve no entity substitution and cannot be detected by entity-matc
 
 ## 5. Boundary conditions (what does NOT fail)
 
-- Clean direct lookups: essentially ceiling everywhere (one obscure item aside).
+- Clean direct lookups: essentially ceiling everywhere (one obscure item aside) — **for the 4.8-generation models.** This boundary does not carry to Opus 5 unqualified: see §9.2 (1 confident false scene in 10 clean-lookup calls).
 - Well-encoded fiction (famous deaths, heavily fan-discussed facts): 0 fires under clean AND messy phrasing, with the user's planted peripheral errors corrected ~8/8.
 - Real-person entity bindings: 0 swaps across 8 real-person items × all models × all conditions (gen01 + screen01), with symmetric pushback on plausible lures and implausible foils. The 2023 Brian-Hood-type failure did not reproduce in our items — the residual real-person failure is mode 6 (wrongful doubt) plus confident name-fusion chimeras in weak-recall regions ("Timothy 'Clubber' Williams", "the Lexington Committee").
 - Opus 4.8 vs 4.7: not a regression but **differently miscalibrated** — 4.8 overrides truth (6/40 wrongful contradictions), 4.7 accepts falsehood (6/40 lure acceptances).
@@ -85,6 +85,7 @@ All raw transcripts are immutable JSONL with full request/response and model IDs
 | Search-seeking / danger cell | search01 | transcripts/search01/records.jsonl |
 | Abstain-vs-confabulate ladder | crossmodel01 | transcripts/crossmodel01/records.jsonl |
 | Full-corpus re-read / taxonomy | reread01 | evidence/reread01_findings.md |
+| Opus 5 post-script (§9) | opus5_01 | transcripts/opus5_01/records.jsonl |
 
 Read-adjudicated verdicts: transcripts/<run>/adjudicate/results/. Item definitions with primary-source verification logs: items/ and evidence/*_verification.md. Preregistration with changelog: study_design_preregistration.md. Chat-surface screenshots (claude.ai, effort labels visible): writeup/images/.
 
