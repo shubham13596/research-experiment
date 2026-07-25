@@ -15,10 +15,10 @@ Claude Opus 4.8, at max thinking effort, confidently told me I was wrong about a
 
 It swapped the protagonist, invented a girlfriend for him, and reassigned the episode's famous quote to fit its rewrite.
 
-I spent $40 and ~1,750 API calls finding out when this happens. 🧵
+I spent $40 and ~2,070 API calls finding out when this happens. 🧵
 
 **2/**
-The headline: asked tidily, the bug basically doesn't exist — 1 error in 140 clean-prompt calls.
+The headline: asked tidily, the bug basically doesn't exist — 1 error in 180 clean-prompt calls.
 
 Asked in my actual messy, typo-ridden phone phrasing: 63% wrong. Same model, same fact.
 
@@ -44,7 +44,7 @@ Opus 5 shipped the night before I planned to publish. So I re-ran the decisive c
 **6/**
 But the bug is still underneath. When Opus 5 fails (~7–10% of the time), it's the *identical* rewrite: "it's George, not Jerry," invented police-officer girlfriend, quote reassigned.
 
-Same script, rarer performances.
+And there's a measured trade: on plain direct lookups — where Opus 4.8 went 0/80 — Opus 5 confabulates the full false scene on 7/90 calls, 24% at LOW thinking effort. Effort rescues the lookup; nothing rescues the trap phrasing.
 
 **7/**
 Rigor notes: predictions were frozen in a public git commit before any data. Scorecard: 2 supported, 2 wrong, 2 never run.
@@ -54,7 +54,7 @@ And my automated keyword grading fabricated ~10 false findings before I banned i
 **8/**
 Full writeup: https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
 
-Repo — preregistration, all ~1,750 raw transcripts, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
+Repo — preregistration, all ~2,070 raw transcripts, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
 
 If you try it on Opus 5: run it several times. At ~7–10%, single screenshots mislead in both directions. @AnthropicAI
 

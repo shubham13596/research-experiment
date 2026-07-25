@@ -1,11 +1,11 @@
 # Bug report: Opus 4.8 confidently overrides correct user premises via schema-driven false recall (with a 6-mode taxonomy across the Claude family)
 
 **Reporter:** Shubham Gupta (shubham13596@gmail.com)
-**Date:** 2026-07-18 (post-script §9 added 2026-07-25 after the Opus 5 release; §§2–4 corrected the same day to match the full re-read's adjudicated grades — see the changelog note at the end)
+**Date:** 2026-07-18 (post-script §9 added 2026-07-25 after the Opus 5 release; §§2–4 corrected the same day to match the full re-read's adjudicated grades; §9 addendum with the fillgrid01 grid-fill run added the same day — see the changelog note at the end)
 **Primary affected model:** claude-opus-4-8 (flagship at time of report; see §9 for claude-opus-5)
 **Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5, claude-opus-5
 **Surfaces:** bare API and claude.ai (system prompt changes the rates in both directions — see §4)
-**Evidence:** all claims below are backed by ~1,750 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
+**Evidence:** all claims below are backed by ~2,070 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script + 324 in the §9-addendum grid-fill run) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
 https://github.com/shubham13596/research-experiment (freeze commit `4d80d071`). Per-run pointers in §8.
 **Full narrative writeup** (methodology, chronology, all tables): https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
 
@@ -53,7 +53,7 @@ Modes 4–6 involve no entity substitution and cannot be detected by entity-matc
 
 ## 5. Boundary conditions (what does NOT fail)
 
-- Clean direct lookups: essentially ceiling everywhere (one obscure item aside) — **for the 4.8-generation models.** This boundary does not carry to Opus 5 unqualified: see §9.2 (1 confident false scene in 10 clean-lookup calls).
+- Clean direct lookups: essentially ceiling (one obscure item aside) — **for Opus 4.8 and Fable 5 specifically.** This boundary does not carry down or forward. Down: Sonnet 4.6 asked the anchor question cold answers *wrongly 36/36* (George 20, Elaine 16 — it lacks the binding and confabulates; its 0% wrongful-correction rate under user premises is premise-agreement, not knowledge), while Haiku 4.5 declines 36/36. Forward: Opus 5 fails clean lookups at ~8%, effort-gated — see §9.2 and the §9 addendum (fillgrid01).
 - Well-encoded fiction (famous deaths, heavily fan-discussed facts): 0 fires under clean AND messy phrasing, with the user's planted peripheral errors corrected ~8/8.
 - Real-person entity bindings: 0 swaps across 8 real-person items × all models × all conditions (gen01 + screen01), with symmetric pushback on plausible lures and implausible foils. The 2023 Brian-Hood-type failure did not reproduce in our items — the residual real-person failure is mode 6 (wrongful doubt) plus confident name-fusion chimeras in weak-recall regions ("Timothy 'Clubber' Williams", "the Lexington Committee").
 - Opus 4.8 vs 4.7: not a regression but **differently miscalibrated** — 4.8 overrides truth (6/40 wrongful contradictions), 4.7 accepts falsehood (6/40 lure acceptances).
@@ -87,6 +87,7 @@ All raw transcripts are immutable JSONL with full request/response and model IDs
 | Abstain-vs-confabulate ladder | crossmodel01 | transcripts/crossmodel01/records.jsonl |
 | Full-corpus re-read / taxonomy | reread01 | evidence/reread01_findings.md |
 | Opus 5 post-script (§9) | opus5_01 | transcripts/opus5_01/records.jsonl |
+| Grid fill: Opus 5 lookup regression measured; Sonnet cold confabulation; Fable bare-API clean | fillgrid01 | transcripts/fillgrid01/records.jsonl |
 
 Read-adjudicated verdicts: transcripts/<run>/adjudicate/results/. Item definitions with primary-source verification logs: items/ and evidence/*_verification.md. Preregistration with changelog: study_design_preregistration.md. Chat-surface screenshots (claude.ai, effort labels visible): writeup/images/.
 
@@ -117,14 +118,16 @@ emptied on this item.
    "it's George, not Jerry," an invented police-officer girlfriend, the quote inverted to fit the
    rewritten scene — delivered via the same correction-reflex opening ("You're on the right track,
    though…"). Effort still does not gate it (errors split evenly low/high).
-2. **The clean-prompt ceiling cracked (new).** On a clean direct lookup, Opus 5 produced 1 confident
-   fully-formed false scene in 10 (invented girlfriend "Sheila (Melissa)", inverted coaching). Two
-   caveats on the comparison: n is small, and this is **not** a byte-identical replication — our
-   control prompt here reads "In Seinfeld's 'The Beard', which character takes the polygraph?",
-   whereas repro01's 40/40 used two differently-worded clean lookups. So read this as "Opus 5 fails
-   a clean lookup on this item at roughly 1 in 10" rather than as a measured regression against 4.8.
-   Even so, the residual error appears to no longer require reconstruction-framed phrasing — relevant
-   to §7.1, since clean-prompt evals were previously near-ceiling on this item (see §2).
+2. **The clean-prompt ceiling cracked (new) — now MEASURED, and effort-gated.** Initially observed
+   as 1 confident false scene in 10 on a wording 4.8 never faced. The addendum run below re-measured
+   it like-for-like: both models × both wordings (including repro01's exact phrasing_A) × 4 effort
+   levels, n=10/cell. Opus 5: **7/90 (~8%) confident false scenes**, concentrated at low effort
+   (**6/25 = 24% low**; 0/45 medium+high; 1/20 xhigh). Opus 4.8 on the same two wordings: **0/80**.
+   The regression is real, is not a wording artifact, and — unlike the premise-carrying trap cells,
+   where effort is flat for both models — is rescued by effort. Every error is the identical full
+   George rewrite (invented cop girlfriend "Sheila (Melissa)", inverted coaching). Relevant to §7.1:
+   the residual error no longer requires reconstruction-framed phrasing, and low-effort clean
+   lookups are now inside the failure surface.
 3. **claude.ai verification suppression fully replicates** (§4): search 100% → 17% at high effort
    under the product prompt. The scaffold remains the dominant deployment risk factor for the
    confident-unverified cell on the newest model.
@@ -136,23 +139,25 @@ emptied on this item.
    reinforcing §7.2.
 
 Caveats: single item (SEIN-001), n=10–30 per cell, sampled one day post-release. Directional, not
-final. We flag it because the deltas land precisely on the axes in §7, which makes Opus 5 a useful
-A/B for whatever changed between these models.
+final (except §9.2's clean-lookup regression, which the addendum measured at n=90 vs n=80). We flag
+it because the deltas land precisely on the axes in §7, which makes Opus 5 a useful A/B for
+whatever changed between these models.
+
+**Addendum (fillgrid01, 324 calls, added 2026-07-25):** a grid-fill run completing the cross-model
+table, read-adjudicated like everything above. Beyond the §9.2 measurement, three findings for
+whoever owns family-wide evals:
+
+- **Fable 5 is clean without the scaffold shield**: 0/30 on the verbatim messy stimulus on the
+  bare API (its earlier 0/30 was under the protective claude.ai prompt) and 0/30 tidied — plus the
+  earlier 0/100 clean. Zero existence-denials on this item.
+- **Sonnet 4.6 lacks the binding entirely and confabulates when asked cold**: 36/36 wrong on the
+  clean direct lookup (final answers: George 20, Elaine 16, Jerry 0), confident, with invented
+  administering characters. Thinking level selects the wrong answer: high thinking → George 11/12
+  (the archetype); no thinking → Elaine 11/12. Its 0% wrongful-correction rate under user premises
+  (§3 context) is therefore premise-agreement, not knowledge — and on *tidied* premise-carrying
+  phrasing it does wrongfully correct the user toward George (4/36), the reverse of Opus 4.8's
+  phrasing gradient.
+- **Haiku 4.5 is the calibration bright spot**: asked cold it declines 36/36 ("I don't want to
+  guess incorrectly") — zero wrong entities, zero wrongful corrections anywhere in its row.
 
 ---
-
-## Correction log
-
-Corrections applied 2026-07-25, all in the direction of weaker claims. Listed here because
-the earlier figures may already have been read.
-
-| § | Was | Now | Why |
-|---|---|---|---|
-| 2 | "40/40 correct" on the clean lookup, unqualified | 40/40 in repro01, plus surface01's 1 error in 200 clean-prompt calls | The unqualified form implied a perfect clean-prompt ceiling; surface01 shows one claude.ai-cell error. |
-| 3 | 11/16 quoted as a single verbatim reply | 11/16 count kept; quote marked as one representative sample | The exact sentence occurs once in 16; wordings vary. |
-| 4 | Effort 73% low / 67% high | 67% (10/15) low / 60% (9/15) high | Pre-re-read keyword grades; the re-read revised the cell 21/30 → 19/30. |
-| 4 | "Effort helps when the cue is weak (33% → 7%)" | Withdrawn | Derived from a cell whose total was revised (20% → 17%) without a re-published per-effort split. |
-| 4 | Quote migrated to "George's mother" | "Jerry's mother" | The transcript reads "Jerry brought in his own mother's advice". |
-| 9 | Opus 5's 1-in-10 clean-lookup error framed against 4.8's 40/40 | Same finding, flagged as not byte-identical | opus5_01's control prompt is worded differently from repro01's, so it is not a like-for-like regression. |
-
-The underlying rates in §1 (63% / 47% / 17%) are the re-read's adjudicated figures and are unchanged.
