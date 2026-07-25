@@ -1,0 +1,38 @@
+<!-- ==================================================================
+     Floating table-of-contents drawer for the bearblog post.
+
+     WHERE THIS GOES: paste this block at the very TOP of the post body
+     in the bearblog editor, above the italic strapline. It is plain
+     HTML, so markdown leaves it alone.
+
+     It needs no JavaScript: the hidden checkbox holds the open/closed
+     state and CSS does the rest. The matching styles are blocks 8-10 of
+     writeup/bearblog_custom.css.
+
+     The links point at the <a id="s1"></a> anchors already sitting above
+     each heading in the post, so they work as-is.
+================================================================== -->
+
+<div id="toc-wrap">
+  <input type="checkbox" id="toc-toggle">
+  <label for="toc-toggle" id="toc-scrim"></label>
+  <label for="toc-toggle" id="toc-button" title="Contents" aria-label="Table of contents">
+    <span></span><span></span><span></span>
+  </label>
+  <nav id="toc" aria-label="Table of contents">
+    <p class="toc-head">Contents</p>
+    <ol>
+      <li><a href="#s1">Cold open: the Melrose Place incident</a></li>
+      <li><a href="#s2">Then Opus 5 shipped, and we ran it back</a></li>
+      <li><a href="#s3">What I actually did</a></li>
+      <li><a href="#s4">The six ways it fails</a></li>
+      <li><a href="#s5">The numbers that carry the story</a></li>
+      <li><a href="#s6">My grading pipeline fabricated more findings than the models did</a></li>
+      <li><a href="#s7">Limitations, honestly</a></li>
+      <li><a href="#s8">What I take away</a></li>
+      <li><a href="#s9">What this means for how you use these tools</a></li>
+      <li><a href="#s10">Try it on your show</a></li>
+    </ol>
+    <p class="toc-appendix"><a href="#app">Appendix: run-by-run history</a></p>
+  </nav>
+</div>
