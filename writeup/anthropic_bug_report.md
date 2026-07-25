@@ -7,6 +7,7 @@
 **Surfaces:** bare API and claude.ai (system prompt changes the rates in both directions — see §4)
 **Evidence:** all claims below are backed by ~1,750 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
 https://github.com/shubham13596/research-experiment (freeze commit `4d80d071`). Per-run pointers in §8.
+**Full narrative writeup** (methodology, chronology, all tables): https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
 
 ---
 
