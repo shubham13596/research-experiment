@@ -1,13 +1,18 @@
 <!-- ==================================================================
-     Floating table-of-contents drawer for the bearblog post.
+     Table of contents for the bearblog post.
 
      WHERE THIS GOES: paste this block at the very TOP of the post body
      in the bearblog editor, above the italic strapline. It is plain
      HTML, so markdown leaves it alone.
 
-     It needs no JavaScript: the hidden checkbox holds the open/closed
-     state and CSS does the rest. The matching styles are blocks 8-10 of
-     writeup/bearblog_custom.css.
+     One block, two behaviors (all CSS, no JavaScript - blocks 9-10 of
+     writeup/bearblog_custom.css):
+     - On wide screens (>=1200px) it renders as an always-visible
+       sidebar in the left margin, Anthropic-style. The checkbox and
+       hamburger button are hidden and unused.
+     - On narrower screens it collapses behind a floating button in
+       the bottom-right corner; the hidden checkbox holds the
+       open/closed state and a tap anywhere closes it.
 
      The links point at the <a id="s1"></a> anchors already sitting above
      each heading in the post, so they work as-is.
