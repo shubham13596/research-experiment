@@ -1,7 +1,8 @@
 # Project Status / Session Handoff
 
-**Last updated:** 2026-07-18. Purpose: let any future session (or a compacted thread, or a fresh
+**Last updated:** 2026-07-25. Purpose: let any future session (or a compacted thread, or a fresh
 chat) resume with zero context loss. All durable state is in this repo — this file is the map.
+NEWEST: Opus 5 released 2026-07-24; `opus5_01` rematch run + post rewritten around it (see below).
 
 ## One-line state
 Preregistered schema-lure study is FROZEN and public. Effect localized (phrasing01), generality-tested
@@ -103,6 +104,14 @@ to George instead of Jerry — has been pinned down AND generalized:
   (evidence/phrasing02_findings.md)
 - `search02` — cross-vendor (GPT/Gemini) search-seeking: PARKED by user decision, not abandoned. Pick-up
   notes: evidence/search02_cross_vendor_PARKED.md.
+- `opus5_01` — **Opus 5 rematch (2026-07-25, day after claude-opus-5 released).** Exact replication of
+  the three decisive Opus 4.8 measurements (phrasing01 anchor cells, repro01 clean lookup, search01
+  optional-tool cells), 148 calls, 0 errors, read-adjudicated. RESULT: wrongful correction collapses
+  63/47/17% → 7/10/10% (attractor SURVIVES — identical full-inversion package when it fires, effort-flat);
+  clean lookup 9/10 (4.8 was 40/40 — ceiling CRACKED, 1 confident false scene); search now effort-gated
+  like Fable (8% low → 100% high bare), danger cell 0/33 (4.8: 18/48); claude.ai scaffold suppresses
+  search 100%→17% (replicates); keyword grader fabricated 4 more name-echo false positives (corrected).
+  (evidence/opus5_01_findings.md, runner/opus5_test.py)
 - `reread01` — **Fable-5 full re-read of the program corpus** (~900 responses: phrasing02 lead read + 8
   forks over gen01/screen01/screen02/phrasing01). No new API calls. RESULT: entity-level conclusions
   survive; taxonomy expands to 6 modes; phrasing01 rates corrected (63/47/17/0, "all spot-verified"
@@ -132,29 +141,45 @@ Tier 1: SEIN-001, SEIN-002, FRI-003, SIMP-004, TV-008.  Tier 2: SPORT-102, HIST-
 Rejected candidates + audit trail: items/candidates/. Verification logs: evidence/.
 
 ## Open decisions / next steps (in priority order)
-1. **PHRASING DISCRIMINATOR — DONE (phrasing02, 2026-07-18).** Result: phrasing is a MULTIPLIER on item
-   susceptibility, not the driver. Robust items (fiction + real) resist BOTH clean and messy phrasing (0/8
-   each); only SEIN-001 fires and messy amplifies it (1/8→5/8). The confound is CLOSED in the direction that
-   strengthens the bounded thesis. See evidence/phrasing02_findings.md. → This promotes #2 (write-up) to the
-   top and answers the old "is robustness a clean-phrasing artifact?" — no.
-2. **Whole-program synthesis / write-up (NOW THE RECOMMENDED NEXT STEP):** all major confounds resolved —
-   mechanism (schema/archetype retrieval) + boundary (item-encoding-gated: under-encoded sitcom bindings
-   fire, well-encoded fictional deaths + real historical record resist) + phrasing (multiplier, not cause)
-   + calibration (hedge-when-unsure; fires are often uncertainty-marked) + methodology (keyword grading
-   fabricates; reading required). The honest bounded paper is writable now. Consider write vs keep probing.
-   OPTIONAL cheap add before writing: operationalize "encoding strength" using existing cold-accuracy data
-   as a quantitative predictor of fire-probability (turns the post-hoc "under-encoded" label into a measure).
+1. **WRITE-UP — DECIDED (2026-07-18): LessWrong post first (cross-posted to user's own blog), arXiv
+   preprint later only if warranted after expansion.** Rationale: the work's strengths (self-correcting
+   narrative, methodology lessons, 6-mode taxonomy, speed-to-relevance while Opus 4.8 is current) fit LW;
+   a reviewer-proof paper would need 50+ items / cross-vendor / power, months away. IN PROGRESS:
+   - 8 origin screenshots staged + renamed in `writeup/images/` (01-08): the SAME messy Melrose prompt
+     across surfaces — 01 Opus4.8-High accepts a GEORGE (lure) premise; 02 Opus4.8-High cold "describe the
+     plot" gives a fully inverted reconstruction (George takes test, Jerry coaches, confabulated
+     polygraph-administrator girlfriend); 03 Opus4.8-High wrongfully contradicts the TRUE Jerry premise
+     ("the character is George, not Jerry", invents girlfriend "Gwen", quote-follows-role); 04 same at
+     Opus4.8-MAX (effort doesn't rescue); 05 Fable5-Max CORRECT on the core binding (note: says "Kramer
+     coaches" — verified vs script: George REFUSES to coach and gives only the aphorism, so even the
+     correct answer shows the peripheral coach-slot drifting — usable as secondary-slot-fragility illo);
+     06 Sonnet4.6-Low correct via WEB SEARCH (the mask: retrieval not parametric); 07 Gemini Flash correct
+     (search-backed, Wikipedia chip); 08 ChatGPT free affirms (generic).
+   - Draft WRITTEN (writeup/post.md) and REWRITTEN 2026-07-25 around the Opus 5 release: rematch is now
+     §2 (not an addendum), results blended through §5-§8, light Seinfeld-flavored tone (user request:
+     fun but data-true), NEW §10 community call-to-action ("try it on your show" — 5-step susceptible-item
+     recipe, share-transcript norms, warning that at 7-10% single screenshots mislead). Title riff kept.
+     HN kit (writeup/hn_submission.md) synced with rematch + CTA. NOT YET PUBLISHED anywhere.
+2. **Anthropic bug report** — WRITTEN (writeup/anthropic_bug_report.md), committed; §9 Opus 5 post-script
+   added 2026-07-25 (deltas land on exactly the flagged axes; clean-ceiling crack is the one regression).
+   NOT YET FILED — user deciding routing (support.claude.com + Discord first, then X to Alex Albert /
+   Ethan Perez / Amanda Askell was the advised sequence).
+3. OPTIONAL pre-post add: operationalize "encoding strength" from existing cold-accuracy data as a
+   quantitative predictor of fire-probability (turns the post-hoc "under-encoded" label into a measure).
 3. **If pursuing more elicitation:** the effect concentrates in sitcom/ensemble character-behavior quirks with
    scene-adjacent archetype lures (NOT famous "who killed X" facts, which are richly encoded and resist). Source
    more of THAT shape if broadening the fire set.
 4. **Grading infra:** reading-adjudication is the standing method; automated entity-matching is banned for
    premise scoring. (screen runner grades only cold by keyword, and even that needs spot-check.)
-5. Housekeeping: real author name in prereg (still "[your name]"); Anthropic bug report. Prereg changelog
-   NOW CAUGHT UP through phrasing02 (v0.2.8 logs the exploratory runs + phrasing02 pre-data predictions).
+5. Housekeeping: author name in prereg FIXED (Shubham Gupta). Prereg changelog caught up through reread01
+   (v0.2.8 + v0.2.9); opus5_01 not yet logged there. Screenshots committed. Repo-readiness for the §10
+   community ask: README rewritten for visitors, MIT LICENSE added, community-finding issue template added
+   (2026-07-25).
 6. Deferred: foil-premise controls on the original 8 items; cross-vendor search02; obscure-real-person items
    (all lower priority now that real-people robustness is replicated twice).
 
-## Model config (config/models.json, all IDs verified 2026-07-17)
+## Model config (config/models.json, all IDs verified 2026-07-17; opus-5 verified live 2026-07-25)
+opus-5=claude-opus-5 (NEW, added to models.json 2026-07-25; used in opus5_01 via runner/opus5_test.py),
 fable-5=claude-fable-5, opus-4.8=claude-opus-4-8, opus-4.7=claude-opus-4-7, sonnet-4.6=claude-sonnet-4-6,
 sonnet-5=claude-sonnet-5, haiku-4.5=claude-haiku-4-5-20251001, openai=gpt-5.6-sol, gemini=gemini-2.5-pro/3.5-flash/3.1-flash-lite.
 Thinking: Opus/Sonnet/Fable use `effort` (adaptive, no manual budget_tokens); Haiku uses budget_tokens.

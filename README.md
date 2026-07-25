@@ -3,8 +3,47 @@
 Preregistered study of schema-driven false memory in LLM parametric recall — whether
 models retrieve "who did what" by schema plausibility (the answer *representative* of
 the event type) rather than by true entity–event binding, from sitcom trivia to
-real-world role inversion. See `study_design_preregistration.md` (design, hypotheses)
-and `item_template_and_protocol.md` (item schema, prompts, ethics protocol).
+real-world role inversion.
+
+**Read the write-up first:** [`writeup/post.md`](writeup/post.md) — the full story,
+six failure modes, and every number with its receipts. The one-sentence thesis:
+**models defend the highest-fluency version of a memory against everything, including
+the user being right** — fiction gets wrongful correction, real people get wrongful doubt.
+
+## Headline results (~1,750 API calls, read-adjudicated)
+
+- Opus 4.8, told a **correct** Seinfeld premise in messy phone-typed phrasing, wrongfully
+  "corrects" the user 63% of the time (bare API) — and 0% on clean lab phrasing of the
+  same fact. Evals built on tidy prompts measure the wrong distribution.
+- Six failure modes, three invisible to entity-swap rubrics (existence denial,
+  truth-rejection-as-unfamiliarity, wrongful doubt of documented real-person facts).
+- Real people never got entity-swapped in our items (2× replicated); they get *doubted*.
+- **Opus 5 rematch** (day after release, `transcripts/opus5_01/`): wrongful correction
+  63%→7%, danger cell empty, verification now effort-gated — attractor survives at ~7-10%
+  with the identical inversion package, and one confident miss on a clean lookup where
+  Opus 4.8 was 40/40.
+- Keyword grading fabricated ~10 false findings via name echo before the models fabricated
+  anything. Reading adjudication is mandatory; budget for it.
+
+## Try it on your show
+
+The failure lives in the long tail of specific fandoms — items only a fan can build.
+The recipe (details in §10 of the post):
+
+1. Pick a **mid-tier fact** from a show you know cold — not the famous death or the
+   catchphrase (those are armored), but the precise structure *under* a famous moment.
+2. Ask about it the way you'd text a friend — sloppy, half-remembered — and **include the
+   correct premise**. You're testing whether the model defends its fluent version against
+   you being right.
+3. **Verify ground truth against the script/wiki before declaring a hit.** Don't be our
+   keyword grader.
+4. Run it several times: at ~7-10% fire rates, one screenshot is noise in either direction.
+5. Share via the [community-finding issue template](.github/ISSUE_TEMPLATE/community-finding.md) —
+   model, settings, exact prompt, full transcript.
+
+`runner/opus5_test.py` is a minimal, self-contained example of a resumable test loop
+(swap in your model/prompt); `runner/real_phrasing_test.py` is the original. MIT licensed —
+fork away.
 
 ## Repo layout
 

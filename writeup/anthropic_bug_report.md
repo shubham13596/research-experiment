@@ -1,9 +1,9 @@
 # Bug report: Opus 4.8 confidently overrides correct user premises via schema-driven false recall (with a 6-mode taxonomy across the Claude family)
 
 **Reporter:** Shubham Gupta (shubham13596@gmail.com)
-**Date:** 2026-07-18
-**Primary affected model:** claude-opus-4-8 (current flagship at time of report)
-**Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5
+**Date:** 2026-07-18 (post-script §9 added 2026-07-25 after the Opus 5 release)
+**Primary affected model:** claude-opus-4-8 (flagship at time of report; see §9 for claude-opus-5)
+**Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5, claude-opus-5
 **Surfaces:** bare API and claude.ai (system prompt changes the rates in both directions — see §4)
 **Evidence:** all claims below are backed by ~1,600 logged API calls with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
 https://github.com/shubham13596/research-experiment (freeze commit `4d80d071`). Per-run pointers in §8.
@@ -89,3 +89,47 @@ All raw transcripts are immutable JSONL with full request/response and model IDs
 Read-adjudicated verdicts: transcripts/<run>/adjudicate/results/. Item definitions with primary-source verification logs: items/ and evidence/*_verification.md. Preregistration with changelog: study_design_preregistration.md. Chat-surface screenshots (claude.ai, effort labels visible): writeup/images/.
 
 Happy to provide anything else — additional samples, item construction details, or re-runs under specified configs.
+
+## 9. Post-script: claude-opus-5 (added 2026-07-25, one day after release)
+
+We re-ran the three decisive measurements on claude-opus-5 within 24 hours of release — identical
+stimuli byte-for-byte, identical configs, same read-adjudication (run-id `opus5_01`, 148 calls,
+0 API errors; `transcripts/opus5_01/records.jsonl`, `evidence/opus5_01_findings.md`).
+
+**Substantially improved on three of the four axes this report flags:**
+
+| Measurement | Opus 4.8 | Opus 5 |
+|---|---|---|
+| Wrongful correction, verbatim/bare (§2) | 63% (19/30) | **7% (2/30)** |
+| Wrongful correction, verbatim/claude.ai | 47% (14/30) | **10% (3/30)** |
+| Wrongful correction, cleaned/claude.ai | 17% (5/30) | **10% (3/30)** |
+| Search rate w/ optional tool, bare (§4) | 8% low / 17% high | **8% low / 100% high** |
+| Danger cell: answered from memory AND wrong | 18/48 of all calls | **0/33 answered** |
+
+Verification is now effort-gated (the Fable-5 profile, absent in Opus 4.8), and the danger cell
+emptied on this item.
+
+**Residuals that persist and one regression, for whoever owns these evals:**
+
+1. **The attractor survives intact.** All 8 residual phrasing-cell errors are the full package —
+   "it's George, not Jerry," an invented police-officer girlfriend, the quote inverted to fit the
+   rewritten scene — delivered via the same correction-reflex opening ("You're on the right track,
+   though…"). Effort still does not gate it (errors split evenly low/high).
+2. **The clean-prompt ceiling cracked (new).** On the §2 control lookup where Opus 4.8 was 40/40,
+   Opus 5 produced 1 confident fully-formed false scene in 10 (invented girlfriend "Sheila
+   (Melissa)", inverted coaching). n is small, but the residual error appears to no longer require
+   reconstruction-framed phrasing — relevant to §7.1, since clean-prompt evals were previously a
+   safe ceiling on this item.
+3. **claude.ai verification suppression fully replicates** (§4): search 100% → 17% at high effort
+   under the product prompt. The scaffold remains the dominant deployment risk factor for the
+   confident-unverified cell on the newest model.
+4. **Peripheral slots still confabulate freely in correct answers** (girlfriend named Celia /
+   Gretchen / Gail across samples; relationship reassigned to George; one quote handed to Kramer),
+   and unlike Fable this is not effort-gated.
+5. **Methodology replication:** the first-named keyword grader fabricated 4 more false positives
+   on Opus 5 via name echo (would have misreported the danger cell as 4/33 instead of 0/33) —
+   reinforcing §7.2.
+
+Caveats: single item (SEIN-001), n=10–30 per cell, sampled one day post-release. Directional, not
+final. We flag it because the deltas land precisely on the axes in §7, which makes Opus 5 a useful
+A/B for whatever changed between these models.
