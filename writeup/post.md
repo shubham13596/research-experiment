@@ -1,6 +1,6 @@
 # "It's Not a Lie If You Believe It": LLMs Defend Their Most Fluent Memory Against Everything — Including You Being Right
 
-*A preregistered study of confident false memory in frontier models: ~2,070 API calls, about $40, one embarrassing sitcom question (thanks Seinfeld!), six distinct failure modes, roughly ten occasions on which my own grading pipeline fabricated results before the models did — and a next-day rematch against Opus 5, which shipped while I was about to post this.*
+*A preregistered study of confident false memory in frontier models: ~2,210 API calls, about $40, one embarrassing sitcom question (thanks Seinfeld!), six distinct failure modes, roughly ten occasions on which my own grading pipeline fabricated results before the models did — and a next-day rematch against Opus 5, which shipped while I was about to post this.*
 
 **TL;DR.** Claude Opus 4.8 — until yesterday the flagship, at high and even maximum thinking effort — confidently tells a user who correctly remembers a Seinfeld episode that they are wrong, swaps the protagonist for the character who *seems like the type*, invents a girlfriend named Gwen, and reassigns the episode's famous quote to fit the rewritten scene. I preregistered a study, froze an item set, and spent ~1,600 API calls pinning down when this happens and when it doesn't. Then, the night before I hit publish, **Opus 5 came out** — so I re-ran the decisive cells on it within 24 hours (148 more calls, same stimuli byte-for-byte). The rematch, in one line: **Opus 5 is a big, real improvement — and the bug is still in there.** The rate at which it wrongly "corrects" a user who is right drops from 63% to 7%. Offered a search tool, Opus 4.8 ignored it and answered confidently-and-wrong from memory in over a third of its calls; Opus 5, given a high thinking budget, reaches for the tool instead of answering from memory. But when Opus 5 does fail, it rewrites the scene in *exactly* the same way its predecessor did — and once, it failed on a plain direct question that Opus 4.8 got right 40 out of 40 times.
 
@@ -93,7 +93,7 @@ That last one matters most. Nearly every AI claim you see online — "it's fixed
 - **Tools off, always.** Otherwise a model that searches looks identical to one that remembers.
 - **Three ways of asking each question** — say nothing, say the true version, say the tempting false version — because any one alone is ambiguous (§4 explains why).
 
-**Cost:** about **$40** in API credit for the main study's ~1,750 calls (a post-publication fill-in run added ~320 more). That's the whole barrier to entry. Anyone reading this can afford to check my work or run their own version, which is the point of §11.
+**Cost:** about **$40** in API credit for the main study's ~1,750 calls (two post-publication fill-in runs added ~470 more). That's the whole barrier to entry. Anyone reading this can afford to check my work or run their own version, which is the point of §11.
 
 And then the data disagreed with me twice in a row — first about whether the bug was even real, then about whose fault it was. Both reversals are in §5, with the numbers.
 
@@ -161,7 +161,7 @@ You need all three. A model that fails the cold question has a memory problem. A
 
 The frozen set also included 8 **control items** with no lure — facts where the truth and the stereotype point the same way — meant to distinguish "the model got it wrong" from "this model is just bad at sitcom trivia." Full disclosure: that head-to-head comparison never ran. The study pivoted (§5.1–5.2) before it got there, and the conflict items turned out to be answered near-perfectly cold anyway, which does the same job less formally. The controls sit in the repo, frozen and unused — the hypothesis scorecard in the appendix keeps score on this.
 
-Eleven runs, ~2,070 API calls (~$40 for the first ~1,750; the fill-in run came after publication), every raw transcript preserved unedited in the repo:
+Twelve runs, ~2,210 API calls (~$40 for the first ~1,750; the two fill-in runs came after publication), every raw transcript preserved unedited in the repo:
 
 | Run | Question it answers | Calls |
 |---|---|---|
@@ -176,6 +176,7 @@ Eleven runs, ~2,070 API calls (~$40 for the first ~1,750; the fill-in run came a
 | phrasing02 | The tie-breaker: is it the messy phrasing, or the fact itself? | 144 |
 | opus5_01 | The rematch: Opus 5 on the three decisive measurements | 148 |
 | fillgrid01 | Post-publication: fill the table's "not run" cells; measure the Opus 5 lookup regression properly | 324 |
+| sonnet5_01 | Post-publication: the full Sonnet 5 row | 144 |
 
 And then the most important run used zero API calls: `reread01`, a full re-read of all ~900 responses from the premise conditions, one by one, hunting for failures my grading rules couldn't see. It found three new ones — which is §6 and §7.
 
@@ -206,10 +207,11 @@ Here is the whole study's central table. Every cell is the wrongful-correction r
 | **Opus 4.8** | 1 / 180 | **19/30 — 63%** | 14/30 — 47% | 5/30 — 17% |
 | **Opus 5** | 7/90 — 8%‡ | 2/30 — 7% | 3/30 — 10% | 3/30 — 10% |
 | Fable 5 | 0 / 100 | 0/30 — 0% | 0/30 — 0% | 0/30 — 0% |
+| **Sonnet 5** | 5/36 — 14%¶ | 5/36 — 14%¶ | 0/36 — 0% | 8/36 — 22%¶ |
 | Sonnet 4.6 | 36/36 — 100%§ | 0/36 — 0% | 0/36 — 0%† | 4/36 — 11% |
 | Haiku 4.5 | 0/36 — 0%§ | 0/36 — 0% | 0/36 — 0% | 0/36 — 0% |
 
-*This table originally shipped with five "not run" cells; a post-publication run (fillgrid01, 324 calls, disclosed in the appendix) filled them and beefed up the Opus 5 clean-lookup cell from n=10 to n=90. Opus 4.7 has no row here — it only ever ran in the generality battery (§5.5), at high effort. †Four Sonnet responses in this cell mention George while declining to answer; my keyword grader scored all four as errors, and reading them shows none actually puts him in the chair. §6 is about exactly this. ‡Opus 5's clean-lookup errors are effort-gated: 6/25 at low effort, 0/45 at medium and high, 1/20 at max. §The clean-lookup column asks the question cold, so there's no user to wrongfully correct — for Sonnet and Haiku it measures raw knowledge instead: Sonnet answers wrongly all 36 times (George 20, Elaine 16, Jerry 0), Haiku declines all 36 times. More on both below.*
+*This table originally shipped with five "not run" cells; two post-publication runs (fillgrid01 and sonnet5_01, disclosed in the appendix) filled them, added the Sonnet 5 row, and beefed up the Opus 5 clean-lookup cell from n=10 to n=90. ¶Sonnet 5's rewrites never star George — they star **Elaine and Kramer**, with confidently invented episode titles; my Jerry/George grader scored 12 of those 13 rewrites as* correct *(§6). Its errors also migrate with effort: lookup misses only at low/no thinking, messy-cell rewrites only at high, tidied-cell rewrites almost all at low. Opus 4.7 has no row here — it only ever ran in the generality battery (§5.5), at high effort. †Four Sonnet responses in this cell mention George while declining to answer; my keyword grader scored all four as errors, and reading them shows none actually puts him in the chair. §6 is about exactly this. ‡Opus 5's clean-lookup errors are effort-gated: 6/25 at low effort, 0/45 at medium and high, 1/20 at max. §The clean-lookup column asks the question cold, so there's no user to wrongfully correct — for Sonnet and Haiku it measures raw knowledge instead: Sonnet answers wrongly all 36 times (George 20, Elaine 16, Jerry 0), Haiku declines all 36 times. More on both below.*
 
 Read across the top row. **Same model, same fact, same week: 1-in-180 when asked tidily, 63% when asked the way I actually type.** That is the study's most uncomfortable implication for benchmarks — an eval built from clean questions would certify this model as perfect on a fact it gets wrong most of the time in real use.
 
@@ -233,7 +235,9 @@ There's a nasty corollary. On the *tidied* premise-carrying phrasing, Sonnet fli
 
 Haiku, meanwhile, is the only model in the family that behaves the way you'd want a model with no knowledge to behave: asked cold, it declined all 36 times — no Jerry, no George, just "I don't want to guess incorrectly; check an episode guide."
 
-That's the real finding, and the fill-in run only deepened it: the models differ less in knowledge than in **what they do when they don't know**. On this one fact, the family lines up as a ladder — Haiku knows it doesn't know; Sonnet confabulates; Opus 4.8 knows it cold but overrides you under messy premises; Opus 5 mostly knows but slips at low effort; Fable knows, full stop. And it explains the chat-window observation from §1 — Sonnet looked correct in the app not because it remembered, but because it recognised it didn't know and searched.
+Then I ran **Sonnet 5**, the current mid-tier, through all four cells — and it broke the pattern in a way none of the other models predicted. It mostly *knows* the fact cold (31/36 correct lookups). But when I assert the fact, it still wrongfully corrects me — 5/36 on the messy phrasing, 8/36 on the tidied one — and **its rewrites never star George.** They star *Elaine* and *Kramer*, each wrapped in a confidently invented episode: "it's actually Elaine, not Jerry — it's from 'The Bizarro Jerry'"; "the Melrose Place storyline is actually about Kramer — it's in 'The Chicken Roaster'"; a version where Kramer lands an acting role *on* Melrose Place. Real episode titles, fabricated plots, explicit "you're mixing this up" framing. So the George-shaped groove isn't a universal fact about the training data — each model has worn its own groove, and the only constant across the family is that *some* fluent rival version steamrolls the true binding when you assert it. (Sonnet 5 also replicates 4.6's reversal: tidied phrasing triggers more wrongful correction than messy, 0/36 → 8/36 under the claude.ai prompt — and its errors migrate with effort instead of shrinking: lookup misses only at low thinking, messy-cell rewrites only at high, tidied-cell rewrites almost all at low.)
+
+That's the real finding, and the fill-in runs only deepened it: the models differ less in knowledge than in **what they do when they don't know — and in *which* wrong version they reach for**. On this one fact, the family lines up as a ladder — Haiku knows it doesn't know; Sonnet 4.6 confabulates; Sonnet 5 mostly knows but keeps a rival Elaine/Kramer version on file; Opus 4.8 knows it cold but overrides you under messy premises; Opus 5 mostly knows but slips at low effort; Fable knows, full stop. And it explains the chat-window observation from §1 — Sonnet looked correct in the app not because it remembered, but because it recognised it didn't know and searched.
 
 ### 5.4 So who checks their work?
 
@@ -334,7 +338,9 @@ Every one of these points the same way: **the grader fabricated evidence for the
 2. **It found failure modes the rubric couldn't express.** My entity-match rubric could only ask "did the model name the wrong person?" Three whole categories of failure don't name anyone wrong — they reject things that are *true*. Those are modes 4–6 in §7, and they exist in this post only because someone read the responses.
 3. **It replicated on Opus 5, right on cue.** Four responses in the rematch were auto-flagged as errors because they open "George's girlfriend is a police officer…" — a wrong supporting detail — while correctly keeping *Jerry* on the polygraph. Without reading, the headline would have been "Opus 5: confidently wrong 4 times without checking" instead of the true **zero**.
 
-**What it means.** If you build hallucination evals, this is the actionable part: name-matching misses half the failure modes and fabricates findings from name echoes. You cannot catch "the model rejects true statements" by checking names, because there's no wrong name to catch. You catch it by noticing the same model asserts a fact in one framing and rejects it in another. Budget for reading.
+**And the Sonnet 5 run found the opposite failure.** Everything above is the grader *fabricating* errors. When I added the Sonnet 5 row, the same grader *erased* them: Sonnet 5's rewrites reassign the scene to Elaine or Kramer, names my Jerry/George rule cannot see — and because those responses mention Jerry while correcting him ("it's actually Elaine, not Jerry"), the grader scored **12 of 13 wrongful corrections as correct**. The rule's vocabulary was frozen around the failure I'd already seen; a new model failed outside it, invisibly. False positives and false negatives from the same rule, one model apart.
+
+**What it means.** If you build hallucination evals, this is the actionable part: name-matching misses half the failure modes, fabricates findings from name echoes, and silently passes any failure whose wrong answer isn't in its vocabulary. You cannot catch "the model rejects true statements" by checking names, because there's no wrong name to catch. You catch it by noticing the same model asserts a fact in one framing and rejects it in another. Budget for reading.
 
 <a id="s7"></a>
 
@@ -417,7 +423,7 @@ The one-line version: **an LLM is not a database you query — it's a reconstruc
 
 ## 11. Try it on your show
 
-Everything here — the preregistration with its changelog, the frozen questions, raw transcripts of all ~2,070 calls, per-response verdicts, the runner scripts, and findings docs including every retraction — is open source: [github.com/shubham13596/research-experiment](https://github.com/shubham13596/research-experiment). A bug report went to Anthropic separately; Opus 5 already moved three of the numbers, so consider this a living document.
+Everything here — the preregistration with its changelog, the frozen questions, raw transcripts of all ~2,210 calls, per-response verdicts, the runner scripts, and findings docs including every retraction — is open source: [github.com/shubham13596/research-experiment](https://github.com/shubham13596/research-experiment). A bug report went to Anthropic separately; Opus 5 already moved three of the numbers, so consider this a living document.
 
 Which brings me to the ask. My questions cover one man's sitcom memory. Yours cover a different show — and that's the point. This failure lives in the long tail of *specific* fandoms, and no lab's eval set will ever walk all of it. The whole study cost about $40; finding your own instance costs cents. Here's the recipe the data produced:
 
@@ -474,4 +480,6 @@ If it can invent a girlfriend for George, it can invent one for Frasier. Go find
 
 **fillgrid01** (324 calls; post-publication, the day after the writeup went up). Fills the central table's five "not run" cells and re-measures the Opus 5 clean lookup properly. Fable 5 messy/bare and tidied/claude.ai: **0/60** — clean in every cell, shield or no shield. Clean-lookup 2×2 ({Opus 4.8, Opus 5} × both wordings, 4 effort levels): Opus 5 **7/90 (~8%)**, concentrated at low effort (6/25; 0/45 at medium+high; 1/20 at max); Opus 4.8 **0/80** — the regression is measured, like-for-like, and effort-gated. Sonnet 4.6 asked cold: **36/36 wrong** (George 20, Elaine 16, Jerry 0) — its messy-cell "86% correct" was premise-agreement, not knowledge; on tidied phrasing it wrongfully corrects 4/36. Haiku asked cold: 36/36 declines, 0 errors. Read-adjudicated: all 113 non-correct-labeled rows read in full, reversal-pattern scan over the 145 correct-labeled rows mentioning George (2 flagged, both genuinely correct), denial-language scan over all Fable rows (0 hits).
 
-*Model versions: claude-opus-5, claude-opus-4-8, claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5 (IDs verified 2026-07-17; opus-5 verified 2026-07-25). No tools enabled in any parametric run except search01/opus5_01's never-executed stub. Total: ~2,070 logged calls; ~$40 through the Opus 5 rematch, plus the smaller fillgrid01 fill-in run.*
+**sonnet5_01** (144 calls; post-publication, two days after the writeup went up). The full Sonnet 5 row, same conventions as the 4.6 cells, read-adjudicated (all 35 non-correct-labeled rows + all 50 rows mentioning Elaine/Kramer read in full). Mostly knows the fact cold (31/36) yet wrongfully corrects the asserting user: messy/bare **5/36** (all at high thinking), messy/claude.ai **0/36**, tidied/claude.ai **8/36** (6 confident, all at low thinking) — replicating 4.6's tidied>messy reversal. Lookup misses **5/36**, all Elaine-flavored, none at high thinking. Its rewrites never star George: Elaine and Kramer, with confidently invented episodes ("The Bizarro Jerry", "The Chicken Roaster", a Kramer acting role on Melrose Place). The preregistered Jerry/George grader scored 12 of the 13 premise-cell rewrites as *correct* — the false-negative failure class documented in §6.
+
+*Model versions: claude-opus-5, claude-opus-4-8, claude-opus-4-7, claude-fable-5, claude-sonnet-5, claude-sonnet-4-6, claude-haiku-4-5 (IDs verified 2026-07-17; opus-5 verified 2026-07-25). No tools enabled in any parametric run except search01/opus5_01's never-executed stub. Total: ~2,210 logged calls; ~$40 through the Opus 5 rematch, plus the smaller post-publication fill-in runs.*

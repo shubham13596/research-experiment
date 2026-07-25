@@ -15,7 +15,7 @@ Claude Opus 4.8, at max thinking effort, confidently told me I was wrong about a
 
 It swapped the protagonist, invented a girlfriend for him, and reassigned the episode's famous quote to fit its rewrite.
 
-I spent $40 and ~2,070 API calls finding out when this happens. 🧵
+I spent $40 and ~2,210 API calls finding out when this happens. 🧵
 
 **2/**
 The headline: asked tidily, the bug basically doesn't exist — 1 error in 180 clean-prompt calls.
@@ -54,7 +54,7 @@ And my automated keyword grading fabricated ~10 false findings before I banned i
 **8/**
 Full writeup: https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
 
-Repo — preregistration, all ~2,070 raw transcripts, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
+Repo — preregistration, all ~2,210 raw transcripts, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
 
 If you try it on Opus 5: run it several times. At ~7–10%, single screenshots mislead in both directions. @AnthropicAI
 

@@ -18,10 +18,11 @@ I asked Opus 4.8 (high thinking, claude.ai) about the Seinfeld episode where Jer
 
 Every part of that is wrong, and it's not one wrong detail — it's a coherent rewrite: protagonist swapped for the show's designated liar, a girlfriend invented, the famous quote reassigned so the new scene stays consistent. Max thinking effort produces the same swap.
 
-So I preregistered a study (predictions frozen in a public git commit before any data) and ran ~2,070 API calls — about **$40** — to pin down when this happens. Every response was read and judged, not keyword-matched. What surprised me most:
+So I preregistered a study (predictions frozen in a public git commit before any data) and ran ~2,210 API calls — about **$40** — to pin down when this happens. Every response was read and judged, not keyword-matched. What surprised me most:
 
 - **Asked tidily, the bug basically doesn't exist:** 1 error in 180 clean-prompt calls. Asked in my actual messy phone-typed phrasing: **63% wrong.** Same model, same fact. The moments you're fuzzy and type a garbled question are exactly when it's most likely to confidently "rewrite" your memory.
 - **Sonnet 4.6 doesn't know the fact at all — and you'd never notice.** Asked cold, it answers wrongly 36/36 (George 20, Elaine 16, Jerry never). But when I asserted the right answer in my question, it agreed with me 86% of the time and looked knowledgeable. Its apparent accuracy was agreement, not memory. Haiku 4.5, to its credit, just says "I don't want to guess" — 36/36.
+- **Each model has its own wrong version.** Sonnet 5 mostly knows the fact cold (31/36) but still "corrects" me when I assert it — and its rewrites never star George. It reassigns the scene to **Elaine or Kramer**, with confidently invented episode titles ("it's actually Elaine, not Jerry — it's from 'The Bizarro Jerry'"; Kramer landing an acting role *on* Melrose Place). My Jerry/George keyword grader scored 12 of those 13 rewrites as correct — reading the responses is the only thing that caught it.
 - **The claude.ai system prompt helps** (63% → 47%) — I went in suspecting the app was causing it, and the data reversed me. But the same prompt also **suppresses web-search checking** in every model I tested, so the app giveth and taketh away.
 - **More thinking effort does not fix it.** Wrong at the same rate at high effort as at low.
 - **Real people don't get role-swapped** (I tried hard to reproduce the 2023 Brian Hood defamation case — zero hits). Instead, models dispute *documented* facts specifically when the user asserts them, while stating the same facts unprompted when asked cold.
@@ -44,7 +45,7 @@ Practical takeaways for daily Claude use:
 3. **Quotes and side details are the flakiest layer.** Even correct Opus 5 answers kept inventing the girlfriend's name (Celia, Gretchen, Gail...).
 
 Full writeup (my blog): https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
-Repo with the preregistration, all ~2,070 raw transcripts, every retraction I had to make, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
+Repo with the preregistration, all ~2,210 raw transcripts, every retraction I had to make, and a recipe for testing YOUR favorite show: https://github.com/shubham13596/research-experiment
 
 That last part is the actual ask — this failure lives in the long tail of specific fandoms, so it needs people who know their shows cold. If you try it on Opus 5, run the prompt several times before concluding anything: at a ~7–10% fire rate, both "it's fixed!" and "still broken!" screenshots are sampling noise.
 

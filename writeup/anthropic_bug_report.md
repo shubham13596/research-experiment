@@ -3,9 +3,9 @@
 **Reporter:** Shubham Gupta (shubham13596@gmail.com)
 **Date:** 2026-07-18 (post-script §9 added 2026-07-25 after the Opus 5 release; §§2–4 corrected the same day to match the full re-read's adjudicated grades; §9 addendum with the fillgrid01 grid-fill run added the same day — see the changelog note at the end)
 **Primary affected model:** claude-opus-4-8 (flagship at time of report; see §9 for claude-opus-5)
-**Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-4-6, claude-haiku-4-5, claude-opus-5
+**Secondary observations:** claude-opus-4-7, claude-fable-5, claude-sonnet-5, claude-sonnet-4-6, claude-haiku-4-5, claude-opus-5
 **Surfaces:** bare API and claude.ai (system prompt changes the rates in both directions — see §4)
-**Evidence:** all claims below are backed by ~2,070 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script + 324 in the §9-addendum grid-fill run) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
+**Evidence:** all claims below are backed by ~2,210 logged API calls (~1,600 in the main study + 148 in the §9 Opus 5 post-script + 468 in the §9-addendum fill-in runs) with immutable raw transcripts, a preregistration frozen before data collection, and read-adjudicated verdicts:
 https://github.com/shubham13596/research-experiment (freeze commit `4d80d071`). Per-run pointers in §8.
 **Full narrative writeup** (methodology, chronology, all tables): https://shubhamg.bearblog.dev/llms-defend-fluent-memory/
 
@@ -88,6 +88,7 @@ All raw transcripts are immutable JSONL with full request/response and model IDs
 | Full-corpus re-read / taxonomy | reread01 | evidence/reread01_findings.md |
 | Opus 5 post-script (§9) | opus5_01 | transcripts/opus5_01/records.jsonl |
 | Grid fill: Opus 5 lookup regression measured; Sonnet cold confabulation; Fable bare-API clean | fillgrid01 | transcripts/fillgrid01/records.jsonl |
+| Sonnet 5 row: model-specific attractor (Elaine/Kramer), grader false-negative class | sonnet5_01 | transcripts/sonnet5_01/records.jsonl |
 
 Read-adjudicated verdicts: transcripts/<run>/adjudicate/results/. Item definitions with primary-source verification logs: items/ and evidence/*_verification.md. Preregistration with changelog: study_design_preregistration.md. Chat-surface screenshots (claude.ai, effort labels visible): writeup/images/.
 
@@ -159,5 +160,23 @@ whoever owns family-wide evals:
   phrasing gradient.
 - **Haiku 4.5 is the calibration bright spot**: asked cold it declines 36/36 ("I don't want to
   guess incorrectly") — zero wrong entities, zero wrongful corrections anywhere in its row.
+
+**Second addendum (sonnet5_01, 144 calls, added 2026-07-26):** the full claude-sonnet-5 row, same
+conventions. Two findings that materially extend the report:
+
+- **The retrieval attractor is model-specific, not data-universal.** Sonnet 5 mostly knows the
+  fact cold (31/36) yet still wrongfully corrects the asserting user (5/36 messy bare — all at
+  high thinking; 8/36 tidied + claude.ai — 6 confident, all at LOW thinking; 0/36 messy +
+  claude.ai). Its rewrites **never name George**: they reassign the scene to **Elaine or Kramer**
+  with confidently confabulated episodes ("The Bizarro Jerry", "The Chicken Roaster", an invented
+  Kramer acting role on Melrose Place). The tidied>messy reversal replicates Sonnet 4.6's. Effort
+  does not remove the errors, it relocates them (lookup misses only at none/low; messy rewrites
+  only at high; tidied rewrites at low) — a caution against any blanket effort-based mitigation.
+- **Grader false-NEGATIVE class (extends §7.2).** The preregistered Jerry/George first-named
+  grader caught 1 of Sonnet 5's 13 premise-cell rewrites; the other 12 were auto-scored *correct*
+  because the response names Jerry while correcting him ("it's actually Elaine, not Jerry") and
+  the grader's vocabulary contains no Elaine/Kramer. Entity-match evals fail open, not just
+  noisy, when a new model's attractor falls outside the expected-answer set. Detection requires
+  reading, or at minimum an open-vocabulary wrong-entity check.
 
 ---
