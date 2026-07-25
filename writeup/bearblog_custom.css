@@ -1,84 +1,98 @@
-/* Custom CSS for the bearblog post.
-   Paste into the custom-CSS box in the bearblog dashboard
-   (Dashboard -> your blog -> Settings/Styles page).
-   Bearblog appends this after its default theme, so these rules win. */
+/* ==================================================================
+   Bearblog customisations for the post.
+
+   WHERE THIS GOES: Dashboard -> Themes -> "Edit theme CSS" box.
+   Scroll to the very BOTTOM of what is already in that box and paste
+   this after it. Later rules win, so these override the theme.
+
+   The default theme is variable-driven, so the margin fix is one line:
+   see step 1 below (you can either edit --width up top, or just leave
+   the override here — this file does it here so you don't have to hunt).
+================================================================== */
+
 
 /* ------------------------------------------------------------------
-   1. Wider margins = narrower text column.
-   Bearblog's default column is ~720px. 40rem (~640px) puts most lines
-   at roughly 70-75 characters, which is the comfortable reading range.
-   Lower the number for even wider margins; 34rem is quite narrow.
+   1. WIDER MARGINS = narrower column.
+   The theme sets --width: 720px. Lower it. 640px puts most lines at
+   ~70-75 characters, the comfortable range for long reading.
+   Try 600px for wider margins still, 680px for a gentler change.
 ------------------------------------------------------------------ */
-body {
-  max-width: 40rem;
-  margin: auto;
-  padding: 1.5rem 1.25rem 4rem;
-  line-height: 1.65;         /* a little more air between lines */
+:root {
+  --width: 640px;
 }
 
-/* Keep side padding on phones so text never touches the screen edge. */
-@media (max-width: 45rem) {
-  body { padding-left: 1.1rem; padding-right: 1.1rem; }
+/* A little more air between lines than the theme's 1.6. Optional. */
+main {
+  line-height: 1.7;
 }
+
 
 /* ------------------------------------------------------------------
-   2. Let figures run wider than the text column.
-   The charts carry small axis labels and are hard to read squeezed into
-   a 40rem column. This centres each image and lets it grow to 52rem
-   (~832px) without disturbing the text measure. Delete this block if you
-   would rather images match the text width exactly.
+   2. FIGURES RUN WIDER THAN THE TEXT.
+   The four charts have small axis labels and get cramped at 640px.
+   This lets images grow to ~860px while the text column stays narrow.
+   DELETE this block if you would rather images match the text width.
 ------------------------------------------------------------------ */
 main img {
   display: block;
-  height: auto;
   width: 100%;
-  max-width: 52rem;
+  max-width: 860px;
+  height: auto;
   margin: 2.25rem auto 0.75rem;
-  /* centre a wider-than-parent element */
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 4px;
 }
 
-@media (max-width: 56rem) {
-  /* below this width there is no room to break out; stay inside the column */
-  main img { max-width: 100%; margin-left: auto; transform: none; }
+/* No room to break out on narrow screens — stay inside the column. */
+@media (max-width: 900px) {
+  main img {
+    max-width: 100%;
+    margin-left: auto;
+    transform: none;
+  }
 }
 
+
 /* ------------------------------------------------------------------
-   3. Figure captions.
-   In the post every caption is a paragraph that is entirely italic, e.g.
+   3. FIGURE CAPTIONS.
+   Every caption in the post is a paragraph that is entirely italic:
        *Same question, same messy phrasing, 30 samples per condition.*
-   which bearblog renders as <p><em>...</em></p>. This styles those as
-   captions: smaller, centred, sitting just under the image.
+   which renders as <p><em>...</em></p>. This styles exactly those,
+   and leaves italics used mid-sentence alone.
 ------------------------------------------------------------------ */
 main p > em:only-child {
   display: block;
   text-align: center;
   font-size: 0.88em;
   line-height: 1.5;
-  color: #666;
+  opacity: 0.75;
   margin: 0 auto 2.25rem;
-  max-width: 42rem;
+  max-width: 640px;
 }
+
 
 /* ------------------------------------------------------------------
-   4. Small readability touches (all optional).
+   4. TABLES SCROLL INSTEAD OF SQUASHING.
+   The theme sets table { width: 100% }, which crushes the ten-row runs
+   table on phones. This lets it scroll sideways instead.
 ------------------------------------------------------------------ */
-h1 { line-height: 1.2; }
-h2 { margin-top: 2.75rem; }
-
-blockquote {
-  border-left: 3px solid #ddd;
-  margin-left: 0;
-  padding-left: 1rem;
-  color: #444;
+main table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0.94em;
 }
 
-/* The runs table and the rematch table scroll instead of overflowing. */
-main table { display: block; overflow-x: auto; width: 100%; }
 
-@media (prefers-color-scheme: dark) {
-  main p > em:only-child { color: #aaa; }
-  blockquote { border-left-color: #444; color: #bbb; }
+/* ------------------------------------------------------------------
+   5. Small touches. All optional.
+------------------------------------------------------------------ */
+h1 { line-height: 1.25; }
+h2 { margin-top: 2.75rem; }
+
+/* The theme italicises blockquotes; the post uses them for verbatim
+   model output, which reads better upright. */
+main blockquote {
+  font-style: normal;
 }
