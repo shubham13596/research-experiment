@@ -40,6 +40,12 @@ export const env = {
 
   adminToken: process.env.ADMIN_TOKEN ?? "",
   ipHashSalt: process.env.IP_HASH_SALT ?? "dev-salt-do-not-use-in-production",
+
+  /**
+   * Public origin, used to build absolute URLs for share cards and copied
+   * links. Heroku doesn't expose this automatically, so set it explicitly.
+   */
+  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/+$/, ""),
 } as const;
 
 export const hasPostgres = Boolean(env.databaseUrl);

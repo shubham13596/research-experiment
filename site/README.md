@@ -39,24 +39,56 @@ endpoint holds a connection for the length of five model calls, and spend caps
 can be derived from stored rows instead of a separate counter service. **You need
 one add-on, Heroku Postgres, and no Redis.**
 
-```bash
-cd site
-heroku create your-app-name
-heroku addons:create heroku-postgresql:essential-0     # sets DATABASE_URL
-heroku config:set ANTHROPIC_API_KEY=sk-ant-...
-heroku config:set ADMIN_TOKEN="$(openssl rand -hex 32)"
-heroku config:set IP_HASH_SALT="$(openssl rand -hex 32)"
-heroku config:set DAILY_BUDGET_USD=15 OPUS_DAILY_BUDGET_USD=5
-heroku config:set NEXT_PUBLIC_TURNSTILE_SITE_KEY=... TURNSTILE_SECRET_KEY=...
+**Two things bite immediately.** `site/` is not the git root in this repo, so
+`heroku create` cannot add a git remote and every later command needs an explicit
+`-a <app>`. And `openssl` does not exist on Windows, so generate secrets with
+.NET instead.
+
+PowerShell, from the repo root:
+
+```powershell
+$app = "your-app-name"
+function New-Secret {
+  $b = New-Object byte[] 32
+  [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($b)
+  ($b | ForEach-Object { $_.ToString('x2') }) -join ''
+}
+
+heroku create $app
+heroku addons:create heroku-postgresql:essential-0 -a $app   # sets DATABASE_URL
+
+$adminToken = New-Secret
+$salt = New-Secret
+heroku config:set -a $app "ANTHROPIC_API_KEY=sk-ant-..."
+heroku config:set -a $app "ADMIN_TOKEN=$adminToken"
+heroku config:set -a $app "IP_HASH_SALT=$salt"
+heroku config:set -a $app "DAILY_BUDGET_USD=15" "OPUS_DAILY_BUDGET_USD=5"
+
+# Heroku app URLs now carry a random suffix — copy the real one from `heroku apps:info`.
+heroku config:set -a $app "NEXT_PUBLIC_SITE_URL=https://$app-xxxxxxxx.herokuapp.com"
 ```
 
-`site/` has to be the app root. If this repo stays a monorepo, either use the
-[subdir buildpack](https://github.com/timanovsky/subdir-heroku-buildpack) with
-`heroku config:set PROJECT_PATH=site`, or push the subtree:
+Bash is the same with `-a $app` added and `openssl rand -hex 32` for the secrets.
 
-```bash
-git subtree push --prefix site heroku main
+Then make `site/` the build root. The [subdir
+buildpack](https://github.com/timanovsky/subdir-heroku-buildpack) is the better
+option because deploys afterwards are an ordinary `git push` — **order matters,
+the subdir buildpack has to be added first**:
+
+```powershell
+heroku buildpacks:add -a $app https://github.com/timanovsky/subdir-heroku-buildpack
+heroku buildpacks:add -a $app heroku/nodejs
+heroku config:set -a $app PROJECT_PATH=site
+
+git remote add heroku "https://git.heroku.com/$app.git"
+git push heroku HEAD:main
 ```
+
+`git subtree push --prefix=site heroku main` also works and needs no buildpack
+config, but it rewrites history on every deploy and gets slow.
+
+`NEXT_PUBLIC_SITE_URL` matters more than it looks: share cards have to be
+absolute URLs or no social scraper will fetch them.
 
 Notes specific to Heroku:
 
@@ -166,10 +198,28 @@ src/lib/                models, prompts, taxonomy, counters, guards
 src/lib/db.ts           three storage drivers behind one interface
 src/lib/hero.ts         verbatim transcript excerpts for the static hero
 src/lib/study-cases.ts  the five cases seeded from the study
+src/app/case/[slug]/    per-case permalink + its own share card
 src/app/api/            submit (SSE), verdict, status, admin
 src/components/         HeroScript, Wizard, TakeCard, Transcript, Listings
 db/schema.sql           readable schema reference; Postgres self-creates
 ```
+
+## Case permalinks
+
+Every case has a page at `/case/<slug>` with its own generated share card, so a
+posted link previews the actual finding — question, real answer, and what the
+model said instead — rather than a site banner.
+
+Study cases use their item id (`/case/sein-001`) and are prerendered. Community
+cases use the clustering key, which `caseKeyFor` produces already URL-safe
+(`/case/frasier--baby-cab-delivers-driver-s`). The share card pulls the wrong
+answer from the "what did it say instead?" field visitors fill in, which is the
+same field that later fills `lure_entity` in an exported repo item.
+
+Case pages include runs that are still in flight, deliberately: a visitor who
+grades the first take and clicks straight through would otherwise land on a 404
+while the remaining four are still going. The gallery stays finished-runs-only,
+so a half-complete run never appears in a public list.
 
 `getGallery` and `getAdminQueue` aggregate in TypeScript rather than SQL so the
 three drivers can't drift apart. If submissions reach six figures, move

@@ -99,6 +99,9 @@ export function parseSubmission(body: unknown): ParsedSubmission {
  * Clusters submissions into cases. Two visitors asking the same thing about the
  * same show in different words should land on one case, so the queue ranks by
  * how many independent people found it — not how many phrasings exist.
+ *
+ * The result doubles as the public URL slug for /case/<key>, so it stays
+ * lowercase, hyphenated and free of anything needing percent-encoding.
  */
 export function caseKeyFor(work: string, question: string): string {
   const stop = new Set([
@@ -114,5 +117,17 @@ export function caseKeyFor(work: string, question: string): string {
 
   const workKey = norm(work).join("-");
   const questionKey = Array.from(new Set(norm(question))).sort().join("-");
-  return `${workKey}::${questionKey}`.slice(0, 200);
+  const key = [workKey, questionKey].filter(Boolean).join("--").slice(0, 180);
+
+  // A question made entirely of stop words would otherwise produce an empty
+  // key, which would merge unrelated submissions into one case.
+  return key || `case-${simpleHash(`${work} ${question}`)}`;
+}
+
+function simpleHash(input: string): string {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash * 31 + input.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash).toString(36);
 }

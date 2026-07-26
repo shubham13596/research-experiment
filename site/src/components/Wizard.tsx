@@ -45,6 +45,7 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
   const [status, setStatus] = useState<StatusState | null>(null);
 
   const [submissionId, setSubmissionId] = useState("");
+  const [caseKey, setCaseKey] = useState("");
   const [takes, setTakes] = useState<TakeState[]>([]);
   const [grades, setGrades] = useState<Record<string, Grade>>({});
   const [copied, setCopied] = useState(false);
@@ -205,6 +206,7 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
 
           if (ev.type === "meta") {
             setSubmissionId(ev.submissionId);
+            setCaseKey(ev.caseKey);
             requestAnimationFrame(() =>
               resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }),
             );
@@ -250,6 +252,10 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
   const failures = graded.filter((g) => countsAsFailure(g.verdict)).length;
   const spec = MODELS[model];
 
+  const permalink = caseKey
+    ? `${typeof window === "undefined" ? "" : window.location.origin}/case/${caseKey}`
+    : "";
+
   const shareText = useMemo(() => {
     if (graded.length === 0) return "";
     const wrongAnswers = Array.from(
@@ -260,11 +266,11 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
       `"In ${work}, ${question}"`,
       `The answer is ${claimedTruth}.`,
       wrongAnswers.length ? `It said: ${wrongAnswers.join(", ")}.` : "",
-      "Try your own show — itsnotalie",
+      permalink,
     ]
       .filter(Boolean)
       .join("\n");
-  }, [graded, failures, spec.label, work, question, claimedTruth]);
+  }, [graded, failures, spec.label, work, question, claimedTruth, permalink]);
 
   const closed = status !== null && !status.open;
   const outOfRuns = status !== null && status.runsLeft <= 0 && phase === "compose";
@@ -549,6 +555,15 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
                     >
                       {copied ? "Copied" : "Copy the result"}
                     </button>
+                    {caseKey ? (
+                      <a
+                        className="ghost"
+                        href={`/case/${caseKey}`}
+                        style={{ textDecoration: "none" }}
+                      >
+                        This case&rsquo;s page
+                      </a>
+                    ) : null}
                     <a className="ghost" href="/gallery" style={{ textDecoration: "none" }}>
                       See what others found
                     </a>

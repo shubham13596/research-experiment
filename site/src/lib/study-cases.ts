@@ -41,6 +41,20 @@ export interface StudyCase {
   tryIt: { work: string; question: string; truth: string };
 }
 
+/**
+ * A study case's permalink is its item id, lowercased — /case/sein-001. Item ids
+ * are already short and stable, and reusing them keeps the site and the repo
+ * talking about the same thing.
+ */
+export function studyCaseSlug(id: string): string {
+  return id.toLowerCase();
+}
+
+export function findStudyCase(slug: string): StudyCase | null {
+  const wanted = slug.toLowerCase();
+  return STUDY_CASES.find((c) => studyCaseSlug(c.id) === wanted) ?? null;
+}
+
 export const STUDY_CASES: StudyCase[] = [
   {
     id: "SEIN-001",

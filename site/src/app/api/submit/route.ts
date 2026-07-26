@@ -132,6 +132,7 @@ export async function POST(req: Request) {
       send({
         type: "meta",
         submissionId: submission.id,
+        caseKey: submission.case_key,
         nTrials: TRIALS_PER_SUBMISSION,
         model,
         prompt,

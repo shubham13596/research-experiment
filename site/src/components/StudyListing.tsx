@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { modelDisplay } from "@/lib/models";
-import type { StudyCase } from "@/lib/study-cases";
+import { studyCaseSlug, type StudyCase } from "@/lib/study-cases";
 
 /**
  * A case carried over from the study. Deliberately shaped differently from a
@@ -24,7 +24,11 @@ export function StudyListing({ row }: { row: StudyCase }) {
         {row.episode ? <span>{row.episode}</span> : null}
       </div>
 
-      <p className="listing-q">{row.question}</p>
+      <p className="listing-q">
+        <Link href={`/case/${studyCaseSlug(row.id)}`} className="listing-link">
+          {row.question}
+        </Link>
+      </p>
 
       <p className="listing-truth">
         Answer: <strong>{row.groundTruth}</strong> &nbsp;·&nbsp; models reach for{" "}
@@ -62,6 +66,13 @@ export function StudyListing({ row }: { row: StudyCase }) {
       <div className="row">
         <Link href={`/?${params.toString()}#try`} className="ghost" style={{ textDecoration: "none" }}>
           Run this one yourself
+        </Link>
+        <Link
+          href={`/case/${studyCaseSlug(row.id)}`}
+          className="ghost"
+          style={{ textDecoration: "none" }}
+        >
+          Full case
         </Link>
       </div>
     </article>

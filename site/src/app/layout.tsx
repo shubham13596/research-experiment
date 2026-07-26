@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Courier_Prime, Instrument_Sans } from "next/font/google";
-import { warnOnce } from "@/lib/env";
+import { env, warnOnce } from "@/lib/env";
 import "./globals.css";
 
 /**
@@ -33,6 +33,9 @@ const ui = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
+  // Makes the generated share-card URLs absolute, which every social scraper
+  // requires. Set NEXT_PUBLIC_SITE_URL in production.
+  metadataBase: new URL(env.siteUrl),
   title: "It's Not a Lie — can you get an AI to defend its favourite wrong answer?",
   description:
     "Type in a fandom fact you know cold. We run it past an AI five times and you grade the answers. Independent research into how language models misremember fiction.",

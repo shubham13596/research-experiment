@@ -2,7 +2,7 @@ import { randomUUID } from "node:crypto";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { env, storageBackend } from "./env";
 import { ensureSchema, query } from "./pg";
-import { countsAsFailure } from "./taxonomy";
+import { countsAsFailure, type Verdict } from "./taxonomy";
 import { stripMarkdown } from "./text";
 import { costUsd, MODELS, type ModelId } from "./models";
 import type {
@@ -140,16 +140,18 @@ const postgresDriver: Driver = {
 
   async loadRaw() {
     await ensureSchema();
+    // Runs still in flight are loaded too, so a case page works the moment its
+    // first take is graded. Callers decide which statuses they want.
     const [submissions, trials, verdicts, cases] = await Promise.all([
       query<Submission>(
-        `select * from submissions where status = 'done'
+        `select * from submissions where status in ('done', 'running')
          order by created_at desc limit $1`,
         [RAW_LIMIT],
       ),
       query<Trial>(
         `select t.* from trials t
            join submissions s on s.id = t.submission_id
-          where s.status = 'done' limit $1`,
+          where s.status in ('done', 'running') limit $1`,
         [RAW_LIMIT * 5],
       ),
       query<VerdictRow>(`select * from verdicts limit $1`, [RAW_LIMIT * 5]),
@@ -256,7 +258,7 @@ const supabaseDriver: Driver = {
       client
         .from("submissions")
         .select("*")
-        .eq("status", "done")
+        .in("status", ["done", "running"])
         .order("created_at", { ascending: false })
         .limit(RAW_LIMIT),
       client.from("trials").select("*").limit(RAW_LIMIT * 5),
@@ -442,7 +444,24 @@ export async function submissionsTodayFor(
 
 // ─── Aggregation ─────────────────────────────────────────────────────────────
 
-function summarise(raw: RawData): CaseSummary[] {
+/**
+ * Rolls submissions up into cases.
+ *
+ * `statuses` decides whether runs still in flight count. The gallery wants
+ * finished runs only, so a half-complete run never appears in a public list. A
+ * single case page wants them included, because a graded take is real data
+ * whether or not its four siblings have landed yet.
+ */
+const DONE_ONLY: ReadonlySet<SubmissionStatus> = new Set<SubmissionStatus>(["done"]);
+const DONE_OR_RUNNING: ReadonlySet<SubmissionStatus> = new Set<SubmissionStatus>([
+  "done",
+  "running",
+]);
+
+function summarise(
+  raw: RawData,
+  statuses: ReadonlySet<SubmissionStatus> = DONE_ONLY,
+): CaseSummary[] {
   const trialById = new Map(raw.trials.map((t) => [t.id, t]));
   const caseByKey = new Map(raw.cases.map((c) => [c.case_key, c]));
   const verdictsBySubmission = new Map<string, VerdictRow[]>();
@@ -454,7 +473,7 @@ function summarise(raw: RawData): CaseSummary[] {
 
   const groups = new Map<string, Submission[]>();
   for (const s of raw.submissions) {
-    if (s.status !== "done") continue;
+    if (!statuses.has(s.status)) continue;
     const list = groups.get(s.case_key) ?? [];
     list.push(s);
     groups.set(s.case_key, list);
@@ -573,7 +592,8 @@ export async function getCaseDetail(caseKey: string): Promise<{
   submissions: Array<Submission & { trials: Array<Trial & { verdict: VerdictRow | null }> }>;
 }> {
   const raw = await driver.loadRaw();
-  const summary = summarise(raw).find((s) => s.case_key === caseKey) ?? null;
+  const summary =
+    summarise(raw, DONE_OR_RUNNING).find((s) => s.case_key === caseKey) ?? null;
   const verdictByTrial = new Map(raw.verdicts.map((v) => [v.trial_id, v]));
 
   const submissions = raw.submissions
@@ -587,6 +607,68 @@ export async function getCaseDetail(caseKey: string): Promise<{
     }));
 
   return { summary, submissions };
+}
+
+export interface PublicResponse {
+  model_id: ModelId;
+  mode: "quiz" | "correction";
+  prompt: string;
+  text: string;
+  verdict: Verdict;
+  wrong_answer_given: string | null;
+  note: string | null
+  created_at: string;
+}
+
+/**
+ * A case as shown on its public permalink: the summary plus graded transcripts,
+ * with no visitor identifiers of any kind. Failures come first, because they are
+ * what a reader arrived to see, and the list is capped so one heavily-replicated
+ * case doesn't render a hundred cards.
+ */
+export async function getPublicCase(caseKey: string): Promise<{
+  summary: CaseSummary;
+  responses: PublicResponse[];
+} | null> {
+  let raw: RawData;
+  try {
+    raw = await driver.loadRaw();
+  } catch (err) {
+    console.error("[its-not-a-lie] getPublicCase failed:", err);
+    return null;
+  }
+
+  const summary = summarise(raw, DONE_OR_RUNNING).find((s) => s.case_key === caseKey);
+  if (!summary || summary.status === "hidden") return null;
+
+  const verdictByTrial = new Map(raw.verdicts.map((v) => [v.trial_id, v]));
+  const submissionById = new Map(raw.submissions.map((s) => [s.id, s]));
+
+  const responses: PublicResponse[] = [];
+  for (const trial of raw.trials) {
+    const verdict = verdictByTrial.get(trial.id);
+    if (!verdict) continue;
+    const sub = submissionById.get(trial.submission_id);
+    if (!sub || sub.case_key !== caseKey) continue;
+    responses.push({
+      model_id: sub.model_id,
+      mode: sub.mode,
+      prompt: sub.messy_text ?? `In ${sub.work}, ${sub.question}`,
+      text: trial.response_text,
+      verdict: verdict.verdict,
+      wrong_answer_given: verdict.wrong_answer_given,
+      note: verdict.note,
+      created_at: verdict.created_at,
+    });
+  }
+
+  responses.sort(
+    (a, b) =>
+      Number(countsAsFailure(b.verdict)) - Number(countsAsFailure(a.verdict)) ||
+      b.created_at.localeCompare(a.created_at),
+  );
+
+  return { summary, responses: responses.slice(0, 8) };
 }
 
 export async function exportResearchData(): Promise<string> {

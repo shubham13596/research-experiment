@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MODELS } from "@/lib/models";
 import type { CaseStatus, CaseSummary } from "@/lib/types";
 
@@ -42,7 +43,11 @@ export function Listing({ row }: { row: CaseSummary }) {
         </span>
       </div>
 
-      <p className="listing-q">{row.question}</p>
+      <p className="listing-q">
+        <Link href={`/case/${row.case_key}`} className="listing-link">
+          {row.question}
+        </Link>
+      </p>
 
       <p className="listing-truth">
         Answer: <strong>{row.ground_truth || row.claimed_truth}</strong>

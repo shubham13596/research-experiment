@@ -89,7 +89,15 @@ export interface CaseSummary {
 
 /** Server-sent events emitted by POST /api/submit. */
 export type SubmitEvent =
-  | { type: "meta"; submissionId: string; nTrials: number; model: ModelId; prompt: string }
+  | {
+      type: "meta";
+      submissionId: string;
+      /** Doubles as the /case/<key> permalink slug once the run is graded. */
+      caseKey: string;
+      nTrials: number;
+      model: ModelId;
+      prompt: string;
+    }
   | {
       type: "take";
       trialId: string;
