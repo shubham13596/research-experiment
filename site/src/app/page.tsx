@@ -26,10 +26,10 @@ export default async function HomePage() {
           <h1
             style={{
               fontFamily: "var(--display)",
-              fontWeight: 800,
+              fontWeight: 700,
               fontSize: "clamp(2.4rem, 1.5rem + 3.1vw, 4.5rem)",
-              lineHeight: 0.98,
-              letterSpacing: "-0.035em",
+              lineHeight: 1.04,
+              letterSpacing: "-0.02em",
               margin: "0 0 1.4rem",
               textWrap: "balance",
               maxWidth: "32ch",
@@ -51,10 +51,10 @@ export default async function HomePage() {
           <h2
             style={{
               fontFamily: "var(--display)",
-              fontWeight: 800,
+              fontWeight: 700,
               fontSize: "var(--step-3)",
-              lineHeight: 1.02,
-              letterSpacing: "-0.03em",
+              lineHeight: 1.06,
+              letterSpacing: "-0.02em",
               margin: "0 0 1rem",
               textWrap: "balance",
               maxWidth: "30ch",

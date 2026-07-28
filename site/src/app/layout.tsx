@@ -1,24 +1,17 @@
 import type { Metadata } from "next";
-import { Syne, Courier_Prime, Instrument_Sans } from "next/font/google";
+import { Courier_Prime, Instrument_Sans } from "next/font/google";
 import { env, warnOnce } from "@/lib/env";
 import "./globals.css";
 
 /**
- * Type has three jobs, so it has three faces.
- *  - Syne carries the wordmark and headlines: wide, geometric, a network ident.
+ * Two faces, two jobs.
  *  - Courier Prime is anything that is script, transcript, label or data. It is
  *    the typeface screenplays are actually set in, so monospace here means
  *    "this is the record", not "this is decorative".
- *  - Instrument Sans handles explanatory prose, where a monospace column would
- *    be tiring to read.
+ *  - Instrument Sans handles everything else — headlines included, set bold and
+ *    tight. One voice for the site's own words keeps the Courier material
+ *    unmistakably "the record".
  */
-const display = Syne({
-  subsets: ["latin"],
-  weight: ["700", "800"],
-  variable: "--font-display",
-  display: "swap",
-});
-
 const script = Courier_Prime({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -52,7 +45,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   warnOnce();
   return (
-    <html lang="en" className={`${display.variable} ${script.variable} ${ui.variable}`}>
+    <html lang="en" className={`${script.variable} ${ui.variable}`}>
       <body>{children}</body>
     </html>
   );

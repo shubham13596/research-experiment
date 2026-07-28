@@ -288,10 +288,10 @@ function CaseHeading({
       <h1
         style={{
           fontFamily: "var(--display)",
-          fontWeight: 800,
+          fontWeight: 700,
           fontSize: "var(--step-3)",
-          lineHeight: 1.02,
-          letterSpacing: "-0.03em",
+          lineHeight: 1.06,
+          letterSpacing: "-0.02em",
           margin: "0 0 1.2rem",
           textWrap: "balance",
           maxWidth: "30ch",

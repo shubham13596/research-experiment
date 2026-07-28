@@ -44,8 +44,9 @@
   --tape: #c2402e;
   --tape-lift: #d6543f;
 
-  /* Type */
-  --display: var(--font-display), "Syne", system-ui, sans-serif;
+  /* Type. Display is the same face as prose, just bold and tight — the only
+     "costume" font on the site is Courier, and it always means "the record". */
+  --display: var(--font-ui), "Instrument Sans", system-ui, sans-serif;
   --script: var(--font-script), "Courier Prime", "Courier New", monospace;
   --ui: var(--font-ui), "Instrument Sans", system-ui, sans-serif;
 
@@ -134,9 +135,9 @@ a {
 
 .wordmark {
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--step-1);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 1;
@@ -527,7 +528,7 @@ a {
   align-items: center;
   gap: 0.7rem;
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--step-0);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -857,7 +858,7 @@ a {
 
 .tally-headline {
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--step-2);
   line-height: 1.15;
   letter-spacing: -0.02em;
@@ -1069,7 +1070,7 @@ a {
 
 .prose h2 {
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: var(--step-1);
   letter-spacing: -0.01em;
   margin: 2.4rem 0 0.9rem;
