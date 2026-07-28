@@ -1,5 +1,13 @@
-import { Pool } from "pg";
+import { Pool, types } from "pg";
 import { env } from "./env";
+
+// node-postgres parses timestamptz/timestamp columns into JS Date objects, but
+// every row type in this app declares created_at as an ISO string — which is
+// what the memory and Supabase drivers return. Parse to ISO strings here so all
+// three drivers hand back the same shape. (1184 = timestamptz, 1114 = timestamp.)
+const toIso = (v: string) => new Date(v).toISOString();
+types.setTypeParser(1184, toIso);
+types.setTypeParser(1114, toIso);
 
 /**
  * Postgres driver, for Heroku Postgres (or any plain DATABASE_URL).
