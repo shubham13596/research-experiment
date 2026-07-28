@@ -30,15 +30,17 @@ export function HeroScript() {
           <span>Shooting script &mdash; white pages</span>
         </p>
 
+        <p className="paper-caption">The proof — a stage direction in the polygraph scene:</p>
         <p className="stagedir">{ANCHOR.stageDirection}</p>
 
         <p className="stagedir-note">
-          That is the whole answer, and it is a stage direction — so it appears in the script and
-          almost nowhere else. The line everyone quotes from this episode belongs to a different
-          character in a different room:
+          That single line is the whole answer: Jerry takes the test. But it is a stage direction,
+          so it lives in the script and almost nowhere else — recaps and quote pages never carry
+          it. What they carry instead is this exchange, from a different scene, where George is
+          telling Jerry how to beat the machine:
         </p>
 
-        <div className="cue-block">
+        <div className="cue-block" aria-label="The episode's famous line, spoken by George">
           <p className="cue-name">George</p>
           <p className="cue-line">
             Jerry, just remember. It&rsquo;s not a lie... if you believe it.
@@ -46,14 +48,21 @@ export function HeroScript() {
         </div>
 
         <p className="stagedir-note">
-          So the famous quote is George&rsquo;s, and the polygraph is Jerry&rsquo;s. Ask a model
-          about the polygraph and watch which of those two facts wins.
+          So the famous quote belongs to George, and the polygraph belongs to Jerry. A model
+          reconstructing the episode from what people quote pulls both facts toward George — and
+          that is exactly the wrong answer it defends.
         </p>
       </article>
 
       {/* ── Revision pages ── */}
       <section>
-        <h2 className="slug">Revisions</h2>
+        <h2 className="slug">What each model said instead</h2>
+        <p className="dim legend-note">
+          One tab per model. The colours copy 1990s script practice: every round of revisions was
+          printed on a new colour of paper — blue pages, pink pages, goldenrod — so a colour here
+          always means the same model, everywhere on this site. White is the unrevised original,
+          reserved for the model that never got this wrong.
+        </p>
 
         <div className="tabs" role="tablist" aria-label="Model responses">
           {REVISIONS.map((rev, i) => (

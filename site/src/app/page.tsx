@@ -6,6 +6,7 @@ import { Listing } from "@/components/Listings";
 import { StudyListing } from "@/components/StudyListing";
 import { getGallery } from "@/lib/db";
 import { env } from "@/lib/env";
+import { ANCHOR } from "@/lib/hero";
 import { STUDY_CASES } from "@/lib/study-cases";
 
 export const dynamic = "force-dynamic";
@@ -19,8 +20,8 @@ export default async function HomePage() {
       <TopRail />
 
       <main>
-        {/* ── Cold open ── */}
-        <section className="shell band">
+        {/* ── Cold open — the pitch in one screen ── */}
+        <section className="shell band-tight">
           <p className="slug">Cold open</p>
           <h1
             style={{
@@ -36,16 +37,16 @@ export default async function HomePage() {
           >
             AI models have a favourite wrong answer. They will defend it — including from you.
           </h1>
-          <p className="dim" style={{ fontSize: "var(--step-1)", maxWidth: "50ch", margin: "0 0 2.5rem" }}>
-            Here is one, in full, from the transcripts. Then bring a fact from your own show and see
-            if you can find another.
+          <p className="hero-question">&ldquo;{ANCHOR.question}&rdquo;</p>
+          <p className="hero-answer" style={{ marginBottom: "1.2rem" }}>
+            The correct answer is <strong>{ANCHOR.answer}</strong>. Four of the six Claude models
+            we tested say <strong>{ANCHOR.lure}</strong> — and stand by it when you correct them.{" "}
+            <a href="#evidence">The transcripts are below.</a> First, try to catch one yourself.
           </p>
-
-          <HeroScript />
         </section>
 
-        {/* ── Your turn ── */}
-        <section className="shell band" id="try" style={{ borderTop: "var(--rule)" }}>
+        {/* ── Your turn — the interesting part, so it comes first ── */}
+        <section className="shell band-tight" id="try">
           <p className="slug">Your turn</p>
           <h2
             style={{
@@ -69,6 +70,18 @@ export default async function HomePage() {
           </p>
 
           <Wizard turnstileSiteKey={env.turnstileSiteKey} />
+        </section>
+
+        {/* ── The evidence ── */}
+        <section className="shell band" id="evidence" style={{ borderTop: "var(--rule)" }}>
+          <p className="slug">The evidence</p>
+          <p className="dim" style={{ fontSize: "var(--step-1)", maxWidth: "52ch", margin: "0 0 2.5rem" }}>
+            One question from a 1995 Seinfeld episode, the page of the shooting script that answers
+            it, and what six Claude models said — every excerpt byte-exact from the study&rsquo;s
+            transcripts.
+          </p>
+
+          <HeroScript />
         </section>
 
         {/* ── Gallery teaser ── */}

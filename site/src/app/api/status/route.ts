@@ -24,7 +24,7 @@ export async function GET(req: Request) {
         open:
           budget.open &&
           MODELS[id].enabled &&
-          (id.startsWith("claude-opus") ? budget.opusOpen : true),
+          (MODELS[id].premium ? budget.opusOpen : true),
       })),
     },
     { headers: { "cache-control": "no-store" } },

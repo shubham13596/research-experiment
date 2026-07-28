@@ -424,6 +424,10 @@ export function Wizard({ turnstileSiteKey }: { turnstileSiteKey: string }) {
           </label>
         ) : null}
 
+        <p className="field-hint" style={{ margin: "0 0 0.7rem", maxWidth: "40rem" }}>
+          Pick the model to test. Each one answers on its own colour of revision paper — the same
+          colour marks that model everywhere on this site.
+        </p>
         <div className="choices">
           {MODEL_ORDER.map((id) => {
             const m = MODELS[id];

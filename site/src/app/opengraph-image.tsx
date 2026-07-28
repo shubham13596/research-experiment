@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { MODELS, MODEL_ORDER } from "@/lib/models";
+import { MODELS, MODEL_ORDER, type Stock } from "@/lib/models";
 
 /**
  * Share card. Set in Courier Prime rather than the site's display face because
@@ -18,11 +18,14 @@ export const alt =
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const STOCK_HEX: Record<string, string> = {
+const STOCK_HEX: Record<Stock, string> = {
   blue: "#A9C4D8",
   pink: "#E8A9B8",
   goldenrod: "#E0B54A",
   green: "#A8C9A0",
+  yellow: "#E5D98A",
+  salmon: "#E59A7C",
+  white: "#EFE9DA",
 };
 
 async function font(file: string) {

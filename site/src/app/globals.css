@@ -25,12 +25,12 @@
   --paper-shade: #e2dac7;
   --paper-edge: #cdc3ab;
   --ink: #1a1714;
-  --ink-soft: #5c5348;
-  --ink-faint: #8b8175;
+  --ink-soft: #514940;
+  --ink-faint: #6f6557;
 
   /* Type on stage */
-  --cue: #e8dfc8;
-  --cue-soft: #a29685;
+  --cue: #ece4d0;
+  --cue-soft: #b7ac9a;
 
   /* Revision stock — the accent system */
   --stock-blue: #a9c4d8;
@@ -38,6 +38,7 @@
   --stock-goldenrod: #e0b54a;
   --stock-green: #a8c9a0;
   --stock-yellow: #e5d98a;
+  --stock-salmon: #e59a7c;
 
   /* Signage */
   --tape: #c2402e;
@@ -48,9 +49,10 @@
   --script: var(--font-script), "Courier Prime", "Courier New", monospace;
   --ui: var(--font-ui), "Instrument Sans", system-ui, sans-serif;
 
-  /* Scale */
-  --step--1: clamp(0.76rem, 0.74rem + 0.1vw, 0.82rem);
-  --step-0: clamp(0.95rem, 0.92rem + 0.15vw, 1.03rem);
+  /* Scale. The small step stays genuinely readable: it is used for labels and
+     hints, not fine print. */
+  --step--1: clamp(0.85rem, 0.82rem + 0.12vw, 0.92rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.08rem);
   --step-1: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem);
   --step-2: clamp(1.45rem, 1.25rem + 0.9vw, 2.05rem);
   --step-3: clamp(1.95rem, 1.5rem + 2vw, 3.4rem);
@@ -150,7 +152,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .rail-nav a {
@@ -174,7 +176,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   color: var(--cue-soft);
   display: flex;
   align-items: center;
@@ -195,6 +197,41 @@ a {
 
 .slug-on-paper::after {
   background: var(--paper-edge);
+}
+
+/* ─── Hero framing ───────────────────────────────────────────────────────── */
+/* The question and answer, stated in plain language before any script page
+   appears — the context that makes the artifacts below readable. */
+
+.hero-question {
+  font-family: var(--script);
+  font-weight: 700;
+  font-size: var(--step-2);
+  line-height: 1.4;
+  color: var(--cue);
+  margin: 0 0 1rem;
+  max-width: 36ch;
+  text-wrap: balance;
+}
+
+.hero-answer {
+  font-family: var(--ui);
+  font-size: var(--step-1);
+  line-height: 1.6;
+  color: var(--cue-soft);
+  max-width: 52ch;
+  margin: 0;
+}
+
+.hero-answer strong {
+  color: var(--cue);
+  font-weight: 600;
+}
+
+.legend-note {
+  margin: -0.4rem 0 1.2rem;
+  max-width: 62ch;
+  line-height: 1.6;
 }
 
 /* ─── Paper ──────────────────────────────────────────────────────────────── */
@@ -229,7 +266,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   color: var(--ink-faint);
   display: flex;
   flex-wrap: wrap;
@@ -256,13 +293,23 @@ a {
 
 .stagedir-note {
   font-family: var(--ui);
-  font-size: var(--step--1);
+  font-size: var(--step-0);
   text-transform: none;
   letter-spacing: 0;
   font-weight: 400;
   color: var(--ink-soft);
   margin: 1rem 0 0;
-  line-height: 1.55;
+  line-height: 1.6;
+  max-width: 58ch;
+}
+
+/* Plain-language caption that introduces a script fragment. */
+.paper-caption {
+  font-family: var(--ui);
+  font-size: var(--step-0);
+  color: var(--ink-soft);
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
 }
 
 /* Character cue + dialogue, centred like a script page. */
@@ -303,6 +350,9 @@ a {
 .stock-yellow {
   --stock: var(--stock-yellow);
 }
+.stock-salmon {
+  --stock: var(--stock-salmon);
+}
 /* White is the original draft — the version that needed no revision. */
 .stock-white {
   --stock: var(--paper);
@@ -339,7 +389,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--ink-faint);
   margin-bottom: 1.1rem;
 }
@@ -444,7 +494,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   background: transparent;
   color: var(--cue-soft);
   border: 1px solid var(--stage-line);
@@ -521,7 +571,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   background: transparent;
   color: var(--cue-soft);
   border: 1px solid var(--stage-line);
@@ -552,7 +602,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.06em;
   color: var(--cue);
 }
 
@@ -651,7 +701,7 @@ a {
   font-weight: 700;
   font-size: var(--step-0);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: var(--cue);
 }
 
@@ -690,7 +740,7 @@ a {
   font-weight: 700;
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
 }
 
 .take-pending {
@@ -701,7 +751,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -790,7 +840,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--ink-faint);
   margin: 0.8rem 0 0;
 }
@@ -888,7 +938,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--cue-soft);
 }
 
@@ -982,7 +1032,7 @@ a {
   font-family: var(--script);
   font-size: var(--step--1);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   padding: 0.2rem 0.5rem;
   border-radius: 2px;
   border: 1px solid currentColor;
@@ -1030,7 +1080,7 @@ a {
   font-family: var(--script);
   font-size: var(--step-0);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   margin: 1.8rem 0 0.6rem;
   color: var(--cue);
 }
@@ -1087,7 +1137,7 @@ a {
 
 .data-table th {
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--cue-soft);
   font-weight: 400;
 }
@@ -1134,7 +1184,7 @@ a {
   margin-bottom: 1rem;
   font-family: var(--script);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 .footer p {
@@ -1170,6 +1220,12 @@ a {
   font-size: var(--step--1);
   color: var(--cue-soft);
   letter-spacing: 0.04em;
+}
+
+/* On paper, stage colours wash out — switch to ink. */
+.paper .mono-note,
+.revision .mono-note {
+  color: var(--ink-faint);
 }
 
 .visually-hidden {

@@ -22,6 +22,7 @@ const STOCK_HEX: Record<Stock, string> = {
   goldenrod: "#E0B54A",
   green: "#A8C9A0",
   yellow: "#E5D98A",
+  salmon: "#E59A7C",
   white: "#EFE9DA",
 };
 

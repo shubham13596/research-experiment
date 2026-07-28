@@ -106,7 +106,18 @@ export async function runTrial(model: ModelId, prompt: string): Promise<TrialRes
 
   const latencyMs = Date.now() - started;
   const cost = costUsd(model, message.usage.input_tokens, message.usage.output_tokens);
-  await recordSpend(cost, model.startsWith("claude-opus"));
+  await recordSpend(cost, spec.premium);
+
+  // Opus 5 and Fable 5 run safety classifiers that can decline a request with
+  // an HTTP 200 and stop_reason "refusal". No server-side fallback here on
+  // purpose: a take silently served by a different model would be logged under
+  // the wrong model id and poison the data. Surface it as a failed take.
+  if (message.stop_reason === "refusal") {
+    throw new Error(
+      `${spec.label} declined this prompt (stop_reason: refusal). ` +
+        "This happens to a small number of benign prompts. Rephrase and try again.",
+    );
+  }
 
   return {
     text: textOf(message.content),

@@ -9,15 +9,24 @@ export type ModelId =
   | "claude-sonnet-4-6"
   | "claude-sonnet-5"
   | "claude-opus-4-8"
+  | "claude-opus-5"
+  | "claude-fable-5"
   | "claude-haiku-4-5";
 
 /**
  * Production revision-page stock. Real 1990s shooting scripts were revised on
- * coloured paper — white draft, then blue, pink, yellow, green, goldenrod.
- * One stock per model, used consistently across the whole site so a colour
- * always means the same model.
+ * coloured paper — white draft, then blue, pink, yellow, green, goldenrod, and
+ * salmon when a script went around again. One stock per model, used
+ * consistently across the whole site so a colour always means the same model.
  */
-export type Stock = "blue" | "pink" | "goldenrod" | "green" | "yellow" | "white";
+export type Stock =
+  | "blue"
+  | "pink"
+  | "goldenrod"
+  | "green"
+  | "yellow"
+  | "salmon"
+  | "white";
 
 export interface ModelSpec {
   id: ModelId;
@@ -38,6 +47,8 @@ export interface ModelSpec {
   maxTokens: number;
   /** True when omitting `thinking` still produces reasoning tokens. */
   thinksByDefault: boolean;
+  /** Draws from the premium daily budget (the Opus-tier spend cap). */
+  premium: boolean;
   /** Selectable in the wizard. */
   enabled: boolean;
 }
@@ -52,6 +63,7 @@ export const MODELS: Record<ModelId, ModelSpec> = {
     priceOut: 15,
     maxTokens: 1024,
     thinksByDefault: false,
+    premium: false,
     enabled: true,
   },
   "claude-sonnet-5": {
@@ -63,6 +75,7 @@ export const MODELS: Record<ModelId, ModelSpec> = {
     priceOut: 15,
     maxTokens: 16384,
     thinksByDefault: true,
+    premium: false,
     enabled: true,
   },
   "claude-opus-4-8": {
@@ -74,6 +87,35 @@ export const MODELS: Record<ModelId, ModelSpec> = {
     priceOut: 25,
     maxTokens: 1024,
     thinksByDefault: false,
+    premium: true,
+    enabled: true,
+  },
+  "claude-opus-5": {
+    id: "claude-opus-5",
+    label: "Opus 5",
+    billing:
+      "Mostly cured — wrong 2 in 30 where Opus 4.8 was wrong 19 in 30. When it fails, the whole invented scene comes back.",
+    stock: "salmon",
+    priceIn: 5,
+    priceOut: 25,
+    // Thinking is on by default on Opus 5 and max_tokens caps thinking + text
+    // together, so it needs the same headroom as Sonnet 5.
+    maxTokens: 16384,
+    thinksByDefault: true,
+    premium: true,
+    enabled: true,
+  },
+  "claude-fable-5": {
+    id: "claude-fable-5",
+    label: "Fable 5",
+    billing: "Has never missed the anchor: 0 for 100. Double the price, so runs are scarce.",
+    stock: "white",
+    priceIn: 10,
+    priceOut: 50,
+    // Thinking is always on and cannot be disabled; same headroom rule.
+    maxTokens: 16384,
+    thinksByDefault: true,
+    premium: true,
     enabled: true,
   },
   "claude-haiku-4-5": {
@@ -85,6 +127,7 @@ export const MODELS: Record<ModelId, ModelSpec> = {
     priceOut: 5,
     maxTokens: 1024,
     thinksByDefault: false,
+    premium: false,
     enabled: true,
   },
 };
@@ -93,6 +136,8 @@ export const MODEL_ORDER: ModelId[] = [
   "claude-sonnet-4-6",
   "claude-sonnet-5",
   "claude-opus-4-8",
+  "claude-opus-5",
+  "claude-fable-5",
   "claude-haiku-4-5",
 ];
 
@@ -112,19 +157,18 @@ export function isModelId(v: unknown): v is ModelId {
 }
 
 /**
- * Models the study measured but the site doesn't offer. Opus 4.7 is superseded;
- * Fable 5 is priced well above what a public box can absorb.
+ * Models the study measured but the site doesn't offer live. Only Opus 4.7 is
+ * left here — superseded by Opus 4.8 and Opus 5.
  *
- * Fable 5 gets white pages on purpose — in a production script, white is the
- * original draft, the one that needed no revision. It answered this correctly
- * every time.
+ * Fable 5 keeps white pages on purpose — in a production script, white is the
+ * original draft, the one that needed no revision. It answered the anchor
+ * correctly every time.
  */
-export type ReferenceModelId = "claude-opus-4-7" | "claude-fable-5";
+export type ReferenceModelId = "claude-opus-4-7";
 export type AnyModelId = ModelId | ReferenceModelId;
 
 const REFERENCE_MODELS: Record<ReferenceModelId, { label: string; stock: Stock }> = {
   "claude-opus-4-7": { label: "Opus 4.7", stock: "yellow" },
-  "claude-fable-5": { label: "Fable 5", stock: "white" },
 };
 
 export function modelDisplay(id: AnyModelId): { label: string; stock: Stock } {
