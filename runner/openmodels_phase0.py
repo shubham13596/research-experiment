@@ -203,6 +203,22 @@ def ping(cfg, names):
     return pins, bad
 
 
+# Provider error strings sometimes arrive as HTTP 200 CONTENT rather than as an exception —
+# observed: GMICloud serving glm-5.2 returned "request param validation error, Value error,
+# enable_thinking and thinking type must be same" in the message body. Such a record looks like a
+# model response and would be read as one. Kept deliberately narrow (short body + a provider-side
+# phrase) so it cannot swallow a real answer; every hit is flagged, excluded, and RE-ATTEMPTED
+# rather than silently dropped, and lands in the transcript for audit either way.
+PROVIDER_ERROR_SIGNS = ("request param validation error", "invalid_request_error",
+                        "upstream error", "internal server error",
+                        "enable_thinking and thinking type must be same")
+
+
+def looks_like_provider_error(text):
+    t = (text or "").strip().lower()
+    return bool(t) and len(t) < 400 and any(s in t for s in PROVIDER_ERROR_SIGNS)
+
+
 def extract_text(msg):
     c = msg.get("content")
     if isinstance(c, list):  # some providers return content parts
@@ -295,20 +311,25 @@ def probe_logprob_endpoint(client, model_id, endpoints, quant_pref):
 
 
 def call_once(client, model_id, prompt, mcfg, defaults, pin, logprobs=False, pin_mode="tag",
-              top_k=20):
+              top_k=20, max_tokens=None, include_reasoning=True):
     """One completion. Returns (record_fields, error_str)."""
     body = {}
     if pin and pin_mode != "none":
         slug = pin["tag"] if pin_mode == "tag" else (pin["provider_name"] or "").lower()
         body["provider"] = {"only": [slug], "allow_fallbacks": False}
     body["usage"] = {"include": True}
-    if mcfg.get("reasoning"):
+    # Request the reasoning trace from EVERY model, not just config-flagged reasoners. Observed
+    # on kimi-k2-0905 (flagged non-reasoning): it spent all 1024 tokens on a trace that was never
+    # returned, yielding finish_reason='length' with content=None — a silently empty record that
+    # would have been read as an abstention. Asking for the trace changes nothing about
+    # generation, only whether we get to see it.
+    if include_reasoning:
         body["include_reasoning"] = True
     kwargs = {
         "model": model_id,
         "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": (defaults["max_tokens_reasoning"] if mcfg.get("reasoning")
-                       else defaults["max_tokens"]),
+        "max_tokens": max_tokens or (defaults["max_tokens_reasoning"] if mcfg.get("reasoning")
+                                     else defaults["max_tokens"]),
         "extra_body": body,
     }
     if logprobs:
@@ -351,6 +372,26 @@ def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, m
             try:
                 rec = call_once(client, model_id, prompt, mcfg, defaults, pin,
                                 logprobs=logprobs, pin_mode=pin_mode, top_k=top_k)
+                # A model can spend its whole budget on a reasoning trace and return no answer.
+                # That is a truncation artifact, NOT an abstention — retry once with the larger
+                # budget rather than banking an empty record that reads as "declined to answer".
+                if (not logprobs and not (rec.get("response_text") or "").strip()
+                        and rec.get("finish_reason") == "length"):
+                    rec = call_once(client, model_id, prompt, mcfg, defaults, pin,
+                                    logprobs=logprobs, pin_mode=pin_mode, top_k=top_k,
+                                    max_tokens=defaults["max_tokens_reasoning"])
+                    rec["escalated_max_tokens"] = True
+                # A provider rejecting include_reasoning answers 200 with the error as content.
+                # Retry once without it rather than banking the error string as a response.
+                if looks_like_provider_error(rec.get("response_text")):
+                    rec2 = call_once(client, model_id, prompt, mcfg, defaults, pin,
+                                     logprobs=logprobs, pin_mode=pin_mode, top_k=top_k,
+                                     include_reasoning=False)
+                    if looks_like_provider_error(rec2.get("response_text")):
+                        rec2["provider_error_as_content"] = True
+                        return rec2, f"provider error as content: {rec2.get('response_text')!r}"
+                    rec2["retried_without_include_reasoning"] = True
+                    rec = rec2
                 rec["pin_mode_used"] = pin_mode
                 rec["top_logprobs_used"] = top_k if logprobs else None
                 return rec, None
@@ -458,16 +499,53 @@ def main():
     client = OpenAI(base_url=defaults["base_url"],
                     api_key=os.environ[defaults["api_key_env"]])
 
+    # Preflight the balance. OpenRouter reserves the MAXIMUM possible completion cost up front,
+    # so a reasoning model at max_tokens=8192 needs ~$0.12 available per call even though it
+    # typically spends a fraction of that. Without this check the run half-completes: cheap
+    # models succeed, expensive ones 402, and the transcript ends up with holes that look like
+    # refusals rather than billing failures.
+    try:
+        req = urllib.request.Request(
+            "https://openrouter.ai/api/v1/credits",
+            headers={"Authorization": f"Bearer {os.environ[defaults['api_key_env']]}"})
+        cr = json.load(urllib.request.urlopen(req, timeout=30))["data"]
+        avail = (cr.get("total_credits") or 0) - (cr.get("total_usage") or 0)
+        print(f"OpenRouter balance: ${avail:.2f} "
+              f"(credits ${cr.get('total_credits', 0):.2f} - usage ${cr.get('total_usage', 0):.2f})")
+        if avail < est:
+            raise SystemExit(
+                f"\nINSUFFICIENT CREDITS: this run needs ~${est:.2f} but the account has "
+                f"${avail:.2f}.\nOpenRouter also reserves max_tokens up front, so reasoning "
+                f"models need ~$0.12 free per call regardless of what they actually spend.\n"
+                f"Add credits at https://openrouter.ai/settings/credits, then re-run — progress "
+                f"is resumable and prior failures are re-attempted automatically.")
+    except SystemExit:
+        raise
+    except Exception as e:  # noqa: BLE001
+        print(f"(could not read credit balance: {type(e).__name__}; continuing)")
+
     os.makedirs(OUT_DIR, exist_ok=True)
     path = os.path.join(OUT_DIR, "records.jsonl")
-    done = set()
+    # Resume on SUCCESSES only. An errored record must not block its own retry — a transient
+    # 402/429/5xx would otherwise permanently poison that cell, which is how a run silently ends
+    # up with holes that look like data. Failed keys are re-attempted and the transcript keeps
+    # both the failure and the eventual success (append-only; analysis takes the last success).
+    done, failed = set(), set()
     if os.path.exists(path):
         for line in open(path, encoding="utf-8"):
             try:
-                done.add(json.loads(line)["key"])
+                r = json.loads(line)
             except Exception:  # noqa: BLE001
-                pass
-        print(f"resuming: {len(done)} records already present")
+                continue
+            key = r.get("key")
+            if (r.get("error") or not (r.get("response_text") or "").strip()
+                    or looks_like_provider_error(r.get("response_text"))):
+                failed.add(key)
+            else:
+                done.add(key)
+        failed -= done
+        print(f"resuming: {len(done)} completed records; {len(failed)} prior failures "
+              f"will be RE-ATTEMPTED")
 
     spent, n_err = 0.0, 0
     s7_pins = {}

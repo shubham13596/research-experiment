@@ -1,37 +1,24 @@
 {
   "run_id": "openmodels01",
   "spec": "openmodels_interp_program.md (Phase 0)",
-  "finished_utc": "2026-08-02T19:24:22.155763+00:00",
+  "finished_utc": "2026-08-02T20:36:54.882230+00:00",
   "models": {
-    "llama-3.1-8b": {
-      "id": "meta-llama/llama-3.1-8b-instruct",
-      "bucket": "D_interp_ladder",
+    "minimax-m2": {
+      "id": "minimax/minimax-m2",
+      "bucket": "A_suspected_claude_flavored",
       "pin": {
-        "tag": "coreweave/bf16",
-        "provider_name": "CoreWeave",
-        "quantization": "bf16",
-        "context_length": 128000,
-        "pricing": {
-          "prompt": "0.00000022",
-          "completion": "0.00000022",
-          "input_cache_read": "0.00000022",
-          "discount": 0
-        },
-        "uptime_last_30m": 100
-      },
-      "s7_pin": {
-        "tag": "novita/fp8",
-        "provider_name": "Novita",
+        "tag": "minimax/fp8",
+        "provider_name": "Minimax",
         "quantization": "fp8",
+        "context_length": 204800,
         "pricing": {
-          "prompt": "0.00000002",
-          "completion": "0.00000005",
-          "discount": 0
+          "prompt": "0.000000255",
+          "completion": "0.00000102",
+          "discount": 0.15
         },
-        "context_length": 16384,
-        "uptime_last_30m": 99.86643330876934,
-        "logprob_verified": true
-      }
+        "uptime_last_30m": null
+      },
+      "s7_pin": null
     }
   },
   "unavailable": [],
@@ -70,13 +57,13 @@
     },
     "S7_logprob": {
       "n": 3,
-      "purpose": "OPTIONAL: forced-choice token logprobs = P(Jerry) vs P(George). Phase-1 metric preview, no GPU needed. Only on s7_eligible models."
+      "purpose": "OPTIONAL: forced-choice token logprobs = P(Jerry) vs P(George). Phase-1 metric preview, no GPU needed. Only on s7_eligible models. NOTE: the `logprobs` flag below records that OpenRouter ADVERTISES logprobs for the model — verified 2026-08-03 that this does NOT mean the serving provider returns them (of 5 llama-3.1-8b endpoints, 3 return an empty array and 1 returns only the terminal token). The runner therefore probes empirically for a logprob-capable endpoint per model and pins S7 to it separately from the behavioral pin; if none works, S7 is skipped for that model and the skip is printed and recorded. Also: S7 runs at temperature 0, so its n=3 is a provider-determinism check, not statistical power."
     }
   },
   "no_tools": true,
   "system_prompt": null,
-  "estimated_cost_usd": 0.001,
-  "reported_cost_usd": 0.0,
+  "estimated_cost_usd": 0.039,
+  "reported_cost_usd": 0.014,
   "errors": 0,
   "grading": "READ ADJUDICATION REQUIRED. keyword_hint_UNTRUSTED is a pre-sort hint only."
 }

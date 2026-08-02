@@ -196,6 +196,25 @@ Rejected candidates + audit trail: items/candidates/. Verification logs: evidenc
    Notable: llama-3.1-405b is DELISTED from OpenRouter; olmo-3-32b-think has 0 live endpoints
    (best data-transparent control — get it locally in Phase 1); gemma-2-9b (Gemma Scope target)
    is not served at all, so SAE work is local-only regardless.
+   **S1 KNOWLEDGE GATE RUN + READ-ADJUDICATED (2026-08-03): 210/210 calls, 0 unrecovered errors.**
+   HEADLINE: the MEME is universal, the SCENE is not — d2 ("It's not a lie…" is George's line)
+   correct in 14/14 models (41/42 responses); d3 (Jerry takes the polygraph) only 22/42, and just
+   3 models get it 3/3. Exactly the asymmetry SEIN-001's meme_asymmetry_note predicted. This
+   DEFLATES P3 (lineage) pre-emptively: a George-shaped error is the expected output of any model
+   holding the meme without the scene, across ALL four buckets, so lineage claims must rest on the
+   idiosyncratic fingerprint flags (f2/f4/f5), never on George rates. **PHASE 1 TARGET =
+   llama-3.3-70b** — d3 3/3, d2 3/3, d4 3/3, AND dissectible (dense, bf16, single H100,
+   TransformerLens, logprobs). kimi-k3 is best on the task (15/15 + calibrated abstention on
+   TV-008) but is a ~1T MoE, so it serves as behavioral ceiling only. P1 PARTIALLY FALSIFIED (only
+   3/9 frontier MoEs pass); the llama-3.3-70b sub-prediction falsified in the useful direction
+   (predicted d3 would be its miss; d3 is its strongest). llama-3.1-8b HARD FAIL (attributes
+   everything to Newman) ⇒ the cheap 24GB/Llama-Scope path is CLOSED for this item.
+   CAVEAT: TV-008 d3 is UNUSABLE as a standalone probe (0/42) — the question omits the show name,
+   so it is a stimulus defect, not a clean result; S6b is unaffected (its prompt names Frasier).
+   New candidate failure mode: CROSS-WORK RELOCATION (deepseek-v4-pro puts the scene in M*A*S*H
+   3/3 with 3 different characters; also Cheers, Friends, Fresh Prince, Malcolm, Proud Family,
+   + fabricated novels with fabricated authors). Full read: evidence/openmodels01_S1_findings.md.
+   NEXT: S2 cold → S3 messy anchor → S7 logprobs, prioritizing llama-3.3-70b.
 
 ## Model config (config/models.json, all IDs verified 2026-07-17; opus-5 verified live 2026-07-25)
 opus-5=claude-opus-5 (NEW, added to models.json 2026-07-25; used in opus5_01 via runner/opus5_test.py),
