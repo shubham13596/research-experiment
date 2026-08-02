@@ -1,0 +1,199 @@
+{
+  "_notes": [
+    "Registry of OPEN-WEIGHT / non-Anthropic models for the Phase 0 screen (run-id: openmodels01).",
+    "Mirrors config/models.json. Keys are the short names used by --models on runner/openmodels_phase0.py.",
+    "ALL model IDs verified live against https://openrouter.ai/api/v1/models on 2026-08-03 (337-model catalog).",
+    "Access is via OpenRouter using the `openai` python client with base_url=https://openrouter.ai/api/v1.",
+    "OPENROUTER_API_KEY must be in .env (gitignored).",
+    "",
+    "PROVIDER/QUANT CONFOUND (important, read before citing any cell): OpenRouter routes to third-party",
+    "providers that serve the SAME model at DIFFERENT quantizations (glm-4.6 is served fp4 by Venice/Z.AI,",
+    "bf16 by Novita, fp8 by AtlasCloud). Quantization plausibly moves a marginal attractor. The runner",
+    "therefore PINS one endpoint per model (provider.only + allow_fallbacks:false), preferring the highest",
+    "precision available (bf16 > fp16 > fp8 > unknown > mxfp4 > fp4 > int4), and records the served provider",
+    "+ quantization on EVERY record. Pins are resolved live by `--ping` and written to the run manifest,",
+    "not hardcoded here, because provider availability churns.",
+    "",
+    "LINEAGE BUCKETS ARE ORGANIZING LABELS, NOT CLAIMS. 'suspected Claude-flavored' records COMMUNITY",
+    "REPORTS of Claude self-identification in these model families; it is speculation, not established fact,",
+    "and Phase 0 is designed to test it via idiosyncratic-error fingerprints rather than assume it.",
+    "See openmodels_interp_program.md 'standing caveats' — a shared GENERIC George error proves only a",
+    "shared web prior, since the 'It's not a lie' meme is George-coded across the whole open web.",
+    "",
+    "NOT AVAILABLE (checked 2026-08-03, kept here so nobody re-researches them):",
+    "  allenai/olmo-3-32b-think  — in the catalog but 0 live endpoints. The best data-transparent control",
+    "                              (open training data => can literally grep the corpus for the George meme).",
+    "                              Get it locally in Phase 1 instead; it is the single most valuable control.",
+    "  google/gemma-2-9b-it      — NOT served by OpenRouter. This is the Gemma Scope SAE target; gemma-2-27b-it",
+    "                              is served but only int4 by one provider (too degraded for a knowledge gate).",
+    "                              Phase 1 runs the Gemma-2 SAE work locally regardless, so this is not blocking.",
+    "  meta-llama/llama-3.1-405b-instruct — DELISTED from OpenRouter (only nousresearch/hermes-3-llama-3.1-405b",
+    "                              remains, a fine-tune, unsuitable as a Meta-lineage control). Roster uses",
+    "                              llama-4-maverick-class / llama-3.3-70b instead."
+  ],
+  "defaults": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "max_tokens": 1024,
+    "max_tokens_reasoning": 8192,
+    "system_prompt": null,
+    "temperature": null,
+    "tools": null,
+    "quant_preference": ["bf16", "fp16", "fp8", "unknown", "mxfp4", "fp4", "int4"],
+    "_temperature_note": "null => provider default, recorded per call from the echoed request. Prereg §4.4 parity.",
+    "_tools_note": "NO TOOLS, EVER, in this run. Several of these models are served with search-augmented variants elsewhere; a search-backed correct answer would destroy the parametric-recall measurement (crossmodel01 lesson)."
+  },
+  "cells": {
+    "S1_knowledge": {"n": 3, "purpose": "knowledge gate (Q2) -> Phase 1 target selection"},
+    "S2_cold": {"n": 8, "purpose": "baseline parametric error rate"},
+    "S3_messy_verbatim": {"n": 8, "purpose": "THE anchor stimulus; phrasing multiplier (Q1)"},
+    "S4_correct_premise": {"n": 8, "purpose": "wrongful-contradiction channel (4.8-side failure)"},
+    "S5_lure_premise": {"n": 8, "purpose": "lure-acceptance/sycophancy channel (4.7-side failure)"},
+    "S6a_fic205": {"n": 8, "purpose": "fingerprint: Michael-alone compression"},
+    "S6b_tv008": {"n": 5, "purpose": "fingerprint: Niles substitution / existence-denial"},
+    "S6c_sein002": {"n": 5, "purpose": "fingerprint: Frank->George compression"},
+    "S7_logprob": {"n": 3, "purpose": "OPTIONAL: forced-choice token logprobs = P(Jerry) vs P(George). Phase-1 metric preview, no GPU needed. Only on s7_eligible models. NOTE: the `logprobs` flag below records that OpenRouter ADVERTISES logprobs for the model — verified 2026-08-03 that this does NOT mean the serving provider returns them (of 5 llama-3.1-8b endpoints, 3 return an empty array and 1 returns only the terminal token). The runner therefore probes empirically for a logprob-capable endpoint per model and pins S7 to it separately from the behavioral pin; if none works, S7 is skipped for that model and the skip is printed and recorded. Also: S7 runs at temperature 0, so its n=3 is a provider-determinism check, not statistical power."}
+  },
+  "models": {
+    "kimi-k2-0905": {
+      "id": "moonshotai/kimi-k2-0905",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": false,
+      "logprobs": false,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp8", "unknown"],
+      "note": "ERA-MATCHED to the study period and the specific Kimi release carrying the most community reports of Claude self-identification. 1T-param MoE — behavioral only, never an interp target."
+    },
+    "kimi-k2-thinking": {
+      "id": "moonshotai/kimi-k2-thinking",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "unknown"],
+      "note": "Reasoning sibling of k2-0905. bf16 available => the cleanest-served model in bucket A. Reasoning trace is recorded (open-model traces are interp-adjacent data we never get from closed models)."
+    },
+    "kimi-k3": {
+      "id": "moonshotai/kimi-k3",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp8", "mxfp4", "unknown"],
+      "note": "Current Moonshot flagship (post-cutoff for the assistant's knowledge; nothing assumed about it). Tests whether any bucket-A signature PERSISTS into the current generation or was era-specific."
+    },
+    "glm-4.6": {
+      "id": "z-ai/glm-4.6",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": true,
+      "logprobs": false,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "fp4", "fp8"],
+      "note": "ERA-MATCHED. WIDEST quant spread in the roster (fp4 to bf16) — pinning matters most here; prefer Novita bf16."
+    },
+    "glm-5.2": {
+      "id": "z-ai/glm-5.2",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp4", "fp8"],
+      "note": "Current Z.ai flagship. No bf16 endpoint seen — pin fp8 and record the limitation."
+    },
+    "minimax-m2": {
+      "id": "minimax/minimax-m2",
+      "bucket": "A_suspected_claude_flavored",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp8", "unknown"],
+      "note": "ERA-MATCHED; carries Claude-self-identification reports."
+    },
+    "deepseek-v3": {
+      "id": "deepseek/deepseek-chat",
+      "bucket": "B_other_lineage",
+      "reasoning": false,
+      "logprobs": false,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp4", "fp8", "unknown"],
+      "note": "V3 chat. Non-reasoning => the cleanest 4.7-side (lure-acceptance) probe in bucket B."
+    },
+    "deepseek-r1": {
+      "id": "deepseek/deepseek-r1",
+      "bucket": "B_other_lineage",
+      "reasoning": true,
+      "logprobs": false,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp8", "unknown"],
+      "note": "Era-matched reasoning model. Tests P4 (heavily-RL'd reasoning => 4.8-side wrongful contradiction)."
+    },
+    "deepseek-v4-pro": {
+      "id": "deepseek/deepseek-v4-pro",
+      "bucket": "B_other_lineage",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp4", "fp8", "unknown"],
+      "note": "Current DeepSeek flagship, 18 endpoints. Generation-matched partner to kimi-k3/glm-5.2."
+    },
+    "qwen3-235b": {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "bucket": "C_independent_control",
+      "reasoning": false,
+      "logprobs": true,
+      "s7_eligible": true,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "fp8", "unknown"],
+      "note": "Non-reasoning instruct => S7 logprob cell works without a reasoning prefix. bf16 available."
+    },
+    "llama-3.3-70b": {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "bucket": "C_independent_control",
+      "reasoning": false,
+      "logprobs": true,
+      "s7_eligible": true,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "fp16", "fp8", "unknown"],
+      "note": "CLEANEST control: Meta lineage, no Claude-distillation reports, weights genuinely open, bf16 served. Doubles as the Phase-1 mid-size ladder anchor (runs on one H100 node)."
+    },
+    "llama-3.1-8b": {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "bucket": "D_interp_ladder",
+      "reasoning": false,
+      "logprobs": true,
+      "s7_eligible": true,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "fp8", "unknown"],
+      "note": "PRIME Phase-1 interp target if it passes the knowledge gate: Llama Scope pretrained SAEs exist, TransformerLens support, runs on a single 24GB GPU. Expected to FAIL the gate (that is itself the decision-relevant result -> gate G2)."
+    },
+    "qwen3-32b": {
+      "id": "qwen/qwen3-32b",
+      "bucket": "D_interp_ladder",
+      "reasoning": true,
+      "logprobs": true,
+      "s7_eligible": false,
+      "verified": "2026-08-03",
+      "quants_seen": ["fp8", "unknown"],
+      "note": "Hybrid-reasoning; dense 32B, interp-viable on one 80GB GPU. s7 disabled because reasoning is on by default and would consume the forced single token."
+    },
+    "gemma-3-27b": {
+      "id": "google/gemma-3-27b-it",
+      "bucket": "D_interp_ladder",
+      "reasoning": false,
+      "logprobs": true,
+      "s7_eligible": true,
+      "verified": "2026-08-03",
+      "quants_seen": ["bf16", "fp8", "unknown"],
+      "note": "Google-family knowledge probe. If Gemma-3-27b passes the gate, Gemma-2-9b (the Gemma Scope SAE target, run LOCALLY in Phase 1) is worth screening locally too."
+    }
+  }
+}

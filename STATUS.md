@@ -181,6 +181,21 @@ Rejected candidates + audit trail: items/candidates/. Verification logs: evidenc
    (2026-07-25).
 6. Deferred: foil-premise controls on the original 8 items; cross-vendor search02; obscure-real-person items
    (all lower priority now that real-people robustness is replicated twice).
+7. **NEW DIRECTION (2026-08-03): open-models + mech-interp program.** Plan + Phase 0 spec:
+   `openmodels_interp_program.md`. **Phase 0 (`openmodels01`) is BUILT and validated short of
+   generation:** `runner/openmodels_phase0.py` + `config/openmodels.json`; 14 open models via
+   OpenRouter (4 buckets: suspected-Claude-flavored / other-lineage / independent controls /
+   interp-ladder feeders), all IDs verified live 2026-08-03, endpoints PINNED per model because
+   OpenRouter serves the same weights at fp4–bf16 depending on provider. 1058 calls, est ~$7.12,
+   cap $40, resumable. Cells: knowledge gate (S1) → cold (S2) → the verbatim messy anchor (S3) →
+   correct/lure premise (S4/S5) → Claude-fingerprint panel (S6a-c: FIC-205 Michael-alone,
+   TV-008 Niles, SEIN-002 Frank→George) → **S7 logprob cell (NEW): OpenRouter exposes
+   top_logprobs on 9/14 models, so P(Jerry) vs P(George) — the Phase-1 attractor metric — is
+   measurable NOW with no GPU.** BLOCKED: `OPENROUTER_API_KEY` empty in .env. TODO before
+   running: log predictions P1–P6 in the prereg changelog (pre-data).
+   Notable: llama-3.1-405b is DELISTED from OpenRouter; olmo-3-32b-think has 0 live endpoints
+   (best data-transparent control — get it locally in Phase 1); gemma-2-9b (Gemma Scope target)
+   is not served at all, so SAE work is local-only regardless.
 
 ## Model config (config/models.json, all IDs verified 2026-07-17; opus-5 verified live 2026-07-25)
 opus-5=claude-opus-5 (NEW, added to models.json 2026-07-25; used in opus5_01 via runner/opus5_test.py),

@@ -1,0 +1,82 @@
+{
+  "run_id": "openmodels01",
+  "spec": "openmodels_interp_program.md (Phase 0)",
+  "finished_utc": "2026-08-02T19:24:22.155763+00:00",
+  "models": {
+    "llama-3.1-8b": {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "bucket": "D_interp_ladder",
+      "pin": {
+        "tag": "coreweave/bf16",
+        "provider_name": "CoreWeave",
+        "quantization": "bf16",
+        "context_length": 128000,
+        "pricing": {
+          "prompt": "0.00000022",
+          "completion": "0.00000022",
+          "input_cache_read": "0.00000022",
+          "discount": 0
+        },
+        "uptime_last_30m": 100
+      },
+      "s7_pin": {
+        "tag": "novita/fp8",
+        "provider_name": "Novita",
+        "quantization": "fp8",
+        "pricing": {
+          "prompt": "0.00000002",
+          "completion": "0.00000005",
+          "discount": 0
+        },
+        "context_length": 16384,
+        "uptime_last_30m": 99.86643330876934,
+        "logprob_verified": true
+      }
+    }
+  },
+  "unavailable": [],
+  "cells": {
+    "S1_knowledge": {
+      "n": 3,
+      "purpose": "knowledge gate (Q2) -> Phase 1 target selection"
+    },
+    "S2_cold": {
+      "n": 8,
+      "purpose": "baseline parametric error rate"
+    },
+    "S3_messy_verbatim": {
+      "n": 8,
+      "purpose": "THE anchor stimulus; phrasing multiplier (Q1)"
+    },
+    "S4_correct_premise": {
+      "n": 8,
+      "purpose": "wrongful-contradiction channel (4.8-side failure)"
+    },
+    "S5_lure_premise": {
+      "n": 8,
+      "purpose": "lure-acceptance/sycophancy channel (4.7-side failure)"
+    },
+    "S6a_fic205": {
+      "n": 8,
+      "purpose": "fingerprint: Michael-alone compression"
+    },
+    "S6b_tv008": {
+      "n": 5,
+      "purpose": "fingerprint: Niles substitution / existence-denial"
+    },
+    "S6c_sein002": {
+      "n": 5,
+      "purpose": "fingerprint: Frank->George compression"
+    },
+    "S7_logprob": {
+      "n": 3,
+      "purpose": "OPTIONAL: forced-choice token logprobs = P(Jerry) vs P(George). Phase-1 metric preview, no GPU needed. Only on s7_eligible models."
+    }
+  },
+  "no_tools": true,
+  "system_prompt": null,
+  "estimated_cost_usd": 0.001,
+  "reported_cost_usd": 0.0,
+  "errors": 0,
+  "grading": "READ ADJUDICATION REQUIRED. keyword_hint_UNTRUSTED is a pre-sort hint only."
+}
