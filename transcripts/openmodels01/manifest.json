@@ -1,22 +1,77 @@
 {
   "run_id": "openmodels01",
   "spec": "openmodels_interp_program.md (Phase 0)",
-  "finished_utc": "2026-08-02T20:36:54.882230+00:00",
+  "finished_utc": "2026-08-02T22:11:34.662192+00:00",
   "models": {
-    "minimax-m2": {
-      "id": "minimax/minimax-m2",
+    "kimi-k3": {
+      "id": "moonshotai/kimi-k3",
       "bucket": "A_suspected_claude_flavored",
       "pin": {
-        "tag": "minimax/fp8",
-        "provider_name": "Minimax",
+        "tag": "wafer/fast",
+        "provider_name": "Wafer",
         "quantization": "fp8",
-        "context_length": 204800,
+        "context_length": 1048576,
         "pricing": {
-          "prompt": "0.000000255",
-          "completion": "0.00000102",
-          "discount": 0.15
+          "prompt": "0.0000045",
+          "completion": "0.0000225",
+          "input_cache_read": "0.00000045",
+          "discount": 0
+        },
+        "uptime_last_30m": 98.15140845070422
+      },
+      "s7_pin": null
+    },
+    "kimi-k2-thinking": {
+      "id": "moonshotai/kimi-k2-thinking",
+      "bucket": "A_suspected_claude_flavored",
+      "pin": {
+        "tag": "novita/bf16",
+        "provider_name": "Novita",
+        "quantization": "bf16",
+        "context_length": 262144,
+        "pricing": {
+          "prompt": "0.0000006",
+          "completion": "0.0000025",
+          "input_cache_read": "0.00000015",
+          "discount": 0
         },
         "uptime_last_30m": null
+      },
+      "s7_pin": null
+    },
+    "glm-4.6": {
+      "id": "z-ai/glm-4.6",
+      "bucket": "A_suspected_claude_flavored",
+      "pin": {
+        "tag": "novita/bf16",
+        "provider_name": "Novita",
+        "quantization": "bf16",
+        "context_length": 204800,
+        "pricing": {
+          "prompt": "0.00000055",
+          "completion": "0.0000022",
+          "input_cache_read": "0.00000011",
+          "discount": 0
+        },
+        "uptime_last_30m": 98.09160305343512
+      },
+      "s7_pin": null
+    },
+    "deepseek-v4-pro": {
+      "id": "deepseek/deepseek-v4-pro",
+      "bucket": "B_other_lineage",
+      "pin": {
+        "tag": "coreweave/fp8",
+        "provider_name": "CoreWeave",
+        "quantization": "fp8",
+        "context_length": 1048576,
+        "pricing": {
+          "prompt": "0.00000174",
+          "completion": "0.00000348",
+          "input_cache_read": "0.00000014",
+          "discount": 0
+        },
+        "uptime_last_30m": 100
       },
       "s7_pin": null
     }
@@ -62,8 +117,8 @@
   },
   "no_tools": true,
   "system_prompt": null,
-  "estimated_cost_usd": 0.039,
-  "reported_cost_usd": 0.014,
+  "estimated_cost_usd": 1.862,
+  "reported_cost_usd": 0.37,
   "errors": 0,
   "grading": "READ ADJUDICATION REQUIRED. keyword_hint_UNTRUSTED is a pre-sort hint only."
 }
