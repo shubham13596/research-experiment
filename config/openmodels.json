@@ -40,6 +40,8 @@
     "temperature": null,
     "tools": null,
     "quant_preference": ["bf16", "fp16", "fp8", "unknown", "mxfp4", "fp4", "int4"],
+    "request_timeout_s": 120,
+    "_timeout_note": "Per-request HTTP timeout. The OpenAI SDK default is 600s; with a single-threaded runner one hung provider connection stalls everything for ten minutes before the retry loop engages (observed on kimi-k3 via Wafer). 120s is well above the slowest legitimate reasoning response seen (~90s on glm-5.2 emitting a 12.7k-char trace).",
     "_temperature_note": "null => provider default, recorded per call from the echoed request. Prereg §4.4 parity.",
     "_tools_note": "NO TOOLS, EVER, in this run. Several of these models are served with search-augmented variants elsewhere; a search-backed correct answer would destroy the parametric-recall measurement (crossmodel01 lesson)."
   },

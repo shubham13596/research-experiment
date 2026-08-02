@@ -175,3 +175,97 @@ for the S6 cells, where the prompts are properly specified.
 Reported spend for the S1 gate: well under the $1.15 estimate for the cell (dominated by reasoning
 models' long traces — glm-5.2 emitted 12,760 characters of reasoning for a single one-line answer).
 Total `openmodels01` spend to date including the smoke tests: ~$0.30.
+
+---
+
+# S2 / S3 / S7 — cold, messy anchor, and logprobs (partial: 3 of 5 gate-passers)
+
+**Status 2026-08-03:** llama-3.3-70b, kimi-k3, kimi-k2-thinking COMPLETE; glm-4.6 and
+deepseek-v4-pro still running. All responses below read by the lead. Cells: S2 cold (both frozen
+cold_prompts, n=8 each), S3 the observer's verbatim messy prompt (n=8), S7 forced-choice logprobs.
+
+## Result 1 — the phrasing multiplier replicates cross-vendor, and it is ITEM/MODEL-GATED
+
+| model | S2 cold_A | S2 cold_B | S3 messy (asserts Jerry) | verdict |
+|---|---|---|---|---|
+| kimi-k3 | Jerry 8/8 | Jerry 8/8 | Jerry 8/8, correct scene | **fully robust** |
+| kimi-k2-thinking | Jerry 6/8 | Jerry 3/8, Elaine 3/8, George 2/8 | (pending) | intermediate/noisy |
+| llama-3.3-70b | **George 7/8** | **George 8/8** | agrees "Jerry", no contradiction | **susceptible** |
+
+The decisive comparison is **cold_A**, byte-identical across models: kimi-k3 answers Jerry 8/8;
+llama-3.3-70b answers George 7/8. Same prompt, opposite attractor. So the surface form is not
+independently causal — it **multiplies a pre-existing per-model weakness**, exactly the conclusion
+phrasing02 reached within Opus 4.8 across items ("phrasing is a MULTIPLIER on a pre-existing item
+susceptibility, NOT an independent cause"). That conclusion now has a **cross-vendor, cross-model
+replication** on open weights.
+
+## Result 2 — a two-token minimal pair that flips llama-3.3-70b
+
+Same model, same settings, same episode, same underlying fact:
+
+- S1 d3: "…which character takes **a polygraph test**?" → **Jerry 3/3**
+- S2 cold_A: "…which character takes **a lie detector test about watching Melrose Place**?" → **George 7/8**
+
+Adding *more correct detail* flips the answer to the lure. Working hypothesis: "lie detector" is
+the phrase that lives in George's meme context — his famous line is advice about beating one —
+so the surface form recruits the George binding that "polygraph" leaves alone. **Not tested yet:**
+which of the two changes carries the effect ("polygraph"→"lie detector" vs adding "about watching
+*Melrose Place*"). That needs two new probes, i.e. NEW STIMULUS TEXT and therefore a post-hoc,
+discovery-driven experiment — to be registered as such before running, per the v0.2.10 lesson.
+
+Caveats, stated plainly: n is small and unequal (3 vs 8) because d3 was built as a gate probe, not
+as a designed contrast; and the pair confounds two edits. It is a lead, not a result.
+
+## Result 3 — S7: the attractor is visible below the behavioral surface
+
+llama-3.3-70b, forced single-token answer, temperature 0 (all 3 samples byte-identical):
+
+| probe | P(Jerry) | P(George) | argmax token |
+|---|---|---|---|
+| clean (cold_A + forced-choice) | 0.187 | 0.327 | `El` (Elaine) |
+| messy (verbatim + forced-choice) | 0.033 | **0.769** | `George` |
+
+P(George) rises 2.4×, P(Jerry) collapses 5.7×; the Jerry:George ratio moves 13×.
+
+**The dissociation is the interesting part.** In FREE TEXT on the messy prompt, llama-3.3-70b
+*agrees* with the user ("Jerry is indeed embarrassed to admit he watches Melrose Place") — no
+wrongful contradiction. Under FORCED single-token choice on the same messy prompt — a prompt that
+explicitly names Jerry — it answers **George at 0.769**. The verbose answer papers over an
+attractor the constrained answer exposes. This is invisible to any behavioral rubric and is
+precisely what S7 was added to catch.
+
+**P6 verdict: directionally CONFIRMED, strictly NOT MET.** P6 required P(George|messy) >
+P(George|clean) *while the argmax stayed "Jerry"*. The inequality holds decisively, but the argmax
+is never Jerry (it is Elaine, then George), because llama-3.3-70b's cold binding is already
+George-dominant. The program's load-bearing assumption — that phrasing moves a continuous
+attractor measurable below the behavioral threshold — **survives**, and the free-text/forced-choice
+dissociation is a stronger form of it than P6 as written. A strict test of P6 needs a model that
+is behaviorally correct AND measurable: kimi-k3 qualifies behaviorally but is not s7_eligible
+(reasoning model) and is not dissectible.
+
+## Result 4 — failure SIDE (P4)
+
+llama-3.3-70b lands on the **4.7 side**: it accepts the user's Jerry premise in free text (no
+wrongful contradiction), while its own cold recall is George. It does not defend George against a
+correcting user — it defends George only when unprompted. That is lure-following plus weak
+encoding, not the Opus-4.8-style truth-override. Consistent with P4's prediction for
+non-reasoning chat models. (kimi-k3 is correct in both directions, so it tests nothing here.)
+
+## Known measurement limitation — S7 and multi-token names
+
+`tv008_clean` returns P(martin)=P(frasier)=0.000 with argmax token `F`. "Frasier" tokenizes as
+`F`+`rasier`, so single-token matching cannot see it. S7 is only valid for names that are single
+tokens in the target tokenizer (Jerry, George, Martin are; Frasier is not). TV-008 S7 numbers are
+UNINFORMATIVE and must not be reported. Fix for Phase 1: score the full name by summing logprobs
+over its token sequence rather than matching the first token.
+
+## Harness issues (fixed, disclosed)
+
+6. **No HTTP timeout.** The OpenAI SDK default is 600s; one hung provider connection stalled the
+   single-threaded run for ~10 min before the retry loop engaged. Now 120s with SDK retries off
+   (the runner owns retry policy).
+7. **Pinned provider went rate-limited upstream mid-run** (kimi-k3 / Wafer, HTTP 429). The retry
+   ladder then fell through to UNPINNED routing — silently surrendering the quantization control
+   the pin exists to enforce, i.e. reintroducing the exact confound the design is built to avoid.
+   Fixed: failover now steps to the next-best ENDPOINT (Wafer→BaseTen), tries a failing pin twice
+   rather than five times, and records `pin_used` per call; unpinned is last resort only.

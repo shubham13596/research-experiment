@@ -161,20 +161,34 @@ def fetch_endpoints(model_id, timeout=60):
         return json.load(r)["data"].get("endpoints", [])
 
 
-def choose_pin(endpoints, quant_pref):
-    """Pick the highest-precision healthy endpoint. Returns (tag, provider_name, quant, pricing)."""
+def rank_pins(endpoints, quant_pref, limit=3):
+    """Rank healthy endpoints by precision then uptime. Returns a list of pin dicts.
+
+    More than one is kept so a provider that goes rate-limited mid-run fails over to the
+    NEXT-BEST ENDPOINT rather than to unpinned routing — falling through to unpinned silently
+    surrenders the quantization control the pin exists to enforce, which is the one confound
+    this run is built to avoid (same weights answer "George" on one provider and "Jerry" on
+    another). Observed: kimi-k3's top endpoint (Wafer) went 429 upstream mid-run.
+    """
     live = [e for e in endpoints if e.get("status", 0) >= 0]
-    if not live:
-        return None
+
     def rank(e):
         q = str(e.get("quantization"))
         idx = quant_pref.index(q) if q in quant_pref else len(quant_pref)
         return (idx, -(e.get("uptime_last_30m") or 0))
-    best = sorted(live, key=rank)[0]
-    return {"tag": best.get("tag"), "provider_name": best.get("provider_name"),
-            "quantization": best.get("quantization"),
-            "context_length": best.get("context_length"),
-            "pricing": best.get("pricing"), "uptime_last_30m": best.get("uptime_last_30m")}
+
+    out = []
+    for e in sorted(live, key=rank)[:limit]:
+        out.append({"tag": e.get("tag"), "provider_name": e.get("provider_name"),
+                    "quantization": e.get("quantization"),
+                    "context_length": e.get("context_length"),
+                    "pricing": e.get("pricing"), "uptime_last_30m": e.get("uptime_last_30m")})
+    return out
+
+
+def choose_pin(endpoints, quant_pref):
+    ranked = rank_pins(endpoints, quant_pref, limit=1)
+    return ranked[0] if ranked else None
 
 
 def ping(cfg, names):
@@ -355,36 +369,42 @@ def call_once(client, model_id, prompt, mcfg, defaults, pin, logprobs=False, pin
     }
 
 
-def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, max_retries=5):
+def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, max_retries=5,
+                      alt_pins=None):
     """Retry transient failures; degrade the pin rather than lose the cell, and RECORD the degrade."""
     # Two independent fallback axes, tried as a flat ordered list so a failure degrades along the
     # axis that actually caused it: pin (endpoint died) vs top_logprobs (provider caps it below
     # 20 — common, and it would otherwise silently cost us the whole S7 cell). Shrinking top-k
     # does not affect the extracted probabilities as long as the name tokens are inside top-k,
     # which they are whenever the model is actually answering the question.
-    pin_modes = ["tag", "name", "none"] if pin else ["none"]
+    pins = alt_pins if alt_pins else ([pin] if pin else [])
+    # Fail over across ENDPOINTS first, and only then to unpinned as a last resort.
+    ladder = [(p, "tag") for p in pins] + [(p, "name") for p in pins[:1]] + [(None, "none")]
     top_ks = [20, 10, 5] if logprobs else [20]
-    attempts = [(pm, tk) for pm in pin_modes for tk in top_ks]
+    attempts = [(p, pm, tk) for (p, pm) in ladder for tk in top_ks]
     last_err = "no attempt made"
-    for idx, (pin_mode, top_k) in enumerate(attempts):
+    for idx, (this_pin, pin_mode, top_k) in enumerate(attempts):
         delay, is_last = 4.0, (idx == len(attempts) - 1)
-        for attempt in range(max_retries):
+        # A provider that is rate-limited UPSTREAM will not recover in seconds; spending the full
+        # backoff ladder on it wasted ~4 min/call. Try it twice, then move to the next endpoint.
+        tries = max_retries if pin_mode == "none" else 2
+        for attempt in range(tries):
             try:
-                rec = call_once(client, model_id, prompt, mcfg, defaults, pin,
+                rec = call_once(client, model_id, prompt, mcfg, defaults, this_pin,
                                 logprobs=logprobs, pin_mode=pin_mode, top_k=top_k)
                 # A model can spend its whole budget on a reasoning trace and return no answer.
                 # That is a truncation artifact, NOT an abstention — retry once with the larger
                 # budget rather than banking an empty record that reads as "declined to answer".
                 if (not logprobs and not (rec.get("response_text") or "").strip()
                         and rec.get("finish_reason") == "length"):
-                    rec = call_once(client, model_id, prompt, mcfg, defaults, pin,
+                    rec = call_once(client, model_id, prompt, mcfg, defaults, this_pin,
                                     logprobs=logprobs, pin_mode=pin_mode, top_k=top_k,
                                     max_tokens=defaults["max_tokens_reasoning"])
                     rec["escalated_max_tokens"] = True
                 # A provider rejecting include_reasoning answers 200 with the error as content.
                 # Retry once without it rather than banking the error string as a response.
                 if looks_like_provider_error(rec.get("response_text")):
-                    rec2 = call_once(client, model_id, prompt, mcfg, defaults, pin,
+                    rec2 = call_once(client, model_id, prompt, mcfg, defaults, this_pin,
                                      logprobs=logprobs, pin_mode=pin_mode, top_k=top_k,
                                      include_reasoning=False)
                     if looks_like_provider_error(rec2.get("response_text")):
@@ -393,6 +413,7 @@ def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, m
                     rec2["retried_without_include_reasoning"] = True
                     rec = rec2
                 rec["pin_mode_used"] = pin_mode
+                rec["pin_used"] = this_pin
                 rec["top_logprobs_used"] = top_k if logprobs else None
                 return rec, None
             except Exception as e:  # noqa: BLE001
@@ -401,7 +422,7 @@ def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, m
                 transient = any(s in low for s in
                                 ("rate", "429", "timeout", "timed out", "502", "503", "504",
                                  "overload", "connection", "internal"))
-                if transient and attempt < max_retries - 1:
+                if transient and attempt < tries - 1:
                     time.sleep(delay)
                     delay *= 2
                     continue
@@ -496,8 +517,14 @@ def main():
             f"  {defaults['api_key_env']}=sk-or-v1-...\n"
             "Get a key at https://openrouter.ai/keys")
     from openai import OpenAI
+    # Explicit per-request timeout. The SDK default is 600s, so a single hung provider connection
+    # stalls the whole (single-threaded) run for ten minutes before the retry loop even engages —
+    # observed on kimi-k3. max_retries=0 because call_with_retries owns retry policy; leaving the
+    # SDK's own retries on would silently multiply the wait by 3.
     client = OpenAI(base_url=defaults["base_url"],
-                    api_key=os.environ[defaults["api_key_env"]])
+                    api_key=os.environ[defaults["api_key_env"]],
+                    timeout=float(defaults.get("request_timeout_s", 120)),
+                    max_retries=0)
 
     # Preflight the balance. OpenRouter reserves the MAXIMUM possible completion cost up front,
     # so a reasoning model at max_tokens=8192 needs ~$0.12 available per call even though it
@@ -554,8 +581,13 @@ def main():
         mcfg = cfg["models"][name]
         mid, pin = mcfg["id"], pins.get(name)
         cells = list(plan) + (list(s7_plan) if mcfg.get("s7_eligible") else [])
+        try:
+            ranked = rank_pins(fetch_endpoints(mid), defaults["quant_preference"], limit=3)
+        except Exception:  # noqa: BLE001
+            ranked = [pin] if pin else []
         print(f"\n--- {name} ({mid}) pin={pin and pin['provider_name']} "
-              f"[{pin and pin['quantization']}] ---")
+              f"[{pin and pin['quantization']}] "
+              f"| failover: {[p['provider_name'] for p in ranked[1:]] or 'none'} ---")
         # S7 needs an endpoint that actually RETURNS per-token logprobs, which is a different
         # (and rarer) property than the precision rank used for the behavioral cells.
         if any(c[0] == "S7_logprob" for c in cells):
@@ -580,8 +612,10 @@ def main():
                     return
                 is_s7 = cell == "S7_logprob"
                 use_pin = s7_pins.get(name) if is_s7 else pin
+                # S7 must stay on its logprob-verified endpoint; behavioral cells may fail over.
+                alts = [use_pin] if is_s7 else ranked
                 rec, err = call_with_retries(client, mid, prompt, mcfg, defaults, use_pin,
-                                             logprobs=is_s7)
+                                             logprobs=is_s7, alt_pins=alts)
                 text = rec["response_text"] if rec else None
                 cost = ((rec or {}).get("usage") or {}).get("cost") or 0
                 try:
