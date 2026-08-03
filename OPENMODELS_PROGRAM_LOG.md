@@ -444,7 +444,15 @@ fully read-adjudicated (690/690); qwen3-32b still running and excluded from ever
 A (model, item) pair qualifies as a **patching substrate** iff cold-correct ≥4/5 AND
 lure-accepted ≥4/5 — same weights, same fact, two prompts, opposite answers.
 
-**P15 CONFIRMED three times over: 10 substrates, 6 of them 5/5 in both directions.**
+**P15 CONFIRMED: 9 substrates** (revised down from 11 after a full-text re-read — see §4.17).
+
+> **§4.16 was written from head-and-tail reading and has been corrected.** Two substrates were
+> withdrawn (gemma-3-27b HIST-104, llama-3.3-70b HIST-103 — both correct mid-body), one was
+> strengthened (llama-3.3-70b SIMP-004). **HIST-103 and HIST-104 are NOT substrates in both models**
+> as originally claimed: HIST-104 holds only in llama-3.3-70b, HIST-103 only in gemma-3-27b. Final
+> list: gemma-3-27b 6 (SPORT-102, HIST-103, FIC-204, FIC-206, FIC-209, FIC-214), llama-3.3-70b 2
+> (HIST-104, SIMP-004), qwen3-32b 1 (FIC-204), llama-3.1-8b 0. Fold rates recomputed: 67% / 50% /
+> 14% / 0% — still no size ordering.
 
 | model | item (truth ← lure) | cold | lure accepted |
 |---|---|---|---|
