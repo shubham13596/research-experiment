@@ -420,6 +420,13 @@ program that cold accuracy does not measure what we care about.
 
 ## The regime trichotomy (this supersedes the earlier two-factor account)
 
+> **SUPERSEDED IN TURN — read with the S8 section below.** This account was derived from SEIN-001
+> alone. The S8 grid shows all three labels are properties of the *model-item pair*, not of the
+> model: kimi-k3 accepts the SEIN-002 lure 5/5, llama-3.3-70b corrects two items 5/5, and glm-4.6
+> corrects two items. What replaces it is **item-gating** — correction tracks how well the *true*
+> fact is encoded. Kept here unedited because it is what the single-item data supported, and the
+> correction is part of the record.
+
 Comparing each model's output ACROSS S3 (user says Jerry) and S5 (user says George) shows what
 actually governs the answer:
 

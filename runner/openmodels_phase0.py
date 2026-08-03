@@ -385,7 +385,15 @@ def call_once(client, model_id, prompt, mcfg, defaults, pin, logprobs=False, pin
         kwargs["temperature"] = 0
     resp = client.chat.completions.create(**kwargs)
     d = resp.model_dump()
-    ch = (d.get("choices") or [{}])[0]
+    # OpenRouter can answer HTTP 200 with an ERROR ENVELOPE and no `choices` at all (upstream
+    # 429s and provider-routing failures arrive this way). `(choices or [{}])[0]` used to swallow
+    # that into an all-None record which call_with_retries then banked as a SUCCESS: no error, no
+    # provider, no text — indistinguishable from an abstention, and it consumed the retry ladder.
+    # Observed on kimi-k3/S6a, 5/5. Raise instead, so the ladder can fail over and the error text
+    # (which carries "429"/"rate"/"timeout") reaches the transient detector.
+    if not d.get("choices"):
+        raise RuntimeError(f"no choices in response: {json.dumps(d.get('error') or d)[:300]}")
+    ch = d["choices"][0]
     msg = ch.get("message") or {}
     usage = d.get("usage") or {}
     return {

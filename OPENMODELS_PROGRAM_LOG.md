@@ -456,6 +456,26 @@ when credits were added the orphan resumed **running pre-fix code**, interleaved
 transcript. Detected via interleaved timestamps and killed. Transcript verified uncorrupted; the
 3 duplicate keys are retries, resolved at analysis by taking the last success.
 
+### 6.9 An HTTP-200 error envelope was banked as a successful empty record
+Found during S6. OpenRouter can answer **200 with no `choices` array at all** — an error envelope
+(upstream 429s, provider-routing failures) in the response body. `call_once` did
+`ch = (d.get("choices") or [{}])[0]`, which turned that into a record with every field `None` and
+**`error: null`**. `call_with_retries` saw no exception and returned it as a *success*: the retry
+ladder never fired, and the record is indistinguishable from a model declining to answer. kimi-k3
+produced **6/6 of these on S6a** before it was caught; 18 more are visible in S8 and 15 in S1.
+
+This is §6.6's failure mode wearing a different hat, and the second time in this program that a
+harness path could have manufactured "abstentions" out of infrastructure failures. **Fixed:**
+`call_once` now raises when `choices` is empty, surfacing the error payload so its text ("429",
+"rate", "timeout") reaches the transient detector and the ladder fails over properly.
+
+**Why nothing was corrupted:** resume already keys on *successes with non-empty text* (§6.7), so
+every one of these records was re-attempted on the next run and later superseded by a real
+response. They survive in the append-only transcript as failed attempts, which is what they are.
+The cost was wasted calls, not wrong numbers — but only because the resume rule happened to be
+strict enough. **Adopted:** an empty `response_text` with `error: null` is now treated as a harness
+defect by definition, never as data.
+
 ---
 
 ## 7. Where I was wrong, and corrected
