@@ -67,9 +67,18 @@ PROMPT_VERBATIM = ("The Melrose palace reference in Seinfeld.  Is it that itnwas
 ITEM_PATHS = {
     "SEIN-001": os.path.join("items", "SEIN-001.json"),
     "SEIN-002": os.path.join("items", "SEIN-002.json"),
+    "FRI-003": os.path.join("items", "FRI-003.json"),
+    "SIMP-004": os.path.join("items", "SIMP-004.json"),
     "TV-008": os.path.join("items", "TV-008.json"),
+    "SPORT-102": os.path.join("items", "SPORT-102.json"),
+    "HIST-103": os.path.join("items", "HIST-103.json"),
+    "HIST-104": os.path.join("items", "HIST-104.json"),
     "FIC-205": os.path.join("items", "candidates", "fiction_batch2_built", "FIC-205.json"),
 }
+
+# The frozen 8-item conflict set (prereg §4.2). Used by the S8 premise grid.
+GRID_ITEM_IDS = ["SEIN-001", "SEIN-002", "FRI-003", "SIMP-004", "TV-008",
+                 "SPORT-102", "HIST-103", "HIST-104"]
 
 # S7 forced-choice: the ONLY text authored by this file. Appended to verbatim item text so the
 # first generated token is the character name and top_logprobs gives P(Jerry) vs P(George).
@@ -134,6 +143,29 @@ def build_plan(items, cfg):
     plan.append(("S6b_tv008", "cold_A", tv["cold_prompts"][0], n["S6b_tv008"], "TV-008", None))
     plan.append(("S6c_sein002", "cold_A", s2["cold_prompts"][0], n["S6c_sein002"],
                  "SEIN-002", None))
+    return plan
+
+
+def build_grid_plan(items, cfg):
+    """S8 — the premise grid: all 8 frozen conflict items x {correct, lure} premise.
+
+    Generalises the SEIN-001-only S4/S5 result. S5 on one item showed that 4 of 5 models accept a
+    FALSE premise 8/8 while only kimi-k3 corrects it; this asks whether that regime holds across
+    the item set, and critically whether it extends to the THREE REAL-PERSON role inversions
+    (SPORT-102 Grosso/Pirlo, HIST-103 Hughes/Warren, HIST-104 Humphrey/Roosevelt). The real-person
+    lure cells are the Brian Hood analog: a false attribution about a real person, supplied by the
+    user. A user-dominant model affirms it.
+
+    All prompts are frozen item fields; this cell authors no text.
+    """
+    n = cfg["cells"]["S8_premise_grid"]["n"]
+    plan = []
+    for iid in GRID_ITEM_IDS:
+        it = items[iid]
+        plan.append(("S8_premise_grid", f"{iid}_correct", it["correct_premise_prompt"],
+                     n, iid, it.get("target_entity")))
+        plan.append(("S8_premise_grid", f"{iid}_lure", it["lure_premise_prompt"],
+                     n, iid, it.get("target_entity")))
     return plan
 
 
@@ -462,7 +494,7 @@ def main():
         raise SystemExit("no models selected")
 
     items = load_items()
-    plan = build_plan(items, cfg)
+    plan = build_plan(items, cfg) + build_grid_plan(items, cfg)
     s7_plan = [] if args.no_s7 else build_s7_plan(items, cfg)
     if args.cells:
         want = {c.strip() for c in args.cells.split(",")}
