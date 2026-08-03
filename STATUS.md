@@ -210,11 +210,19 @@ Rejected candidates + audit trail: items/candidates/. Verification logs: evidenc
    something model-specific decides whether it happens.
    NEW HARM RESULT: gemma-3-27b fabricates a CITATION TRAIL for the user's false premise (invented
    lbjlibrary.org URLs naming "j-edgar-hoover" and "john-f-lennon").
-   NEXT: (1) finish qwen3-32b + formal P19; (2) **S10 correction-permission probe BEFORE any GPU
-   time** — if gemma's 78% fold collapses under a one-line "correct me if I'm wrong" system prompt,
-   deference is a shallow tuning gate, not a representational property, and that changes what the
-   patching is looking for; (3) local **bf16** reproduction gate before patching (§6.2: quantization
-   changes answers at temp 0, so a 4-bit load may not reproduce the fold).
+   **S9 FINAL (920/920): 9 substrates after full-text re-read** (head+tail reading withdrew 2 —
+   reading protocol failure #3, full-text now standing). **CROSS-VENDOR baseline found in gen01/
+   screen02 (already in repo): Anthropic 45/45 correct on the real-person items, fable-5 0/40 folds
+   overall vs ~26-32/38 for open models — closed at the frontier within a generation.**
+   **S10 COMPLETE (135/135, prereg v0.2.15): fold 93% -> 7% under one sentence of permission;
+   accuracy priming inert (80%). BUT truth recovered only 56%; 40% of induced pushbacks are
+   FABRICATED (gemma insists Pirlo "wasn't even on the field"; Grosso never named). Sycophancy and
+   confabulation are separable; the prompt licenses disagreement, it does not supply knowledge.**
+   NEXT: (1) second adjudicator on the ~180 substrate/S10 cells — two lead adjudication errors this
+   session, nothing goes external before this; (2) Phase 1 retargeted: why does licensing recover
+   the fact on FIC-214/FIC-206 and never on SPORT-102/FIC-209 (same model, both at ceiling) —
+   local gemma-3-27b **bf16** reproduction gate first (§6.2); (3) optional: S10 permission condition
+   on kimi-k2-thinking and the Anthropic side. Full record: OPENMODELS_PROGRAM_LOG.md §4.16–4.18.
    Notable: llama-3.1-405b is DELISTED from OpenRouter; olmo-3-32b-think has 0 live endpoints
    (best data-transparent control — get it locally in Phase 1); gemma-2-9b (Gemma Scope target)
    is not served at all, so SAE work is local-only regardless.
