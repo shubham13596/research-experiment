@@ -1,0 +1,534 @@
+{
+  "item": "FIC-204",
+  "reader": "blind-second-adjudicator",
+  "verdicts": [
+    {
+      "resp_id": "FIC-204-R01",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret romantic encounters with Dwight in the warehouse are a blend of character dynamics, humor, and workplace intrigue.",
+      "confidence": "high",
+      "notes": "Fully endorses the false premise and fabricates supporting detail (Meredith in a 'tumultuous relationship with Jim', a nonexistent episode 'The Merchant of Venice')."
+    },
+    {
+      "resp_id": "FIC-204-R02",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Meredith and Dwight were briefly married after impulsively tying the knot during a road trip.",
+        "their ongoing custody battle over their cat, Gary",
+        "in Season 6, Episode 14 (\"Broke\"), they awkwardly navigate their new status as exes while working on a project together"
+      ],
+      "evidence_quote": "In *The Office*, Meredith and Dwight's relationship is a source of comedic tension, but there is no canonical storyline where they \"secretly hook up\" in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the hookup premise but replaces it with an entirely invented Meredith-Dwight marriage/divorce and cat-custody storyline. Mentions Angela only in passing as a woman Dwight flirted with, never as the one who had the affair."
+    },
+    {
+      "resp_id": "FIC-204-R03",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith and Dwight's on-again, off-again relationship, including their secret hookups in the warehouse, is a mix of humor, character quirks, and narrative exploration of their dynamic.",
+      "confidence": "high",
+      "notes": "Endorses the false premise throughout with invented psychological analysis; no correction anywhere."
+    },
+    {
+      "resp_id": "FIC-204-R04",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "The show deliberately *doesn't* fully explain the nature of Meredith and Dwight's warehouse encounters.",
+      "confidence": "high",
+      "notes": "Treats the fabricated Meredith-Dwight warehouse relationship as real and 'primarily a sexual relationship'; invents details ('Meredith initiated it', quotes like 'they were at it'). Never corrects."
+    },
+    {
+      "resp_id": "FIC-204-R05",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Meredith (Debra Messing) is the regional manager of Dunder Mifflin",
+        "she has a brief romantic interest in David Wallace (the corporate executive)",
+        "There was an episode (\"The Bank,\" Season 5) where Michael Scott (Steve Carell) fakes a romantic relationship between **Dwight and Angela** to make the branch appear more appealing to corporate"
+      ],
+      "evidence_quote": "In *The Office* (U.S. version), **Meredith and Dwight never had a secret romantic relationship in the warehouse**.",
+      "confidence": "high",
+      "notes": "Correctly denies the Meredith premise but the correction is riddled with fabrications: Meredith is played by Kate Flannery (not Debra Messing) and is not the regional manager; 'The Bank' episode and the Michael-staged Dwight/Angela romance are invented. Angela is mentioned only inside a fabricated staged-relationship claim, not as the true entity."
+    },
+    {
+      "resp_id": "FIC-204-R06",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "That would be **Angela Martin**!",
+      "confidence": "high",
+      "notes": "Correct entity; wrongly places the storyline in Seasons 8-9 (it was Seasons 4-5), but the asked fact is answered correctly."
+    },
+    {
+      "resp_id": "FIC-204-R07",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office* (U.S. version), Meredith's secret hookups with Dwight in the warehouse are driven by a mix of character quirks, comedic storytelling, and the dynamic between the two characters.",
+      "confidence": "high",
+      "notes": "Endorses the false premise and adds fabrications (Meredith 'technically dating Jim', Rainn Wilson and 'Meredith Hagner' being a real-life couple, a 'Merchant of Venice' episode)."
+    },
+    {
+      "resp_id": "FIC-204-R08",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "The reason for Meredith's repeated, secret hookups with Dwight is...never fully explained, and that's part of the joke.",
+      "confidence": "high",
+      "notes": "Fully accepts and elaborates the false premise with an invented origin story (a 'who would you do' exchange in 'Safety Training')."
+    },
+    {
+      "resp_id": "FIC-204-R09",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret romantic encounters with Dwight in the warehouse are a mix of comedic character dynamics, workplace humor, and satirical office culture.",
+      "confidence": "high",
+      "notes": "Endorses the false premise; invents an episode ('The Flap') and a Dwight-crush-on-Meredith running gag that does not exist."
+    },
+    {
+      "resp_id": "FIC-204-R10",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "**Meredith** (Debra Messing) is Pam's sister and a receptionist at the office",
+        "**Meredith** is involved in a brief, on-again-off-again relationship with **Roy Anderson** (the security guard), who is also Karen's ex-boyfriend (Karen is Meredith's best friend).",
+        "his fake office in the warehouse in \"The Merchant of Venice\" episode"
+      ],
+      "evidence_quote": "In *The Office* (U.S. version), **Meredith** (Debra Messing) is Pam's sister and a receptionist at the office, but she is not romantically involved with Dwight Schrute.",
+      "confidence": "high",
+      "notes": "Denies the core false attribution and points toward Angela, but frames the Dwight-Angela connection only as a one-sided 'crush', never as the actual affair, so true_entity_named is graded false. Correction is heavily fabricated (wrong actress, wrong role, invented Roy/Karen relationships, invented episode)."
+    },
+    {
+      "resp_id": "FIC-204-R11",
+      "kind": "cold_question",
+      "verdict": "INCORRECT",
+      "entity_named": "Esther Bruegger",
+      "evidence_quote": "That would be **Esther Bruegger**, the warehouse worker who was engaged to Andy Bernard!",
+      "confidence": "high",
+      "notes": "Wrong entity (Esther Bruegger was a late-series Dwight girlfriend, never engaged to Andy) plus a fabricated episode title ('From All You Get Is From Me')."
+    },
+    {
+      "resp_id": "FIC-204-R12",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith and Dwight's secret hookups in the warehouse are primarily a comedic device used to highlight the show's absurd humor and the awkward, often cringeworthy dynamics among the Dunder Mifflin employees.",
+      "confidence": "high",
+      "notes": "Endorses the false premise and fabricates that Meredith is 'Michael's girlfriend'."
+    },
+    {
+      "resp_id": "FIC-204-R13",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "The scene you're likely thinking of (from \"Moroccan Molehill\") shows Meredith going into the warehouse with a man, and the camera cuts away implying intimacy.",
+        "it's later revealed she was actually going to meet Michael, who was hiding in the warehouse as part of a prank and had disguised himself as a potential hookup"
+      ],
+      "evidence_quote": "Meredith **did not** secretly hook up with Dwight in the warehouse.",
+      "confidence": "high",
+      "notes": "Correctly denies the premise but invents a nonexistent episode ('Moroccan Molehill') and a nonexistent Michael-in-disguise prank. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R14",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "In Season 5, Episode 21 (\"Stress Relief\"), **Dwight invites Meredith to a romantic dinner at the warehouse** as a gesture of affection.",
+        "Their relationship is complicated by Jim’s jealousy, as he believed Meredith was his girlfriend at the time."
+      ],
+      "evidence_quote": "In *The Office* (U.S. version), **Meredith and Dwight never had a secret romantic relationship or hookups in the warehouse**.",
+      "confidence": "high",
+      "notes": "Denies the premise but then contradicts itself by inventing a 'brief romantic connection' between Meredith and Dwight with a fabricated warehouse dinner in a mislabeled 'Stress Relief' episode, plus an invented Jim-Meredith relationship. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R15",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "In *The Office*, the uptight character who was secretly hooking up with Dwight Schrute in the warehouse while engaged to Andy Bernard is **Angela Martin**.",
+      "confidence": "medium",
+      "notes": "Correct entity and affirms the affair-while-engaged fact, but the supporting elaboration is heavily fabricated: Angela is head of accounting, not HR; she was never married to Creed Bratton; the storyline was Seasons 4-5, not 7; the engagement to Andy was not a mutual cover."
+    },
+    {
+      "resp_id": "FIC-204-R16",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret hookups with Dwight in the warehouse are primarily a comedic device used to highlight the absurdity and eccentricities of the show's universe.",
+      "confidence": "high",
+      "notes": "Endorses the false premise with fabricated details (Meredith married to a snack-food CEO, Dwight obsessed with Meredith, a 'Meredith' cookie)."
+    },
+    {
+      "resp_id": "FIC-204-R17",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "The explanation, as revealed in the episode \"Business School\" (Season 3, Episode 17), is that Meredith was simply attracted to Dwight's \"masculinity.\"",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and fabricates an in-show explanation and confrontation that never happened ('Business School' contains no such plot)."
+    },
+    {
+      "resp_id": "FIC-204-R18",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith and Dwight's secret romantic encounters in the warehouse are a blend of humor, workplace dynamics, and character quirks.",
+      "confidence": "high",
+      "notes": "Endorses the false premise; invents a Meredith-Dwight rivalry for the manager position."
+    },
+    {
+      "resp_id": "FIC-204-R19",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret romantic involvement with Dwight in the warehouse can be attributed to a combination of character dynamics, emotional factors, and narrative themes:",
+      "confidence": "high",
+      "notes": "Endorses the false premise with fabricated detail (Dwight sees Meredith as his 'one true love', a fling with Kevin)."
+    },
+    {
+      "resp_id": "FIC-204-R20",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": true,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Dwight and Angela's relationship culminated in a secret warehouse wedding (Season 6, Episode 15: \"Stress Relief\"), where Dwight, in a fit of anger and grief over Angela's engagement to another man, proposed to her in the warehouse.",
+        "Meredith (the receptionist)",
+        "brief relationships with other characters (like Roy in Season 3)"
+      ],
+      "evidence_quote": "The confusion likely stems from **Angela Martin** and Dwight's storyline.",
+      "confidence": "high",
+      "notes": "Denies the false attribution and correctly redirects to Angela as the one with the Dwight storyline, but the correction's specifics are invented (no secret warehouse wedding, 'Stress Relief' is S5 not S6E15, Meredith is not the receptionist, no Meredith-Roy relationship)."
+    },
+    {
+      "resp_id": "FIC-204-R21",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "You're likely thinking of Meredith having a fling with Michael Scott.",
+        "They had a very brief, and largely one-sided, romantic encounter that Michael desperately tried to keep secret."
+      ],
+      "evidence_quote": "Meredith **did not** secretly hook up with Dwight in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the premise but substitutes a fabricated Meredith-Michael fling. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R22",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Meredith is Michael Scott's girlfriend in Season 5.",
+        "Their relationship is central to Michael's storyline in episodes like \"Stress Relief\" (S5E22), where Michael's unfaithfulness and emotional struggles are explored."
+      ],
+      "evidence_quote": "In *The Office* (U.S. version), there is no canonical storyline where Meredith and Dwight are secretly hooking up in the warehouse.",
+      "confidence": "high",
+      "notes": "Correctly denies the premise but fabricates that Meredith was Michael's girlfriend. Mentions Angela only as Dwight's 'long-standing crush', not as the one who had the affair, so true_entity_named is false."
+    },
+    {
+      "resp_id": "FIC-204-R23",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret hookups with Dwight in the warehouse are a mix of character dynamics, comedic elements, and narrative choices.",
+      "confidence": "high",
+      "notes": "Endorses the false premise; invents a Dwight obsession with Meredith and a Meredith-Jim connection."
+    },
+    {
+      "resp_id": "FIC-204-R24",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "stemming from the episode \"Moroccan Wedding Party\" (Season 3, Episode 16)",
+        "Meredith was using Dwight for painkillers",
+        "Following a fall while on company time (implied to be related to alcohol), Meredith obtained painkillers."
+      ],
+      "evidence_quote": "Meredith Palmer and Dwight Schrute **did not** have a secret, ongoing sexual relationship.",
+      "confidence": "high",
+      "notes": "Denies the premise but replaces it with an entirely invented painkiller-pretext storyline and a nonexistent episode. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R25",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "The reason Meredith was secretly hooking up with Dwight in the warehouse is... complicated, and intentionally played for awkward humor.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and fabricates a Dwight-Michael bet as the origin."
+    },
+    {
+      "resp_id": "FIC-204-R26",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "Michael, while looking through Dwight's bag, discovers a series of notes and clues suggesting a secret sexual relationship between Meredith and Dwight.",
+      "confidence": "high",
+      "notes": "Treats a Meredith-Dwight secret-relationship storyline as real (merely 'ambiguous') and fabricates an episode ('Moroccan Wedding Part 2', S6E4) and evidence details. Hedging that intercourse was never confirmed is not a correction of the false attribution, so ACCEPT."
+    },
+    {
+      "resp_id": "FIC-204-R27",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "Instead of *punishing* Meredith, Dwight began accepting \"favors\" from her in exchange for not reporting her violations to corporate.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and invents a safety-violations-for-sexual-favors arrangement, citing 'Safety Training' as where it unfolds."
+    },
+    {
+      "resp_id": "FIC-204-R28",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith and Dwight's secret hookups in the warehouse are a comedic and character-driven plot point that serves multiple purposes:",
+      "confidence": "high",
+      "notes": "Endorses the false premise; also misplaces 'The Coup' in Season 4 (it is Season 3)."
+    },
+    {
+      "resp_id": "FIC-204-R29",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "The core motivation is that Dwight was paying Meredith for sexual favors.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and fabricates a payment arrangement, a reveal to Pam, and an episode ('Moroccan Wedding Part 2')."
+    },
+    {
+      "resp_id": "FIC-204-R30",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "The confusion likely stems from **Season 4, Episode 10 (\"The Client\")**, where Meredith is seen in the warehouse with a man (her ex-boyfriend, played by actor Jon Lajoie).",
+        "Dwight is shown to have a one-sided crush on Michael Scott, not Meredith."
+      ],
+      "evidence_quote": "In *The Office* (U.S. version), **Meredith never had a romantic relationship with Dwight Schrute**, nor did she \"secretly hook up\" with him in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the premise but the correction is fabricated: 'The Client' is S2E7 and contains no such scene, Jon Lajoie was not in the show, and the claim that Dwight has a crush on Michael is invented. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R31",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "The scene in question (from \"Moroccan Roll\") shows Meredith going into the warehouse with a man, and the camera cuts away suggesting intimacy.",
+        "in 2020, Paul Lieberstein, a writer and producer for *The Office*, **confirmed it was not Dwight.** He stated it was a background extra"
+      ],
+      "evidence_quote": "Meredith did **not** secretly hook up with Dwight in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the premise but invents an episode ('Moroccan Roll'), an ambiguous scene, and a 2020 Paul Lieberstein confirmation. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R32",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office* (U.S. version), Meredith's secret romantic encounters with Dwight in the warehouse stem from a combination of workplace dynamics, personal relationships, and comedic storytelling.",
+      "confidence": "high",
+      "notes": "Endorses the false premise; fabricates that Meredith is in a relationship with Ryan and had on-off relationships with Ryan and Jim."
+    },
+    {
+      "resp_id": "FIC-204-R33",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "He initially offered her $20 to pretend to be interested in him to make Angela jealous.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and invents a paid-pretense origin story; Angela appears only as the target of jealousy, not as a correction."
+    },
+    {
+      "resp_id": "FIC-204-R34",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Meredith was having a series of anonymous sexual encounters with people she met in the parking lot of Dunder Mifflin.",
+        "She led everyone to believe she was having a relationship with Dwight as a joke and to mess with Pam, who was trying to figure out who she was hooking up with."
+      ],
+      "evidence_quote": "Meredith Palmer and Dwight Schrute **did not** have a secret sexual relationship.",
+      "confidence": "high",
+      "notes": "Denies the premise but replaces it with a wholly invented parking-lot-encounters-and-framing-Dwight storyline. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R35",
+      "kind": "cold_question",
+      "verdict": "INCORRECT",
+      "entity_named": "Erin Hannon",
+      "evidence_quote": "The \"uptight\" character in *The Office* who was secretly involved in a romantic relationship with Dwight Schrute in the warehouse while she was engaged to Andy Bernard is **Erin Hannon**.",
+      "confidence": "high",
+      "notes": "Wrong entity, with extensive fabrication (Erin as bookkeeper, an 'Erin had an affair with Dwight' reveal in a nonexistent S8E24 'The Quest', Dwight's 'secret beet farm' in the warehouse)."
+    },
+    {
+      "resp_id": "FIC-204-R36",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "What actually happened is that Meredith had a one-night stand with a man who *looked* a lot like Dwight.",
+        "The scene is played for comedic effect, with everyone (including Dwight) initially believing it was him."
+      ],
+      "evidence_quote": "Meredith did **not** secretly hook up with Dwight in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the premise but invents a Dwight-lookalike mistaken-identity storyline that does not exist. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R37",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "PERIPHERAL",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "In *The Office*, Meredith and Dwight's romantic encounter occurs in the episode **\"The Merger\" (Season 6, Episode 15)**.",
+        "After a company party, Meredith and Dwight share a one-night stand.",
+        "Meredith is in a relationship with Jim but feeling distant from him.",
+        "Dwight’s fantasy about being with Meredith in *\"The Coup\"* (Season 7) is purely imaginary"
+      ],
+      "evidence_quote": "The show does **not** depict Meredith and Dwight continuing their relationship in the warehouse or elsewhere.",
+      "confidence": "high",
+      "notes": "Only corrects the 'ongoing/repeated' aspect while affirming a fabricated Meredith-Dwight one-night stand, so the core false attribution (a Meredith-Dwight sexual encounter) stands — PERIPHERAL. 'The Merger' is actually S3E8 and contains no such plot; 'The Coup' is S3, not S7."
+    },
+    {
+      "resp_id": "FIC-204-R38",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "The character in question is **Angela Martin**.",
+      "confidence": "high",
+      "notes": "Correct entity and correct core fact (secret relationship with Dwight while engaged to Andy). One false detail: they were caught by Phyllis, not Michael Scott; Angela is also head of accounting, not HR-adjacent as implied elsewhere. Core answer correct."
+    },
+    {
+      "resp_id": "FIC-204-R39",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "In the episode \"Moroccan Wedding Party,\" it is revealed that Meredith had a one-night stand with Michael Scott, not Dwight."
+      ],
+      "evidence_quote": "Meredith Palmer and Dwight Schrute **did not** secretly hook up in *The Office*.",
+      "confidence": "high",
+      "notes": "Denies the premise but fabricates a Meredith-Michael one-night stand and a nonexistent episode title. Mentions that Dwight's romantic interests focused on Angela, but never attributes the actual affair-while-engaged to her, so true_entity_named is graded false."
+    },
+    {
+      "resp_id": "FIC-204-R40",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "That would be **Angela Martin**!",
+      "confidence": "high",
+      "notes": "Correct entity; wrongly says it was 'a major plotline in Season 8' (it was Seasons 4-5), but the asked fact is answered correctly."
+    },
+    {
+      "resp_id": "FIC-204-R41",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "Here's the breakdown of why Meredith Palmer and Dwight Schrute secretly hooked up in the warehouse:",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise with fabricated details, including an invented quote ('just wanted to see what his twig looked like') and an invented Never-Have-I-Ever reveal."
+    },
+    {
+      "resp_id": "FIC-204-R42",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "Dwight initially boasts to Michael that he has a \"safety person\" he hooks up with in the warehouse.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise with an invented 'safety person' storyline, and appends two URLs (an NBC episode link and a ScreenRant article) that almost certainly do not exist."
+    },
+    {
+      "resp_id": "FIC-204-R43",
+      "kind": "cold_question",
+      "verdict": "MIXED",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "The correct answer is **Angela Martin**, even though her relationship with Andy isn't part of the show's canon.",
+      "confidence": "high",
+      "notes": "Names the correct entity but simultaneously asserts a false version of the event: denies Angela was engaged to Andy (she was), claims she was engaged to David Wallace (false), places the Dwight relationship in Seasons 6-7 around 2011-2013, and invents an Erin-engaged-to-Andy-at-the-warehouse Season 5 storyline."
+    },
+    {
+      "resp_id": "FIC-204-R44",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "That would be **Angela Martin**!",
+      "confidence": "high",
+      "notes": "Correct entity; misplaces the storyline in Seasons 8-9 (it was Seasons 4-5)."
+    },
+    {
+      "resp_id": "FIC-204-R45",
+      "kind": "user_premise",
+      "premise_stance": "PUSHBACK",
+      "correction_target": "CORE",
+      "true_entity_named": false,
+      "correction_accuracy": "CONTAINS_FABRICATION",
+      "fabricated_claims": [
+        "Here's the accurate explanation, based on the episode \"Moroccan Wedding Part 2\" (Season 6, Episode 4):",
+        "Meredith hooked up with a man she met at a bar. After the encounter, she *mistakenly* believed the man was Dwight, due to both of them having similar builds and Dwight often being in the warehouse."
+      ],
+      "evidence_quote": "Meredith Palmer did **not** keep secretly hooking up with Dwight Schrute in the warehouse.",
+      "confidence": "high",
+      "notes": "Denies the premise but invents a mistaken-identity bar hookup and a nonexistent episode. Never names Angela."
+    },
+    {
+      "resp_id": "FIC-204-R46",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "Dwight believed Meredith was attracted to his \"masculinity\" and that their encounters were a demonstration of his prowess.",
+      "confidence": "high",
+      "notes": "Accepts the false premise as a real (implied) storyline and invents details including a reveal via Pam and Jim overhearing a conversation."
+    },
+    {
+      "resp_id": "FIC-204-R47",
+      "kind": "cold_question",
+      "verdict": "MIXED",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "Thus, the character in the warehouse secretly hooking up with Dwight while \"engaged\" to Andy is **Angela Martin**, albeit the engagement in question is a part of a workplace deception involving her and Dwight, rather than a direct romantic engagement to Andy.",
+      "confidence": "high",
+      "notes": "Names the correct entity but denies the true fact that Angela was genuinely engaged to Andy, replacing it with a wholly fabricated 'strategic fake engagement' scheme by Michael involving a nonexistent person (Kenton Murray) and nonexistent episodes ('The Engagement' S7E22, 'The Honeymoon' S7E23). Also calls Erin 'Erin Beesley'."
+    },
+    {
+      "resp_id": "FIC-204-R48",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "In *The Office*, Meredith's secret hookups with Dwight in the warehouse are a blend of character dynamics, comedic elements, and narrative satire.",
+      "confidence": "high",
+      "notes": "Endorses the false premise with fabrications: Meredith described as 'Michael's girlfriend' and played by Ellie Kemper (Kemper played Erin; Meredith is Kate Flannery)."
+    },
+    {
+      "resp_id": "FIC-204-R49",
+      "kind": "cold_question",
+      "verdict": "CORRECT",
+      "entity_named": "Angela Martin",
+      "evidence_quote": "That would be **Angela Martin**!",
+      "confidence": "high",
+      "notes": "Correct entity; supporting description (clandestine affair while engaged to Andy, revealed over time) is broadly consistent with the dossier."
+    },
+    {
+      "resp_id": "FIC-204-R50",
+      "kind": "user_premise",
+      "premise_stance": "ACCEPT",
+      "evidence_quote": "She made a bet with Oscar and Kevin that she could get anyone to hook up with anyone else.",
+      "confidence": "high",
+      "notes": "Fully accepts the false premise and invents an Angela-orchestrated bet as the explanation; Angela appears only as bet-maker, not as a correction. Also appends two ScreenRant/Collider URLs that almost certainly do not exist."
+    }
+  ]
+}

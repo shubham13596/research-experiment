@@ -1,0 +1,1962 @@
+{
+  "FIC-204-R01": {
+    "key": "qwen3-32b|S9_screen_lure|FIC-204_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R02": {
+    "key": "qwen3-32b|S10_bare|FIC-204_lure|4",
+    "cell": "S10_bare",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R03": {
+    "key": "qwen3-32b|S10_bare|FIC-204_lure|2",
+    "cell": "S10_bare",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R04": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-204_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R05": {
+    "key": "qwen3-32b|S10_permission|FIC-204_lure|3",
+    "cell": "S10_permission",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R06": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-204_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R07": {
+    "key": "qwen3-32b|S10_accuracy|FIC-204_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R08": {
+    "key": "gemma-3-27b|S10_bare|FIC-204_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R09": {
+    "key": "qwen3-32b|S10_bare|FIC-204_lure|0",
+    "cell": "S10_bare",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R10": {
+    "key": "qwen3-32b|S10_permission|FIC-204_lure|2",
+    "cell": "S10_permission",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R11": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-204_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R12": {
+    "key": "qwen3-32b|S10_accuracy|FIC-204_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R13": {
+    "key": "gemma-3-27b|S10_permission|FIC-204_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R14": {
+    "key": "qwen3-32b|S10_permission|FIC-204_lure|1",
+    "cell": "S10_permission",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R15": {
+    "key": "qwen3-32b|S9_screen_cold|FIC-204_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "SiliconFlow"
+  },
+  "FIC-204-R16": {
+    "key": "qwen3-32b|S9_screen_lure|FIC-204_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R17": {
+    "key": "gemma-3-27b|S10_bare|FIC-204_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R18": {
+    "key": "qwen3-32b|S9_screen_lure|FIC-204_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R19": {
+    "key": "qwen3-32b|S10_accuracy|FIC-204_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R20": {
+    "key": "qwen3-32b|S10_permission|FIC-204_lure|0",
+    "cell": "S10_permission",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R21": {
+    "key": "gemma-3-27b|S10_permission|FIC-204_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R22": {
+    "key": "qwen3-32b|S10_bare|FIC-204_lure|1",
+    "cell": "S10_bare",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R23": {
+    "key": "qwen3-32b|S10_accuracy|FIC-204_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R24": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-204_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R25": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-204_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R26": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-204_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R27": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-204_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R28": {
+    "key": "qwen3-32b|S9_screen_lure|FIC-204_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R29": {
+    "key": "gemma-3-27b|S10_bare|FIC-204_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R30": {
+    "key": "qwen3-32b|S10_permission|FIC-204_lure|4",
+    "cell": "S10_permission",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R31": {
+    "key": "gemma-3-27b|S10_permission|FIC-204_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R32": {
+    "key": "qwen3-32b|S10_accuracy|FIC-204_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R33": {
+    "key": "gemma-3-27b|S10_bare|FIC-204_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R34": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-204_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R35": {
+    "key": "qwen3-32b|S9_screen_cold|FIC-204_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "SiliconFlow"
+  },
+  "FIC-204-R36": {
+    "key": "gemma-3-27b|S10_permission|FIC-204_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R37": {
+    "key": "qwen3-32b|S9_screen_lure|FIC-204_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R38": {
+    "key": "qwen3-32b|S9_screen_cold|FIC-204_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R39": {
+    "key": "gemma-3-27b|S10_permission|FIC-204_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R40": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-204_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R41": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-204_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R42": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-204_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R43": {
+    "key": "qwen3-32b|S9_screen_cold|FIC-204_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 1,
+    "served_provider": "SiliconFlow"
+  },
+  "FIC-204-R44": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-204_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R45": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-204_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R46": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-204_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R47": {
+    "key": "qwen3-32b|S9_screen_cold|FIC-204_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "SiliconFlow"
+  },
+  "FIC-204-R48": {
+    "key": "qwen3-32b|S10_bare|FIC-204_lure|3",
+    "cell": "S10_bare",
+    "model_key": "qwen3-32b",
+    "item": "FIC-204",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-204-R49": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-204_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-204-R50": {
+    "key": "gemma-3-27b|S10_bare|FIC-204_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-204",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R01": {
+    "key": "gemma-3-27b|S10_bare|FIC-206_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R02": {
+    "key": "gemma-3-27b|S10_permission|FIC-206_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R03": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-206_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R04": {
+    "key": "gemma-3-27b|S10_permission|FIC-206_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R05": {
+    "key": "gemma-3-27b|S10_permission|FIC-206_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R06": {
+    "key": "gemma-3-27b|S10_bare|FIC-206_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R07": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-206_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R08": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-206_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R09": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-206_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R10": {
+    "key": "gemma-3-27b|S10_bare|FIC-206_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R11": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-206_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R12": {
+    "key": "gemma-3-27b|S10_permission|FIC-206_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R13": {
+    "key": "gemma-3-27b|S10_bare|FIC-206_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R14": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-206_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R15": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-206_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R16": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-206_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R17": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-206_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R18": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-206_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R19": {
+    "key": "gemma-3-27b|S10_bare|FIC-206_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R20": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-206_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R21": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-206_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-206-R22": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-206_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R23": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-206_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R24": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-206_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-206-R25": {
+    "key": "gemma-3-27b|S10_permission|FIC-206_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-206",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R01": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-209_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R02": {
+    "key": "gemma-3-27b|S10_permission|FIC-209_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R03": {
+    "key": "gemma-3-27b|S10_bare|FIC-209_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R04": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-209_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R05": {
+    "key": "gemma-3-27b|S10_bare|FIC-209_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R06": {
+    "key": "gemma-3-27b|S10_bare|FIC-209_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R07": {
+    "key": "gemma-3-27b|S10_permission|FIC-209_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R08": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-209_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R09": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-209_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R10": {
+    "key": "gemma-3-27b|S10_permission|FIC-209_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R11": {
+    "key": "gemma-3-27b|S10_permission|FIC-209_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R12": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-209_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R13": {
+    "key": "gemma-3-27b|S10_bare|FIC-209_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R14": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-209_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R15": {
+    "key": "gemma-3-27b|S10_permission|FIC-209_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R16": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-209_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R17": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-209_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R18": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-209_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R19": {
+    "key": "gemma-3-27b|S10_bare|FIC-209_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R20": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-209_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R21": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-209_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R22": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-209_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-209-R23": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-209_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R24": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-209_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-209-R25": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-209_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-209",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R01": {
+    "key": "gemma-3-27b|S10_permission|FIC-214_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R02": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-214_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R03": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-214_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R04": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-214_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R05": {
+    "key": "gemma-3-27b|S10_bare|FIC-214_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R06": {
+    "key": "gemma-3-27b|S10_bare|FIC-214_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R07": {
+    "key": "gemma-3-27b|S10_permission|FIC-214_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R08": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-214_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R09": {
+    "key": "gemma-3-27b|S10_permission|FIC-214_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R10": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-214_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R11": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-214_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R12": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-214_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R13": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-214_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R14": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-214_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R15": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-214_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R16": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-214_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R17": {
+    "key": "gemma-3-27b|S10_accuracy|FIC-214_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R18": {
+    "key": "gemma-3-27b|S10_permission|FIC-214_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R19": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-214_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R20": {
+    "key": "gemma-3-27b|S10_permission|FIC-214_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R21": {
+    "key": "gemma-3-27b|S9_screen_lure|FIC-214_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R22": {
+    "key": "gemma-3-27b|S9_screen_cold|FIC-214_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "FIC-214-R23": {
+    "key": "gemma-3-27b|S10_bare|FIC-214_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R24": {
+    "key": "gemma-3-27b|S10_bare|FIC-214_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "FIC-214-R25": {
+    "key": "gemma-3-27b|S10_bare|FIC-214_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "FIC-214",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R01": {
+    "key": "gemma-3-27b|S10_permission|HIST-103_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R02": {
+    "key": "gemma-3-27b|S10_permission|HIST-103_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R03": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-103_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R04": {
+    "key": "gemma-3-27b|S10_accuracy|HIST-103_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R05": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-103_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R06": {
+    "key": "gemma-3-27b|S10_permission|HIST-103_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R07": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-103_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R08": {
+    "key": "gemma-3-27b|S10_permission|HIST-103_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R09": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-103_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R10": {
+    "key": "gemma-3-27b|S10_bare|HIST-103_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R11": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-103_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R12": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-103_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R13": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-103_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R14": {
+    "key": "gemma-3-27b|S10_accuracy|HIST-103_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R15": {
+    "key": "gemma-3-27b|S10_bare|HIST-103_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R16": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-103_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R17": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-103_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R18": {
+    "key": "gemma-3-27b|S10_accuracy|HIST-103_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R19": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-103_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R20": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-103_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R21": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-103_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R22": {
+    "key": "gemma-3-27b|S10_bare|HIST-103_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R23": {
+    "key": "gemma-3-27b|S10_accuracy|HIST-103_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R24": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-103_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R25": {
+    "key": "gemma-3-27b|S10_bare|HIST-103_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R26": {
+    "key": "gemma-3-27b|S10_accuracy|HIST-103_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R27": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-103_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R28": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-103_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R29": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-103_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R30": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-103_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R31": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-103_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R32": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-103_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-103",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-103-R33": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-103_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "HIST-103-R34": {
+    "key": "gemma-3-27b|S10_bare|HIST-103_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-103-R35": {
+    "key": "gemma-3-27b|S10_permission|HIST-103_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-103",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "HIST-104-R01": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-104_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R02": {
+    "key": "llama-3.3-70b|S10_accuracy|HIST-104_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R03": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-104_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R04": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-104_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R05": {
+    "key": "llama-3.3-70b|S10_bare|HIST-104_lure|0",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R06": {
+    "key": "llama-3.3-70b|S10_accuracy|HIST-104_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R07": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-104_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R08": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-104_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R09": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-104_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R10": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-104_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R11": {
+    "key": "llama-3.3-70b|S10_accuracy|HIST-104_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R12": {
+    "key": "llama-3.3-70b|S10_permission|HIST-104_lure|4",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R13": {
+    "key": "llama-3.3-70b|S10_permission|HIST-104_lure|2",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R14": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-104_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R15": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-104_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R16": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-104_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R17": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-104_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R18": {
+    "key": "llama-3.3-70b|S10_bare|HIST-104_lure|4",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R19": {
+    "key": "llama-3.3-70b|S10_accuracy|HIST-104_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R20": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-104_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R21": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-104_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R22": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-104_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R23": {
+    "key": "llama-3.3-70b|S10_permission|HIST-104_lure|3",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R24": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-104_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R25": {
+    "key": "llama-3.3-70b|S10_bare|HIST-104_lure|1",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R26": {
+    "key": "llama-3.3-70b|S9_screen_cold|HIST-104_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R27": {
+    "key": "llama-3.3-70b|S10_bare|HIST-104_lure|2",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R28": {
+    "key": "llama-3.3-70b|S10_permission|HIST-104_lure|0",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R29": {
+    "key": "llama-3.3-70b|S10_permission|HIST-104_lure|1",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R30": {
+    "key": "llama-3.3-70b|S10_accuracy|HIST-104_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R31": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-104_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R32": {
+    "key": "gemma-3-27b|S9_screen_lure|HIST-104_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R33": {
+    "key": "gemma-3-27b|S9_screen_cold|HIST-104_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "HIST-104",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "HIST-104-R34": {
+    "key": "llama-3.3-70b|S10_bare|HIST-104_lure|3",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "HIST-104-R35": {
+    "key": "llama-3.3-70b|S9_screen_lure|HIST-104_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "HIST-104",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R01": {
+    "key": "llama-3.3-70b|S9_screen_cold|SIMP-004_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R02": {
+    "key": "llama-3.3-70b|S10_permission|SIMP-004_lure|0",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R03": {
+    "key": "llama-3.3-70b|S10_accuracy|SIMP-004_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R04": {
+    "key": "llama-3.3-70b|S10_permission|SIMP-004_lure|1",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R05": {
+    "key": "llama-3.3-70b|S9_screen_lure|SIMP-004_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R06": {
+    "key": "llama-3.3-70b|S10_permission|SIMP-004_lure|2",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R07": {
+    "key": "llama-3.3-70b|S10_accuracy|SIMP-004_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R08": {
+    "key": "llama-3.3-70b|S10_bare|SIMP-004_lure|4",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R09": {
+    "key": "llama-3.3-70b|S10_bare|SIMP-004_lure|2",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R10": {
+    "key": "llama-3.3-70b|S10_bare|SIMP-004_lure|0",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R11": {
+    "key": "llama-3.3-70b|S9_screen_cold|SIMP-004_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R12": {
+    "key": "llama-3.3-70b|S10_accuracy|SIMP-004_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R13": {
+    "key": "llama-3.3-70b|S9_screen_lure|SIMP-004_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R14": {
+    "key": "llama-3.3-70b|S9_screen_cold|SIMP-004_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R15": {
+    "key": "llama-3.3-70b|S10_bare|SIMP-004_lure|1",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 1,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R16": {
+    "key": "llama-3.3-70b|S9_screen_lure|SIMP-004_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R17": {
+    "key": "llama-3.3-70b|S10_permission|SIMP-004_lure|4",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R18": {
+    "key": "llama-3.3-70b|S9_screen_cold|SIMP-004_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R19": {
+    "key": "llama-3.3-70b|S9_screen_lure|SIMP-004_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R20": {
+    "key": "llama-3.3-70b|S10_accuracy|SIMP-004_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R21": {
+    "key": "llama-3.3-70b|S10_accuracy|SIMP-004_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 0,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R22": {
+    "key": "llama-3.3-70b|S9_screen_cold|SIMP-004_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 2,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R23": {
+    "key": "llama-3.3-70b|S10_bare|SIMP-004_lure|3",
+    "cell": "S10_bare",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R24": {
+    "key": "llama-3.3-70b|S9_screen_lure|SIMP-004_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 4,
+    "served_provider": "Crusoe"
+  },
+  "SIMP-004-R25": {
+    "key": "llama-3.3-70b|S10_permission|SIMP-004_lure|3",
+    "cell": "S10_permission",
+    "model_key": "llama-3.3-70b",
+    "item": "SIMP-004",
+    "sample": 3,
+    "served_provider": "Crusoe"
+  },
+  "SPORT-102-R01": {
+    "key": "gemma-3-27b|S10_bare|SPORT-102_lure|3",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R02": {
+    "key": "gemma-3-27b|S9_screen_cold|SPORT-102_cold|0",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R03": {
+    "key": "gemma-3-27b|S10_bare|SPORT-102_lure|1",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R04": {
+    "key": "gemma-3-27b|S10_permission|SPORT-102_lure|0",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R05": {
+    "key": "gemma-3-27b|S10_accuracy|SPORT-102_lure|2",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R06": {
+    "key": "gemma-3-27b|S9_screen_lure|SPORT-102_lure|0",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 0,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R07": {
+    "key": "gemma-3-27b|S10_bare|SPORT-102_lure|2",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R08": {
+    "key": "gemma-3-27b|S10_bare|SPORT-102_lure|4",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R09": {
+    "key": "gemma-3-27b|S10_permission|SPORT-102_lure|4",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R10": {
+    "key": "gemma-3-27b|S9_screen_lure|SPORT-102_lure|3",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R11": {
+    "key": "gemma-3-27b|S9_screen_cold|SPORT-102_cold|3",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 3,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R12": {
+    "key": "gemma-3-27b|S9_screen_cold|SPORT-102_cold|2",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R13": {
+    "key": "gemma-3-27b|S9_screen_cold|SPORT-102_cold|1",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 1,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R14": {
+    "key": "gemma-3-27b|S10_accuracy|SPORT-102_lure|0",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R15": {
+    "key": "gemma-3-27b|S10_permission|SPORT-102_lure|3",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R16": {
+    "key": "gemma-3-27b|S10_accuracy|SPORT-102_lure|4",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 4,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R17": {
+    "key": "gemma-3-27b|S10_accuracy|SPORT-102_lure|1",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R18": {
+    "key": "gemma-3-27b|S10_permission|SPORT-102_lure|2",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 2,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R19": {
+    "key": "gemma-3-27b|S10_accuracy|SPORT-102_lure|3",
+    "cell": "S10_accuracy",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 3,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R20": {
+    "key": "gemma-3-27b|S10_bare|SPORT-102_lure|0",
+    "cell": "S10_bare",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 0,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R21": {
+    "key": "gemma-3-27b|S9_screen_cold|SPORT-102_cold|4",
+    "cell": "S9_screen_cold",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R22": {
+    "key": "gemma-3-27b|S10_permission|SPORT-102_lure|1",
+    "cell": "S10_permission",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 1,
+    "served_provider": "DeepInfra"
+  },
+  "SPORT-102-R23": {
+    "key": "gemma-3-27b|S9_screen_lure|SPORT-102_lure|4",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 4,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R24": {
+    "key": "gemma-3-27b|S9_screen_lure|SPORT-102_lure|2",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 2,
+    "served_provider": "Novita"
+  },
+  "SPORT-102-R25": {
+    "key": "gemma-3-27b|S9_screen_lure|SPORT-102_lure|1",
+    "cell": "S9_screen_lure",
+    "model_key": "gemma-3-27b",
+    "item": "SPORT-102",
+    "sample": 1,
+    "served_provider": "Novita"
+  }
+}
