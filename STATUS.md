@@ -191,8 +191,10 @@ Rejected candidates + audit trail: items/candidates/. Verification logs: evidenc
    correct/lure premise (S4/S5) → Claude-fingerprint panel (S6a-c: FIC-205 Michael-alone,
    TV-008 Niles, SEIN-002 Frank→George) → **S7 logprob cell (NEW): OpenRouter exposes
    top_logprobs on 9/14 models, so P(Jerry) vs P(George) — the Phase-1 attractor metric — is
-   measurable NOW with no GPU.** BLOCKED: `OPENROUTER_API_KEY` empty in .env. TODO before
-   running: log predictions P1–P6 in the prereg changelog (pre-data).
+   measurable NOW with no GPU.**
+   **PHASE 0 IS COMPLETE (2026-08-03): all cells run and read-adjudicated — S1 210, S2/S3/S7 129,
+   S4/S5 80, S8 400 (399 usable), S6 90. Prereg v0.2.11 / v0.2.12 / v0.2.13 all registered
+   PRE-DATA.** Narrative log: `OPENMODELS_PROGRAM_LOG.md`. Results: `evidence/openmodels01_S1_findings.md`.
    Notable: llama-3.1-405b is DELISTED from OpenRouter; olmo-3-32b-think has 0 live endpoints
    (best data-transparent control — get it locally in Phase 1); gemma-2-9b (Gemma Scope target)
    is not served at all, so SAE work is local-only regardless.

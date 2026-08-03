@@ -73,12 +73,25 @@ ITEM_PATHS = {
     "SPORT-102": os.path.join("items", "SPORT-102.json"),
     "HIST-103": os.path.join("items", "HIST-103.json"),
     "HIST-104": os.path.join("items", "HIST-104.json"),
-    "FIC-205": os.path.join("items", "candidates", "fiction_batch2_built", "FIC-205.json"),
 }
+# The 15 built fiction_batch2 conflict items (all verification_status=verified) join the registry
+# for the S9 screen: finding knows-it-then-folds pairs needs a WIDE item pool, because the pair is
+# a property of the model-item combination (§4.12), not of the model.
+for _i in range(201, 216):
+    ITEM_PATHS[f"FIC-{_i}"] = os.path.join(
+        "items", "candidates", "fiction_batch2_built", f"FIC-{_i}.json")
 
 # The frozen 8-item conflict set (prereg §4.2). Used by the S8 premise grid.
 GRID_ITEM_IDS = ["SEIN-001", "SEIN-002", "FRI-003", "SIMP-004", "TV-008",
                  "SPORT-102", "HIST-103", "HIST-104"]
+
+# S9 screen item pool: the frozen 8 plus all 15 built FIC items = 23 conflict items.
+SCREEN_ITEM_IDS = GRID_ITEM_IDS + [f"FIC-{i}" for i in range(201, 216)]
+
+# S9 screen model ladder: DENSE, open-weight, locally dissectible models only. This is the whole
+# point of the cell — the phenomenon has to be reproducible on something you can put activation
+# hooks into. MoEs are excluded no matter how interesting their behaviour is.
+SCREEN_MODELS = ["llama-3.3-70b", "qwen3-32b", "gemma-3-27b", "llama-3.1-8b"]
 
 # S7 forced-choice: the ONLY text authored by this file. Appended to verbatim item text so the
 # first generated token is the character name and top_logprobs gives P(Jerry) vs P(George).
@@ -166,6 +179,33 @@ def build_grid_plan(items, cfg):
                      n, iid, it.get("target_entity")))
         plan.append(("S8_premise_grid", f"{iid}_lure", it["lure_premise_prompt"],
                      n, iid, it.get("target_entity")))
+    return plan
+
+
+def build_screen_plan(items, cfg):
+    """S9 — the deference screen over DISSECTIBLE models.
+
+    Phase 0 established that the mech-interp-relevant phenomenon is not schema capture but
+    DEFERENCE OVER KNOWLEDGE: the model states the true fact cold, then abandons it when the user
+    asserts otherwise (kimi-k2-thinking and kimi-k3 each answer SEIN-002 'Jerry' 5/5 cold and
+    'George' 5/5 under the lure premise). That is a suppression event with BOTH states observable
+    -- exactly what activation patching needs. But every model showing it cleanly so far is a ~1T
+    MoE, i.e. undissectible.
+
+    This cell hunts for the same conjunction on dense open-weight models: for each (model, item),
+    run the COLD prompt and the LURE-premise prompt. A pair with high cold accuracy AND high lure
+    acceptance is a ready-made patching substrate -- same weights, same fact, two prompts, opposite
+    answers. Pairs are scored per prereg v0.2.14; the screen itself authors no text.
+    """
+    cold_n = cfg["cells"]["S9_screen_cold"]["n"]
+    lure_n = cfg["cells"]["S9_screen_lure"]["n"]
+    plan = []
+    for iid in SCREEN_ITEM_IDS:
+        it = items[iid]
+        plan.append(("S9_screen_cold", f"{iid}_cold", it["cold_prompts"][0],
+                     cold_n, iid, it.get("target_entity")))
+        plan.append(("S9_screen_lure", f"{iid}_lure", it["lure_premise_prompt"],
+                     lure_n, iid, it.get("target_entity")))
     return plan
 
 
@@ -441,6 +481,16 @@ def call_with_retries(client, model_id, prompt, mcfg, defaults, pin, logprobs, m
                                     logprobs=logprobs, pin_mode=pin_mode, top_k=top_k,
                                     max_tokens=defaults["max_tokens_reasoning"])
                     rec["escalated_max_tokens"] = True
+                # A provider can also fail MID-STREAM: choices are present, but content is empty
+                # and finish_reason is "error" (observed on kimi-k3/S6c after an 11,657-char
+                # reasoning trace). error is null, so nothing else notices. Empty text with a
+                # non-"stop" terminal reason is an infrastructure failure, never an abstention --
+                # a real abstention has text in it. Raise so the ladder retries.
+                if (not logprobs and not (rec.get("response_text") or "").strip()
+                        and rec.get("finish_reason") in ("error", None)):
+                    raise RuntimeError(
+                        f"empty content with finish_reason={rec.get('finish_reason')!r} "
+                        f"(reasoning_text {len(rec.get('reasoning_text') or '')} chars)")
                 # A provider rejecting include_reasoning answers 200 with the error as content.
                 # Retry once without it rather than banking the error string as a response.
                 if looks_like_provider_error(rec.get("response_text")):
@@ -504,7 +554,7 @@ def main():
         raise SystemExit("no models selected")
 
     items = load_items()
-    plan = build_plan(items, cfg) + build_grid_plan(items, cfg)
+    plan = build_plan(items, cfg) + build_grid_plan(items, cfg) + build_screen_plan(items, cfg)
     s7_plan = [] if args.no_s7 else build_s7_plan(items, cfg)
     if args.cells:
         want = {c.strip() for c in args.cells.split(",")}
