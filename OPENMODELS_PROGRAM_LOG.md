@@ -563,7 +563,33 @@ Jerry.** Left alone, the cell would have been written up as *"kimi-k3: Jerry 5/5
 **third** time an infrastructure failure would have silently become a finding (§6.6, §6.9, here),
 and the first where it would have changed a headline number rather than merely wasting calls.
 
----
+### 6.11 Concurrent appends destroyed a record — the transcript itself was corrupted
+Launching S9 as four processes (one per model) against the single append-only `records.jsonl`
+**destroyed a record mid-write**. Line 981 of the file was the orphaned tail of a record whose head
+had been overwritten by another process's append: `top_logprobs_used": null}` sitting on its own
+line. **Append is not atomic on Windows**, and these records are ~1.6 KB — comfortably past any
+size at which you could get lucky.
+
+Caught within a minute because the analysis one-liner raised `JSONDecodeError` rather than skipping
+the line. **All four processes were stopped immediately**; `records.jsonl` was restored from commit
+`e7e2885` (verified: 975 lines, 918 unique keys, 0 unparseable) and the ~80 S9 records written up
+to that point were discarded and re-run. No committed data was lost — the corruption existed only
+in the working tree, for about 90 seconds.
+
+**Fixed three ways:**
+1. **`--shard NAME`** — each process writes `records.<shard>.jsonl`; readers glob `records*.jsonl`
+   and treat the set as one append-only transcript. Per-shard immutability is preserved and no two
+   processes ever touch the same file. `manifest.json` is sharded for the same reason.
+2. **The resume scan now aborts** on any unparseable line rather than silently `continue`-ing past
+   it. That `except: continue` was the actually dangerous part: it would have let every subsequent
+   run append happily to a damaged transcript, and **a corrupt record is indistinguishable from a
+   missing one at analysis time** — which is exactly the distinction this program turns on.
+3. Blank lines are skipped explicitly rather than being fed to the parser.
+
+**Retroactive check on S8, which also ran four parallel processes against one file:** the committed
+transcript parses with **0 unparseable lines** and yields **400 unique S8 keys, 399 usable** — the
+numbers reported in §4.12. S8 got lucky; it was not safe. Every parallel run before this fix was
+one unlucky interleave away from a silently missing record.
 
 ## 7. Where I was wrong, and corrected
 

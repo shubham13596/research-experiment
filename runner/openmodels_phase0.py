@@ -39,6 +39,7 @@ Transcripts are append-only and immutable; exclusions happen at analysis with lo
 """
 import argparse
 import datetime
+import glob
 import json
 import math
 import os
@@ -535,6 +536,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="print the plan + cost estimate, no calls")
     ap.add_argument("--max-usd", type=float, default=40.0, help="hard spend cap (default 40)")
     ap.add_argument("--no-s7", action="store_true", help="skip the logprob cell entirely")
+    ap.add_argument("--shard", default=None,
+                    help="write to records.<SHARD>.jsonl instead of records.jsonl. REQUIRED when "
+                         "running several processes at once: concurrent appends to one file are "
+                         "not atomic on Windows and will destroy records. Readers glob all shards.")
     args = ap.parse_args()
 
     verify_stimulus_provenance()
@@ -648,17 +653,27 @@ def main():
         print(f"(could not read credit balance: {type(e).__name__}; continuing)")
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    path = os.path.join(OUT_DIR, "records.jsonl")
+    # SHARDED WRITES. Concurrent appends to one file are NOT atomic on Windows: running four
+    # models as four processes against records.jsonl destroyed a record mid-write and left an
+    # orphan tail fragment (`top_logprobs_used": null}`) as its own line. Each process now owns
+    # its own file; every reader globs records*.jsonl and treats them as one append-only
+    # transcript. Nothing is ever rewritten, so immutability is preserved per shard.
+    path = os.path.join(OUT_DIR, f"records.{args.shard}.jsonl" if args.shard else "records.jsonl")
+    shard_paths = sorted(glob.glob(os.path.join(OUT_DIR, "records*.jsonl")))
     # Resume on SUCCESSES only. An errored record must not block its own retry — a transient
     # 402/429/5xx would otherwise permanently poison that cell, which is how a run silently ends
     # up with holes that look like data. Failed keys are re-attempted and the transcript keeps
     # both the failure and the eventual success (append-only; analysis takes the last success).
     done, failed = set(), set()
-    if os.path.exists(path):
-        for line in open(path, encoding="utf-8"):
+    n_corrupt = 0
+    for spath in shard_paths:
+        for line in open(spath, encoding="utf-8"):
+            if not line.strip():
+                continue
             try:
                 r = json.loads(line)
             except Exception:  # noqa: BLE001
+                n_corrupt += 1
                 continue
             key = r.get("key")
             if (r.get("error") or not (r.get("response_text") or "").strip()
@@ -666,9 +681,15 @@ def main():
                 failed.add(key)
             else:
                 done.add(key)
-        failed -= done
-        print(f"resuming: {len(done)} completed records; {len(failed)} prior failures "
-              f"will be RE-ATTEMPTED")
+    failed -= done
+    if shard_paths:
+        print(f"resuming: {len(done)} completed records across {len(shard_paths)} shard(s); "
+              f"{len(failed)} prior failures will be RE-ATTEMPTED")
+    # Never let a damaged line pass silently — a corrupt record is indistinguishable from a
+    # missing one at analysis time, and this whole program turns on that distinction.
+    if n_corrupt:
+        raise SystemExit(f"ABORT: {n_corrupt} unparseable line(s) in {OUT_DIR}. Repair or "
+                         "restore from git before running; do not append to a damaged transcript.")
 
     spent, n_err = 0.0, 0
     s7_pins = {}
@@ -767,7 +788,10 @@ def main():
         "errors": n_err,
         "grading": "READ ADJUDICATION REQUIRED. keyword_hint_UNTRUSTED is a pre-sort hint only.",
     }
-    mpath = os.path.join(OUT_DIR, "manifest.json")
+    # Sharded for the same reason as the transcript: two processes finishing at once would
+    # interleave one truncating write and leave unparseable JSON.
+    mpath = os.path.join(OUT_DIR,
+                         f"manifest.{args.shard}.json" if args.shard else "manifest.json")
     with open(mpath, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
     print(f"\nDone. {n_err} errors. Reported spend ${spent:.3f}. Manifest: {mpath}")
