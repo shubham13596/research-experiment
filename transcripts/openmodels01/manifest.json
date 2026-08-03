@@ -1,23 +1,23 @@
 {
   "run_id": "openmodels01",
   "spec": "openmodels_interp_program.md (Phase 0)",
-  "finished_utc": "2026-08-02T23:21:02.429913+00:00",
+  "finished_utc": "2026-08-03T07:53:11.874112+00:00",
   "models": {
     "kimi-k3": {
       "id": "moonshotai/kimi-k3",
       "bucket": "A_suspected_claude_flavored",
       "pin": {
-        "tag": "wafer/fast",
-        "provider_name": "Wafer",
+        "tag": "baseten/fp8",
+        "provider_name": "BaseTen",
         "quantization": "fp8",
         "context_length": 1048576,
         "pricing": {
-          "prompt": "0.0000045",
-          "completion": "0.0000225",
-          "input_cache_read": "0.00000045",
+          "prompt": "0.000003",
+          "completion": "0.000015",
+          "input_cache_read": "0.0000003",
           "discount": 0
         },
-        "uptime_last_30m": 99.2
+        "uptime_last_30m": 100
       },
       "s7_pin": null
     }
@@ -59,12 +59,16 @@
     "S7_logprob": {
       "n": 3,
       "purpose": "OPTIONAL: forced-choice token logprobs = P(Jerry) vs P(George). Phase-1 metric preview, no GPU needed. Only on s7_eligible models. NOTE: the `logprobs` flag below records that OpenRouter ADVERTISES logprobs for the model — verified 2026-08-03 that this does NOT mean the serving provider returns them (of 5 llama-3.1-8b endpoints, 3 return an empty array and 1 returns only the terminal token). The runner therefore probes empirically for a logprob-capable endpoint per model and pins S7 to it separately from the behavioral pin; if none works, S7 is skipped for that model and the skip is printed and recorded. Also: S7 runs at temperature 0, so its n=3 is a provider-determinism check, not statistical power."
+    },
+    "S8_premise_grid": {
+      "n": 5,
+      "purpose": "THE GENERALISATION RUN. All 8 frozen conflict items x {correct, lure} premise. S4/S5 on SEIN-001 alone showed 4 of 5 models accept a FALSE premise 8/8 while only kimi-k3 corrects it; this tests whether that regime holds item-wide, and whether it extends to the 3 REAL-PERSON role inversions (SPORT-102, HIST-103, HIST-104) which are the Brian Hood analog. n=5 matches gen01 convention. Authors no new text - all prompts are frozen item fields."
     }
   },
   "no_tools": true,
   "system_prompt": null,
-  "estimated_cost_usd": 0.909,
-  "reported_cost_usd": 0.536,
+  "estimated_cost_usd": 0.379,
+  "reported_cost_usd": 0.225,
   "errors": 0,
   "grading": "READ ADJUDICATION REQUIRED. keyword_hint_UNTRUSTED is a pre-sort hint only."
 }

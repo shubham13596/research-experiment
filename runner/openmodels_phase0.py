@@ -471,6 +471,8 @@ def main():
     ap.add_argument("--models", help="comma list of short names from config/openmodels.json")
     ap.add_argument("--bucket", help="run every model in this bucket")
     ap.add_argument("--cells", help="comma list of cell names (default: all except S7)")
+    ap.add_argument("--items", help="comma list of item ids to restrict to (e.g. HIST-103,HIST-104). "
+                                    "Lets a high-value subset be run first; the rest resumes later.")
     ap.add_argument("--ping", action="store_true", help="verify IDs + resolve pins, then exit")
     ap.add_argument("--dry-run", action="store_true", help="print the plan + cost estimate, no calls")
     ap.add_argument("--max-usd", type=float, default=40.0, help="hard spend cap (default 40)")
@@ -500,6 +502,10 @@ def main():
         want = {c.strip() for c in args.cells.split(",")}
         plan = [p for p in plan if p[0] in want]
         s7_plan = [p for p in s7_plan if p[0] in want]
+    if args.items:
+        keep = {i.strip() for i in args.items.split(",")}
+        plan = [p for p in plan if p[4] in keep]
+        s7_plan = [p for p in s7_plan if p[4] in keep]
 
     print(f"=== {RUN_ID} | {len(names)} models | {sum(p[3] for p in plan)} calls/model "
           f"(+{sum(p[3] for p in s7_plan)} S7 where eligible) ===\n")
